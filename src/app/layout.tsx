@@ -14,6 +14,13 @@ export const metadata: Metadata = {
     description: "One deal score across every marketplace. 10 verticals. Instant alerts.",
     siteName: "Shinnslist",
     type: "website",
+    url: "https://shinnslist.com",
+    images: [{ url: "https://shinnslist.com/icon.svg", width: 512, height: 512 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Shinnslist — Find Deals Before Anyone Else",
+    description: "10 marketplaces. One deal score. Get alerts when underpriced items drop.",
   },
 };
 

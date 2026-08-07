@@ -16,6 +16,7 @@ export default function BottomNav() {
 
   const links = [
     { href: '/', label: 'Deals', icon: '🏷️' },
+    { href: '/top-deals', label: 'Top', icon: '🏆' },
     { href: '/post', label: 'Post', icon: '📸' },
     { href: '/zones', label: 'Zones', icon: '🗺️' },
     { href: hasPreferences ? '/pricing' : '/onboarding', label: hasPreferences ? 'Upgrade' : 'Setup', icon: hasPreferences ? '⚡' : '🎯' },

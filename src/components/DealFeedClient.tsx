@@ -8,6 +8,9 @@ import StatsBar from './StatsBar';
 import { EmptyState } from './ErrorBoundary';
 import { formatPrice, timeAgo, sourceColor } from '@/lib/utils';
 import { scoreDeal } from '@/lib/deal-scorer';
+import { getPrefs } from '@/lib/subscription';
+import { track } from '@/lib/track';
+import { ONBOARDING_CARDS } from '@/data/interestTaxonomy';
 
 const SUPABASE_URL = 'https://nmisxwzrbsyqihqwnvsx.supabase.co';
 const SUPABASE_ANON_KEY = 'sb_publishable__hPy32xbnBwGYQHKNiiw-g_zWrx2bSC';
@@ -91,7 +94,28 @@ export default function DealFeedClient({ initialListings }: Props) {
     }
 
     // Quick filters
-    if (activeFilter === 'FREE') {
+    if (activeFilter === '🎯 For You') {
+      // Curate from onboarding prefs: interest cards → categories, projects → keywords
+      const prefs = getPrefs();
+      const prefCategories = new Set(
+        (prefs?.cards || []).flatMap(id => {
+          const card = ONBOARDING_CARDS.find(c => c.id === id);
+          return card?.categories || [];
+        })
+      );
+      const kws = (prefs?.projects || []).map(k => k.toLowerCase()).filter(k => k.length > 2);
+      if (prefCategories.size > 0 || kws.length > 0) {
+        items = items.filter(l => {
+          const text = `${l.title} ${l.description}`.toLowerCase();
+          return prefCategories.has(l.category) || kws.some(k => text.includes(k));
+        });
+      }
+      items = [...items].sort((a, b) => {
+        const sa = scoreDeal({ title: a.title, description: a.description, price: a.price, category: a.category, condition: a.condition, postedAt: a.postedAt }).score;
+        const sb = scoreDeal({ title: b.title, description: b.description, price: b.price, category: b.category, condition: b.condition, postedAt: b.postedAt }).score;
+        return sb - sa;
+      });
+    } else if (activeFilter === 'FREE') {
       items = items.filter(l => l.price === 0);
     } else if (activeFilter === '🔥 Hot') {
       items = items.filter(l => scoreDeal({
@@ -130,7 +154,7 @@ export default function DealFeedClient({ initialListings }: Props) {
     <main className="flex-1">
       {/* Hero */}
       <section className="max-w-7xl mx-auto px-4 pt-8 pb-4">
-        <SearchBar onSearch={setSearchQuery} />
+        <SearchBar onSearch={(q) => { setSearchQuery(q); if (q.trim()) track('search', { extra: { q: q.trim().slice(0, 100) } }); }} />
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
           <div>
             <h1 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
@@ -147,7 +171,7 @@ export default function DealFeedClient({ initialListings }: Props) {
           </div>
 
           <div className="flex items-center gap-2 flex-wrap">
-            {['All', 'FREE', '🔥 Hot', '📈 Trending', '✅ Quality', '💎 High Value'].map(f => (
+            {['🎯 For You', 'All', 'FREE', '🔥 Hot', '📈 Trending', '✅ Quality', '💎 High Value'].map(f => (
               <button
                 key={f}
                 onClick={() => setActiveFilter(f)}
@@ -168,7 +192,7 @@ export default function DealFeedClient({ initialListings }: Props) {
         </div>
 
         {/* Vertical filter */}
-        <VerticalFilter active={activeVertical} onChange={setActiveVertical} />
+        <VerticalFilter active={activeVertical} onChange={(v) => { setActiveVertical(v); if (v !== 'all') track('vertical_select', { vertical: v }); }} />
       </section>
 
       {/* Deal grid */}
@@ -205,6 +229,7 @@ export default function DealFeedClient({ initialListings }: Props) {
                     href={deal.sourceUrl}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => track('deal_view', { deal_id: deal.id, category: deal.category, price: deal.price, estimated_value: deal.estimatedValue ?? undefined, city: deal.location?.city })}
                     className="group bg-[var(--shinnslist-surface)] border border-[var(--shinnslist-border)] rounded-2xl overflow-hidden hover:border-zinc-600 transition-all hover:shadow-lg hover:shadow-[var(--shinnslist-pink)]/5 active:scale-[0.99]"
                   >
                     {/* Image placeholder */}

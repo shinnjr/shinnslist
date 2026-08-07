@@ -1,13 +1,21 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 import {
   ADDONS,
   TIER_BUNDLED_ADDONS,
+  VERTICAL_META,
+  VERTICAL_SLUGS,
+  VERTICAL_PRICE_CENTS,
   dollars,
   type AddonKey,
   type Tier,
 } from '@/lib/pricing';
+import { getSub, isUnlocked } from '@/lib/subscription';
+import { track } from '@/lib/track';
+
+const CHECKOUT_WORKER = 'https://shinnslist-checkout.jamesrshinn.workers.dev';
 
 interface TierCard {
   name: string;
@@ -80,6 +88,20 @@ export default function PricingPage() {
   const [selected, setSelected] = useState<AddonKey[]>([]);
   const [loading, setLoading] = useState<null | 'pro' | 'flipper' | 'manage'>(null);
   const [error, setError] = useState<string | null>(null);
+  const searchParams = useSearchParams();
+
+  // ?v=<slug> from a locked deal → scroll to verticals and pulse the target
+  useEffect(() => {
+    const v = searchParams.get('v');
+    if (!v) return;
+    const el = document.getElementById('verticals');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const target = document.getElementById(`vertical-${v}`);
+      target?.classList.add('ring-2', 'ring-[var(--shinnslist-pink)]');
+      setTimeout(() => target?.classList.remove('ring-2', 'ring-[var(--shinnslist-pink)]'), 2500);
+    }
+  }, [searchParams]);
 
   function toggle(addon: AddonKey) {
     setError(null);
@@ -91,27 +113,14 @@ export default function PricingPage() {
   async function checkout(tier: Exclude<Tier, 'free'>) {
     setLoading(tier);
     setError(null);
-    try {
-      const res = await fetch('/api/checkout', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ tier, addons: selected }),
-      });
-      const data = await res.json().catch(() => ({}));
-      if (res.status === 401) {
-        window.location.href = '/login';
-        return;
-      }
-      if (!res.ok || !data.url) {
-        setError(data.error || 'Could not start checkout. Please try again.');
-        return;
-      }
-      window.location.href = data.url;
-    } catch {
-      setError('Network error. Please try again.');
-    } finally {
-      setLoading(null);
-    }
+    track('checkout_start', { plan: tier });
+    // Worker 302-redirects straight to Stripe Checkout
+    window.location.href = `${CHECKOUT_WORKER}?tier=${tier}`;
+  }
+
+  function checkoutVertical(slug: string) {
+    track('checkout_start', { plan: `vertical-${slug}`, vertical: slug });
+    window.location.href = `${CHECKOUT_WORKER}?vertical=${slug}`;
   }
 
   async function manageSubscription() {
@@ -217,6 +226,48 @@ export default function PricingPage() {
           ))}
         </div>
 
+        {/* Verticals — $1/week per vertical */}
+        <div id="verticals" className="max-w-4xl mx-auto mb-12 scroll-mt-6">
+          <h2 className="text-xl font-bold text-white mb-2 text-center">
+            Unlock a vertical — <span className="text-[var(--shinnslist-pink)]">$1/week</span>
+          </h2>
+          <p className="text-center text-xs text-[var(--shinnslist-muted)] mb-6">
+            Pay only for the categories you flip. Or grab Pro and unlock everything.
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+            {VERTICAL_SLUGS.map((slug) => {
+              const meta = VERTICAL_META[slug];
+              const active = isUnlocked(slug);
+              return (
+                <div
+                  key={slug}
+                  id={`vertical-${slug}`}
+                  className={`bg-[var(--shinnslist-surface)] border rounded-2xl p-4 flex flex-col items-center text-center transition-all ${
+                    active ? 'border-[var(--shinnslist-green)]/50' : 'border-[var(--shinnslist-border)] hover:border-zinc-600'
+                  }`}
+                >
+                  <span className="text-3xl mb-2">{meta.icon}</span>
+                  <h4 className="text-white font-semibold text-sm">{meta.label}</h4>
+                  <p className="text-[var(--shinnslist-muted)] text-[11px] mt-0.5 mb-3 flex-1">{meta.blurb}</p>
+                  {active ? (
+                    <span className="text-[11px] font-bold text-[var(--shinnslist-green)] border border-[var(--shinnslist-green)]/40 rounded-full px-3 py-1.5">
+                      ✓ Unlocked
+                    </span>
+                  ) : (
+                    <button
+                      onClick={() => checkoutVertical(slug)}
+                      disabled={loading !== null}
+                      className="min-h-[40px] w-full bg-[var(--shinnslist-pink)]/15 border border-[var(--shinnslist-pink)]/40 text-[var(--shinnslist-pink)] text-xs font-bold rounded-full py-2 hover:bg-[var(--shinnslist-pink)] hover:text-white active:scale-[0.97] transition-all disabled:opacity-60"
+                    >
+                      ${(VERTICAL_PRICE_CENTS / 100).toFixed(0)}/wk
+                    </button>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
         {/* Add-ons */}
         <div className="max-w-2xl mx-auto">
           <h2 className="text-xl font-bold text-white mb-2 text-center">
@@ -271,16 +322,18 @@ export default function PricingPage() {
           <p className="text-center text-sm text-red-400 mt-6">{error}</p>
         )}
 
-        {/* Manage existing subscription */}
-        <div className="text-center mt-8">
-          <button
-            onClick={manageSubscription}
-            disabled={loading !== null}
-            className="text-sm text-[var(--shinnslist-muted)] underline hover:text-white disabled:opacity-60"
-          >
-            {loading === 'manage' ? 'Opening…' : 'Already a subscriber? Manage your plan'}
-          </button>
-        </div>
+        {/* Manage existing subscription — only when one exists locally */}
+        {getSub() && (
+          <div className="text-center mt-8">
+            <button
+              onClick={manageSubscription}
+              disabled={loading !== null}
+              className="text-sm text-[var(--shinnslist-muted)] underline hover:text-white disabled:opacity-60"
+            >
+              {loading === 'manage' ? 'Opening…' : 'Already a subscriber? Manage your plan'}
+            </button>
+          </div>
+        )}
 
         <p className="text-center text-xs text-[var(--shinnslist-muted)] mt-6">
           All prices in USD. Cancel anytime. No refunds for partial weeks.

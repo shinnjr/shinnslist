@@ -5,20 +5,23 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { INTEREST_GROUPINGS, ONBOARDING_CARDS } from '@/data/interestTaxonomy';
 import type { InterestGrouping } from '@/types';
 
-type Step = 'pick-categories' | 'pick-interests' | 'email-signup';
+type Step = 'pick-categories' | 'pick-interests' | 'projects' | 'email-signup';
 
 export default function OnboardingPage() {
   const [step, setStep] = useState<Step>('pick-categories');
   const [selectedGroupings, setSelectedGroupings] = useState<string[]>([]);
   const [selectedCards, setSelectedCards] = useState<string[]>([]);
+  const [projects, setProjects] = useState('');
   const [email, setEmail] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
   const toggleGrouping = (id: string) => {
-    setSelectedGroupings(prev =>
-      prev.includes(id) ? prev.filter(g => g !== id) : [...prev, id]
-    );
+    setSelectedGroupings(prev => {
+      if (prev.includes(id)) return prev.filter(g => g !== id);
+      if (prev.length >= 3) return prev; // cap at 3 — stay focused, we can add more later
+      return [...prev, id];
+    });
   };
 
   const toggleCard = (id: string) => {
@@ -43,6 +46,7 @@ export default function OnboardingPage() {
       const prefs = {
         groupings: selectedGroupings,
         cards: selectedCards,
+        projects: projects.split(',').map(p => p.trim()).filter(Boolean),
       };
       localStorage.setItem('shinnslist_prefs', JSON.stringify(prefs));
 
@@ -67,8 +71,9 @@ export default function OnboardingPage() {
       <div className="w-full max-w-2xl">
         {/* Progress bar */}
         <div className="flex gap-1 mb-8">
-          <div className={`h-1 rounded-full flex-1 ${step === 'pick-categories' || step === 'pick-interests' || step === 'email-signup' ? 'bg-[var(--shinnslist-pink)]' : 'bg-[var(--shinnslist-border)]'}`}/>
-          <div className={`h-1 rounded-full flex-1 ${step === 'pick-interests' || step === 'email-signup' ? 'bg-[var(--shinnslist-pink)]' : 'bg-[var(--shinnslist-border)]'}`}/>
+          <div className={`h-1 rounded-full flex-1 ${step === 'pick-categories' || step === 'pick-interests' || step === 'projects' || step === 'email-signup' ? 'bg-[var(--shinnslist-pink)]' : 'bg-[var(--shinnslist-border)]'}`}/>
+          <div className={`h-1 rounded-full flex-1 ${step === 'pick-interests' || step === 'projects' || step === 'email-signup' ? 'bg-[var(--shinnslist-pink)]' : 'bg-[var(--shinnslist-border)]'}`}/>
+          <div className={`h-1 rounded-full flex-1 ${step === 'projects' || step === 'email-signup' ? 'bg-[var(--shinnslist-pink)]' : 'bg-[var(--shinnslist-border)]'}`}/>
           <div className={`h-1 rounded-full flex-1 ${step === 'email-signup' ? 'bg-[var(--shinnslist-pink)]' : 'bg-[var(--shinnslist-border)]'}`}/>
         </div>
 
@@ -86,7 +91,7 @@ export default function OnboardingPage() {
               <span className="text-4xl">🎯</span>
               <h1 className="text-2xl font-bold text-white mt-3">What brings you here?</h1>
               <p className="text-[var(--shinnslist-muted)] text-sm mt-1">
-                Pick one or more — we'll find the best deals for your life
+                Pick up to 3 — we'll find the best deals for your life
               </p>
             </div>
 
@@ -113,8 +118,13 @@ export default function OnboardingPage() {
               disabled={selectedGroupings.length === 0}
               className="w-full min-h-[48px] bg-[var(--shinnslist-pink)] text-white font-bold py-4 rounded-xl hover:bg-fuchsia-600 active:scale-[0.98] transition-all disabled:opacity-50"
             >
-              Continue ({selectedGroupings.length} selected) →
+              Continue ({selectedGroupings.length}/3 selected) →
             </button>
+            {selectedGroupings.length >= 3 && (
+              <p className="text-center text-[var(--shinnslist-green)] text-xs mt-2">
+                ✓ 3 categories locked in — you can add more anytime
+              </p>
+            )}
             <p className="text-center text-[var(--shinnslist-muted)] text-xs mt-4">
               Skip this? <button onClick={() => setStep('pick-interests')} className="text-[var(--shinnslist-pink)] hover:underline">Go straight to interests</button>
             </p>
@@ -163,7 +173,7 @@ export default function OnboardingPage() {
                 ← Back
               </button>
               <button
-                onClick={() => setStep('email-signup')}
+                onClick={() => setStep('projects')}
                 disabled={selectedCards.length < 3}
                 className="flex-1 min-h-[48px] bg-[var(--shinnslist-pink)] text-white font-bold py-4 rounded-xl hover:bg-fuchsia-600 active:scale-[0.98] transition-all disabled:opacity-50"
               >
@@ -172,6 +182,74 @@ export default function OnboardingPage() {
             </div>
             <p className="text-center text-[var(--shinnslist-muted)] text-xs mt-4">
               <span className="text-[var(--shinnslist-pink)]">{selectedCategories.size}</span> categories from your picks
+            </p>
+          </motion.div>
+        )}
+
+        {/* Step 2.5: Name projects you're working on — powers curation */}
+        {step === 'projects' && (
+          <motion.div
+            key="projects"
+            initial={{ opacity: 0, x: 24 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -24 }}
+            transition={{ duration: 0.25 }}
+          >
+            <div className="text-center mb-6">
+              <span className="text-4xl">🛠️</span>
+              <h1 className="text-2xl font-bold text-white mt-3">What are you working on?</h1>
+              <p className="text-[var(--shinnslist-muted)] text-sm mt-1">
+                Name projects or goals — we'll surface deals that help you finish them
+              </p>
+            </div>
+
+            <div className="bg-[var(--shinnslist-surface)] border border-[var(--shinnslist-border)] rounded-2xl p-5">
+              <label className="text-white text-sm font-medium block mb-2" htmlFor="projects-input">
+                Projects, comma-separated
+              </label>
+              <textarea
+                id="projects-input"
+                value={projects}
+                onChange={e => setProjects(e.target.value)}
+                rows={3}
+                placeholder="e.g. flipping furniture, nursery for a baby due in October, building a gaming PC, reselling sneakers"
+                className="w-full bg-[var(--shinnslist-bg)] border border-[var(--shinnslist-border)] rounded-xl px-4 py-3 text-white placeholder:text-zinc-600 focus:outline-none focus:border-[var(--shinnslist-pink)] text-sm resize-none"
+              />
+              <div className="flex flex-wrap gap-2 mt-3">
+                {['Flipping furniture', 'Nursery for baby', 'Gaming PC build', 'Sneaker resale'].map(s => (
+                  <button
+                    key={s}
+                    type="button"
+                    onClick={() => setProjects(prev => prev ? `${prev}, ${s}` : s)}
+                    className="text-[11px] bg-[var(--shinnslist-pink)]/10 border border-[var(--shinnslist-pink)]/30 text-[var(--shinnslist-pink)] px-3 py-1.5 rounded-full hover:bg-[var(--shinnslist-pink)]/20 transition-colors"
+                  >
+                    + {s}
+                  </button>
+                ))}
+              </div>
+              <p className="text-[var(--shinnslist-muted)] text-[11px] mt-3">
+                We match keywords against listings. Example: &quot;nursery&quot; surfaces cribs, rockers, and diaper deals.
+              </p>
+            </div>
+
+            <div className="flex gap-3 mt-4">
+              <button
+                onClick={() => setStep('pick-interests')}
+                className="flex-1 min-h-[48px] bg-[var(--shinnslist-surface)] border border-[var(--shinnslist-border)] text-white font-medium py-4 rounded-xl hover:bg-zinc-800 active:scale-[0.98] transition-all"
+              >
+                ← Back
+              </button>
+              <button
+                onClick={() => setStep('email-signup')}
+                className="flex-1 min-h-[48px] bg-[var(--shinnslist-pink)] text-white font-bold py-4 rounded-xl hover:bg-fuchsia-600 active:scale-[0.98] transition-all"
+              >
+                Continue →
+              </button>
+            </div>
+            <p className="text-center text-[var(--shinnslist-muted)] text-xs mt-4">
+              <button onClick={() => setStep('email-signup')} className="text-[var(--shinnslist-pink)] hover:underline">
+                Skip — I'll name projects later
+              </button>
             </p>
           </motion.div>
         )}
@@ -231,10 +309,10 @@ export default function OnboardingPage() {
 
             <div className="flex gap-3 mt-4">
               <button
-                onClick={() => setStep('pick-interests')}
+                onClick={() => setStep('projects')}
                 className="flex-1 min-h-[48px] bg-[var(--shinnslist-surface)] border border-[var(--shinnslist-border)] text-white font-medium py-3 rounded-xl hover:bg-zinc-800 active:scale-[0.98] transition-all"
               >
-                ← Back to interests
+                ← Back to projects
               </button>
               <button
                 onClick={handleSignup}
