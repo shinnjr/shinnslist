@@ -16,6 +16,7 @@ const SUPABASE_URL = 'https://nmisxwzrbsyqihqwnvsx.supabase.co';
 const SUPABASE_ANON_KEY = 'sb_publishable__hPy32xbnBwGYQHKNiiw-g_zWrx2bSC';
 
 import SearchBar from './SearchBar';
+import TrendingSection from './TrendingSection';
 
 interface Props {
   initialListings: Listing[];
@@ -194,6 +195,9 @@ export default function DealFeedClient({ initialListings }: Props) {
         {/* Vertical filter */}
         <VerticalFilter active={activeVertical} onChange={(v) => { setActiveVertical(v); if (v !== 'all') track('vertical_select', { vertical: v }); }} />
       </section>
+
+      {/* Trending & Gamification */}
+      <TrendingSection categories={[]} />
 
       {/* Deal grid */}
       <section className="max-w-7xl mx-auto px-4 pb-16">
