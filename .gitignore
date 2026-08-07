@@ -47,3 +47,5 @@ scripts/.venv/
 next-env.d.ts
 scripts/.venv/
 scripts/seed_listings.py
+sql/
+.env.local
