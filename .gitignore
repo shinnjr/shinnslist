@@ -49,3 +49,4 @@ scripts/.venv/
 scripts/seed_listings.py
 sql/
 .env.local
+.venv/
