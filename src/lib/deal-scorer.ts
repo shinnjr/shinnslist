@@ -23,14 +23,17 @@ export interface ScoreOutput {
 }
 
 const KW = {
-  free: ['free', 'gratis', 'giving away'],
-  priceDrop: ['price drop', 'reduced', 'lowered', 'was $', 'originally $', 'marked down'],
-  motivated: ['must sell', 'moving', 'need gone', 'priced to sell', 'obo', 'make offer', 'motivated', 'urgent'],
-  belowMarket: ['below market', 'under market', 'below retail', 'steal', 'bargain', 'deal of', 'half off'],
-  rarity: ['limited edition', 'rare', 'vintage', 'discontinued', 'collector', 'deadstock', 'og', 'first edition', 'signed', 'numbered', 'exclusive', 'collab', 'prototype'],
-  quality: ['mint', 'brand new', 'never worn', 'never used', 'sealed', 'unopened', 'with tags', 'nwt'],
-  damage: ['damaged', 'broken', 'cracked', 'stained', 'torn', 'missing parts', 'as-is', 'for parts', 'not working', 'needs repair'],
-  urgency: ['today only', 'this weekend', "won't last", 'going fast', 'first come', 'act fast'],
+  free: ['free', 'gratis', 'giving away', 'no cost', 'curb alert', 'curb find'],
+  priceDrop: ['price drop', 'reduced', 'lowered', 'was $', 'originally $', 'marked down', 'slash', 'clearance', 'closeout', 'liquidation'],
+  motivated: ['must sell', 'moving', 'need gone', 'priced to sell', 'obo', 'make offer', 'motivated', 'urgent', 'divorce', 'estate sale', 'downsizing', 'lost storage', 'eviction'],
+  belowMarket: ['below market', 'under market', 'below retail', 'steal', 'bargain', 'deal of', 'half off', 'way under', 'insane deal', 'crazy deal', 'best price', 'lowest price', 'fire sale', 'dirt cheap'],
+  rarity: ['limited edition', 'rare', 'vintage', 'discontinued', 'collector', 'deadstock', 'og', 'first edition', 'signed', 'numbered', 'exclusive', 'collab', 'prototype', 'one of a kind', 'custom', 'handmade', 'artisan', 'antique', 'retro', 'throwback', 'grail'],
+  quality: ['mint', 'brand new', 'never worn', 'never used', 'sealed', 'unopened', 'with tags', 'nwt', 'like new', 'open box', 'barely used', 'lightly used', 'excellent condition', 'pristine', 'flawless', 'showroom'],
+  damage: ['damaged', 'broken', 'cracked', 'stained', 'torn', 'missing parts', 'as-is', 'for parts', 'not working', 'needs repair', 'scratched', 'dented', 'worn', 'faded', 'chipped', 'rusty', 'mold', 'water damage'],
+  urgency: ['today only', 'this weekend', "won't last", 'going fast', 'first come', 'act fast', 'last chance', 'ending soon', 'final hours', 'blowout', 'while supplies last'],
+  furniture: ['mid century', 'mid-century', 'mcm', 'eames', 'west elm', 'cb2', 'crate barrel', 'pottery barn', 'restoration hardware', 'rh', 'herman miller', 'knoll', 'saarinen', 'nelson', 'barcelona chair', 'chesterfield', 'sectional', 'solid wood', 'hardwood', 'teak', 'walnut', 'mahogany', 'oak'],
+  instruments: ['gibson', 'fender', 'martin', 'taylor', 'yamaha', 'steinway', 'roland', 'moog', 'stratocaster', 'telecaster', 'les paul', 'sg', 'jazz bass', 'precision bass', 'acoustic', 'electric guitar', 'grand piano', 'upright piano', 'synthesizer', 'drum set', 'saxophone', 'trumpet', 'violin'],
+  artCollectibles: ['original painting', 'oil on canvas', 'watercolor', 'lithograph', 'serigraph', 'print signed', 'numbered print', 'etching', 'sculpture', 'bronze', 'ceramic', 'pottery', 'porcelain', 'crystal', 'silver', 'gold', 'platinum', 'diamond', 'gemstone', 'coin collection', 'stamp collection', 'comic book', 'action figure', 'funko pop', 'hot wheels', 'barbie'],
 };
 
 const FLOORS: Record<string, number> = {
@@ -87,6 +90,11 @@ export function scoreDeal(input: ScoreInput): ScoreOutput {
 
   // Rarity score (0–20)
   let rarityScore = Math.min(countMatches(text, KW.rarity) * 4, 20);
+  // Bonus for furniture, instruments, art/collectibles that signal value
+  rarityScore += countMatches(text, KW.furniture);
+  rarityScore += countMatches(text, KW.instruments);
+  rarityScore += countMatches(text, KW.artCollectibles);
+  rarityScore = Math.min(rarityScore, 20);
   if (condition === 'new' || condition === 'like-new') rarityScore += 3;
 
   // Quality score (0–10)

@@ -13,6 +13,7 @@ const VERTICALS = [
   { id: 'electronics', label: 'Electronics', icon: '💻' },
   { id: 'cars', label: 'Cars', icon: '🚗' },
   { id: 'real-estate', label: 'Homes', icon: '🏠' },
+  { id: 'rentals', label: 'Rentals', icon: '🏢' },
 ];
 
 interface Props {

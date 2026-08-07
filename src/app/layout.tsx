@@ -72,10 +72,11 @@ export default function RootLayout({
               <span>— One deal score. Every marketplace.</span>
             </div>
             <div className="flex gap-6">
+              <a href="/how-it-works" className="hover:text-white transition-colors">How It Works</a>
               <a href="/pricing" className="hover:text-white transition-colors">Pricing</a>
               <a href="mailto:hello@shinnslist.com" className="hover:text-white transition-colors">Contact</a>
-              <a href="#" className="hover:text-white transition-colors">Privacy</a>
-              <a href="#" className="hover:text-white transition-colors">Terms</a>
+              <a href="/privacy" className="hover:text-white transition-colors">Privacy</a>
+              <a href="/terms" className="hover:text-white transition-colors">Terms</a>
             </div>
           </div>
         </footer>
