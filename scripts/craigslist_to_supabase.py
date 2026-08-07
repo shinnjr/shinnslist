@@ -11,8 +11,8 @@ import requests
 from bs4 import BeautifulSoup
 
 SUPABASE_URL = "https://nmisxwzrbsyqihqwnvsx.supabase.co"
-SUPABASE_KEY = "REPLACED_SECRET"
-ANON_KEY = "sb_publishable__hPy32xbnBwGYQHKNiiw-g_zWrx2bSC"
+SUPABASE_KEY = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
+ANON_KEY = os.environ.get("NEXT_PUBLIC_SUPABASE_ANON_KEY", "")
 
 CITIES = {
     "denver": "denver.craigslist.org",
