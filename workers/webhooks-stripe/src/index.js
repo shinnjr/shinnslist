@@ -5,9 +5,10 @@
 import { createHmac, timingSafeEqual } from 'node:crypto';
 
 const CORS_HEADERS = {
-  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Origin': 'https://shinnslist.com',
   'Access-Control-Allow-Methods': 'POST, OPTIONS',
   'Access-Control-Allow-Headers': 'Content-Type, Stripe-Signature',
+  'Vary': 'Origin',
 };
 
 function json(body, status = 200) {

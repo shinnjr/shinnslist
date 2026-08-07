@@ -42,21 +42,30 @@ SUPABASE_SERVICE_ROLE_KEY=eyJ...
 3. Switch to **Test mode** (toggle in top-right of dashboard)
 
 ### Create products & prices
+
+> **Automated (recommended):** set `STRIPE_SECRET_KEY` to a **test-mode** key in `.env.local`,
+> then run `node scripts/setup-stripe.mjs`. It idempotently creates all 9 products + weekly
+> prices and prints the price IDs + `.env` lines. Manual alternative below.
+
 You need these Stripe products (weekly pricing):
 
 | Product | Price ID (test) | Amount |
 |---------|----------------|--------|
-| Shinnslist Pro — Weekly | `price_pro_weekly` | $5.00/wk |
-| Pro Flipper — Weekly | `price_pro_flipper_weekly` | $20.00/wk |
-| Instant Alerts (add-on) | `price_addon_instant` | $3.00/wk |
-| Additional State (add-on) | `price_addon_state` | $1.00/wk |
-| Research & Comps (add-on) | `price_addon_research` | $4.00/wk |
-| Data Export (add-on) | `price_addon_export` | $5.00/wk |
-| Email Digest (add-on) | `price_addon_digest` | $2.00/wk |
-| Whole Country (add-on) | `price_addon_country` | $8.00/wk |
-| Road Trip (add-on) | `price_addon_roadtrip` | $3.00/wk |
+| Shinnslist Pro — Weekly | `STRIPE_PRO_PRICE_ID` | $5.00/wk |
+| Pro Flipper — Weekly | `STRIPE_FLIPPER_PRICE_ID` | $20.00/wk |
+| Instant Alerts (add-on) | `STRIPE_ADDON_INSTANT_PRICE_ID` | $3.00/wk |
+| Additional State (add-on) | `STRIPE_ADDON_STATE_PRICE_ID` | $1.00/wk |
+| Research & Comps (add-on) | `STRIPE_ADDON_RESEARCH_PRICE_ID` | $4.00/wk |
+| Data Export (add-on) | `STRIPE_ADDON_EXPORT_PRICE_ID` | $5.00/wk |
+| Email Digest (add-on) | `STRIPE_ADDON_DIGEST_PRICE_ID` | $2.00/wk |
+| Whole Country (add-on) | `STRIPE_ADDON_COUNTRY_PRICE_ID` | $8.00/wk |
+| Road Trip (add-on) | `STRIPE_ADDON_ROADTRIP_PRICE_ID` | $3.00/wk |
 
-1. Stripe Dashboard → Products → Add product
+The catalog lives in `src/lib/pricing.ts` (canonical, used by the app) and
+`functions/_lib/config.ts` (used by the Cloudflare Pages Functions backend). The
+provisioning script uses the same values.
+
+1. Stripe Dashboard → Products → Add product (or run `scripts/setup-stripe.mjs`)
 2. Set **Recurring** → Weekly
 3. Copy the price ID (starts with `price_`)
 4. Add to `.env.local`:
@@ -64,17 +73,28 @@ You need these Stripe products (weekly pricing):
 STRIPE_SECRET_KEY=sk_test_...
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_...
 STRIPE_WEBHOOK_SECRET=whsec_...
-STRIPE_PRO_WEEKLY_PRICE_ID=price_xxx
-STRIPE_PRO_FLIPPER_PRICE_ID=price_xxx
+STRIPE_PRO_PRICE_ID=price_xxx
+STRIPE_FLIPPER_PRICE_ID=price_xxx
 STRIPE_ADDON_INSTANT_PRICE_ID=price_xxx
 # (etc for each add-on)
 ```
 
 ### Webhook setup
 1. Stripe Dashboard → Webhooks → Add endpoint
-2. URL: `https://shinnslist.com/api/webhooks/stripe`
+2. URL: `https://shinnslist.pages.dev/api/webhooks/stripe`
 3. Events: `checkout.session.completed`, `customer.subscription.updated`, `customer.subscription.deleted`, `invoice.payment_failed`
 4. Copy the signing secret → `STRIPE_WEBHOOK_SECRET`
+
+> **Architecture note (Next 16 + Cloudflare Pages):** this app deploys as a **static export**
+> (`output: "export"`). Next.js API routes don't run on static export, and `@cloudflare/next-on-pages`
+> doesn't support Next 16 (peer dep `<=15.5.2`). So the billing backend — `/api/checkout`,
+> `/api/billing/portal`, `/api/webhooks/stripe` — is implemented as **Cloudflare Pages Functions**
+> in `functions/`, which run on the live static site. A Next-native copy also lives under
+> `src/app/api/` if you ever move to a Node/Next host. Keep the two catalogs in sync.
+
+### Database (billing)
+Run `supabase/migrations/002_billing.sql` in the Supabase SQL editor. It adds
+`stripe_customer_id`, `subscription_status`, and `addon_*` columns to `users`.
 
 ---
 

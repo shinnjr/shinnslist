@@ -8,7 +8,7 @@ echo "=== Building Shinnslist for Cloudflare Pages ==="
 # Move dynamic routes out
 echo "Moving dynamic routes..."
 mkdir -p "$BACKUP"
-for d in src/app/api/auth src/app/api/checkout src/app/api/push src/app/api/listings src/app/api/webhooks src/app/auth; do
+for d in src/app/api/billing src/app/api/auth src/app/api/checkout src/app/api/push src/app/api/listings src/app/api/webhooks src/app/auth; do
   [ -d "$d" ] && mv "$d" "$BACKUP/" && echo "  → backed up $d"
 done
 
@@ -25,6 +25,7 @@ for item in "$BACKUP"/*; do
     target=""
     case "$name" in
       auth) target="src/app/auth" ;;
+      billing) target="src/app/api/billing" ;;
       checkout) target="src/app/api/checkout" ;;
       push) target="src/app/api/push" ;;
       listings) target="src/app/api/listings" ;;

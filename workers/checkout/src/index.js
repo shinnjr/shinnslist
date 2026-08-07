@@ -3,9 +3,10 @@
 // GET /?tier=pro|pro-flipper  ->  creates a Stripe Checkout Session and 302-redirects to it.
 
 const CORS_HEADERS = {
-  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Origin': 'https://shinnslist.com',
   'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
   'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+  'Vary': 'Origin',
 };
 
 function cors() {
