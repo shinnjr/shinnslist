@@ -71,6 +71,20 @@ FREE_SECTIONS = [
     "/search/bka",      # books
 ]
 
+# Human-readable source names per section (for source diversity on the site)
+SECTION_SOURCE_NAMES = {
+    "/search/zip": "craigslist_free",
+    "/search/hsa": "craigslist_furniture",
+    "/search/ele": "craigslist_electronics",
+    "/search/sga": "craigslist_sporting",
+    "/search/bab": "craigslist_baby_kids",
+    "/search/ppa": "craigslist_photo",
+    "/search/tla": "craigslist_tools",
+    "/search/ata": "craigslist_autoparts",
+    "/search/msa": "craigslist_instruments",
+    "/search/bka": "craigslist_books",
+}
+
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                   "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -89,7 +103,7 @@ def get_supabase() -> Client:
     return create_client(url, key)
 
 
-def extract_listings(html: str, source_id_base: str) -> list[dict]:
+def extract_listings(html: str, source_id_base: str, source_name: str = "craigslist") -> list[dict]:
     """Parse Craigslist gallery page HTML into listing dicts."""
     soup = BeautifulSoup(html, "html.parser")
     listings = []
@@ -119,7 +133,7 @@ def extract_listings(html: str, source_id_base: str) -> list[dict]:
             source_id = hashlib.md5(url.encode()).hexdigest()
 
             listings.append({
-                "source": "craigslist",
+                "source": source_name,
                 "source_id": source_id,
                 "source_url": url,
                 "title": title,
@@ -147,6 +161,7 @@ def scrape_section(subdomain: str, section: str, city_info: dict) -> int:
     """Scrape one section of one city. Returns count of new listings inserted."""
     base_url = f"https://{subdomain}.craigslist.org"
     url = urljoin(base_url, section)
+    source_name = SECTION_SOURCE_NAMES.get(section, "craigslist")
 
     log.info(f"Scraping {url}")
 
@@ -157,7 +172,7 @@ def scrape_section(subdomain: str, section: str, city_info: dict) -> int:
         log.error(f"HTTP error scraping {url}: {e}")
         return 0
 
-    listings = extract_listings(resp.text, f"{city_info['subdomain']}-{section}")
+    listings = extract_listings(resp.text, f"{city_info['subdomain']}-{section}", source_name)
     if not listings:
         log.info(f"  No listings found at {url}")
         return 0
@@ -175,22 +190,21 @@ def scrape_section(subdomain: str, section: str, city_info: dict) -> int:
                 "raw_data": listing,
             }, on_conflict="source,source_id").execute()
 
-            # Also try inserting into clean listings table (will be sparse without AI)
-            if listing["price"] == 0:  # only insert free listings
-                supabase.table("listings").upsert({
-                    "source": listing["source"],
-                    "source_id": listing["source_id"],
-                    "source_url": listing["source_url"],
-                    "title": listing["title"],
-                    "description": listing["description"],
-                    "photos": listing["photos"],
-                    "price": listing["price"],
-                    "category": listing["category"],
-                    "flags": listing["flags"],
-                    "city": listing["city"],
-                    "state": listing["state"],
-                    "posted_at": listing["posted_at"],
-                }, on_conflict="source,source_id").execute()
+            # Insert all listings into clean table (free and paid)
+            supabase.table("listings").upsert({
+                "source": listing["source"],
+                "source_id": listing["source_id"],
+                "source_url": listing["source_url"],
+                "title": listing["title"],
+                "description": listing["description"],
+                "photos": listing["photos"],
+                "price": listing["price"],
+                "category": listing["category"],
+                "flags": listing["flags"],
+                "city": listing["city"],
+                "state": listing["state"],
+                "posted_at": listing["posted_at"],
+            }, on_conflict="source,source_id").execute()
 
             inserted += 1
         except Exception as e:

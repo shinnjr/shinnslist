@@ -34,6 +34,12 @@ const KW = {
   furniture: ['mid century', 'mid-century', 'mcm', 'eames', 'west elm', 'cb2', 'crate barrel', 'pottery barn', 'restoration hardware', 'rh', 'herman miller', 'knoll', 'saarinen', 'nelson', 'barcelona chair', 'chesterfield', 'sectional', 'solid wood', 'hardwood', 'teak', 'walnut', 'mahogany', 'oak'],
   instruments: ['gibson', 'fender', 'martin', 'taylor', 'yamaha', 'steinway', 'roland', 'moog', 'stratocaster', 'telecaster', 'les paul', 'sg', 'jazz bass', 'precision bass', 'acoustic', 'electric guitar', 'grand piano', 'upright piano', 'synthesizer', 'drum set', 'saxophone', 'trumpet', 'violin'],
   artCollectibles: ['original painting', 'oil on canvas', 'watercolor', 'lithograph', 'serigraph', 'print signed', 'numbered print', 'etching', 'sculpture', 'bronze', 'ceramic', 'pottery', 'porcelain', 'crystal', 'silver', 'gold', 'platinum', 'diamond', 'gemstone', 'coin collection', 'stamp collection', 'comic book', 'action figure', 'funko pop', 'hot wheels', 'barbie'],
+  sportsOutdoor: ['patagonia', "arc'teryx", 'arcteryx', 'the north face', 'north face', 'rei', 'yeti', 'marmot', 'mountain hardwear', 'outdoor research', 'black diamond', 'osprey', 'coleman', 'pelican', 'garmin', 'gopro', 'yeti cooler', 'rooftop tent', 'kayak', 'stand up paddle', 'snowboard', 'skis', 'rossignol', 'burton', 'snowshoes', 'hiking boots', 'merrell', 'salomon', 'keen'],
+  babyKids: ['stroller', 'uppababy', 'car seat', 'nuna', 'britax', 'graco', 'chicco', 'crib', 'baby bjorn', 'ergobaby', 'baby jogger', 'bugaboo', 'doona', 'snoo', 'owlet', 'dockatot', 'keekaroo', 'stokke', 'tripp trapp', 'nugget', 'play couch', 'magnatiles', 'play kitchen', 'pikler triangle', 'montessori', 'melissa doug', 'lovevery', 'kiwi co'],
+  tools: ['dewalt', 'milwaukee', 'makita', 'bosch', 'ryobi', 'rigid', 'porter cable', 'delta', 'jet', 'powermatic', 'festool', 'sawstop', 'snap-on', 'mac tools', 'matco', 'craftsman', 'husky', 'kobalt', 'table saw', 'miter saw', 'planer', 'jointer', 'bandsaw', 'lathe', 'welder', 'air compressor', 'generator', 'pressure washer', 'chainsaw', 'stihl', 'husqvarna', 'echo'],
+  cameraGear: ['canon', 'nikon', 'sony', 'leica', 'fujifilm', 'fuji', 'panasonic', 'olympus', 'sigma', 'tamron', 'zeiss', 'hasselblad', 'pentax', 'dslr', 'mirrorless', 'lens', 'telephoto', 'wide angle', 'prime lens', 'zoom lens', 'gopro hero', 'dji', 'drone', 'mavic', 'tripod', 'gitzo', 'manfrotto', 'profoto', 'speedlight', 'godox'],
+  bikes: ['trek', 'specialized', 'cannondale', 'santa cruz', 'giant', 'bianchi', 'colnago', 'pinarello', 'cervelo', 'surly', 'salsa', 'all-city', 'kona', 'yeti cycles', 'ibis', 'evil', 'transition', 'pivot', 'evil', 'electric bike', 'ebike', 'rad power', 'tern', 'brompton', 'carbon frame', 'shimano', 'sram', 'campagnolo', 'enzo', 'fox suspension', 'rockshox'],
+  vinylRecords: ['vinyl', 'lp', 'record collection', 'turntable', 'technics', 'audio technica', 'rega', 'pro-ject', 'vpi', 'clear audio', 'ortofon', 'shure', 'first pressing', 'limited vinyl', 'colored vinyl', 'picture disc', 'box set', 'album collection', 'jazz vinyl', 'blues vinyl', 'rock vinyl', 'hip hop vinyl', 'rare vinyl'],
 };
 
 const FLOORS: Record<string, number> = {
@@ -42,6 +48,12 @@ const FLOORS: Record<string, number> = {
   'free-stuff': 0, furniture: 100, 'real-estate': 50000, rentals: 500,
   instruments: 150,
   art: 200,
+  'sports-outdoor': 50,
+  'baby-kids': 30,
+  tools: 50,
+  'camera-gear': 150,
+  bikes: 100,
+  'vinyl-records': 20,
 };
 
 function countMatches(text: string, keywords: string[]): number {
@@ -92,10 +104,16 @@ export function scoreDeal(input: ScoreInput): ScoreOutput {
 
   // Rarity score (0–20)
   let rarityScore = Math.min(countMatches(text, KW.rarity) * 4, 20);
-  // Bonus for furniture, instruments, art/collectibles that signal value
+  // Bonus for high-value categories and brands that signal value
   rarityScore += countMatches(text, KW.furniture);
   rarityScore += countMatches(text, KW.instruments);
   rarityScore += countMatches(text, KW.artCollectibles);
+  rarityScore += countMatches(text, KW.sportsOutdoor);
+  rarityScore += countMatches(text, KW.babyKids);
+  rarityScore += countMatches(text, KW.tools);
+  rarityScore += countMatches(text, KW.cameraGear);
+  rarityScore += countMatches(text, KW.bikes);
+  rarityScore += countMatches(text, KW.vinylRecords);
   rarityScore = Math.min(rarityScore, 20);
   if (condition === 'new' || condition === 'like-new') rarityScore += 3;
 
