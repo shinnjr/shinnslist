@@ -166,7 +166,8 @@ export async function calculateDealScore(
       }
       case 'instruments':
       case 'art':
-      case 'sports-outdoor': {
+      case 'sports-outdoor':
+      case 'baby-kids': {
         const ebayComps = await fetchEbaySold(listing.title);
         if (ebayComps) marketValue = ebayComps.avgPrice;
         break;

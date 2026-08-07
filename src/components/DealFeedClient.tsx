@@ -29,6 +29,7 @@ const VERTICALS = [
   { id: 'instruments', label: 'Instruments', icon: '🎸' },
   { id: 'art', label: 'Art', icon: '🎨' },
   { id: 'sports-outdoor', label: 'Outdoor', icon: '🏔️' },
+  { id: 'baby-kids', label: 'Baby', icon: '👶' },
 ];
 
 const FILTERS = ['All', 'FREE', '🔥 Hot', '📈 Trending', '✅ Quality', '💎 High Value'];
@@ -49,6 +50,7 @@ function getCategoryEmoji(cat: string): string {
     'handbags': '👜', 'instruments': '🎸', 'real-estate': '🏠',
     'rentals': '🏢', 'free-stuff': '📦', 'art': '🎨',
     'sports-outdoor': '🏔️',
+    'baby-kids': '👶',
   };
   return map[cat] || '📦';
 }

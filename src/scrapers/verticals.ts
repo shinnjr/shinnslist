@@ -590,4 +590,56 @@ export const VERTICAL_CONFIGS: VerticalConfig[] = [
       locationField: 'location',
     },
   },
+
+  // 14. BABY & KIDS
+  {
+    id: 'baby-kids',
+    name: 'Baby & Kids',
+    emoji: '👶',
+    description: 'Strollers, car seats, cribs, toys, clothes — FB Marketplace, Craigslist, eBay, OfferUp',
+    sources: [
+      {
+        name: 'facebook_baby',
+        method: 'browser',
+        proxy: true,
+        urls: ['https://www.facebook.com/marketplace/denver/search?query=baby+kids'],
+        scheduleMinutes: 15,
+        parseListing: 'facebook_marketplace',
+      },
+      {
+        name: 'craigslist_baby',
+        method: 'html',
+        proxy: false,
+        urls: ['https://denver.craigslist.org/search/bab'],
+        scheduleMinutes: 10,
+        parseListing: 'craigslist_gallery',
+      },
+      {
+        name: 'ebay_baby',
+        method: 'html',
+        proxy: false,
+        urls: ['https://www.ebay.com/sch/Baby/20400/i.html'],
+        scheduleMinutes: 15,
+        parseListing: 'ebay_search',
+      },
+      {
+        name: 'offerup_baby',
+        method: 'browser',
+        proxy: false,
+        urls: ['https://offerup.com/explore/s/?category=baby+kids&deliveryParam=all&radius=25'],
+        scheduleMinutes: 15,
+        parseListing: 'offerup',
+      },
+    ],
+    dealScoring: {
+      provider: 'ebay_sold',
+      method: 'completed_listings',
+      inputFields: ['brand', 'model', 'type', 'condition', 'age_range'],
+    },
+    normalizationRules: {
+      titlePatterns: ['(UPPAbaby|Nuna|Bugaboo|Doona|Stokke|Britax|Graco|Chicco|Baby Jogger).*(.*)'],
+      priceField: 'price',
+      locationField: 'location',
+    },
+  },
 ];
