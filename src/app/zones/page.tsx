@@ -2,9 +2,14 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import dynamic from 'next/dynamic';
+import { EmptyState, ErrorBoundary } from '@/components/ErrorBoundary';
+import { MapSkeleton } from '@/components/Skeletons';
 
 // Dynamic import to avoid SSR issues with Leaflet
-const MapWithNoSSR = dynamic(() => import('./MapClient'), { ssr: false });
+const MapWithNoSSR = dynamic(() => import('./MapClient'), {
+  ssr: false,
+  loading: () => <MapSkeleton />,
+});
 
 interface Zone {
   id: string;
@@ -49,7 +54,7 @@ export default function ZonesPage() {
               <select
                 value={activeState}
                 onChange={e => setActiveState(e.target.value)}
-                className="bg-[var(--shinnslist-surface)] border border-[var(--shinnslist-border)] rounded-lg px-3 py-1.5 text-sm text-white"
+                className="min-h-[48px] bg-[var(--shinnslist-surface)] border border-[var(--shinnslist-border)] rounded-lg px-3 py-1.5 text-sm text-white"
               >
                 {states.map(s => (
                   <option key={s} value={s}>{s}</option>
@@ -59,9 +64,9 @@ export default function ZonesPage() {
 
             <button
               onClick={() => setMode(mode === 'draw' ? 'view' : 'draw')}
-              className={`px-4 py-1.5 rounded-full text-sm font-bold border transition-colors ${
+              className={`min-h-[48px] px-4 py-1.5 rounded-full text-sm font-bold border transition-all active:scale-[0.97] ${
                 mode === 'draw'
-                  ? 'bg-[var(--shinnslist-pink)] border-[var(--shinnslist-pink)] text-white'
+                  ? 'bg-[var(--shinnslist-pink)] border-[var(--shinnslist-pink)] text-white shadow-lg shadow-[var(--shinnslist-pink)]/20'
                   : 'border-[var(--shinnslist-border)] text-[var(--shinnslist-muted)] hover:border-zinc-500'
               }`}
             >
@@ -71,7 +76,7 @@ export default function ZonesPage() {
             {/* Road trip toggle */}
             <button
               onClick={() => setRoadTrip(!roadTrip)}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium border transition-colors ${
+              className={`flex min-h-[48px] items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium border transition-all active:scale-[0.97] ${
                 roadTrip
                   ? 'bg-green-600/20 border-green-600/40 text-green-400'
                   : 'border-[var(--shinnslist-border)] text-[var(--shinnslist-muted)]'
@@ -106,13 +111,29 @@ export default function ZonesPage() {
 
       {/* Map */}
       <section className="flex-1 relative min-h-[60vh]">
-        <MapWithNoSSR
-          zones={zones}
-          activeState={activeState}
-          mode={mode}
-          roadTrip={roadTrip}
-          onZoneCreated={addZone}
-        />
+        <ErrorBoundary label="The map">
+          <MapWithNoSSR
+            zones={zones}
+            activeState={activeState}
+            mode={mode}
+            roadTrip={roadTrip}
+            onZoneCreated={addZone}
+          />
+        </ErrorBoundary>
+
+        {/* Empty-state hint overlay when no zones drawn yet */}
+        {zones.length === 0 && mode === 'view' && (
+          <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+            <div className="pointer-events-auto max-w-xs mx-4">
+              <EmptyState
+                message="No zones yet"
+                description="Tap “+ Draw Zone” and trace a polygon on the map to start searching that area."
+                emoji="🗺️"
+                action={{ label: 'Draw your first zone', onClick: () => setMode('draw') }}
+              />
+            </div>
+          </div>
+        )}
       </section>
 
       {/* Add-on upsell */}
@@ -128,7 +149,7 @@ export default function ZonesPage() {
                 Add zones in other states to expand your search area
               </p>
             </div>
-            <button className="bg-[var(--shinnslist-pink)] text-white text-xs font-bold px-4 py-2 rounded-full hover:bg-fuchsia-600 transition-colors whitespace-nowrap">
+            <button className="min-h-[48px] bg-[var(--shinnslist-pink)] text-white text-xs font-bold px-4 py-2 rounded-full hover:bg-fuchsia-600 active:scale-[0.97] transition-all whitespace-nowrap">
               Add State
             </button>
           </div>
@@ -145,7 +166,7 @@ export default function ZonesPage() {
             </div>
             <button
               onClick={() => setRoadTrip(true)}
-              className="border border-[var(--shinnslist-pink)] text-[var(--shinnslist-pink)] text-xs font-bold px-4 py-2 rounded-full hover:bg-[var(--shinnslist-pink)]/10 transition-colors whitespace-nowrap"
+              className="min-h-[48px] border border-[var(--shinnslist-pink)] text-[var(--shinnslist-pink)] text-xs font-bold px-4 py-2 rounded-full hover:bg-[var(--shinnslist-pink)]/10 active:scale-[0.97] transition-all whitespace-nowrap"
             >
               Try Road Trip
             </button>

@@ -1,0 +1,6 @@
+Contact: mailto:security@shinnslist.com
+Contact: mailto:hello@shinnslist.com
+Expires: 2027-08-07T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://shinnslist.com/.well-known/security.txt
+Policy: https://shinnslist.com/security

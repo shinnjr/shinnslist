@@ -1,6 +1,7 @@
 import { Listing, ListingFlag } from '@/types';
 import { createServiceClient } from '@/lib/supabase/service';
 import DealFeedClient from '@/components/DealFeedClient';
+import { ErrorBoundary } from '@/components/ErrorBoundary';
 
 // Mock data fallback — shown when Supabase isn't configured yet
 const MOCK_DEALS: Listing[] = [
@@ -86,5 +87,9 @@ async function getListings(): Promise<Listing[]> {
 
 export default async function HomePage() {
   const listings = await getListings();
-  return <DealFeedClient initialListings={listings} />;
+  return (
+    <ErrorBoundary label="The deal feed">
+      <DealFeedClient initialListings={listings} />
+    </ErrorBoundary>
+  );
 }

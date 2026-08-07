@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { INTEREST_GROUPINGS, ONBOARDING_CARDS } from '@/data/interestTaxonomy';
 import type { InterestGrouping } from '@/types';
 
@@ -22,7 +23,7 @@ export default function OnboardingPage() {
 
   const toggleCard = (id: string) => {
     setSelectedCards(prev =>
-      prev.includes(id) ? prev.filter(c => c !== id) : [...prev, c]
+      prev.includes(id) ? prev.filter(cardId => cardId !== id) : [...prev, id]
     );
   };
 
@@ -71,9 +72,16 @@ export default function OnboardingPage() {
           <div className={`h-1 rounded-full flex-1 ${step === 'email-signup' ? 'bg-[var(--shinnslist-pink)]' : 'bg-[var(--shinnslist-border)]'}`}/>
         </div>
 
+        <AnimatePresence mode="wait">
         {/* Step 1: Pick lifestyle categories */}
         {step === 'pick-categories' && (
-          <>
+          <motion.div
+            key="pick-categories"
+            initial={{ opacity: 0, x: 24 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -24 }}
+            transition={{ duration: 0.25 }}
+          >
             <div className="text-center mb-6">
               <span className="text-4xl">🎯</span>
               <h1 className="text-2xl font-bold text-white mt-3">What brings you here?</h1>
@@ -103,19 +111,25 @@ export default function OnboardingPage() {
             <button
               onClick={handleContinue}
               disabled={selectedGroupings.length === 0}
-              className="w-full bg-[var(--shinnslist-pink)] text-white font-bold py-4 rounded-xl hover:bg-fuchsia-600 transition-colors disabled:opacity-50"
+              className="w-full min-h-[48px] bg-[var(--shinnslist-pink)] text-white font-bold py-4 rounded-xl hover:bg-fuchsia-600 active:scale-[0.98] transition-all disabled:opacity-50"
             >
               Continue ({selectedGroupings.length} selected) →
             </button>
             <p className="text-center text-[var(--shinnslist-muted)] text-xs mt-4">
               Skip this? <button onClick={() => setStep('pick-interests')} className="text-[var(--shinnslist-pink)] hover:underline">Go straight to interests</button>
             </p>
-          </>
+          </motion.div>
         )}
 
         {/* Step 2: Pick specific interests */}
         {step === 'pick-interests' && (
-          <>
+          <motion.div
+            key="pick-interests"
+            initial={{ opacity: 0, x: 24 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -24 }}
+            transition={{ duration: 0.25 }}
+          >
             <div className="text-center mb-6">
               <span className="text-4xl">🔍</span>
               <h1 className="text-2xl font-bold text-white mt-3">Pick your interests</h1>
@@ -144,14 +158,14 @@ export default function OnboardingPage() {
             <div className="flex gap-3">
               <button
                 onClick={() => setStep('pick-categories')}
-                className="flex-1 bg-[var(--shinnslist-surface)] border border-[var(--shinnslist-border)] text-white font-medium py-4 rounded-xl hover:bg-zinc-800 transition-colors"
+                className="flex-1 min-h-[48px] bg-[var(--shinnslist-surface)] border border-[var(--shinnslist-border)] text-white font-medium py-4 rounded-xl hover:bg-zinc-800 active:scale-[0.98] transition-all"
               >
                 ← Back
               </button>
               <button
                 onClick={() => setStep('email-signup')}
                 disabled={selectedCards.length < 3}
-                className="flex-1 bg-[var(--shinnslist-pink)] text-white font-bold py-4 rounded-xl hover:bg-fuchsia-600 transition-colors disabled:opacity-50"
+                className="flex-1 min-h-[48px] bg-[var(--shinnslist-pink)] text-white font-bold py-4 rounded-xl hover:bg-fuchsia-600 active:scale-[0.98] transition-all disabled:opacity-50"
               >
                 Continue ({selectedCards.length} selected) →
               </button>
@@ -159,12 +173,18 @@ export default function OnboardingPage() {
             <p className="text-center text-[var(--shinnslist-muted)] text-xs mt-4">
               <span className="text-[var(--shinnslist-pink)]">{selectedCategories.size}</span> categories from your picks
             </p>
-          </>
+          </motion.div>
         )}
 
         {/* Step 3: Email signup (no password needed for free tier) */}
         {step === 'email-signup' && (
-          <>
+          <motion.div
+            key="email-signup"
+            initial={{ opacity: 0, x: 24 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -24 }}
+            transition={{ duration: 0.25 }}
+          >
             <div className="text-center mb-6">
               <span className="text-4xl">🚀</span>
               <h1 className="text-2xl font-bold text-white mt-3">You're all set!</h1>
@@ -198,9 +218,9 @@ export default function OnboardingPage() {
 
                 <button
                   type="submit" disabled={loading || !email}
-                  className="w-full bg-[var(--shinnslist-pink)] text-white font-bold py-4 rounded-xl hover:bg-fuchsia-600 transition-colors disabled:opacity-50 text-lg"
+                  className="w-full min-h-[48px] bg-[var(--shinnslist-pink)] text-white font-bold py-4 rounded-xl hover:bg-fuchsia-600 active:scale-[0.98] transition-all disabled:opacity-50 text-lg flex items-center justify-center gap-2"
                 >
-                  {loading ? 'Setting up...' : 'Start finding deals →'}
+                  {loading ? (<><span className="animate-spin inline-block w-5 h-5 border-2 border-white/40 border-t-white rounded-full" /> Setting up...</>) : 'Start finding deals →'}
                 </button>
               </form>
 
@@ -212,20 +232,21 @@ export default function OnboardingPage() {
             <div className="flex gap-3 mt-4">
               <button
                 onClick={() => setStep('pick-interests')}
-                className="flex-1 bg-[var(--shinnslist-surface)] border border-[var(--shinnslist-border)] text-white font-medium py-3 rounded-xl hover:bg-zinc-800 transition-colors"
+                className="flex-1 min-h-[48px] bg-[var(--shinnslist-surface)] border border-[var(--shinnslist-border)] text-white font-medium py-3 rounded-xl hover:bg-zinc-800 active:scale-[0.98] transition-all"
               >
                 ← Back to interests
               </button>
               <button
                 onClick={handleSignup}
                 disabled={!email || loading}
-                className="flex-1 bg-white text-black font-bold py-3 rounded-xl hover:bg-gray-100 transition-colors disabled:opacity-50"
+                className="flex-1 bg-white text-black font-bold py-3 rounded-xl hover:bg-gray-100 transition-colors disabled:opacity-50 min-h-[48px]"
               >
                 Continue with Google
               </button>
             </div>
-          </>
+          </motion.div>
         )}
+        </AnimatePresence>
       </div>
     </main>
   );

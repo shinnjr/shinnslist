@@ -29,7 +29,7 @@ export default function VerticalFilter({ active, onChange }: Props) {
           <button
             key={v.id}
             onClick={() => onChange(v.id)}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-all border ${
+            className={`flex min-h-[48px] items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-all active:scale-[0.97] border ${
               isActive
                 ? 'bg-[var(--shinnslist-pink)]/15 border-[var(--shinnslist-pink)]/40 text-[var(--shinnslist-pink)]'
                 : 'border-[var(--shinnslist-border)] text-[var(--shinnslist-muted)] hover:border-zinc-500 hover:text-zinc-300'

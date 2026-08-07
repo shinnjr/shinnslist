@@ -99,5 +99,9 @@ export function scoreDeal(input: ScoreInput): ScoreOutput {
   const signals = flags.length + (orig ? 1 : 0) + (condition !== 'unknown' ? 1 : 0);
   const confidence = signals >= 4 ? 'high' : signals >= 2 ? 'medium' : 'low';
 
+  // False-positive mitigation
+  if (condition === 'poor' || countMatches(text, KW.damage) > 0) flags.push('damaged');
+  if (confidence === 'low' && score < 15) flags.push('spam');
+
   return { score, breakdown: { priceScore, urgencyScore, rarityScore, qualityScore }, flags, confidence };
 }

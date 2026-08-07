@@ -3,6 +3,15 @@
 import { useState } from 'react';
 import { createBrowserClient } from '@/lib/supabase/client';
 
+function Spinner() {
+  return (
+    <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24" fill="none">
+      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+      <path className="opacity-90" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+    </svg>
+  );
+}
+
 export default function LoginPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -82,7 +91,8 @@ export default function LoginPage() {
             {/* Google sign-in */}
             <button
               onClick={handleGoogle}
-              className="w-full bg-white text-black font-medium py-3 rounded-xl hover:bg-gray-100 transition-colors flex items-center justify-center gap-2 mb-4"
+              disabled={loading}
+              className="w-full min-h-[48px] bg-white text-black font-medium py-3 rounded-xl hover:bg-gray-100 active:scale-[0.98] transition-all flex items-center justify-center gap-2 mb-4 disabled:opacity-60"
             >
               <svg className="w-5 h-5" viewBox="0 0 24 24">
                 <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/>
@@ -106,33 +116,33 @@ export default function LoginPage() {
                 value={email}
                 onChange={e => setEmail(e.target.value)}
                 required
-                className="w-full bg-[var(--shinnslist-bg)] border border-[var(--shinnslist-border)] rounded-xl px-4 py-3 text-white placeholder:text-zinc-600 focus:outline-none focus:border-[var(--shinnslist-pink)] mb-3"
+                className="min-h-[48px] w-full bg-[var(--shinnslist-bg)] border border-[var(--shinnslist-border)] rounded-xl px-4 py-3 text-white placeholder:text-zinc-600 focus:outline-none focus:border-[var(--shinnslist-pink)] mb-3 transition-colors"
               />
               <input
                 type="password"
                 placeholder="Password"
                 value={password}
                 onChange={e => setPassword(e.target.value)}
-                className="w-full bg-[var(--shinnslist-bg)] border border-[var(--shinnslist-border)] rounded-xl px-4 py-3 text-white placeholder:text-zinc-600 focus:outline-none focus:border-[var(--shinnslist-pink)] mb-1"
+                className="min-h-[48px] w-full bg-[var(--shinnslist-bg)] border border-[var(--shinnslist-border)] rounded-xl px-4 py-3 text-white placeholder:text-zinc-600 focus:outline-none focus:border-[var(--shinnslist-pink)] mb-1 transition-colors"
               />
 
               {error && (
-                <p className="text-red-400 text-xs mt-2 mb-2">{error}</p>
+                <p className="text-red-400 text-xs mt-2 mb-2 animate-fade-in">{error}</p>
               )}
 
               <button
                 type="submit"
                 disabled={loading || !email}
-                className="w-full bg-[var(--shinnslist-pink)] text-white font-bold py-3 rounded-xl hover:bg-fuchsia-600 transition-colors disabled:opacity-50 mt-3"
+                className="w-full min-h-[48px] bg-[var(--shinnslist-pink)] text-white font-bold py-3 rounded-xl hover:bg-fuchsia-600 active:scale-[0.98] transition-all disabled:opacity-50 mt-3 flex items-center justify-center gap-2"
               >
-                {loading ? 'Signing in...' : 'Sign in'}
+                {loading ? (<><Spinner /> Signing in...</>) : 'Sign in'}
               </button>
 
               <button
                 type="button"
                 onClick={handleMagicLink}
                 disabled={loading || !email}
-                className="w-full text-[var(--shinnslist-muted)] text-sm py-2 hover:text-white transition-colors mt-2"
+                className="w-full min-h-[48px] text-[var(--shinnslist-muted)] text-sm py-2 hover:text-white active:scale-[0.98] transition-all mt-2 disabled:opacity-50"
               >
                 Send magic link instead
               </button>

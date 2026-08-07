@@ -14,7 +14,7 @@ export default function SignupPage() {
   return (
     <main className="flex-1 flex items-center justify-center px-4">
       <div className="w-full max-w-sm">
-        <div className="text-center mb-8">
+        <div className="text-center mb-8 animate-fade-in-up">
           <span className="text-4xl">🆓</span>
           <h1 className="text-2xl font-bold text-white mt-3">
             Find your next <span className="text-[var(--shinnslist-pink)]">deal</span>
@@ -25,7 +25,7 @@ export default function SignupPage() {
         <div className="bg-[var(--shinnslist-surface)] border border-[var(--shinnslist-border)] rounded-2xl p-6">
           <a
             href="/onboarding"
-            className="w-full bg-[var(--shinnslist-pink)] text-white font-bold py-3 rounded-xl hover:bg-fuchsia-600 transition-colors flex items-center justify-center"
+            className="w-full min-h-[48px] bg-[var(--shinnslist-pink)] text-white font-bold py-3 rounded-xl hover:bg-fuchsia-600 active:scale-[0.98] transition-all flex items-center justify-center"
           >
             Get started — it's free
           </a>
@@ -38,7 +38,7 @@ export default function SignupPage() {
 
           <button
             onClick={handleGoogle}
-            className="w-full bg-white text-black font-medium py-3 rounded-xl hover:bg-gray-100 transition-colors flex items-center justify-center gap-2"
+            className="w-full min-h-[48px] bg-white text-black font-medium py-3 rounded-xl hover:bg-gray-100 active:scale-[0.98] transition-all flex items-center justify-center gap-2"
           >
             <svg className="w-5 h-5" viewBox="0 0 24 24">
               <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/>

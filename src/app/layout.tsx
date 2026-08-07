@@ -26,22 +26,23 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <head>
         <link rel="manifest" href="/manifest.json" />
+        <link rel="security-txt" href="/.well-known/security.txt" />
         <meta name="theme-color" content="#FF1493" />
       </head>
       <body className={`${inter.variable} font-sans antialiased bg-[var(--shinnslist-bg)] text-[var(--shinnslist-muted)] min-h-screen flex flex-col`}>
         {/* Header */}
         <header className="border-b border-[var(--shinnslist-border)] bg-[var(--shinnslist-surface)]/80 backdrop-blur-xl sticky top-0 z-50">
           <div className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
-            <a href="/" className="flex items-center gap-2">
+            <a href="/" className="flex min-h-[48px] items-center gap-2">
               <span className="text-xl">🆓</span>
               <span className="text-lg font-bold text-white tracking-tight">
                 Shinns<span className="text-[var(--shinnslist-pink)]">list</span>
               </span>
             </a>
             <nav className="hidden md:flex items-center gap-6 text-sm">
-              <a href="/" className="hover:text-white transition-colors">Deals</a>
-              <a href="/pricing" className="hover:text-white transition-colors">Pricing</a>
-              <a href="/pricing" className="bg-[var(--shinnslist-pink)] text-white px-4 py-1.5 rounded-full text-sm font-medium hover:bg-fuchsia-600 transition-colors">
+              <a href="/" className="flex min-h-[48px] items-center hover:text-white transition-colors">Deals</a>
+              <a href="/pricing" className="flex min-h-[48px] items-center hover:text-white transition-colors">Pricing</a>
+              <a href="/pricing" className="flex min-h-[48px] items-center bg-[var(--shinnslist-pink)] text-white px-4 py-1.5 rounded-full text-sm font-medium hover:bg-fuchsia-600 active:scale-[0.97] transition-all">
                 Go Pro → $5/week
               </a>
             </nav>
