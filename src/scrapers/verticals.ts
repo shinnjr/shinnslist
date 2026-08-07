@@ -135,6 +135,14 @@ export const VERTICAL_CONFIGS: VerticalConfig[] = [
         scheduleMinutes: 15,
         parseListing: 'facebook_marketplace',
       },
+      {
+        name: 'reddit_sneakermarket',
+        method: 'html',
+        proxy: false,
+        urls: ['https://www.reddit.com/r/sneakermarket/new.json'],
+        scheduleMinutes: 10,
+        parseListing: 'reddit_json',
+      },
     ],
     dealScoring: {
       provider: 'stockx',
@@ -325,6 +333,14 @@ export const VERTICAL_CONFIGS: VerticalConfig[] = [
         urls: ['https://www.facebook.com/marketplace/denver/vehicles'],
         scheduleMinutes: 15,
         parseListing: 'facebook_marketplace',
+      },
+      {
+        name: 'offerup_cars',
+        method: 'browser',
+        proxy: false,
+        urls: ['https://offerup.com/explore/s/?category=vehicles&deliveryParam=all&radius=25'],
+        scheduleMinutes: 20,
+        parseListing: 'offerup',
       },
     ],
     dealScoring: {

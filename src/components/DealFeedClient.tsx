@@ -24,7 +24,7 @@ const VERTICALS = [
   { id: 'handbags', label: 'Handbags', icon: '👜' },
   { id: 'electronics', label: 'Electronics', icon: '💻' },
   { id: 'cars', label: 'Cars', icon: '🚗' },
-  { id: 'homes', label: 'Homes', icon: '🏠' },
+  { id: 'real-estate', label: 'Homes', icon: '🏠' },
   { id: 'rentals', label: 'Rentals', icon: '🏢' },
   { id: 'instruments', label: 'Instruments', icon: '🎸' },
   { id: 'art', label: 'Art', icon: '🎨' },
@@ -45,7 +45,7 @@ function getCategoryEmoji(cat: string): string {
   const map: Record<string, string> = {
     'trading_cards': '🃏', 'sneakers': '👟', 'watches': '⌚',
     'electronics': '💻', 'cars': '🚗', 'legos': '🧱',
-    'handbags': '👜', 'instruments': '🎸', 'homes': '🏠',
+    'handbags': '👜', 'instruments': '🎸', 'real-estate': '🏠',
     'rentals': '🏢', 'free-stuff': '📦', 'art': '🎨',
   };
   return map[cat] || '📦';
