@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { Listing } from '@/types';
 import VerticalFilter from './VerticalFilter';
@@ -9,16 +9,81 @@ import { EmptyState } from './ErrorBoundary';
 import { formatPrice, timeAgo, sourceColor } from '@/lib/utils';
 import { scoreDeal } from '@/lib/deal-scorer';
 
+const SUPABASE_URL = 'https://nmisxwzrbsyqihqwnvsx.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable__hPy32xbnBwGYQHKNiiw-g_zWrx2bSC';
+
+import SearchBar from './SearchBar';
+
 interface Props {
   initialListings: Listing[];
 }
 
 export default function DealFeedClient({ initialListings }: Props) {
+  const [listings, setListings] = useState<Listing[]>(initialListings);
+  const [loading, setLoading] = useState(initialListings.length === 0);
+  const [lastScraped, setLastScraped] = useState<string | null>(null);
+  const [sourceCount, setSourceCount] = useState(0);
   const [activeVertical, setActiveVertical] = useState('all');
   const [activeFilter, setActiveFilter] = useState('All');
+  const [searchQuery, setSearchQuery] = useState('');
+
+  // Fetch real listings from Supabase on mount
+  const fetchListings = useCallback(async () => {
+    try {
+      setLoading(true);
+      const res = await fetch(
+        `${SUPABASE_URL}/rest/v1/listings?select=*&order=posted_at.desc&limit=100`,
+        {
+          headers: {
+            apikey: SUPABASE_ANON_KEY,
+            Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
+          },
+        }
+      );
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      if (data.length === 0) return;
+
+      const mapped: Listing[] = data.map((row: any) => ({
+        id: row.id,
+        source: row.source || 'unknown',
+        sourceUrl: row.source_url || '#',
+        title: row.title,
+        description: row.description || '',
+        photos: row.photos || [],
+        price: row.price || 0,
+        estimatedValue: row.estimated_value || null,
+        category: row.category || 'free-stuff',
+        condition: row.condition || 'unknown',
+        flags: row.flags || [],
+        location: {
+          lat: 39.7392, lng: -104.9903,
+          city: row.city || 'Denver', state: row.state || 'CO',
+        },
+        postedAt: new Date(row.posted_at).getTime(),
+        expiresAt: row.expires_at ? new Date(row.expires_at).getTime() : null,
+      }));
+
+      setListings(mapped);
+      setSourceCount(new Set(mapped.map(l => l.source)).size);
+      setLastScraped(new Date().toLocaleTimeString());
+    } catch (e) {
+      console.warn('Supabase fetch failed:', e);
+    } finally {
+      setLoading(false);
+    }
+  }, []);
+
+  useEffect(() => { fetchListings(); }, [fetchListings]);
+
+  // Auto-refresh every 2 minutes
+  useEffect(() => {
+    const interval = setInterval(fetchListings, 120000);
+    return () => clearInterval(interval);
+  }, [fetchListings]);
 
   const filtered = useMemo(() => {
-    let items = initialListings;
+    let items = listings;
 
     // Vertical filter
     if (activeVertical !== 'all') {
@@ -36,7 +101,6 @@ export default function DealFeedClient({ initialListings }: Props) {
     } else if (activeFilter === '📈 Trending') {
       items = [...items].sort((a, b) => b.postedAt - a.postedAt);
     } else if (activeFilter === '✅ Quality') {
-      // Filter out junk: score < 15, or damage keywords, or spam patterns
       items = items.filter(l => {
         const s = scoreDeal({
           title: l.title, description: l.description, price: l.price,
@@ -44,15 +108,29 @@ export default function DealFeedClient({ initialListings }: Props) {
         });
         return s.score >= 15 && !s.flags.includes('damaged') && !s.flags.includes('spam');
       });
+    } else if (activeFilter === '💎 High Value') {
+      items = items.filter(l => (l.estimatedValue || 0) >= 500 || l.price >= 500);
+    }
+
+    // AI-powered search
+    if (searchQuery.trim()) {
+      const q = searchQuery.toLowerCase();
+      items = items.filter(l =>
+        l.title.toLowerCase().includes(q) ||
+        l.description.toLowerCase().includes(q) ||
+        l.category.toLowerCase().includes(q) ||
+        (l.flags || []).some(f => f.toLowerCase().includes(q))
+      );
     }
 
     return items;
-  }, [initialListings, activeVertical, activeFilter]);
+  }, [listings, activeVertical, activeFilter, searchQuery]);
 
   return (
     <main className="flex-1">
       {/* Hero */}
       <section className="max-w-7xl mx-auto px-4 pt-8 pb-4">
+        <SearchBar onSearch={setSearchQuery} />
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
           <div>
             <h1 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
@@ -60,16 +138,16 @@ export default function DealFeedClient({ initialListings }: Props) {
             </h1>
             <p className="text-[var(--shinnslist-muted)] mt-1 text-sm md:text-base mb-2">
               <StatsBar
-                totalDeals={initialListings.length}
-                sourceCount={3}
+                totalDeals={listings.length}
+                sourceCount={sourceCount || 1}
                 verticalCount={10}
-                lastScraped="2m ago"
+                lastScraped={lastScraped || 'just now'}
               />
             </p>
           </div>
 
           <div className="flex items-center gap-2 flex-wrap">
-            {['All', 'FREE', '🔥 Hot', '📈 Trending', '✅ Quality'].map(f => (
+            {['All', 'FREE', '🔥 Hot', '📈 Trending', '✅ Quality', '💎 High Value'].map(f => (
               <button
                 key={f}
                 onClick={() => setActiveFilter(f)}
