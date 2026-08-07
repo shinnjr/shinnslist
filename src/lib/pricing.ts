@@ -16,6 +16,41 @@ export type AddonKey =
   | 'country'
   | 'roadtrip';
 
+/** Per-vertical unlock catalog — $1/week each (matches weekly billing cadence). */
+export const VERTICAL_SLUGS = [
+  'free-stuff',
+  'trading-cards',
+  'sneakers',
+  'watches',
+  'legos',
+  'handbags',
+  'electronics',
+  'cars',
+  'real-estate',
+  'furniture',
+] as const;
+
+export type VerticalSlug = (typeof VERTICAL_SLUGS)[number];
+
+export const VERTICAL_META: Record<VerticalSlug, { label: string; icon: string; blurb: string }> = {
+  'free-stuff': { label: 'Free Stuff', icon: '🆓', blurb: 'The best free pickups first' },
+  'trading-cards': { label: 'Cards', icon: '🃏', blurb: 'Pokémon, sports, TCG lots' },
+  sneakers: { label: 'Sneakers', icon: '👟', blurb: 'Deadstock and grails' },
+  watches: { label: 'Watches', icon: '⌚', blurb: 'Rolex, Omega, Seiko finds' },
+  legos: { label: 'Legos', icon: '🧱', blurb: 'Sets and bulk bricks' },
+  handbags: { label: 'Handbags', icon: '👜', blurb: 'Luxury bags at garage prices' },
+  electronics: { label: 'Electronics', icon: '💻', blurb: 'GPUs, consoles, MacBooks' },
+  cars: { label: 'Cars', icon: '🚗', blurb: 'Flippable vehicles' },
+  'real-estate': { label: 'Homes', icon: '🏠', blurb: 'Land and property' },
+  furniture: { label: 'Furniture', icon: '🛋️', blurb: 'Designer pieces, fast movers' },
+};
+
+export const VERTICAL_PRICE_CENTS = 100; // $1/week per vertical
+
+export function verticalLookupKey(slug: string): string {
+  return `vertical-${slug}`;
+}
+
 export interface PriceDef {
   /** Unique Stripe price lookup_key (stable, idempotent) */
   lookupKey: string;
