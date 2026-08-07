@@ -1,0 +1,17 @@
+name = "shinnslist-vision"
+main = "src/index.js"
+compatibility_date = "2025-09-01"
+compatibility_flags = ["nodejs_compat"]
+account_id = "26cb8b771f26e2b269f6bf810221f1b5"
+workers_dev = true
+
+# routes = [
+#   { pattern = "shinnslist.com/api/vision", custom_domain = true },
+#   { pattern = "shinnslist.com/api/vision/*", custom_domain = true },
+# ]
+
+[vars]
+NEXT_PUBLIC_APP_URL = "https://shinnslist.pages.dev"
+
+# Secret (set via: npx wrangler secret put OPENAI_API_KEY):
+#   OPENAI_API_KEY = sk-...
