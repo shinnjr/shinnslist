@@ -405,9 +405,61 @@ export const VERTICAL_CONFIGS: VerticalConfig[] = [
       inputFields: ['beds', 'baths', 'sqft', 'zip', 'amenities'],
     },
     normalizationRules: {
-      titlePatterns: ['(.*?),(.*?),(\\d{5})'],
+      titlePatterns: ['(.*?),(.*?),(\\\\d{5})'],
       priceField: 'price',
       locationField: 'address',
+    },
+  },
+
+  // 11. MUSICAL INSTRUMENTS
+  {
+    id: 'instruments',
+    name: 'Musical Instruments',
+    emoji: '🎸',
+    description: 'Guitars, pianos, drums, synths — Reverb, eBay, Craigslist, FB Marketplace',
+    sources: [
+      {
+        name: 'reverb',
+        method: 'html',
+        proxy: false,
+        urls: ['https://reverb.com/marketplace'],
+        scheduleMinutes: 15,
+        parseListing: 'reverb',
+      },
+      {
+        name: 'ebay_instruments',
+        method: 'html',
+        proxy: false,
+        urls: ['https://www.ebay.com/sch/Musical-Instruments-Gear/619/i.html'],
+        scheduleMinutes: 10,
+        parseListing: 'ebay_search',
+      },
+      {
+        name: 'craigslist_instruments',
+        method: 'html',
+        proxy: false,
+        urls: ['https://denver.craigslist.org/search/msa'],
+        scheduleMinutes: 10,
+        parseListing: 'craigslist_gallery',
+      },
+      {
+        name: 'facebook_instruments',
+        method: 'browser',
+        proxy: true,
+        urls: ['https://www.facebook.com/marketplace/denver/search?query=instruments'],
+        scheduleMinutes: 15,
+        parseListing: 'facebook_marketplace',
+      },
+    ],
+    dealScoring: {
+      provider: 'reverb',
+      method: 'price_guide',
+      inputFields: ['brand', 'model', 'condition', 'year'],
+    },
+    normalizationRules: {
+      titlePatterns: ['(Gibson|Fender|Martin|Taylor|Yamaha|Steinway|Roland|Moog|PRS|Ibanez|Gretsch).*(.*)'],
+      priceField: 'price',
+      locationField: 'location',
     },
   },
 ];

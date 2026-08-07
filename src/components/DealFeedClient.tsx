@@ -165,7 +165,7 @@ export default function DealFeedClient({ initialListings }: Props) {
               <StatsBar
                 totalDeals={listings.length}
                 sourceCount={sourceCount || 1}
-                verticalCount={10}
+                verticalCount={11}
                 lastScraped={lastScraped || 'just now'}
               />
             </p>
@@ -250,6 +250,7 @@ export default function DealFeedClient({ initialListings }: Props) {
                          deal.category === 'cars' ? '🚗' :
                          deal.category === 'legos' ? '🧱' :
                          deal.category === 'handbags' ? '👜' :
+                         deal.category === 'instruments' ? '🎸' :
                          '📦'}
                       </motion.span>
                       {/* Deal score badge */}

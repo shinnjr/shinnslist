@@ -40,6 +40,7 @@ const FLOORS: Record<string, number> = {
   'trading-cards': 50, 'trading_cards': 50, sneakers: 100, watches: 500,
   electronics: 200, cars: 5000, legos: 50, handbags: 200,
   'free-stuff': 0, furniture: 100, 'real-estate': 50000, rentals: 500,
+  instruments: 150,
 };
 
 function countMatches(text: string, keywords: string[]): number {
