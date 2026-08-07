@@ -1,6 +1,6 @@
 import { VerticalConfig } from './types';
 
-// === 10 Vertical Configs ===
+// === 12 Vertical Configs ===
 // Each vertical: sources → scraping strategy → parsing rules → deal scoring API
 
 export const VERTICAL_CONFIGS: VerticalConfig[] = [
@@ -458,6 +458,58 @@ export const VERTICAL_CONFIGS: VerticalConfig[] = [
     },
     normalizationRules: {
       titlePatterns: ['(Gibson|Fender|Martin|Taylor|Yamaha|Steinway|Roland|Moog|PRS|Ibanez|Gretsch).*(.*)'],
+      priceField: 'price',
+      locationField: 'location',
+    },
+  },
+
+  // 12. ART & COLLECTIBLES
+  {
+    id: 'art',
+    name: 'Art & Collectibles',
+    emoji: '🎨',
+    description: 'Original paintings, prints, sculptures, coins, comics, antiques — eBay, FB Marketplace, Craigslist',
+    sources: [
+      {
+        name: 'ebay_art',
+        method: 'html',
+        proxy: false,
+        urls: ['https://www.ebay.com/sch/Art/550/i.html'],
+        scheduleMinutes: 15,
+        parseListing: 'ebay_search',
+      },
+      {
+        name: 'ebay_collectibles',
+        method: 'html',
+        proxy: false,
+        urls: ['https://www.ebay.com/sch/Collectibles/1/i.html'],
+        scheduleMinutes: 15,
+        parseListing: 'ebay_search',
+      },
+      {
+        name: 'craigslist_art',
+        method: 'html',
+        proxy: false,
+        urls: ['https://denver.craigslist.org/search/art'],
+        scheduleMinutes: 10,
+        parseListing: 'craigslist_gallery',
+      },
+      {
+        name: 'facebook_art',
+        method: 'browser',
+        proxy: true,
+        urls: ['https://www.facebook.com/marketplace/denver/search?query=art+collectibles'],
+        scheduleMinutes: 15,
+        parseListing: 'facebook_marketplace',
+      },
+    ],
+    dealScoring: {
+      provider: 'ebay_sold',
+      method: 'completed_listings',
+      inputFields: ['title', 'artist', 'medium', 'condition'],
+    },
+    normalizationRules: {
+      titlePatterns: ['(.*?)(?:-|–|by|signed).*(original|print|painting|sculpture|etching|lithograph|bronze|ceramic)'],
       priceField: 'price',
       locationField: 'location',
     },

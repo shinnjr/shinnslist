@@ -164,6 +164,12 @@ export async function calculateDealScore(
         if (ebayComps) marketValue = ebayComps.avgPrice;
         break;
       }
+      case 'instruments':
+      case 'art': {
+        const ebayComps = await fetchEbaySold(listing.title);
+        if (ebayComps) marketValue = ebayComps.avgPrice;
+        break;
+      }
       case 'cars':
         marketValue = await fetchVehicleValue({
           year: parseInt(listing.title.match(/\d{4}/)?.[0] || '0'),
