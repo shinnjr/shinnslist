@@ -530,4 +530,64 @@ export const VERTICAL_CONFIGS: VerticalConfig[] = [
       locationField: 'location',
     },
   },
+
+  // 13. SPORTS & OUTDOOR GEAR
+  {
+    id: 'sports-outdoor',
+    name: 'Sports & Outdoor',
+    emoji: '🏔️',
+    description: 'Camping gear, bikes, skis, snowboards, kayaks, fitness equipment — Craigslist, FB Marketplace, REI Used Gear',
+    sources: [
+      {
+        name: 'craigslist_sporting',
+        method: 'html',
+        proxy: false,
+        urls: ['https://denver.craigslist.org/search/sga'],
+        scheduleMinutes: 10,
+        parseListing: 'craigslist_gallery',
+      },
+      {
+        name: 'craigslist_bikes',
+        method: 'html',
+        proxy: false,
+        urls: ['https://denver.craigslist.org/search/bik'],
+        scheduleMinutes: 10,
+        parseListing: 'craigslist_gallery',
+      },
+      {
+        name: 'ebay_sporting',
+        method: 'html',
+        proxy: false,
+        urls: ['https://www.ebay.com/sch/Sporting-Goods/888/i.html'],
+        scheduleMinutes: 10,
+        parseListing: 'ebay_search',
+      },
+      {
+        name: 'facebook_outdoor',
+        method: 'browser',
+        proxy: true,
+        urls: ['https://www.facebook.com/marketplace/denver/search?query=outdoor+gear'],
+        scheduleMinutes: 15,
+        parseListing: 'facebook_marketplace',
+      },
+      {
+        name: 'facebook_bikes',
+        method: 'browser',
+        proxy: true,
+        urls: ['https://www.facebook.com/marketplace/denver/search?query=bikes'],
+        scheduleMinutes: 15,
+        parseListing: 'facebook_marketplace',
+      },
+    ],
+    dealScoring: {
+      provider: 'ebay_sold',
+      method: 'completed_listings',
+      inputFields: ['brand', 'model', 'type', 'condition'],
+    },
+    normalizationRules: {
+      titlePatterns: ['(Trek|Specialized|Cannondale|Santa Cruz|Giant|Patagonia|Arc\'teryx|North Face|Yeti|Burton|Rossignol).*(.*)'],
+      priceField: 'price',
+      locationField: 'location',
+    },
+  },
 ];

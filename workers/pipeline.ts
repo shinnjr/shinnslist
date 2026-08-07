@@ -13,7 +13,7 @@ import crypto from 'crypto';
 import { createClient, SupabaseClient } from '@supabase/supabase-js';
 import * as dotenv from 'dotenv';
 
-dotenv.config({ path: '.env.local' });
+dotenv.config({ path: '.env.local', override: true });
 
 // ============================================================
 // CONFIG

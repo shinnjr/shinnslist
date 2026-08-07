@@ -28,6 +28,7 @@ const VERTICALS = [
   { id: 'rentals', label: 'Rentals', icon: '🏢' },
   { id: 'instruments', label: 'Instruments', icon: '🎸' },
   { id: 'art', label: 'Art', icon: '🎨' },
+  { id: 'sports-outdoor', label: 'Outdoor', icon: '🏔️' },
 ];
 
 const FILTERS = ['All', 'FREE', '🔥 Hot', '📈 Trending', '✅ Quality', '💎 High Value'];
@@ -47,6 +48,7 @@ function getCategoryEmoji(cat: string): string {
     'electronics': '💻', 'cars': '🚗', 'legos': '🧱',
     'handbags': '👜', 'instruments': '🎸', 'real-estate': '🏠',
     'rentals': '🏢', 'free-stuff': '📦', 'art': '🎨',
+    'sports-outdoor': '🏔️',
   };
   return map[cat] || '📦';
 }

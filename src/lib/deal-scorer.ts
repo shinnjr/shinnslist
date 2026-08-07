@@ -48,7 +48,7 @@ const FLOORS: Record<string, number> = {
   'free-stuff': 0, furniture: 100, 'real-estate': 50000, rentals: 500,
   instruments: 150,
   art: 200,
-  'sports-outdoor': 50,
+  'sports-outdoor': 75,
   'baby-kids': 30,
   tools: 50,
   'camera-gear': 150,
