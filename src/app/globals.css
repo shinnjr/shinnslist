@@ -1,26 +1,65 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --shinnslist-pink: #FF1493;
+  --shinnslist-pink-glow: rgba(255, 20, 147, 0.15);
+  --shinnslist-green: #39FF14;
+  --shinnslist-bg: #08080A;
+  --shinnslist-surface: #111115;
+  --shinnslist-border: #1E1E24;
+  --shinnslist-text: #F5F0EB;
+  --shinnslist-muted: #6B6B7B;
+  color-scheme: dark;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--shinnslist-bg);
+  color: var(--shinnslist-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--shinnslist-bg); }
+::-webkit-scrollbar-thumb { background: var(--shinnslist-border); border-radius: 3px; }
+
+/* Deal score gradient text */
+.deal-score-high {
+  background: linear-gradient(135deg, #39FF14, #00E5FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Animated border for live cards */
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.card-live {
+  position: relative;
+}
+.card-live::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--shinnslist-pink), var(--shinnslist-green), var(--shinnslist-pink));
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+/* Pulse dot for "live" indicator */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+.pulse-dot {
+  animation: pulse-dot 1.5s ease-in-out infinite;
 }

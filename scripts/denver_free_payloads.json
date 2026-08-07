@@ -1,0 +1,153 @@
+{
+  "generated_at": "2026-08-07T07:33:59.428408+00:00",
+  "city_filter": "denver",
+  "count": 6,
+  "listings": [
+    {
+      "title": "LEGO Star Wars Collection, new, sealed boxes",
+      "price": "Free",
+      "price_cents": 0,
+      "location": "Denver, CO",
+      "url": "https://www.facebook.com/marketplace/item/sample3",
+      "image_url": "",
+      "posted_minutes_ago": 90,
+      "dedupe_key": "lego star wars collection new sealed boxes||denver co",
+      "hash": "e331ad560eea",
+      "score": {
+        "overall": 74,
+        "value": 55,
+        "condition": 84,
+        "recency": 96,
+        "value_tokens": [
+          "lego"
+        ],
+        "condition_tokens": [
+          "new",
+          "sealed"
+        ],
+        "is_free": true
+      }
+    },
+    {
+      "title": "Apple iPhone 13 - free, barely used",
+      "price": "Free",
+      "price_cents": 0,
+      "location": "Denver, CO",
+      "url": "https://www.facebook.com/marketplace/item/sample1",
+      "image_url": "",
+      "posted_minutes_ago": 40,
+      "dedupe_key": "apple iphone 13 free barely used||denver co",
+      "hash": "239c639453b3",
+      "score": {
+        "overall": 73,
+        "value": 60,
+        "condition": 72,
+        "recency": 98,
+        "value_tokens": [
+          "apple",
+          "iphone"
+        ],
+        "condition_tokens": [
+          "barely used"
+        ],
+        "is_free": true
+      }
+    },
+    {
+      "title": "Mountain bike Trek, gently used",
+      "price": "Free",
+      "price_cents": 0,
+      "location": "Denver, CO",
+      "url": "https://www.facebook.com/marketplace/item/sample6",
+      "image_url": "",
+      "posted_minutes_ago": 25,
+      "dedupe_key": "mountain bike trek gently used||denver co",
+      "hash": "e98b55de4d54",
+      "score": {
+        "overall": 73,
+        "value": 60,
+        "condition": 72,
+        "recency": 99,
+        "value_tokens": [
+          "mountain bike",
+          "trek"
+        ],
+        "condition_tokens": [
+          "gently used"
+        ],
+        "is_free": true
+      }
+    },
+    {
+      "title": "KitchenAid stand mixer, excellent condition",
+      "price": "Free",
+      "price_cents": 0,
+      "location": "Denver, CO",
+      "url": "https://www.facebook.com/marketplace/item/sample9",
+      "image_url": "",
+      "posted_minutes_ago": 45,
+      "dedupe_key": "kitchenaid stand mixer excellent condition||denver co",
+      "hash": "771364c1e4fc",
+      "score": {
+        "overall": 71,
+        "value": 55,
+        "condition": 72,
+        "recency": 98,
+        "value_tokens": [
+          "kitchenaid"
+        ],
+        "condition_tokens": [
+          "excellent"
+        ],
+        "is_free": true
+      }
+    },
+    {
+      "title": "Nintendo Switch with games",
+      "price": "Free",
+      "price_cents": 0,
+      "location": "Denver, CO",
+      "url": "https://www.facebook.com/marketplace/item/sample7",
+      "image_url": "",
+      "posted_minutes_ago": 5,
+      "dedupe_key": "nintendo switch with games||denver co",
+      "hash": "d2e96dc0face",
+      "score": {
+        "overall": 70,
+        "value": 60,
+        "condition": 60,
+        "recency": 100,
+        "value_tokens": [
+          "nintendo",
+          "switch"
+        ],
+        "condition_tokens": [],
+        "is_free": true
+      }
+    },
+    {
+      "title": "Free treadmill, needs repair",
+      "price": "Free",
+      "price_cents": 0,
+      "location": "Denver, CO",
+      "url": "https://www.facebook.com/marketplace/item/sample5",
+      "image_url": "",
+      "posted_minutes_ago": 300,
+      "dedupe_key": "free treadmill needs repair||denver co",
+      "hash": "2d0317bf05b5",
+      "score": {
+        "overall": 59,
+        "value": 55,
+        "condition": 42,
+        "recency": 87,
+        "value_tokens": [
+          "treadmill"
+        ],
+        "condition_tokens": [
+          "needs repair"
+        ],
+        "is_free": true
+      }
+    }
+  ]
+}
