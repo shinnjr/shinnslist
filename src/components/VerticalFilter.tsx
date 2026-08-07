@@ -1,7 +1,5 @@
 'use client';
 
-import { useState } from 'react';
-
 const VERTICALS = [
   { id: 'all', label: 'All Deals', icon: '🏷️' },
   { id: 'free-stuff', label: 'Free Stuff', icon: '🆓' },
