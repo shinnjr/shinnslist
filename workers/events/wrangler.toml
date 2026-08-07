@@ -1,6 +1,6 @@
 name = "shinnslist-events"
 main = "src/index.js"
-compatibility_date = "2025-09-01"
+compatibility_date = "2024-01-01"
 compatibility_flags = ["nodejs_compat"]
 account_id = "26cb8b771f26e2b269f6bf810221f1b5"
 workers_dev = true
