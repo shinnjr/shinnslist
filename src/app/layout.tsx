@@ -8,10 +8,10 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   title: "Shinnslist — Find Deals Before Anyone Else",
-  description: "Real-time deal scoring across 11 marketplaces. Free stuff, trading cards, sneakers, watches, cars, Legos, handbags, electronics, real estate, instruments, and rentals.",
+  description: "Real-time deal scoring across 12 marketplaces. Free stuff, trading cards, sneakers, watches, cars, Legos, handbags, electronics, real estate, instruments, art, and rentals.",
   openGraph: {
     title: "Shinnslist — Find Deals Before Anyone Else",
-    description: "One deal score across every marketplace. 11 verticals. Instant alerts.",
+    description: "One deal score across every marketplace. 12 verticals. Instant alerts.",
     siteName: "Shinnslist",
     type: "website",
     url: "https://shinnslist.com",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Shinnslist — Find Deals Before Anyone Else",
-    description: "11 marketplaces. One deal score. Get alerts when underpriced items drop.",
+    description: "12 marketplaces. One deal score. Get alerts when underpriced items drop.",
   },
 };
 
@@ -38,18 +38,18 @@ export default function RootLayout({
       </head>
       <body className={`${inter.variable} font-sans antialiased bg-[var(--shinnslist-bg)] text-[var(--shinnslist-muted)] min-h-screen flex flex-col`}>
         {/* Header */}
-        <header className="border-b border-[var(--shinnslist-border)] bg-[var(--shinnslist-surface)]/80 backdrop-blur-xl sticky top-0 z-50">
+        <header className="border-b border-[var(--fa-border)] bg-[var(--fa-bg)]/90 backdrop-blur-xl sticky top-0 z-50">
           <div className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
             <a href="/" className="flex min-h-[48px] items-center gap-2">
               <span className="text-xl">🆓</span>
               <span className="text-lg font-bold text-white tracking-tight">
-                Shinns<span className="text-[var(--shinnslist-pink)]">list</span>
+                Shinns<span className="text-[var(--fa-green)]">list</span>
               </span>
             </a>
             <nav className="hidden md:flex items-center gap-6 text-sm">
               <a href="/" className="flex min-h-[48px] items-center hover:text-white transition-colors">Deals</a>
               <a href="/pricing" className="flex min-h-[48px] items-center hover:text-white transition-colors">Pricing</a>
-              <a href="/pricing" className="flex min-h-[48px] items-center bg-[var(--shinnslist-pink)] text-white px-4 py-1.5 rounded-full text-sm font-medium hover:bg-fuchsia-600 active:scale-[0.97] transition-all">
+              <a href="/pricing" className="flex min-h-[48px] items-center bg-[var(--fa-green)] text-black px-4 py-1.5 rounded-full text-sm font-bold hover:bg-emerald-400 active:scale-[0.97] transition-all">
                 Go Pro → $5/week
               </a>
             </nav>
@@ -65,11 +65,11 @@ export default function RootLayout({
         <PushPrompt />
 
         {/* Footer */}
-        <footer className="border-t border-[var(--shinnslist-border)] mt-auto pb-20 md:pb-0">
-          <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row justify-between gap-4 text-sm text-[var(--shinnslist-muted)]">
+        <footer className="border-t border-[var(--fa-border)] mt-auto pb-20 md:pb-0">
+          <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row justify-between gap-4 text-sm text-[var(--fa-muted)]">
             <div>
               <span className="font-bold text-white">Shinnslist</span>{" "}
-              <span>— One deal score. Every marketplace.</span>
+              <span>— Free stuff alerts, faster than anyone else.</span>
             </div>
             <div className="flex gap-6">
               <a href="/how-it-works" className="hover:text-white transition-colors">How It Works</a>

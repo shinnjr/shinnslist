@@ -3,14 +3,29 @@
 @tailwind utilities;
 
 :root {
-  --shinnslist-pink: #FF1493;
-  --shinnslist-pink-glow: rgba(255, 20, 147, 0.15);
-  --shinnslist-green: #39FF14;
-  --shinnslist-bg: #08080A;
-  --shinnslist-surface: #111115;
-  --shinnslist-border: #1E1E24;
+  /* Freebie Alerts-inspired palette */
+  --fa-purple: #6B3FA0;
+  --fa-purple-dark: #4A1D7A;
+  --fa-blue: #3B82F6;
+  --fa-green: #22C55E;
+  --fa-green-bright: #4ADE80;
+  --fa-gold: #F59E0B;
+  --fa-bg: #0F0A1A;
+  --fa-surface: #1A1028;
+  --fa-border: #2D1F40;
+  --fa-text: #F5F0EB;
+  --fa-muted: #8B7BA8;
+  --fa-hero-gradient: linear-gradient(135deg, #4A1D7A 0%, #6B3FA0 30%, #3B82F6 100%);
+
+  /* Keep backward compat aliases */
+  --shinnslist-pink: #22C55E;
+  --shinnslist-pink-glow: rgba(34, 197, 94, 0.15);
+  --shinnslist-green: #4ADE80;
+  --shinnslist-bg: #0F0A1A;
+  --shinnslist-surface: #1A1028;
+  --shinnslist-border: #2D1F40;
   --shinnslist-text: #F5F0EB;
-  --shinnslist-muted: #6B6B7B;
+  --shinnslist-muted: #8B7BA8;
   color-scheme: dark;
 }
 

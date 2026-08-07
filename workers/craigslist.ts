@@ -2,7 +2,9 @@
  * Craigslist Free Stuff Scraper
  * 
  * Run: npx ts-node --skip-project workers/craigslist.ts
- * Or:  node --loader ts-node/esm workers/craigslist.ts
+ * 
+ * Now tags each listing with its source city so downstream consumers
+ * don't need to infer city from URL (which often points to www.craigslist.org).
  */
 
 import axios from 'axios';
@@ -18,6 +20,10 @@ interface CLListing {
   location: string;
   postedAt: string;
   hasImage: boolean;
+  cityName: string;
+  cityLat: number;
+  cityLng: number;
+  state: string;
 }
 
 // === Config ===
@@ -28,7 +34,7 @@ const CITIES = [
   { name: 'fortcollins', subdomain: 'fortcollins', lat: 40.5853, lng: -105.0844, state: 'CO' },
 ];
 
-const SECTIONS = ['zip']; // 'zip' = free stuff; add 'hsa', 'ele', 'tla' etc for paid items
+const SECTIONS = ['zip'];
 
 const HEADERS = {
   'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36',
@@ -36,13 +42,16 @@ const HEADERS = {
   'Accept-Language': 'en-US,en;q=0.9',
 };
 
-const DELAY_MS = 2000; // Be polite to Craigslist servers
+const DELAY_MS = 2000;
 
 // === Scrape one city + section ===
 async function scrapeCitySection(
   subdomain: string,
   section: string,
   cityName: string,
+  cityLat: number,
+  cityLng: number,
+  state: string,
 ): Promise<CLListing[]> {
   const url = `https://${subdomain}.craigslist.org/search/${section}#search=1~list~0~0`;
   console.log(`  Scraping: ${url}`);
@@ -52,7 +61,6 @@ async function scrapeCitySection(
     const $ = cheerio.load(response.data);
     const listings: CLListing[] = [];
 
-    // Craigslist static search results — each listing is <li class="cl-static-search-result">
     $('li.cl-static-search-result').each((_i, el) => {
       try {
         const $el = $(el);
@@ -68,17 +76,13 @@ async function scrapeCitySection(
 
         if (!title || !href) return;
 
-        // Clean price — "$0" or "free" → 0
         let price = 0;
         const priceMatch = priceText.match(/\$?([\d,]+)/);
         if (priceMatch && !priceText.toLowerCase().includes('free')) {
           price = parseInt(priceMatch[1].replace(/,/g, ''));
         }
 
-        // Generate deterministic source ID from URL
         const sourceId = crypto.createHash('md5').update(href).digest('hex').slice(0, 12);
-
-        // Check for image
         const hasImage = $el.find('img').length > 0;
 
         listings.push({
@@ -89,6 +93,10 @@ async function scrapeCitySection(
           location,
           postedAt: '',
           hasImage,
+          cityName,
+          cityLat,
+          cityLng,
+          state,
         });
       } catch (err) {
         // Skip malformed listings
@@ -115,10 +123,12 @@ async function main() {
     console.log(`📍 ${city.name} (${city.subdomain}.craigslist.org)`);
 
     for (const section of SECTIONS) {
-      const listings = await scrapeCitySection(city.subdomain, section, city.name);
+      const listings = await scrapeCitySection(
+        city.subdomain, section, city.name,
+        city.lat, city.lng, city.state
+      );
       console.log(`   ✅ Found ${listings.length} listings`);
 
-      // Deduplicate (in case same item scraped twice)
       for (const listing of listings) {
         if (!allListings.find(l => l.sourceId === listing.sourceId)) {
           allListings.push(listing);
@@ -127,27 +137,21 @@ async function main() {
 
       totalListings += listings.length;
 
-      // Be polite
       if (CITIES.indexOf(city) < CITIES.length - 1 || SECTIONS.indexOf(section) < SECTIONS.length - 1) {
         await new Promise(resolve => setTimeout(resolve, DELAY_MS));
       }
     }
   }
 
-  // === Output summary ===
   console.log(`\n📊 Total unique listings: ${allListings.length}`);
 
-  // Top 5 by title (show what we found)
   console.log('\n📋 Sample listings:');
   allListings.slice(0, 10).forEach(l => {
     const priceLabel = l.price === 0 ? 'FREE' : `$${l.price}`;
-    console.log(`  ${priceLabel.padEnd(8)} | ${l.title.slice(0, 60).padEnd(60)} | ${l.location}`);
+    console.log(`  ${priceLabel.padEnd(8)} | ${l.title.slice(0, 60).padEnd(60)} | ${l.cityName}`);
   });
 
   console.log('\n✅ Done.');
-  console.log('\n💡 To insert into Supabase, set NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY in .env.local');
-
-  // Export for use by Supabase insert script
   return allListings;
 }
 

@@ -2,7 +2,7 @@
  * Heuristic Deal Scorer — shared library
  *
  * Used by: Next.js app (deal feed), cron workers (batch scoring)
- * Zero dependencies. Zero API keys. Works across all 10 verticals.
+ * Zero dependencies. Zero API keys. Works across all 12 verticals.
  */
 
 export interface ScoreInput {
@@ -41,6 +41,7 @@ const FLOORS: Record<string, number> = {
   electronics: 200, cars: 5000, legos: 50, handbags: 200,
   'free-stuff': 0, furniture: 100, 'real-estate': 50000, rentals: 500,
   instruments: 150,
+  art: 200,
 };
 
 function countMatches(text: string, keywords: string[]): number {
