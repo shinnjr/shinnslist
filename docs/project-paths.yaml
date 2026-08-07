@@ -1,0 +1,51 @@
+# Project Paths — Single Source of Truth
+# Every cron job, digest, and agent reads this file. Never guess a path again.
+# Updated: 2026-08-07
+
+projects:
+  shinnslist:
+    root: ~/projects/freebie
+    description: "Shinnslist.com — multi-vertical deal aggregator. PRIMARY revenue engine."
+    stack: [nextjs, cloudflare-pages, supabase, stripe]
+    status: deployed
+    deploy_url: https://1ab26bfb.shinnslist.pages.dev
+    deploy_command: "cd ~/projects/freebie && bash scripts/build-deploy.sh"
+    custom_domain: shinnslist.com (pending DNS CNAME)
+    github: https://github.com/shinnjr/shinnslist
+    supabase_url: https://nmisxwzrbsyqihqwnvsx.supabase.co
+
+  tiktok-hermes:
+    root: ~/code/tiktok-hermes-ingest
+    description: "TikTok @sidehustle720 knowledge corpus extraction"
+    status: complete
+
+  smart-router:
+    root: ~/.hermes/skills/productivity/smart-router
+    description: "Evidence-based model routing with fallback chain"
+    status: live
+
+  mission-continuity:
+    root: ~/.hermes/skills/personal-infrastructure/mission-continuity
+    description: "Cross-session state preservation and checkpointing"
+    status: operational
+
+  comfyui:
+    root: ~/Documents/comfy/ComfyUI
+    description: "Local image generation (JuggernautXL, Uncanny Flux)"
+    status: deferred
+
+life_systems:
+  obsidian_vault: ~/life
+  ai_memory: ~/life/_system/ai-memory
+  handoff_file: ~/life/_system/handoff.md  # STALE — use ai_memory instead
+  mission_dashboard: ~/life/_system/ai-memory/mission-dashboard.html
+  system_audit: ~/life/_system/ai-memory/system-audit.html
+
+hermes_paths:
+  config: ~/.hermes/config.yaml
+  env: ~/.hermes/.env
+  skills: ~/.hermes/skills
+  kanban_db: ~/.hermes/kanban.db
+  cron_state: ~/.hermes/cron_state
+  source: ~/.hermes/hermes-agent
+  web_dist: ~/.hermes/hermes-agent/hermes_cli/web_dist
