@@ -134,8 +134,16 @@ def main():
         print(f"ERROR: Invalid JSON: {e}", file=sys.stderr)
         sys.exit(1)
 
+    # Handle wrapper shapes: {listings:[...]}, {deals:[...]}, {payloads:[...]}
     if not isinstance(payloads, list):
-        payloads = [payloads]
+        if "listings" in payloads:
+            payloads = payloads["listings"]
+        elif "deals" in payloads:
+            payloads = payloads["deals"]
+        elif "payloads" in payloads:
+            payloads = payloads["payloads"]
+        else:
+            payloads = [payloads]
 
     print(f"Processing {len(payloads)} listings...", file=sys.stderr)
 
@@ -143,14 +151,21 @@ def main():
 
     for item in payloads:
         title = item.get("title", "Unknown")
-        price = float(item.get("price", 0)) if item.get("price") else 0
+        raw_price = item.get("price", 0)
+        if raw_price == "Free" or raw_price is None:
+            price = 0.0
+        else:
+            try:
+                price = float(raw_price)
+            except (ValueError, TypeError):
+                price = 0.0
         location = item.get("location", "Denver, CO")
         source_url = item.get("url", "")
 
-        # Build Supabase-compatible listing
+        # Build Supabase-compatible listing (matches actual listings table schema)
         listing = {
-            "source": "facebook_marketplace",
-            "source_id": generate_source_id(title, "facebook_marketplace", location),
+            "source": "facebook",
+            "source_id": generate_source_id(title, "facebook", location),
             "source_url": source_url,
             "title": title,
             "description": item.get("description", ""),
@@ -160,13 +175,10 @@ def main():
             "category": "free-stuff",
             "condition": item.get("condition", "unknown"),
             "flags": item.get("flags", []),
-            "lat": DENVER_LAT,
-            "lng": DENVER_LNG,
+            "location": f"SRID=4326;POINT({DENVER_LNG} {DENVER_LAT})",
             "city": "Denver",
             "state": "CO",
             "posted_at": item.get("posted_at", datetime.now(timezone.utc).isoformat()),
-            "deal_score": score_deal(title, item.get("description", ""), price),
-            "scraped_at": datetime.now(timezone.utc).isoformat(),
         }
 
         status = "unknown"

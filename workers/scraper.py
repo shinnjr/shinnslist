@@ -69,6 +69,10 @@ FREE_SECTIONS = [
     "/search/ata",      # auto parts
     "/search/msa",      # music instruments
     "/search/bka",      # books
+    "/search/fua",      # furniture by owner
+    "/search/clt",      # collectibles
+    "/search/cta",      # cars+trucks by owner
+    "/search/gms",      # garage & moving sales
 ]
 
 # Human-readable source names per section (for source diversity on the site)
@@ -83,6 +87,10 @@ SECTION_SOURCE_NAMES = {
     "/search/ata": "craigslist_autoparts",
     "/search/msa": "craigslist_instruments",
     "/search/bka": "craigslist_books",
+    "/search/fua": "craigslist_furniture_deals",
+    "/search/clt": "craigslist_collectibles",
+    "/search/cta": "craigslist_cars",
+    "/search/gms": "craigslist_garage_sales",
 }
 
 # Map Craigslist sections → Shinnslist vertical categories
@@ -97,6 +105,10 @@ SECTION_CATEGORIES = {
     "/search/ata": "cars",             # auto parts → cars
     "/search/msa": "instruments",
     "/search/bka": "free-stuff",       # books → free-stuff
+    "/search/fua": "free-stuff",       # furniture deals → free-stuff
+    "/search/clt": "art",              # collectibles → art & collectibles
+    "/search/cta": "cars",             # cars+trucks → cars
+    "/search/gms": "free-stuff",       # garage sales → free-stuff
 }
 
 HEADERS = {
