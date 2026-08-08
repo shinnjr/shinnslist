@@ -8,10 +8,10 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   title: "Shinnslist — Find Deals Before Anyone Else",
-  description: "Real-time deal scoring across 12 marketplaces. Free stuff, trading cards, sneakers, watches, cars, Legos, handbags, electronics, real estate, instruments, art, and rentals.",
+  description: "Real-time deal scoring across 14 marketplaces. Free stuff, trading cards, sneakers, watches, cars, Legos, handbags, electronics, real estate, instruments, art, sports gear, baby gear, and rentals — find deals before anyone else.",
   openGraph: {
     title: "Shinnslist — Find Deals Before Anyone Else",
-    description: "One deal score across every marketplace. 12 verticals. Instant alerts.",
+    description: "One deal score across every marketplace. 14 verticals. Instant alerts.",
     siteName: "Shinnslist",
     type: "website",
     url: "https://shinnslist.com",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Shinnslist — Find Deals Before Anyone Else",
-    description: "12 marketplaces. One deal score. Get alerts when underpriced items drop.",
+    description: "14 marketplaces. One deal score. Get alerts when underpriced items drop.",
   },
 };
 

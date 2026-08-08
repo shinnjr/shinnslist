@@ -85,6 +85,20 @@ SECTION_SOURCE_NAMES = {
     "/search/bka": "craigslist_books",
 }
 
+# Map Craigslist sections → Shinnslist vertical categories
+SECTION_CATEGORIES = {
+    "/search/zip": "free-stuff",
+    "/search/hsa": "free-stuff",       # household/furniture → free-stuff
+    "/search/ele": "electronics",
+    "/search/sga": "sports-outdoor",
+    "/search/bab": "baby-kids",
+    "/search/ppa": "electronics",      # photo/video → electronics
+    "/search/tla": "free-stuff",       # tools → free-stuff (no dedicated vertical yet)
+    "/search/ata": "cars",             # auto parts → cars
+    "/search/msa": "instruments",
+    "/search/bka": "free-stuff",       # books → free-stuff
+}
+
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                   "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -103,7 +117,7 @@ def get_supabase() -> Client:
     return create_client(url, key)
 
 
-def extract_listings(html: str, source_id_base: str, source_name: str = "craigslist") -> list[dict]:
+def extract_listings(html: str, source_id_base: str, source_name: str = "craigslist", category: str = "free-stuff") -> list[dict]:
     """Parse Craigslist gallery page HTML into listing dicts."""
     soup = BeautifulSoup(html, "html.parser")
     listings = []
@@ -141,7 +155,7 @@ def extract_listings(html: str, source_id_base: str, source_name: str = "craigsl
                 "photos": [],
                 "price": price,
                 "estimated_value": None,
-                "category": None,
+                "category": category,
                 "brand": None,
                 "model": None,
                 "condition": "unknown",
@@ -162,6 +176,7 @@ def scrape_section(subdomain: str, section: str, city_info: dict) -> int:
     base_url = f"https://{subdomain}.craigslist.org"
     url = urljoin(base_url, section)
     source_name = SECTION_SOURCE_NAMES.get(section, "craigslist")
+    category = SECTION_CATEGORIES.get(section, "free-stuff")
 
     log.info(f"Scraping {url}")
 
@@ -172,7 +187,7 @@ def scrape_section(subdomain: str, section: str, city_info: dict) -> int:
         log.error(f"HTTP error scraping {url}: {e}")
         return 0
 
-    listings = extract_listings(resp.text, f"{city_info['subdomain']}-{section}", source_name)
+    listings = extract_listings(resp.text, f"{city_info['subdomain']}-{section}", source_name, category)
     if not listings:
         log.info(f"  No listings found at {url}")
         return 0
