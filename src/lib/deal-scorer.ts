@@ -2,7 +2,7 @@
  * Heuristic Deal Scorer — shared library
  *
  * Used by: Next.js app (deal feed), cron workers (batch scoring)
- * Zero dependencies. Zero API keys. Works across all 12 verticals.
+ * Zero dependencies. Zero API keys. Works across all 15 verticals.
  */
 
 export interface ScoreInput {

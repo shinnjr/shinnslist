@@ -642,4 +642,56 @@ export const VERTICAL_CONFIGS: VerticalConfig[] = [
       locationField: 'location',
     },
   },
+
+  // 15. TOOLS & HARDWARE
+  {
+    id: 'tools',
+    name: 'Tools & Hardware',
+    emoji: '🔧',
+    description: 'Power tools, hand tools, woodworking, welding, generators — Craigslist, FB Marketplace, eBay, OfferUp',
+    sources: [
+      {
+        name: 'craigslist_tools',
+        method: 'html',
+        proxy: false,
+        urls: ['https://denver.craigslist.org/search/tls'],
+        scheduleMinutes: 10,
+        parseListing: 'craigslist_gallery',
+      },
+      {
+        name: 'ebay_tools',
+        method: 'html',
+        proxy: false,
+        urls: ['https://www.ebay.com/sch/Tools/61573/i.html'],
+        scheduleMinutes: 10,
+        parseListing: 'ebay_search',
+      },
+      {
+        name: 'facebook_tools',
+        method: 'browser',
+        proxy: true,
+        urls: ['https://www.facebook.com/marketplace/denver/search?query=tools'],
+        scheduleMinutes: 15,
+        parseListing: 'facebook_marketplace',
+      },
+      {
+        name: 'offerup_tools',
+        method: 'browser',
+        proxy: false,
+        urls: ['https://offerup.com/explore/s/?category=tools&deliveryParam=all&radius=25'],
+        scheduleMinutes: 15,
+        parseListing: 'offerup',
+      },
+    ],
+    dealScoring: {
+      provider: 'ebay_sold',
+      method: 'completed_listings',
+      inputFields: ['brand', 'model', 'type', 'condition'],
+    },
+    normalizationRules: {
+      titlePatterns: ['(DeWalt|Milwaukee|Makita|Bosch|Ryobi|Festool|Snap-on|Craftsman|Husky|Stihl|Husqvarna|Echo).*(.*)'],
+      priceField: 'price',
+      locationField: 'location',
+    },
+  },
 ];
