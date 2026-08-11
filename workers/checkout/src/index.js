@@ -55,14 +55,14 @@ export default {
       // verticals are found by lookup_key so no per-vertical vars are needed
       try {
         const lookup = await fetch(
-          `https://api.stripe.com/v1/prices/lookup?lookup_key=vertical-${vertical}&expand[]=product`,
+          `https://api.stripe.com/v1/prices?lookup_keys[]=vertical-${vertical}&expand[]=data.product`,
           { headers: auth }
         );
         const data = await lookup.json();
-        if (!lookup.ok || !data.id) {
-          return json({ error: `Unknown vertical '${vertical}'`, detail: data.error?.message }, 400);
+        if (!lookup.ok || !data.data?.[0]?.id) {
+          return json({ error: `Unknown vertical '${vertical}'`, detail: data.error?.message || 'no price found' }, 400);
         }
-        priceId = data.id;
+        priceId = data.data[0].id;
       } catch (e) {
         return json({ error: 'Price lookup failed', detail: String(e) }, 502);
       }

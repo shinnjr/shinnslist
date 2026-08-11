@@ -12,9 +12,9 @@ workers_dev = true
 # ]
 
 [vars]
-STRIPE_PRO_PRICE_ID = ""
-STRIPE_FLIPPER_PRICE_ID = ""
-NEXT_PUBLIC_APP_URL = "https://shinnslist.pages.dev"
+STRIPE_PRO_PRICE_ID = "price_1U37SB402tPZAlhiiQsh06Cr"
+STRIPE_FLIPPER_PRICE_ID = "price_1U37SC402tPZAlhibFhLJeTT"
+NEXT_PUBLIC_APP_URL = "https://shinnslist.com"
 
 # Secret (set via: npx wrangler secret put STRIPE_SECRET_KEY):
 #   STRIPE_SECRET_KEY = sk_...
