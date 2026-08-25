@@ -29,12 +29,15 @@ flags drift.
 | Grant DB (2,503 programs) | Supabase `grant_opportunities` | live | grant-coverage + ingest crons |
 | Grant scoring / eligibility | `functions/api/grants`, `functions/api/grant-profile` | live | shinnslist-status window |
 | OSINT profile enrichment | onboarding prefill + entity-enrichment | live | shinnslist-status window |
+| Real-estate data vertical (RE) | `src/app/re/*` (hub, tax-delinquent-denver, methodology, shinnslist-vs-propstream), `src/data/realEstate.ts` | live | overnight-swarm session (2026-08-25) |
 | Core app pages | `src/app/*` (grants, pricing, learn, onboarding, etc.) | live | core |
 
 ## In-flight (do not duplicate)
 - (none right now)
 
 ## Merge log
+- 2026-08-25 — **RE vertical (Shinnslist RE)**: /re hub + Denver tax-delinquent product page (ungated 10-row preview) + methodology + PropStream comparison; all static data-driven from verified public-record ingests (8,373 scored delinquent parcels, 571,667-parcel Zone A spine). Checkout wiring deferred — payment-method policy conflict (Google Pay standing rule vs Stripe handoff directive) surfaced to James.
+- 2026-08-25 — **classActions.ts outage fix**: file had been overwritten empty (raw scraper run, no failsafe) breaking static build of /file/[slug]; restored via live scrape (263 settlements) + added min-50 failsafe inside scripts/scrape_class_actions.py itself.
 - 2026-08-15 — **DFY filing engine (James's direction)**: time-estimator + rolling-rate
   pricing (`src/lib/dfy.ts`), localStorage cart + membership (`src/lib/cart.ts`),
   add-to-cart buttons on class actions/grants/apply, `/cart` checkout (Stripe

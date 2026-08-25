@@ -12,4 +12,2372 @@ export interface ClassAction {
   description: string;
 }
 
-export const classActions: ClassAction[] = [];
+export const classActions: ClassAction[] = [
+  {
+    "slug": "costco-marketing-emails-washington",
+    "name": "Costco - Marketing Emails (Washington)",
+    "claim_url": "https://www.washingtoncommercialemailsettlement.com/",
+    "payout": "Varies",
+    "deadline": "8/24/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you received an email from Costco while living in Washington between June 2, 2021 and July 7, 2026."
+  },
+  {
+    "slug": "lakeview-health-systems-data-breach",
+    "name": "Lakeview Health Systems - Data Breach",
+    "claim_url": "https://lakeviewhealthsettlement.com/",
+    "payout": "$50 - $5,000",
+    "deadline": "8/24/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your private information was compromised in the January 2024 Lakeview Health Systems data breach."
+  },
+  {
+    "slug": "mckenzie-health-system-data-breach",
+    "name": "McKenzie Health System - Data Breach",
+    "claim_url": "https://mckenziehealthsettlement.com/",
+    "payout": "$50 - $4,000",
+    "deadline": "8/24/26",
+    "proof": "No",
+    "description": "You may be able to claim a piece of this settlement if your private information was compromised in the April 2025 McKenzie Health System data breach."
+  },
+  {
+    "slug": "crr-data-breach",
+    "name": "CR&R - Data Breach",
+    "claim_url": "https://crrdatasettlement.com/",
+    "payout": "$150 - $5,000",
+    "deadline": "8/24/26",
+    "proof": "No",
+    "description": "If you received a notice about the December 2022 CR&R data breach, you may be included in this settlement."
+  },
+  {
+    "slug": "new-york-renaissance-faire-ticket-fees",
+    "name": "New York Renaissance Faire - Ticket Fees",
+    "claim_url": "https://nyrenfaireticketfeesettlement.com/",
+    "payout": "Up to $20",
+    "deadline": "8/24/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you paid a service charge to buy an electronic ticket to the New York Renaissance Faire from the New York Renaissance Faire website between August 29, 2022 and April 4, 2025."
+  },
+  {
+    "slug": "big-als-employment",
+    "name": "Big Al’s - Employment",
+    "claim_url": "https://baincsettlement.com/",
+    "payout": "Varies",
+    "deadline": "8/24/26",
+    "proof": "N/A",
+    "description": "You may be able to claim a piece of this settlement if you worked for Big Al’s between January 1, 2020, and May 22, 2026 and earned less than twice the applicable state minimum hourly wage."
+  },
+  {
+    "slug": "spothero-drip-pricing",
+    "name": "SpotHero - Drip Pricing (California)",
+    "claim_url": "https://www.shpricingsettlement.com/",
+    "payout": "$4.76 (est.)",
+    "deadline": "8/25/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you bought at least one parking reservation through SpotHero’s website or its mobile app between July 1, 2024 and March 13, 2025 while in California."
+  },
+  {
+    "slug": "national-association-of-realtors",
+    "name": "National Association of Realtors - Homebuyer Litigation",
+    "claim_url": "https://homebuyerlitigation.com/home/",
+    "payout": "Varies",
+    "deadline": "8/25/26",
+    "proof": "Yes",
+    "description": "You may be included in this settlement if you bought residential real estate in the United States since 2006 that was listed on a multiple listing service."
+  },
+  {
+    "slug": "kyb-americas-corporation-data-breach",
+    "name": "KYB Americas Corporation - Data Breach",
+    "claim_url": "https://kybdatasettlement.com/",
+    "payout": "$75 - $5,400",
+    "deadline": "8/26/26",
+    "proof": "No",
+    "description": "This settlement covers those whose personal information was exposed in the February 2025 KYB Americas Corporation data breach."
+  },
+  {
+    "slug": "talcott-premium-tax-charges",
+    "name": "Talcott - Premium Tax Charges",
+    "claim_url": "https://www.premiumtaxsettlement.com/",
+    "payout": "Varies",
+    "deadline": "8/26/26",
+    "proof": "N/A",
+    "description": "If you had certain life insurance policies issued or owned by a Hartford or Talcott life insurance company that were subject to a premium tax charge, you may be included in this settlement."
+  },
+  {
+    "slug": "hillcrest-convalescent-center-data-breach",
+    "name": "Hillcrest Convalescent Center - Data Breach",
+    "claim_url": "https://hccdatasettlement.com/",
+    "payout": "$50 - $2,500",
+    "deadline": "8/26/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your private information was compromised in the June 2024 Hillcrest Convalescent Center data breach."
+  },
+  {
+    "slug": "city-of-detroit-water-supply-services-michigan",
+    "name": "City of Detroit - Water Supply Services (Michigan)",
+    "claim_url": "https://www.detroitwatersettlement.com/",
+    "payout": "• New",
+    "deadline": "8/26/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you received water services from the City of Detroit between August 1, 2022 and May 31, 2026."
+  },
+  {
+    "slug": "fanatics-handling-fees",
+    "name": "Fanatics - Handling Fees",
+    "claim_url": "https://handlingfeesettlement.com/",
+    "payout": "Two $5 Vouchers",
+    "deadline": "8/27/26",
+    "proof": "No",
+    "description": "If you purchased merchandise through the Fanatics websites between May 6, 2018 and March 30, 2026 and paid a handling fee, you may be covered by this settlement."
+  },
+  {
+    "slug": "berman-and-rabin-data-breach",
+    "name": "Berman & Rabin - Data Breach",
+    "claim_url": "https://bermanrabinsettlement.com/",
+    "payout": "Up to $3,500",
+    "deadline": "8/27/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your private information was exposed in the July 2024 Berman & Rabin data breach."
+  },
+  {
+    "slug": "2023-las-vegas-grand-prix",
+    "name": "2023 Las Vegas Grand Prix",
+    "claim_url": "https://www.lvgp2023ticketsettlement.com/index.html",
+    "payout": "Varies",
+    "deadline": "8/27/26",
+    "proof": "Yes",
+    "description": "You may be included in this settlement if you had a ticket for the 2023 Las Vegas Grand Prix and attempted to attend the FP2 free practice session."
+  },
+  {
+    "slug": "walton-womens-center-data-breach",
+    "name": "Walton Women’s Center - Data Breach",
+    "claim_url": "https://www.hwwcdataincidentsettlement.com/",
+    "payout": "Up to $2,500",
+    "deadline": "8/27/26",
+    "proof": "No",
+    "description": "This settlement covers those whose personal information was potentially compromised in the February 2022 Walton Women’s Center data breach."
+  },
+  {
+    "slug": "bmw-shark-fin-antennas",
+    "name": "BMW Shark-Fin Antennas",
+    "claim_url": "https://sharkfinsettlement.com/",
+    "payout": "Varies",
+    "deadline": "8/27/26",
+    "proof": "Yes",
+    "description": "You may be covered by this settlement if you owned or leased certain 2019-2020 model year BMW X3, X4, X5, X6, or X7 vehicles."
+  },
+  {
+    "slug": "call-on-doc-data-privacy",
+    "name": "Call-On-Doc - Data Privacy",
+    "claim_url": "https://callondoccipasettlement.com/",
+    "payout": "Up to $20",
+    "deadline": "8/29/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you created an account on the Call-On-Doc website on or after November 7, 2023, or if you were a registered Call-On-Doc user and started to book an appointment for medical care on or after November 7, 2021."
+  },
+  {
+    "slug": "youtube-tv-subscription-renewals-california",
+    "name": "YouTube TV - Subscription Renewals (California)",
+    "claim_url": "https://www.youtubetvsettlement.com/",
+    "payout": "$92.26 (est.)",
+    "deadline": "8/30/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you lived in California and paid for at least one renewal term of a YouTube TV subscription via YouTube billing between February 1, 2017 and October 29, 2021."
+  },
+  {
+    "slug": "permobil-speedcontrol-dials",
+    "name": "Permobil - SpeedControl Dials",
+    "claim_url": "https://www.speedcontroldialsettlement.com/",
+    "payout": "Up to $1,000",
+    "deadline": "8/31/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you bought or used a SpeedControl Dial between April 1, 2022 and July 1, 2026."
+  },
+  {
+    "slug": "urban-one-data-breach",
+    "name": "Urban One - Data Breach",
+    "claim_url": "https://urbanonedataincident.com/",
+    "payout": "$500 - $10,000",
+    "deadline": "8/31/26",
+    "proof": "No",
+    "description": "You may be covered by this settlement if your personal information was exposed in the Urban One data breach discovered in March 2025."
+  },
+  {
+    "slug": "fiton-data-privacy",
+    "name": "FitOn - Data Privacy",
+    "claim_url": "https://fitonvppasettlement.com/",
+    "payout": "$10",
+    "deadline": "8/31/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you had a FitOn account and accessed at least one video on the platform between October 22, 2022 and May 29, 2026."
+  },
+  {
+    "slug": "mary-black-health-system-south-carolina",
+    "name": "Mary Black Health System (South Carolina)",
+    "claim_url": "https://maryblackclassaction.com/",
+    "payout": "• New",
+    "deadline": "8/31/26",
+    "proof": "No",
+    "description": "If you received medical treatment at Mary Black Memorial Hospital or Gaffney H.M.A. in South Carolina since January 1, 2014 and your medical bills were not submitted to your health insurance provider, you may be included in this settlement."
+  },
+  {
+    "slug": "fmc-services-data-breach",
+    "name": "FMC Services - Data Breach",
+    "claim_url": "https://www.fmcdatasettlement.com/",
+    "payout": "$75 - $5,000",
+    "deadline": "8/31/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your private information was potentially compromised in the July 2022 FMC Services data breach."
+  },
+  {
+    "slug": "aod-federal-credit-union-data-breach",
+    "name": "AOD Federal Credit Union - Data Breach",
+    "claim_url": "https://aodfcudataincidentsettlement.com/",
+    "payout": "$75 - $5,000",
+    "deadline": "9/1/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your personal information was compromised in the August 2024 AOD Federal Credit Union data breach."
+  },
+  {
+    "slug": "serviceaide-data-breach",
+    "name": "Serviceaide - Data Breach",
+    "claim_url": "https://serviceaidedatasettlement.com/",
+    "payout": "$50 - $5,000",
+    "deadline": "9/1/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your personal information was exposed in the Serviceaide data breach that took place between September and November 2024 and impacted Catholic Health patients."
+  },
+  {
+    "slug": "equifax-duplicate-collection-accounts",
+    "name": "Equifax - Duplicate Collection Accounts",
+    "claim_url": "https://duplicateaccountfcrasettlement.com/",
+    "payout": "Varies",
+    "deadline": "9/1/26",
+    "proof": "No",
+    "description": "You may be able to claim a piece of this settlement if you had a duplicate collection account reflected in your Equifax file at the same time there was an inquiry on your file in August or September 2022."
+  },
+  {
+    "slug": "guitar-center-employee-wages",
+    "name": "Guitar Center - Employee Wages",
+    "claim_url": "https://www.caemployeesettlementguitarcenter.com/",
+    "payout": "Varies",
+    "deadline": "9/1/26",
+    "proof": "N/A",
+    "description": "You may be included in this settlement if you worked for Guitar Center as a non-exempt employee between January 11, 2020 and July 11, 2025."
+  },
+  {
+    "slug": "crimson-wine-data-breach",
+    "name": "Crimson Wine - Data Breach",
+    "claim_url": "https://crimsonwinesettlement.com/",
+    "payout": "$100 - $5,000",
+    "deadline": "9/1/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your private information was compromised in the January 2024 Crimson Wine data breach."
+  },
+  {
+    "slug": "zoll-medical-corporation-data-breach",
+    "name": "ZOLL Medical Corporation - Data Breach",
+    "claim_url": "https://www.heartdevicedatasettlement.com/",
+    "payout": "Est. $50 - $5,000",
+    "deadline": "9/2/26",
+    "proof": "No",
+    "description": "If you received a notice stating that your personal information may have been exposed in the January 2023 ZOLL Medical Corporation data breach, you may be included in this settlement."
+  },
+  {
+    "slug": "saint-gobain-meal-rest-breaks-washington",
+    "name": "Saint-Gobain - Meal, Rest Breaks (Washington)",
+    "claim_url": "https://wagesettlementsgaai.com/",
+    "payout": "• New",
+    "deadline": "9/2/26",
+    "proof": "N/A",
+    "description": "You may be covered by this settlement if you worked for Saint-Gobain in Washington between September 9, 2022 and July 6, 2026."
+  },
+  {
+    "slug": "okanogan-behavioral-healthcare-data-breach",
+    "name": "Okanogan Behavioral Healthcare - Data Breach",
+    "claim_url": "https://okanogandatasettlement.com/",
+    "payout": "$50 - $5,350",
+    "deadline": "9/3/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your private information was exposed in the data breach discovered by Okanogan Behavioral Healthcare in May 2024."
+  },
+  {
+    "slug": "scale-ai-employee-wages",
+    "name": "Scale AI - Employee Wages (California)",
+    "claim_url": "https://mckinneyscaleaisettlement.com/",
+    "payout": "Varies",
+    "deadline": "9/3/26",
+    "proof": "N/A",
+    "description": "You may be included in this settlement if you were an independent contractor who performed services with Scale AI, Smart Ecosystem or HireArt while residing in California."
+  },
+  {
+    "slug": "amca-data-breach-labcorp",
+    "name": "AMCA Data Breach - Labcorp",
+    "claim_url": "https://www.amcadatabreachsettlement83395.com/",
+    "payout": "$50 - $5,000",
+    "deadline": "9/3/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you received diagnostic services from Labcorp and your personal information was potentially exposed in a data breach affecting American Medical Collection Agency."
+  },
+  {
+    "slug": "circle-k-data-breach",
+    "name": "Circle K - Data Breach",
+    "claim_url": "https://gasexpressdatasettlement.com/",
+    "payout": "$50 - $2,000",
+    "deadline": "9/3/26",
+    "proof": "No",
+    "description": "This settlement covers those who received notice that their private information was affected by the May 2024 Circle K data breach."
+  },
+  {
+    "slug": "greater-rochester-independent-practice-association-data-breach",
+    "name": "Greater Rochester Independent Practice Association - Data Breach",
+    "claim_url": "https://www.moveitsettlementgripa.com/index.html",
+    "payout": "$100 - $2,500",
+    "deadline": "9/3/26",
+    "proof": "No",
+    "description": "You may be able to claim a piece of this settlement if your personal information was exposed in the May 2023 MOVEit data breach that impacted Greater Rochester Independent Practice Association."
+  },
+  {
+    "slug": "omni-healthcare-financial-holdings-data-breach",
+    "name": "Omni Healthcare Financial Holdings - Data Breach",
+    "claim_url": "https://omnihealthcaresettlement.com/",
+    "payout": "$40 - $5,000",
+    "deadline": "9/3/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your personal information was exposed in the January 2024 Omni Healthcare Financial Holdings data breach."
+  },
+  {
+    "slug": "abbott-laboratories-employees-credit-union-data-breach",
+    "name": "Abbott Laboratories Employees Credit Union - Data Breach",
+    "claim_url": "https://alecdatasettlement.com/",
+    "payout": "Up to $2,500+",
+    "deadline": "9/3/26",
+    "proof": "No",
+    "description": "If your private information was compromised in the August 2024 Abbott Laboratories Employees Credit Union data breach, you may be able to claim a piece of this settlement."
+  },
+  {
+    "slug": "smith-and-nephew-us-savings-plan",
+    "name": "Smith & Nephew U.S. Savings Plan",
+    "claim_url": "https://smithandnephewerisa.com/",
+    "payout": "Varies",
+    "deadline": "9/4/26",
+    "proof": "N/A",
+    "description": "This settlement covers anyone who was a participant or beneficiary of the Smith & Nephew U.S. Savings Plan at any time between August 30, 2018, and May 13, 2026."
+  },
+  {
+    "slug": "calverton-park-vehicle-towing",
+    "name": "Calverton Park - Vehicle Towing",
+    "claim_url": "https://www.calvertonparkclassaction.com/",
+    "payout": "Varies",
+    "deadline": "9/4/26",
+    "proof": "Yes",
+    "description": "You may be included in this settlement if your vehicle was towed from private property by the city of Calverton Park between September 25, 2018 and June 26, 2025."
+  },
+  {
+    "slug": "banner-health-data-privacy",
+    "name": "Banner Health - Data Privacy",
+    "claim_url": "https://bannerhealthdatasettlement.com/",
+    "payout": "$20",
+    "deadline": "9/5/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you logged in to a Banner Health patient account between June 1, 2020 and November 22, 2023."
+  },
+  {
+    "slug": "lucent-health-solutions-data-breach",
+    "name": "Lucent Health Solutions - Data Breach",
+    "claim_url": "https://lhdatabreachsettlement.com/",
+    "payout": "$80 - $6,175",
+    "deadline": "9/5/26",
+    "proof": "No",
+    "description": "If your private information was compromised in the October 2023 Lucent Health Solutions data breach, you may be included in this settlement."
+  },
+  {
+    "slug": "brandsafway-job-postings-washington",
+    "name": "BrandSafway - Job Postings (Washington)",
+    "claim_url": "https://epoasettlementbsw.com/",
+    "payout": "Est. $1,632.11",
+    "deadline": "9/7/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you applied for a job opening with BrandSafway or its affiliates in Washington between January 1, 2023 and July 8, 2026."
+  },
+  {
+    "slug": "disney-streaming-antitrust",
+    "name": "Disney - Streaming Antitrust",
+    "claim_url": "https://onlinetvsettlement.com/",
+    "payout": "Varies",
+    "deadline": "9/8/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you paid for a YouTube TV subscription or DirecTV streaming live pay TV subscription between April 1, 2019 and March 31, 2026."
+  },
+  {
+    "slug": "parks-heritage-federal-credit-union-data-breach",
+    "name": "Parks Heritage Federal Credit Union - Data Breach",
+    "claim_url": "https://www.parksheritagedataincident.com/",
+    "payout": "$75 - $4,500",
+    "deadline": "9/8/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your personal information was exposed in the July 2024 Parks Heritage Federal Credit Union data breach."
+  },
+  {
+    "slug": "t-mobile-job-postings-washington",
+    "name": "T-Mobile - Job Postings (Washington)",
+    "claim_url": "https://www.epoasettlementtmui.com/",
+    "payout": "$1,487.82",
+    "deadline": "9/8/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you applied for a job with T-Mobile in Washington between January 1, 2023, and May 21, 2026."
+  },
+  {
+    "slug": "true-world-holdings-data-breach",
+    "name": "True World Holdings - Data Breach",
+    "claim_url": "https://trueworlddatasettlement.com/",
+    "payout": "• New",
+    "deadline": "9/8/26",
+    "proof": "No",
+    "description": "If your private information was exposed in the August 2024 True World Holdings data breach, you may be covered by this settlement."
+  },
+  {
+    "slug": "aion-management-fees-virginia",
+    "name": "AION Management - Fees (Virginia)",
+    "claim_url": "https://www.apartmentfeesclassaction.com/",
+    "payout": "• New",
+    "deadline": "9/8/26",
+    "proof": "N/A",
+    "description": "You may be able to claim a piece of this settlement if you signed a lease at an apartment complex managed by AION Management in Virginia between October 10, 2023 and November 1, 2025."
+  },
+  {
+    "slug": "lemonade-insurance-agency-data-disclosure",
+    "name": "Lemonade Insurance Agency - Data Disclosure",
+    "claim_url": "https://www.lemonadedatadisclosuresettlement.com/",
+    "payout": "Up to $10,000",
+    "deadline": "9/8/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your personal information was compromised in a data incident that affected Lemonade Insurance Agency's quotation platform between April 2023 and September 18, 2024."
+  },
+  {
+    "slug": "allina-health-system-data-privacy",
+    "name": "Allina Health System - Data Privacy",
+    "claim_url": "https://www.allinapixelsettlement.com/",
+    "payout": "Varies",
+    "deadline": "9/8/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you used Allina Health System's websites between September 16, 2018 and May 11, 2026."
+  },
+  {
+    "slug": "pineland-community-service-board-data-breach",
+    "name": "Pineland Community Service Board - Data Breach",
+    "claim_url": "https://www.pinelandsettlement.com/",
+    "payout": "Up to $5,000",
+    "deadline": "9/9/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your private information was potentially impacted in a data breach affecting Pineland Community Service Board between November 2024 and January 2025."
+  },
+  {
+    "slug": "dohman-akerlund-and-eddy-data-breach",
+    "name": "Dohman, Akerlund & Eddy - Data Breach",
+    "claim_url": "https://dohmandatasettlement.com/",
+    "payout": "$50 - $5,000",
+    "deadline": "9/10/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your private information was compromised in the February 2024 Dohman, Akerlund & Eddy data breach."
+  },
+  {
+    "slug": "aetna-life-insurance-lumbar-artificial-disc-replacement",
+    "name": "Aetna Life Insurance - Lumbar Artificial Disc Replacement",
+    "claim_url": "https://www.ladrsurgerysettlement.com/",
+    "payout": "Up to $55,000",
+    "deadline": "9/10/26",
+    "proof": "Yes",
+    "description": "You may be included in this settlement if you had a pre-service authorization request or post-service claim for single-level lumbar artificial disc replacement denied by Aetna Life Insurance Company."
+  },
+  {
+    "slug": "stiiizy-data-breach",
+    "name": "STIIIZY - Data Breach",
+    "claim_url": "https://www.stiiizydatabreachsettlement.com/",
+    "payout": "Up to $7,500",
+    "deadline": "9/10/26",
+    "proof": "No",
+    "description": "If your personal information was exposed in the October 2024 STIIIZY data breach, you may be able to claim a piece of this settlement."
+  },
+  {
+    "slug": "illinois-institute-of-technology-covid-tuition",
+    "name": "Illinois Institute of Technology - COVID Tuition",
+    "claim_url": "https://iltech2020settlement.com/",
+    "payout": "Varies",
+    "deadline": "9/10/26",
+    "proof": "N/A",
+    "description": "You may be included in this settlement if you were an Illinois Tech student who paid or were obligated to pay tuition, fees, or other costs to Illinois Tech for the Spring 2020 academic term."
+  },
+  {
+    "slug": "concord-hospital-data-privacy",
+    "name": "Concord Hospital - Data Privacy",
+    "claim_url": "https://concordpixelsettlement.com/",
+    "payout": "Varies",
+    "deadline": "9/11/26",
+    "proof": "No",
+    "description": "You may be able to claim a piece of this settlement if you used the Concord Hospital website between May 9, 2021 and June 12, 2026."
+  },
+  {
+    "slug": "american-college-of-medical-quality-marketing-faxes",
+    "name": "American College of Medical Quality - Marketing Faxes",
+    "claim_url": "https://www.acmqfaxsettlement.com/",
+    "payout": "Up to $500",
+    "deadline": "9/11/26",
+    "proof": "No",
+    "description": "You may be covered by this settlement if you received a fax advertisement from American College of Medical Quality in August 2022."
+  },
+  {
+    "slug": "payactiv-data-breach",
+    "name": "Payactiv - Data Breach",
+    "claim_url": "https://payactivdataincidentsettlement.com/",
+    "payout": "Up to $2,500",
+    "deadline": "9/12/26",
+    "proof": "Yes",
+    "description": "You may be included in this settlement if your personal information was compromised in the April 2025 Payactiv data breach."
+  },
+  {
+    "slug": "farmers-insurance-unwanted-calls",
+    "name": "Farmer's Insurance - Unwanted Calls",
+    "claim_url": "https://www.heckathorntcpasettlement.com/",
+    "payout": "Up to $160",
+    "deadline": "9/14/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you received two or more telemarketing calls from certain Farmer's Insurance agents or their agencies between April 19, 2020 and June 15, 2026."
+  },
+  {
+    "slug": "comcast-data-breach",
+    "name": "Comcast - Data Breach",
+    "claim_url": "https://comcastbreachsettlement.com/",
+    "payout": "$50 - $10,000",
+    "deadline": "9/14/26",
+    "proof": "No",
+    "description": "You may be covered by this settlement if you received notice that your personal information was potentially compromised in the October 2023 Comcast data breach."
+  },
+  {
+    "slug": "google-play-data-privacy",
+    "name": "Google Play - Data Privacy",
+    "claim_url": "https://www.coppaprivacyclassaction.com/",
+    "payout": "Varies",
+    "deadline": "9/14/26",
+    "proof": "No",
+    "description": "This settlement covers those who downloaded or used an app from Google Play from April 1, 2015 to the present while under the age of 13."
+  },
+  {
+    "slug": "lighthouse-electric-company-data-breach",
+    "name": "Lighthouse Electric Company - Data Breach",
+    "claim_url": "https://lighthouseelectricdataincident.com/",
+    "payout": "$60 - $2,750",
+    "deadline": "9/14/26",
+    "proof": "No",
+    "description": "If your personal information was exposed in the October 2024 Lighthouse Electric Company data breach, you may be included in this settlement."
+  },
+  {
+    "slug": "schuster-data-breach",
+    "name": "Schuster - Data Breach",
+    "claim_url": "https://schusterdataincident.com/",
+    "payout": "$50 - $2,500",
+    "deadline": "9/14/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your personal information was exposed in the January 2024 Schuster data breach."
+  },
+  {
+    "slug": "refresco-beverages-job-postings-washington",
+    "name": "Refresco Beverages - Job Postings (Washington)",
+    "claim_url": "https://refrescosettlement.com/",
+    "payout": "1,724.39 (est.)",
+    "deadline": "9/14/26",
+    "proof": "No",
+    "description": "You may be able to claim a piece of this settlement if you applied for a job opening at Refresco Beverages in Washington between January 1, 2023 and June 5, 2026."
+  },
+  {
+    "slug": "chantix-nitrosamine",
+    "name": "Chantix - Nitrosamine",
+    "claim_url": "https://chantixsettlement.com/home-page/",
+    "payout": "Varies",
+    "deadline": "9/14/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you bought Chantix between September 29, 2015 and September 17, 2021."
+  },
+  {
+    "slug": "suntrust-bank-overdraft-fees",
+    "name": "SunTrust Bank - Overdraft Fees (Georgia)",
+    "claim_url": "https://suntrustoverdraftclassaction.com/",
+    "payout": "Varies",
+    "deadline": "9/14/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you had an account with SunTrust Bank and were charged at least one overdraft fee between July 12, 2006 and April 15, 2014."
+  },
+  {
+    "slug": "central-transport-sex-discrimination",
+    "name": "Central Transport - Sex Discrimination",
+    "claim_url": "https://centraltransportsettlement.com/",
+    "payout": "Varies",
+    "deadline": "9/14/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you are a female, applied for a position as a truck driver with Central Transport after Jan. 1, 2016, had a CDL A and were denied the job."
+  },
+  {
+    "slug": "western-montana-clinic-data-breach",
+    "name": "Western Montana Clinic - Data Breach",
+    "claim_url": "https://www.wmcsettlement.com/",
+    "payout": "$20 to $5,060",
+    "deadline": "9/15/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your personal information was exposed in the Western Montana Clinic data breach that occurred between March 11, 2025 and April 15, 2025."
+  },
+  {
+    "slug": "vector-security-data-breach",
+    "name": "Vector Security - Data Breach",
+    "claim_url": "https://vectorsettlement.com/",
+    "payout": "$50 - $2,000",
+    "deadline": "9/15/26",
+    "proof": "No",
+    "description": "If your private information was compromised in the December 2024 Vector Security data breach, you may be able to claim a piece of this settlement."
+  },
+  {
+    "slug": "soliant-health-job-postings-washington",
+    "name": "Soliant Health - Job Postings (Washington)",
+    "claim_url": "https://sh-spsepoasettlement.com/",
+    "payout": "$652 - $5,000",
+    "deadline": "9/15/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you applied for a job with Soliant Health or Soliant Physician Staffing in Washington between January 1, 2023 and May 26, 2026."
+  },
+  {
+    "slug": "strides-pharma-testosterone-gel",
+    "name": "Strides Pharma - Testosterone Gel",
+    "claim_url": "https://stridesgelsettlement.com/",
+    "payout": "Varies",
+    "deadline": "9/16/26",
+    "proof": "Yes",
+    "description": "If you purchased testosterone gel manufactured by Strides Pharma between June 1, 2022 and July 31, 2025, you may be included in this settlement."
+  },
+  {
+    "slug": "aspire-health-alliance-data-breach",
+    "name": "Aspire Health Alliance - Data Breach",
+    "claim_url": "https://aspiredataincident.com/",
+    "payout": "Up to $2,500",
+    "deadline": "9/16/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your personal information was exposed in the September 2023 Aspire Health Alliance data breach."
+  },
+  {
+    "slug": "penn-medicine-data-privacy",
+    "name": "Penn Medicine - Data Privacy",
+    "claim_url": "https://www.uphspixelsettlement.com/",
+    "payout": "Up to $15",
+    "deadline": "9/16/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you accessed the myPennMedicine patient portal between January 23, 2021 and January 23, 2023."
+  },
+  {
+    "slug": "american-consumer-credit-counseling-data-breach",
+    "name": "American Consumer Credit Counseling - Data Breach",
+    "claim_url": "https://acccsettlement.com/",
+    "payout": "$45 - $3,580",
+    "deadline": "9/16/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your private information was exposed in the January 2025 American Consumer Credit Counseling data breach."
+  },
+  {
+    "slug": "oppenheimer-cash-sweep",
+    "name": "Oppenheimer Cash Sweep",
+    "claim_url": "https://www.oppenheimercashsweeplitigation.com",
+    "payout": "Varies",
+    "deadline": "9/17/26",
+    "proof": "Yes",
+    "description": "You may be included in this settlement if you participated in Oppenheimer's Advantage Bank Deposit Program between March 17, 2022 and May 22, 2026."
+  },
+  {
+    "slug": "evergy-401k",
+    "name": "Evergy - 401(k)",
+    "claim_url": "https://evergyerisa.com/",
+    "payout": "Varies",
+    "deadline": "9/17/26",
+    "proof": "N/A",
+    "description": "This settlement covers participants and beneficiaries of the Evergy 401(k) Savings Plan who invested in any of the American Century Target Date Funds."
+  },
+  {
+    "slug": "moodswings-ticket-fees",
+    "name": "Moodswings - Ticket Fees",
+    "claim_url": "https://moodswingsticketingsettlement.com/",
+    "payout": "$2 - $7 per ticket",
+    "deadline": "9/18/26",
+    "proof": "No",
+    "description": "This settlement covers those who bought tickets online through tickets.mesmerica.com, tickets.beautifica.show, changeworlds.org and ticketshop.mesmerica.com in certain states."
+  },
+  {
+    "slug": "columbus-regional-health-data-privacy",
+    "name": "Columbus Regional Health - Data Privacy",
+    "claim_url": "https://columbusregionalsettlement.com/",
+    "payout": "$25.50",
+    "deadline": "9/19/26",
+    "proof": "No",
+    "description": "This settlement covers current and former patients of Columbus Regional Health who completed a registration for access to their electronic records between November 1, 2017 and June 30, 2022."
+  },
+  {
+    "slug": "excel-fitness-management-data-breach",
+    "name": "Excel Fitness Management - Data Breach",
+    "claim_url": "https://excelfitnessdatasettlement.com/",
+    "payout": "$50 - $4,000",
+    "deadline": "9/21/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your private information was compromised in the January 2025 Excel Fitness Management data breach."
+  },
+  {
+    "slug": "700credit-data-breach",
+    "name": "700Credit - Data Breach",
+    "claim_url": "https://700creditdatabreachsettlement.com/",
+    "payout": "$50 - $2,500",
+    "deadline": "9/22/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your personal information was impacted by the data breach detected by 700Credit in October 2025."
+  },
+  {
+    "slug": "national-tenant-network-credit-reports",
+    "name": "National Tenant Network - Eviction Reports",
+    "claim_url": "https://ntnpostcardsettlement.com/",
+    "payout": "Varies",
+    "deadline": "9/22/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you were the subject of postcards that the National Tenant Network sent to suspected landlords between June 30, 2018 and December 3, 2023."
+  },
+  {
+    "slug": "medical-record-fees-west-virginia",
+    "name": "Medical Record Fees (West Virginia)",
+    "claim_url": "https://www.wvhospitalsclassaction.com/",
+    "payout": "• New",
+    "deadline": "9/22/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you paid for copies of medical records from a West Virginia University medical entity between December 1, 2010 and July 5, 2017."
+  },
+  {
+    "slug": "toyota-ic-forklift",
+    "name": "Toyota IC Forklift",
+    "claim_url": "https://forkliftsettlement.com/",
+    "payout": "Varies",
+    "deadline": "9/22/26",
+    "proof": "Yes",
+    "description": "You may be included in this settlement if you bought or leased an IC Toyota forklift on or before January 20, 2026."
+  },
+  {
+    "slug": "dovenmuehle-phone-payment-fees",
+    "name": "Dovenmuehle - Phone Payment Fees",
+    "claim_url": "https://dovenmuehlephonefeelawsuit.com/home",
+    "payout": "Varies",
+    "deadline": "9/23/26",
+    "proof": "N/A",
+    "description": "This settlement covers those with a residential mortgage loan securing a property in North Carolina that was serviced by Dovenmuehle who paid a fee for making a loan payment by phone between April 10, 2020 and January 13, 2026."
+  },
+  {
+    "slug": "drug-and-alcohol-treatment-services-data-breach",
+    "name": "Drug and Alcohol Treatment Services - Data Breach",
+    "claim_url": "https://www.datsdatabreachsettlement.com/",
+    "payout": "Up to $5,000",
+    "deadline": "9/24/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your personal information was impacted by the October 2024 Drug and Alcohol Treatment Services data breach."
+  },
+  {
+    "slug": "mishan-and-sons-stainless-steel-cookware",
+    "name": "Mishan & Sons - Stainless Steel Cookware",
+    "claim_url": "https://www.stainless-steelcookwaresettlement.com/",
+    "payout": "• New",
+    "deadline": "9/25/26",
+    "proof": "No",
+    "description": "If you bought Gotham Steel, Granite Stone, or Bell & Howell brand cookware products with stainless steel components in California or Colorado between September 8, 2021 and July 6, 2026, you may be able to claim a piece of this settlement."
+  },
+  {
+    "slug": "red-robin-job-postings-washington",
+    "name": "Red Robin - Job Postings (Washington)",
+    "claim_url": "https://rrepoasettlement.com/",
+    "payout": "$573.43 (est.)",
+    "deadline": "9/25/26",
+    "proof": "No",
+    "description": "You may be able to claim a piece of this settlement if you applied for a job with Red Robin in Washington between January 1, 2023 and June 12, 2026."
+  },
+  {
+    "slug": "tesla-idle-fees",
+    "name": "Tesla - Idle Fees",
+    "claim_url": "https://teslaidlefeeclassaction.com/",
+    "payout": "$10 - $350+",
+    "deadline": "9/25/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you bought a Supercharger-enabled Tesla vehicle in California before December 16, 2016 and were a citizen of California as of June 21, 2021."
+  },
+  {
+    "slug": "community-realty-management-data-breach",
+    "name": "Community Realty Management - Data Breach",
+    "claim_url": "https://crmdatasettlement.com/",
+    "payout": "• New",
+    "deadline": "9/25/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your personal information was exposed in the September 2024 Community Realty Management data breach."
+  },
+  {
+    "slug": "night-us-brooklyn-bedding-mattresses-california",
+    "name": "Night US, Brooklyn Bedding - Mattresses (California)",
+    "claim_url": "https://nightbbsettlement.com/",
+    "payout": "$110",
+    "deadline": "9/25/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you bought a mattress listed at a discount from leesa.com, brooklynbedding.com, helixsleep.com, or bearmattress.com in California between July 28, 2019 and April 1, 2024."
+  },
+  {
+    "slug": "seawind-hotel-investment-job-postings-washington",
+    "name": "Seawind Hotel Investment - Job Postings (Washington)",
+    "claim_url": "https://shisettlement.com/",
+    "payout": "Varies",
+    "deadline": "9/25/26",
+    "proof": "No",
+    "description": "You may be able to claim a piece of this settlement if you applied for a job with Seawind Hotel Investment (Quality Inn SeaTac) in Washington between January 1, 2023 and July 26, 2025."
+  },
+  {
+    "slug": "the-travelers-indemnity-company-underinsured-coverage",
+    "name": "The Travelers Indemnity Company - Underinsured Coverage (NM)",
+    "claim_url": "https://aguilaruimclasssettlement.com/",
+    "payout": "Varies",
+    "deadline": "9/27/26",
+    "proof": "No",
+    "description": "This settlement covers New Mexico Travelers Indemnity Company customers who had underinsured motorist automobile insurance coverage between January 1, 2015 and August 16, 2022."
+  },
+  {
+    "slug": "pierce-county-library-system-data-breach",
+    "name": "Pierce County Library System - Data Breach",
+    "claim_url": "https://piercecountylibrarydatasettlement.com/",
+    "payout": "Up to $4,000",
+    "deadline": "9/28/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your personal information was exposed in the Pierce County Library System data breach disclosed in July 2025."
+  },
+  {
+    "slug": "university-of-st-thomas-data-breach",
+    "name": "University of St. Thomas - Data Breach",
+    "claim_url": "https://ustdatasettlement.com/",
+    "payout": "$50 - $4,500",
+    "deadline": "9/28/26",
+    "proof": "No",
+    "description": "You may be able to claim a piece of this settlement if you received notice that your personal information was exposed in the data breach affecting University of St. Thomas between July 25, 2025 and August 12, 2025."
+  },
+  {
+    "slug": "central-valley-meat-co-data-breach",
+    "name": "Central Valley Meat Co - Data Breach",
+    "claim_url": "https://centralvalleydatasettlement.com/",
+    "payout": "$25 - $5,075",
+    "deadline": "9/28/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your private information was potentially compromised in the May 2024 Central Valley Meat Co data breach."
+  },
+  {
+    "slug": "zale-delaware-sterling-jewelers-job-postings-washington",
+    "name": "Zale Delaware, Sterling Jewelers - Job Postings (Washington)",
+    "claim_url": "https://zdiclassactionsettlement.com/",
+    "payout": "• New",
+    "deadline": "9/28/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you applied for a job opening with Zale Delaware or Sterling Jewelers in Washington between January 1, 2023 and July 26, 2025."
+  },
+  {
+    "slug": "oreilly-automotive-unwanted-texts",
+    "name": "O’Reilly Automotive - Unwanted Texts",
+    "claim_url": "https://oreillyrndsettlement.com/",
+    "payout": "$22",
+    "deadline": "9/28/26",
+    "proof": "No",
+    "description": "If you received two or more text messages from O’Reilly Automotive when your telephone number was on the National Do-Not-Call Registry, you may be included in this settlement."
+  },
+  {
+    "slug": "abc-legal-services-data-breach",
+    "name": "ABC Legal Services - Data Breach",
+    "claim_url": "https://www.abcdatasettlement.com/",
+    "payout": "Up to $5,000",
+    "deadline": "9/28/26",
+    "proof": "No",
+    "description": "You may be able to claim a piece of this settlement if your personal information was potentially compromised in the August 2024 ABC Legal Services data breach."
+  },
+  {
+    "slug": "mount-sinai-medical-center-data-privacy",
+    "name": "Mount Sinai Medical Center - Data Privacy",
+    "claim_url": "https://www.mountsinaidatasettlement.com/",
+    "payout": "$20",
+    "deadline": "9/28/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you accessed Mount Sinai Medical Center’s website or patient portal between June 10, 2021 and September 18, 2025."
+  },
+  {
+    "slug": "pacific-bag-job-postings-washington",
+    "name": "Pacific Bag - Job Postings (Washington)",
+    "claim_url": "https://epoasettlementpbl.com/",
+    "payout": "Up to $5,000",
+    "deadline": "9/28/26",
+    "proof": "No",
+    "description": "You may be able to claim a piece of this settlement if you applied for a job with Pacific Bag or TricorBraun in Washington between January 1, 2023 and June 30, 2026."
+  },
+  {
+    "slug": "system-pavers-data-breach",
+    "name": "System Pavers - Data Breach",
+    "claim_url": "https://systempaversdataincident.com/",
+    "payout": "$80 - $3,000",
+    "deadline": "9/28/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your private information was exposed in the September 2024 System Pavers data breach."
+  },
+  {
+    "slug": "atrium-health-data-privacy",
+    "name": "Atrium Health - Data Privacy",
+    "claim_url": "https://atriumhealthpixelsettlement.com/",
+    "payout": "Varies",
+    "deadline": "9/28/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you had a MyAtriumHealth or MyCarolinas patient portal account between January 1, 2015 and April 10, 2024."
+  },
+  {
+    "slug": "xactus-credit-plus-consumer-reports",
+    "name": "Xactus, Credit Plus - Consumer Reports",
+    "claim_url": "https://cinnerfcraclassaction.com/default.aspx",
+    "payout": "$500 (est.)",
+    "deadline": "9/29/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you were the subject of certain consumer reports Credit Plus sent to a third party between November 16, 2021 and June 18, 2026."
+  },
+  {
+    "slug": "hcf-management-data-breach",
+    "name": "HCF Management - Data Breach",
+    "claim_url": "https://hcfdatasettlement.com/",
+    "payout": "$35 - $4,480",
+    "deadline": "9/29/26",
+    "proof": "No",
+    "description": "You may be covered by this settlement if you received notice that your personal information was allegedly accessed in the September 2024 HCF Management data breach."
+  },
+  {
+    "slug": "people-data-labs-mobile-numbers-colorado",
+    "name": "People Data Labs - Mobile Numbers (Colorado)",
+    "claim_url": "https://pdlsettlement.com/",
+    "payout": "• New",
+    "deadline": "9/29/26",
+    "proof": "No",
+    "description": "This settlement covers Colorado residents whose mobile number was found in People Data Labs' database and whose information was disclosed at least once between September 2022 and March 3, 2026."
+  },
+  {
+    "slug": "emanate-health-medical-center-data-privacy",
+    "name": "Emanate Health Medical Center - Data Privacy",
+    "claim_url": "https://www.emanateprivacysettlement.com/",
+    "payout": "Varies",
+    "deadline": "9/29/26",
+    "proof": "No",
+    "description": "If you logged into the Emanate patient portal, submitted an online form or scheduled an appointment on Emanate's website between August 30, 2019 and April 30, 2024, you may be covered by this settlement."
+  },
+  {
+    "slug": "physicians-primary-care-of-southwest-florida-data-breach",
+    "name": "Physicians’ Primary Care Of Southwest Florida - Data Breach",
+    "claim_url": "https://physiciansprimarycaredatasettlement.com/",
+    "payout": "Up to $5,000",
+    "deadline": "9/29/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your personal information was potentially exposed in the September 2024 Physicians’ Primary Care Of Southwest Florida data breach."
+  },
+  {
+    "slug": "lifestance-health-group-data-privacy",
+    "name": "LifeStance Health Group - Data Privacy",
+    "claim_url": "https://www.lifestancepixelsettlement.com/",
+    "payout": "Varies",
+    "deadline": "9/29/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you were a LifeStance patient between March 1, 2020 and April 30, 2023."
+  },
+  {
+    "slug": "furman-foods-data-breach",
+    "name": "Furman Foods - Data Breach",
+    "claim_url": "https://www.furmanfoodsdatasettlement.com/",
+    "payout": "$35 - $2,400",
+    "deadline": "9/30/26",
+    "proof": "No",
+    "description": "You may be able to claim a piece of this settlement if your personal information was compromised in the October 2024 Furman Foods data breach."
+  },
+  {
+    "slug": "first-baptist-church-of-hammond-indiana-data-breach",
+    "name": "First Baptist Church of Hammond, Indiana - Data Breach",
+    "claim_url": "https://fbcdatasettlement.com/",
+    "payout": "$50 - $5,030",
+    "deadline": "9/30/26",
+    "proof": "No",
+    "description": "If your private information was compromised in the July 2025 First Baptist Church of Hammond, Indiana data breach, you may be included in this settlement."
+  },
+  {
+    "slug": "clay-platte-family-medicine-data-breach",
+    "name": "Clay-Platte Family Medicine - Data Breach",
+    "claim_url": "https://www.cpfmsettlement.com/",
+    "payout": "Up to $15,000",
+    "deadline": "9/30/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your personal information was exposed in the June 2024 Clay-Platte Family Medicine Clinic data breach."
+  },
+  {
+    "slug": "apollomd-data-breach",
+    "name": "ApolloMD - Data Breach",
+    "claim_url": "https://apollomddatasettlement.com/",
+    "payout": "$75 - $5,000",
+    "deadline": "9/30/26",
+    "proof": "No",
+    "description": "This settlement covers those whose private information was potentially exposed in the May 2025 ApolloMD data breach."
+  },
+  {
+    "slug": "healthcare-services-group-data-breach",
+    "name": "Healthcare Services Group - Data Breach",
+    "claim_url": "https://healthcareservicesgroupsettlement.com/",
+    "payout": "Up to $5,000",
+    "deadline": "10/1/26",
+    "proof": "No",
+    "description": "You may be able to claim a piece of this settlement if your personal information was potentially exposed in the September 2024 Healthcare Services Group data breach."
+  },
+  {
+    "slug": "nj-lenders-corp-data-breach",
+    "name": "NJ Lenders Corp - Data Breach",
+    "claim_url": "https://njlendersdatasettlement.com/",
+    "payout": "$40 - $2,500",
+    "deadline": "10/1/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your personal information was exposed in the August 2025 NJ Lenders Corp data breach."
+  },
+  {
+    "slug": "palm-beach-tan-unwanted-texts",
+    "name": "Palm Beach Tan - Unwanted Texts",
+    "claim_url": "https://www.hudsonclass.com/",
+    "payout": "• New",
+    "deadline": "10/4/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you received a marketing text from Palm Beach Tan between June 19, 2019 and July 5, 2026 after requesting that the texts stop."
+  },
+  {
+    "slug": "volkswagen-atlas-water-pumps",
+    "name": "Volkswagen Atlas - Water Pumps",
+    "claim_url": "https://mainenginewaterpumpsettlement.com/",
+    "payout": "Varies",
+    "deadline": "10/5/26",
+    "proof": "Yes",
+    "description": "You may be included in this settlement if you owned or leased a 2018-2022 Volkswagen Atlas or Atlas Cross Sport vehicle equipped with a 3.6 Liter engine."
+  },
+  {
+    "slug": "crst-expedited-driver-wages-california",
+    "name": "CRST Expedited - Driver Wages (California)",
+    "claim_url": "https://truckingdriversettlement.com/",
+    "payout": "• New",
+    "deadline": "10/5/26",
+    "proof": "N/A",
+    "description": "This settlement covers California CRST Expedited drivers who were compensated by a piece-rate at any time between August 9, 2017 and April 10, 2023."
+  },
+  {
+    "slug": "bestway-spa-pumps",
+    "name": "Bestway Spa Pumps",
+    "claim_url": "https://spapumpclassactionsettlement.com/",
+    "payout": "Up to $75",
+    "deadline": "10/5/26",
+    "proof": "Yes",
+    "description": "You may be included in this settlement if you purchased certain Bestway AirJet or Bestway HydroJet spa pumps."
+  },
+  {
+    "slug": "just4veterans-disability-claim-fees",
+    "name": "Just4Veterans - Disability Claim Fees",
+    "claim_url": "https://www.j4vsettlement.com/",
+    "payout": "• New",
+    "deadline": "10/5/26",
+    "proof": "No",
+    "description": "You may be covered by this settlement if you are a veteran who was charged a fee by Just4Veterans in connection with a VA disability claim on or after September 20, 2020."
+  },
+  {
+    "slug": "albany-gastroenterology-consultants-data-breach",
+    "name": "Albany Gastroenterology Consultants - Data Breach",
+    "claim_url": "https://albanygastrodatasettlement.com/",
+    "payout": "• New",
+    "deadline": "10/5/26",
+    "proof": "No",
+    "description": "If your private information was compromised in the November 2024 Albany Gastroenterology Consultants data breach, you may be able to claim a piece of this settlement."
+  },
+  {
+    "slug": "usa-clinics-group-unwanted-texts",
+    "name": "USA Clinics Group - Unwanted Texts",
+    "claim_url": "https://usaclinicsgrouptcpasettlement.com/",
+    "payout": "• New",
+    "deadline": "10/5/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you received more than one marketing text from USA Clinics Group between June 12, 2021 and June 16, 2026."
+  },
+  {
+    "slug": "sportsmans-guide-firearm-purchase-data-privacy",
+    "name": "Sportsman’s Guide - Firearm Purchase Data Privacy",
+    "claim_url": "https://pasportsmansguideufasettlement.com/",
+    "payout": "• New",
+    "deadline": "10/5/26",
+    "proof": "No",
+    "description": "This settlement covers Pennsylvania residents who ordered or reserved a firearm online from the Sportsman’s Guide website from January 11, 2021 to July 7, 2026."
+  },
+  {
+    "slug": "coleman-professional-services-data-breach",
+    "name": "Coleman Professional Services - Data Breach",
+    "claim_url": "https://www.colemansettlement.com/",
+    "payout": "• New",
+    "deadline": "10/5/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your personal information was accessed in the October 2023 Coleman Professional Services data breach."
+  },
+  {
+    "slug": "bayhealth-data-privacy",
+    "name": "Bayhealth - Data Privacy",
+    "claim_url": "https://bayhealthpixelsettlement.com/",
+    "payout": "$25",
+    "deadline": "10/5/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you used the Bayhealth website to access the Bayhealth MyChart patient portal between January 1, 2019 and December 31, 2025."
+  },
+  {
+    "slug": "heritage-south-credit-union-data-breach",
+    "name": "Heritage South Credit Union - Data Breach",
+    "claim_url": "https://hscudatasettlement.com/",
+    "payout": "Up to $2,000",
+    "deadline": "10/5/26",
+    "proof": "No",
+    "description": "You may be able to claim a piece of this settlement if your personal information was exposed in the February 2025 Heritage South Credit Union data breach."
+  },
+  {
+    "slug": "total-vision-data-breach-california",
+    "name": "Total Vision - Data Breach (California)",
+    "claim_url": "https://totalvisionsettlement.com/",
+    "payout": "Up to $1,000+",
+    "deadline": "10/5/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you are a California resident to whom Total Vision, LLC sent a direct mail notice of a data security incident that occurred on October 30, 2020."
+  },
+  {
+    "slug": "cone-health-data-privacy",
+    "name": "Cone Health - Data Privacy",
+    "claim_url": "https://conepixelsettlement.com/",
+    "payout": "• New",
+    "deadline": "10/5/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you accessed Cone Health's MyChart patient portal or submitted a form on its website between September 1, 2016 and November 3, 2022."
+  },
+  {
+    "slug": "stockpile-investments-data-breach",
+    "name": "Stockpile Investments - Data Breach",
+    "claim_url": "https://www.stockpiledatasettlement.com/",
+    "payout": "• New",
+    "deadline": "10/6/26",
+    "proof": "No",
+    "description": "You may be covered by this settlement if your personal information was exposed in the 2020 Stockpile Investments data breach."
+  },
+  {
+    "slug": "the-management-association-data-breaches",
+    "name": "MRA The Management Association - Data Breaches",
+    "claim_url": "https://mradatasettlement.com/",
+    "payout": "Varies",
+    "deadline": "10/7/26",
+    "proof": "N/A",
+    "description": "You may be included in this settlement if your personal information was potentially exposed in a data breach affecting MRA - The Management Association in July 2023 or January 2024."
+  },
+  {
+    "slug": "bradford-scott-data-data-breach",
+    "name": "Bradford-Scott Data - Data Breach",
+    "claim_url": "https://bradfordscottdatasettlement.com/",
+    "payout": "$100 - $5,000",
+    "deadline": "10/7/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your private information was potentially accessed in the July 2023 data breach affecting Bradford-Scott Data."
+  },
+  {
+    "slug": "the-money-source-unwanted-calls",
+    "name": "The Money Source - Unwanted Calls",
+    "claim_url": "https://www.moneysourcetcpaclassaction.com/",
+    "payout": "Varies",
+    "deadline": "10/7/26",
+    "proof": "N/A",
+    "description": "You may be included in this settlement if you were called on your cell phone between February 6, 2019 and May 7, 2025 by The Money Source with a prerecorded voice after you asked them to stop calling you."
+  },
+  {
+    "slug": "arrowhead-regional-computing-consortium-data-breach",
+    "name": "Arrowhead Regional Computing Consortium - Data Breach",
+    "claim_url": "https://arrowheaddatasecuritysettlement.com/",
+    "payout": "• New",
+    "deadline": "10/8/26",
+    "proof": "No",
+    "description": "This settlement covers those who were affected by the February 2023 Arrowhead Regional Computing Consortium data breach."
+  },
+  {
+    "slug": "usaa-total-loss-claims-michigan",
+    "name": "USAA - Total Loss Claims (Michigan)",
+    "claim_url": "https://www.marcheksettlement.com/Home/portalid/0",
+    "payout": "Varies",
+    "deadline": "10/8/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you insured a leased vehicle under a Michigan USAA auto insurance policy and did not receive full payment for tax and regulatory fees after the vehicle was totaled between January 27, 2015 and March 11, 2026."
+  },
+  {
+    "slug": "ernst-and-young-moveit-data-breach",
+    "name": "Ernst & Young - MOVEit Data Breach",
+    "claim_url": "https://www.moveitsettlementeyboa.com/",
+    "payout": "$100 - $10,000",
+    "deadline": "10/8/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you received notice from Ernst & Young that your personal information was potentially exposed in the May 2023 MOVEit data breach."
+  },
+  {
+    "slug": "onepoint-patient-care-data-breach",
+    "name": "OnePoint Patient Care - Data Breach",
+    "claim_url": "https://onepointsettlement.com/",
+    "payout": "$100 - $3,500",
+    "deadline": "10/8/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your private information was accessed in the August 2024 OnePoint Patient Care data breach."
+  },
+  {
+    "slug": "eisner-advisory-group-data-breach",
+    "name": "Eisner Advisory Group - Data Breach",
+    "claim_url": "https://eisnerdatasettlement.com/",
+    "payout": "$100 - $5,150",
+    "deadline": "10/8/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your private information was exposed in the September 2023 Eisner Advisory Group data breach."
+  },
+  {
+    "slug": "anthem-prostate-cancer-treatment",
+    "name": "Anthem - Prostate Cancer Treatment",
+    "claim_url": "https://protonbeamradiationtherapylitigation.com/",
+    "payout": "• New",
+    "deadline": "10/10/26",
+    "proof": "Yes",
+    "description": "You may be included in this settlement if you received proton beam radiation therapy for prostate cancer and sought coverage from Anthem, but your treatments were not covered by insurance."
+  },
+  {
+    "slug": "ais-infosource-data-breach",
+    "name": "AIS InfoSource - Data Breach",
+    "claim_url": "https://aissettlement.com/",
+    "payout": "• New",
+    "deadline": "10/12/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your personal information was exposed in the February 2025 AIS InfoSource data breach."
+  },
+  {
+    "slug": "davison-design-and-development-unwanted-texts-washington",
+    "name": "Davison Design & Development - Unwanted Texts (Washington)",
+    "claim_url": "https://www.millertextsettlement.com/",
+    "payout": "Varies",
+    "deadline": "10/13/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you were a Washington resident and received one or more text messages from Davison Design & Development between November 15, 2021 and December 10, 2025."
+  },
+  {
+    "slug": "sansone-group-data-breach",
+    "name": "Sansone Group - Data Breach",
+    "claim_url": "https://sansonedataincident.com/",
+    "payout": "• New",
+    "deadline": "10/13/26",
+    "proof": "No",
+    "description": "If your personal information was exposed during the March 2025 Sansone Group data breach, you may be included in this settlement."
+  },
+  {
+    "slug": "doxim-data-breach",
+    "name": "Doxim - Data Breach",
+    "claim_url": "https://www.doximdatasecuritysettlement.com/",
+    "payout": "$100 - $5,000",
+    "deadline": "10/13/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your private information was impacted in the December 2023 Doxim data breach."
+  },
+  {
+    "slug": "crossroads-trading-co-data-breach",
+    "name": "Crossroads Trading Co. - Data Breach",
+    "claim_url": "https://crossroadssettlement.com/",
+    "payout": "• New",
+    "deadline": "10/13/26",
+    "proof": "No",
+    "description": "This settlement covers those who were affected by the February 2025 Crossroads Trading Co. data breach."
+  },
+  {
+    "slug": "hirevue-biometric-privacy-illinois",
+    "name": "HireVue - Biometric Privacy (Illinois)",
+    "claim_url": "https://videointerviewbipasettlement.com/",
+    "payout": "• New",
+    "deadline": "10/13/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if, while in Illinois, you completed an interview through HireVue's video interview platform between January 27, 2017 and June 25, 2026."
+  },
+  {
+    "slug": "dairy-farmers-of-america-data-breach",
+    "name": "Dairy Farmers of America - Data Breach",
+    "claim_url": "https://dfadatasettlement.com/",
+    "payout": "• New",
+    "deadline": "10/14/26",
+    "proof": "No",
+    "description": "If your private information was compromised in the June 2025 Dairy Farmers of America data breach, you may be able to claim a piece of this settlement."
+  },
+  {
+    "slug": "flo-app-data-privacy",
+    "name": "FLO App - Data Privacy",
+    "claim_url": "https://periodtrackerdataprivacylitigation.com/home/",
+    "payout": "Varies",
+    "deadline": "10/15/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you used the FLO app between November 1, 2016 and February 28, 2019."
+  },
+  {
+    "slug": "tift-regional-health-system-data-breach",
+    "name": "Tift Regional Health System - Data Breach",
+    "claim_url": "https://tiftdatasettlement.com/",
+    "payout": "• New",
+    "deadline": "10/15/26",
+    "proof": "No",
+    "description": "This settlement covers those whose personal information was exposed in the August 2022 Tift Regional Health System data breach."
+  },
+  {
+    "slug": "new-york-city-central-booking",
+    "name": "New York City - Central Booking",
+    "claim_url": "https://www.centralbookingsettlement.com/",
+    "payout": "• New",
+    "deadline": "10/19/26",
+    "proof": "No",
+    "description": "You may be able to claim a piece of this settlement if you were detained at Brooklyn Central Booking between April 8, 2017 and December 27, 2019 or any Central Booking facility between February 3, 2020 and March 1, 2023."
+  },
+  {
+    "slug": "tennessee-farmers-mutual-insurance-total-loss-claims",
+    "name": "Tennessee Farmers Mutual Insurance - Total Loss Claims",
+    "claim_url": "https://autoinsuranceclaimsettlement.com/",
+    "payout": "Varies",
+    "deadline": "10/19/26",
+    "proof": "N/A",
+    "description": "If your vehicle was adjusted to be a total loss by Tennessee Farmers Mutual Insurance Company and the claim was submitted between September 26, 2017 and April 7, 2026, you may be included in this settlement."
+  },
+  {
+    "slug": "lester-and-rosalie-anixter-center-data-breach",
+    "name": "Lester and Rosalie Anixter Center - Data Breach",
+    "claim_url": "https://www.anixterdatasettlement.com/",
+    "payout": "• New",
+    "deadline": "10/19/26",
+    "proof": "No",
+    "description": "If your private information was compromised in the July 2023 Lester and Rosalie Anixter Center data breach, you may be included in this settlement."
+  },
+  {
+    "slug": "csxt-train-derailment-kentucky",
+    "name": "CSXT Train Derailment (Kentucky)",
+    "claim_url": "https://livingstonderailmentsettlement.com/",
+    "payout": "• New",
+    "deadline": "10/19/26",
+    "proof": "Yes",
+    "description": "If you were residing or owned residential property within a three-mile radius of the CSXT train derailment site in Rockcastle County, Kentucky on November 22, 2023, you may be included in this settlement."
+  },
+  {
+    "slug": "state-farm-total-loss-fees-louisiana",
+    "name": "State Farm - Total Loss Fees (Louisiana)",
+    "claim_url": "https://louisianafeessettlement.com/",
+    "payout": "• New",
+    "deadline": "10/19/26",
+    "proof": "No",
+    "description": "You may be eligible to claim a piece of this settlement if you are a Louisiana resident and received a total loss claim payment for your vehicle from State Farm between May 17, 2022 and May 21, 2026."
+  },
+  {
+    "slug": "dap-health-data-breach",
+    "name": "DAP Health - Data Breach",
+    "claim_url": "https://dapdatasettlement.com/",
+    "payout": "• New",
+    "deadline": "10/21/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your personal information was exposed in the July 2024 DAP Health data breach."
+  },
+  {
+    "slug": "americold-logistics-data-breaches",
+    "name": "Americold Logistics - Data Breaches",
+    "claim_url": "https://americoldbracysettlement.com/",
+    "payout": "• New",
+    "deadline": "10/22/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your information was exposed in an Americold Logistics data breach in 2020 or 2023."
+  },
+  {
+    "slug": "lands-end-data-breach",
+    "name": "Lands’ End - Data Breach",
+    "claim_url": "https://landsenddatasettlement.com/",
+    "payout": "$60 - $5,000",
+    "deadline": "10/22/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your information was compromised in the December 2024 Lands’ End data breach."
+  },
+  {
+    "slug": "equinox-data-breach",
+    "name": "Equinox - Data Breach",
+    "claim_url": "https://www.equinoxincsettlement.com/",
+    "payout": "$100 - $5,000",
+    "deadline": "10/23/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if your personal information was exposed in the April 2024 Equinox data breach."
+  },
+  {
+    "slug": "homebuyer-antitrust-multiple-listing-services",
+    "name": "Homebuyer Antitrust - Multiple Listing Services",
+    "claim_url": "https://homebuyersettlement.com/en",
+    "payout": "• New",
+    "deadline": "10/27/26",
+    "proof": "Yes",
+    "description": "You may be included in this settlement if you bought a home that was listed on a multiple listing service and a commission was paid to any brokerage as part of the transaction."
+  },
+  {
+    "slug": "lloyds-london",
+    "name": "Lloyd’s London",
+    "claim_url": "https://syndicatesettlement.com/home/",
+    "payout": "• New",
+    "deadline": "10/30/26",
+    "proof": "No",
+    "description": "This settlement covers those who purchased insurance through certain syndicates at Lloyd's London between January 1, 1997 and April 15, 2025."
+  },
+  {
+    "slug": "bestway-above-ground-pools",
+    "name": "Bestway - Above-Ground Pools",
+    "claim_url": "https://www.poolsettlementbw.com/",
+    "payout": "• New",
+    "deadline": "10/30/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you bought a Bestway above-ground pool between 2008 and 2024 that is 48 inches or taller with compression straps running on the outside of the vertical support legs."
+  },
+  {
+    "slug": "whirlpool-refrigerators",
+    "name": "Whirlpool Refrigerators - Wire Harness Issue",
+    "claim_url": "https://www.refrigeratorsettlement.com/",
+    "payout": "Varies",
+    "deadline": "11/2/26",
+    "proof": "Yes",
+    "description": "You may be included in this settlement if you bought a side-by-side refrigerator manufactured by Whirlpool from 2018-2021, including certain Whirlpool, Maytag, KitchenAid, and JennAir brand refrigerators."
+  },
+  {
+    "slug": "generic-pharmaceuticals-antitrust",
+    "name": "Generic Pharmaceuticals Antitrust",
+    "claim_url": "https://www.genericdrugsendpayersettlement.com/",
+    "payout": "Varies",
+    "deadline": "11/9/26",
+    "proof": "Yes",
+    "description": "You may be able to claim a piece of this settlement if you paid for certain prescription generic drugs between May 1, 2009 and December 31, 2019."
+  },
+  {
+    "slug": "forbes-data-privacy-california",
+    "name": "Forbes - Data Privacy (California)",
+    "claim_url": "https://www.mediasitetrackersettlement.com/",
+    "payout": "• New",
+    "deadline": "11/9/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you are a California resident and you accessed Forbes' websites between December 20, 2023 and June 11, 2026."
+  },
+  {
+    "slug": "hearthside-food-solutions-labor-laws-illinois",
+    "name": "Hearthside Food Solutions - Labor Laws (Illinois)",
+    "claim_url": "https://www.hearthsidefssettlement.com/",
+    "payout": "Varies",
+    "deadline": "11/20/26",
+    "proof": "Yes",
+    "description": "This settlement covers those who worked at a Hearthside Food Solutions facility in Illinois while under the age of 16 between March 1, 2020 and December 4, 2024."
+  },
+  {
+    "slug": "twitter-acquisition-securities",
+    "name": "Twitter Acquisition - Securities",
+    "claim_url": "https://twitteracquisitionlitigation.com/",
+    "payout": "Varies",
+    "deadline": "11/24/26",
+    "proof": "Yes",
+    "description": "If you sold the publicly traded stock or call options, or purchased the put options, of Twitter, Inc. between May 13, 2022 and October 4, 2022, you may be included in this settlement."
+  },
+  {
+    "slug": "toyota-airbag-control-units",
+    "name": "Toyota - Airbag Control Units",
+    "claim_url": "https://www.airbagcontrolunitsettlement.com/",
+    "payout": "Varies",
+    "deadline": "12/16/26",
+    "proof": "Yes",
+    "description": "This settlement covers current and former owners and lessees of certain 2011-2019 Toyota vehicles. The full list of affected vehicles can be found on the settlement website."
+  },
+  {
+    "slug": "service-spot-parking-reservation-fees",
+    "name": "Service Spot - Parking Reservation Fees (California)",
+    "claim_url": "https://servicespotsettlement.com/",
+    "payout": "Varies",
+    "deadline": "12/17/26",
+    "proof": "No",
+    "description": "If you made a booking on ParkOn.com or CheapAirportParking.org between July 1, 2024 and June 9, 2025 and paid a mandatory reservation fee as a California resident, you may be included in this settlement."
+  },
+  {
+    "slug": "kroger-prescription-drug-prices",
+    "name": "Kroger - Prescription Drug Prices",
+    "claim_url": "https://www.krogersavingsclubsettlement.com/",
+    "payout": "• New",
+    "deadline": "12/21/26",
+    "proof": "No",
+    "description": "You may be included in this settlement if you paid for prescription drugs from Kroger using your insurance between December 9, 2018 and August 23, 2026."
+  },
+  {
+    "slug": "realpage-rent-price-fixing",
+    "name": "RealPage - Rent Price-Fixing",
+    "claim_url": "https://www.realpagerentalsettlement.com/",
+    "payout": "Varies",
+    "deadline": "1/29/27",
+    "proof": "Yes",
+    "description": "This settlement covers those who paid rent on a lease for at least one multifamily property subject to a license for certain RealPage software between October 18, 2018 and November 21, 2025."
+  },
+  {
+    "slug": "hyundai-kia-airbag-control-units",
+    "name": "Hyundai, Kia - Airbag Control Units",
+    "claim_url": "https://www.acusettlement.com/hyundaikia",
+    "payout": "Up to $150 - $350+",
+    "deadline": "3/29/27",
+    "proof": "Yes",
+    "description": "This settlement includes those who, as of April 14, 2025, owned or leased certain Hyundai or Kia models. You can find the full list of vehicles on the settlement website."
+  },
+  {
+    "slug": "hyundai-kia-vehicle-theft",
+    "name": "Hyundai, Kia - Vehicle Theft",
+    "claim_url": "https://www.hkmultistateimmobilizersettlement.com/home",
+    "payout": "$375 - $4,500",
+    "deadline": "3/31/27",
+    "proof": "Yes",
+    "description": "You may be included in this settlement if you owned or leased certain 2011-2022 Hyundai or Kia vehicles that were stolen or almost stolen on or after April 29, 2025."
+  },
+  {
+    "slug": "breckenridge-duloxetine",
+    "name": "Breckenridge - Duloxetine Future Refund Program",
+    "claim_url": "https://www.breckenridgefuturerefundprogram.com/",
+    "payout": "Varies",
+    "deadline": "1/1/28",
+    "proof": "Yes",
+    "description": "This website is for those who wish to make a claim to receive compensation for out-of-pocket costs paid for unused, returned Breckenridge duloxetine that is subject to a product recall occurring after May 22, 2025."
+  },
+  {
+    "slug": "domestic-flight-antitrust",
+    "name": "Domestic Flight Antitrust",
+    "claim_url": "https://domesticairclass.com/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "This settlement covers those who bought domestic airline tickets from Delta, Southwest, United, Continental, or US Airways between July 1, 2011 and December 2017 and between July 1, 2011 and June 14, 2018 from American Airlines."
+  },
+  {
+    "slug": "my-little-steamer",
+    "name": "My Little Steamer",
+    "claim_url": "https://www.steamerrecallsettlement.com/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "Yes",
+    "description": "This settlement aims to cover anyone who purchased a Joy/JM-branded My Little Steamer between January 1, 2002 and December 31, 2020."
+  },
+  {
+    "slug": "nissan-cvt-transmissions",
+    "name": "Nissan - CVT Transmissions",
+    "claim_url": "http://www.roguepathfinderqx60cvtsettlement.com/",
+    "payout": "Up to $5,000",
+    "deadline": "Varies",
+    "proof": "Yes",
+    "description": "You may be included in this settlement if you owned or leased a 2014-2018 Rogue, 2015-2018 Pathfinder or a 2015-2018 Infiniti QX60."
+  },
+  {
+    "slug": "ram-trucks-anti-lock-braking-system",
+    "name": "Ram Trucks - Anti-Lock Braking System",
+    "claim_url": "https://fcarambrakesettlement.com/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "Yes",
+    "description": "This settlement covers current owners or lessees of certain 2017-2018 Ram 2500, 3500, 4500 and 5500 models built between April 1, 2017 and December 29, 2018."
+  },
+  {
+    "slug": "huuuge-casino-mobile-games",
+    "name": "Huuuge Casino - Mobile Games",
+    "claim_url": "https://huuugesettlement.com/home",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "If you made a purchase through Huuuge Casino or Billionaire Casino on or before January 23, 2025, you may be covered by this settlement."
+  },
+  {
+    "slug": "dodge-grand-caravan-sliding-doors",
+    "name": "Dodge Grand Caravan - Sliding Doors",
+    "claim_url": "https://www.dodgeslidingdoorlatchsettlement.com/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "Yes",
+    "description": "You may be included in this settlement if you bought or leased a 2017-2018 Dodge Grand Caravan built between January 1, 2017 and December 31, 2017."
+  },
+  {
+    "slug": "nyc-taxi-and-limousine-commission",
+    "name": "NYC Taxi and Limousine Commission",
+    "claim_url": "https://www.tlcsuspensionclaims.com/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "No",
+    "description": "If you were a taxi or for-hire vehicle driver whose license was suspended by the NYC Taxi and Limousine Commission based on having been arrested on a criminal charge between June 28, 2003 and February 18, 2020, you may be included in this settlement."
+  },
+  {
+    "slug": "washington-nationals-discount-tickets",
+    "name": "Washington Nationals - Discount Tickets",
+    "claim_url": "https://natsdiscountticketsettlement.com/",
+    "payout": "$18+",
+    "deadline": "Varies",
+    "proof": "No",
+    "description": "You may be included in this settlement if you bought a Washington Nationals ticket in the 2023 or 2024 season and were not eligible for the “Millennial” or “Young Professional” discount due to being 40 or older."
+  },
+  {
+    "slug": "lincoln-university-covid-tuition",
+    "name": "Lincoln University - COVID Tuition",
+    "claim_url": "https://lincolncovidsettlement.com/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "If you were a student enrolled at Lincoln University for the Spring 2020 semester, did not withdraw by March 12, 2020 and were not fully refunded for tuition or fees, you may be included in this settlement."
+  },
+  {
+    "slug": "kaiser-permanente-out-of-network-claims",
+    "name": "Kaiser Permanente - Out-of-Network Claims (California)",
+    "claim_url": "https://www.outofnetworkhealthclaims.com/home",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "Yes",
+    "description": "You may be included in this settlement if you were a Kaiser Permanente member and paid for out-of-network mental health/substance use disorder care because you attempted but couldn’t access in-network care after January 1, 2021."
+  },
+  {
+    "slug": "zonolite-vermiculite-attic-insulation",
+    "name": "Zonolite Vermiculite Attic Insulation",
+    "claim_url": "https://www.zonoliteatticinsulation.com/Hm1.aspx",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "Yes",
+    "description": "If Zonolite attic insulation was installed in a structure that you own(ed) or rent(ed) and you had to pay any costs related to its removal, you may be able to claim a piece of this settlement."
+  },
+  {
+    "slug": "ford-powershift-transmissions",
+    "name": "Ford - PowerShift Transmissions",
+    "claim_url": "http://fordtransmissionsettlement.com/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "Yes",
+    "description": "This settlement covers current and former 2011-2016 Fiesta and 2012-2016 Focus owners and lessees who had issues with their PowerShift transmissions."
+  },
+  {
+    "slug": "theranos-blood-testing-services",
+    "name": "Theranos Blood Testing Services",
+    "claim_url": "https://www.theranoslawsuit.com/",
+    "payout": "$10+",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "If you paid for Theranos blood testing services out-of-pocket, through health insurance, or through any other source between November 2013 and June 2016, you may be included in this settlement."
+  },
+  {
+    "slug": "teedsh",
+    "name": "CertainTeed Organic Shingles",
+    "claim_url": "http://www.certainteedshinglesettlement.com/index.cfm",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "Yes",
+    "description": "Class members are defined as owners of buildings with CertainTeed Organic Shingles manufactured after July 1, 1987. The settlement provides compensation for the cost of replacing the roof, dependent upon damage."
+  },
+  {
+    "slug": "nibco",
+    "name": "NIBCO",
+    "claim_url": "http://www.pexsystemsettlement.com/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "Yes",
+    "description": "If you own or owned a building (commercial or residential) containing NIBCO's Pex tubing, fittings or clamps anytime after January 1, 2005, you may be able to claim a piece of this settlement."
+  },
+  {
+    "slug": "boohoo-advertised-sales",
+    "name": "Boohoo - Advertised Sales",
+    "claim_url": "http://www.boohoonationwidepricingsettlement.com/",
+    "payout": "$10 Gift Card",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "You may be included in this settlement if you bought products from Boohoo, BoohooMAN, PrettyLittleThing or Nasty Gal outside of California between April 1, 2016 and June 17, 2022."
+  },
+  {
+    "slug": "kia-engine-failure",
+    "name": "Kia - Engine Failure",
+    "claim_url": "https://kiaengineclasssettlement.com/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "Yes",
+    "description": "Drivers who bought or leased certain 2010–2020 Kia vehicles may be covered by this settlement."
+  },
+  {
+    "slug": "branford-manor",
+    "name": "Branford Manor",
+    "claim_url": "https://www.branfordmanorsettlement.com/",
+    "payout": "Up to $6,000",
+    "deadline": "Varies",
+    "proof": "No",
+    "description": "You may be included in this settlement if you were listed on the rental forms at Branford Manor at some point between November 23, 2019 and November 22, 2022."
+  },
+  {
+    "slug": "sanyo-energy-solar-panels",
+    "name": "Sanyo Energy - Solar Panels",
+    "claim_url": "https://www.sanyosolarclaims.com/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "Yes",
+    "description": "You may be covered by this settlement if you bought solar panels from Sanyo or if you bought a residence or building with the panels already installed."
+  },
+  {
+    "slug": "gm-fuel-pumps",
+    "name": "GM - Fuel Pumps",
+    "claim_url": "https://www.gmfuelpumplitigation.com/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "Yes",
+    "description": "You may be covered by this settlement if you bought a 2011-2016 Duramax diesel Chevrolet Silverado or GMC Sierra from a GM-authorized dealer in California, Florida, Illinois, Iowa, New York, Pennsylvania, or Texas."
+  },
+  {
+    "slug": "st-stephens-cemetery-kentucky",
+    "name": "St. Stephen’s Cemetery (Kentucky)",
+    "claim_url": "https://kycemeterysettlement.com/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "Yes",
+    "description": "You may be included in this settlement if you bought or are the next of kin or the surviving spouse of a person who purchased a burial plot or services from St. Stephen’s Cemetery between January 1, 1992 and February 24, 2017."
+  },
+  {
+    "slug": "tca-600k-crossroads-trading-data-breach-class-action-settlement",
+    "name": "$600K Crossroads Trading data breach class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/600k-crossroads-trading-data-breach-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Crossroads Trading agreed to a $600,000 class action settlement over a 2025 data breach that compromised employee and customer information…."
+  },
+  {
+    "slug": "tca-4-45m-detroit-water-rates-class-action-settlement",
+    "name": "$4.45M Detroit water rates class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/4-45m-detroit-water-rates-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "The Detroit water rates class action settlement provides $4.45 million in relief for eligible customers who paid allegedly unfair water rates…."
+  },
+  {
+    "slug": "tca-3-6m-anthem-denied-benefits-class-action-settlement",
+    "name": "$3.6M Anthem denied benefits class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/3-6m-anthem-denied-benefits-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Anthem agreed to a $3.6 million class action settlement to resolve claims that it denied benefits coverage for proton beam radiation therapy for prostate cancer…."
+  },
+  {
+    "slug": "tca-1-5m-the-money-source-robocalls-class-action-settlement",
+    "name": "$1.5M The Money Source robocalls class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/1-5m-the-money-source-robocalls-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "The Money Source class action settlement will provide $1.5 million to resolve claims the company violated the TCPA with unsolicited robocalls…."
+  },
+  {
+    "slug": "tca-2-5m-ernst-young-bank-of-america-moveit-data-breach-class-action-settlement",
+    "name": "$2.5M Ernst & Young, Bank of America MOVEit data breach class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/2-5m-ernst-young-bank-of-america-moveit-data-breach-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Ernst & Young and Bank of America agreed to pay $2.5 million as part of a class action settlement to resolve claims that they failed to protect consumers from the MOVEit data breach…."
+  },
+  {
+    "slug": "tca-volkswagen-atlas-water-pump-class-action-settlement",
+    "name": "Volkswagen Atlas water pump class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/volkswagen-atlas-water-pump-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Volkswagen Atlas and Atlas Cross Sport owners may qualify for warranty extensions or repair reimbursement under the class action settlement…."
+  },
+  {
+    "slug": "tca-475k-total-vision-data-breach-class-action-settlement",
+    "name": "$475K Total Vision data breach class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/475k-total-vision-data-breach-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Total Vision has agreed to a $475,000 data breach class action settlement. If you received a data breach notification letter, you may be eligible to claim cash…."
+  },
+  {
+    "slug": "tca-3m-healthcare-services-group-data-breach-class-action-settlement",
+    "name": "$3M Healthcare Services Group data breach class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/3m-healthcare-services-group-data-breach-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "If you received a notice about a Healthcare Services Group data breach, you may be eligible for compensation from a $3M class action settlement…."
+  },
+  {
+    "slug": "tca-647000-usaa-michigan-auto-insurance-class-action-settlement",
+    "name": "$647,000 USAA Michigan auto insurance class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/647000-usaa-michigan-auto-insurance-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "USAA agreed to a $647,000 class action settlement over claims it failed to pay full sales tax and fees on leased vehicles insured under a Michigan policy…."
+  },
+  {
+    "slug": "tca-385000-pierce-county-library-system-data-breach-class-action-settlement",
+    "name": "$385,000 Pierce County Library System data breach class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/385000-pierce-county-library-system-data-breach-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Pierce County Library System has agreed to pay $385,000 to resolve claims that a data breach compromised the personal information of its employees, contractors and their family members…."
+  },
+  {
+    "slug": "tca-3-02m-lifestance-health-group-website-tracking-class-action-settlement",
+    "name": "$3.02M LifeStance Health Group website tracking class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/3-02m-lifestance-health-group-website-tracking-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "LifeStance Health Group has agreed to a $3.03 million class action settlement over claims it violated patients’ privacy rights by using tracking pixels on its website…."
+  },
+  {
+    "slug": "tca-220000-mount-sinai-medical-center-data-breach-class-action-settlement",
+    "name": "$220,000 Mount Sinai Medical Center data breach class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/220000-mount-sinai-medical-center-data-breach-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "The Mount Sinai Medical Center of Florida data privacy class action settlement provides $220,000 in benefits, including cash and medical data monitoring…."
+  },
+  {
+    "slug": "tca-4-02m-apollomd-data-breach-class-action-settlement",
+    "name": "$4.02M ApolloMD data breach class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/4-02m-apollomd-data-breach-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "ApolloMD has agreed to a $4.02 million class action settlement over a 2025 data breach that compromised patient information…."
+  },
+  {
+    "slug": "tca-18-8m-oreilly-automotive-spam-text-messages-class-action-settlement",
+    "name": "$18.8M O’Reilly Automotive spam text messages class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/18-8m-oreilly-automotive-spam-text-messages-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "O’Reilly Automotive has agreed to pay $18.8 million to resolve claims it sent unsolicited text messages to phone numbers on the National Do Not Call Registry in violation of the Telephone Consumer Protection Act…."
+  },
+  {
+    "slug": "tca-2-1m-atrium-health-data-privacy-class-action-settlement",
+    "name": "$2.1M Atrium Health data privacy class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/2-1m-atrium-health-data-privacy-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Atrium Health has agreed to a $2.1 million class action settlement over claims it used pixel technology that led to the disclosure of personal information…."
+  },
+  {
+    "slug": "tca-tesla-idle-fees-class-action-settlement",
+    "name": "Tesla idle fees class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/tesla-idle-fees-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Tesla agreed to a class action settlement to resolve claims it charged “idle fees” to customers who purchased vehicles with free lifetime Supercharging. Claim between $10 and $350…."
+  },
+  {
+    "slug": "tca-17-5m-700credit-data-breach-class-action-settlement",
+    "name": "$17.5M 700Credit data breach class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/17-5m-700credit-data-breach-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "A $17.5 million 700Credit data breach class action settlement is open to individuals whose information was compromised in the 2025 data breach…."
+  },
+  {
+    "slug": "tca-5-5m-central-transport-sex-discrimination-settlement",
+    "name": "$5.5M Central Transport sex discrimination settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/5-5m-central-transport-sex-discrimination-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Central Transport LLC has agreed to pay $5,500,000 to resolve a nationwide EEOC lawsuit alleging the company refused to hire qualified female truck driver applicants because of their sex…."
+  },
+  {
+    "slug": "tca-keystone-rv-passport-travel-trailer-class-action-judgment",
+    "name": "Keystone RV Passport travel trailer class action judgment",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/keystone-rv-passport-travel-trailer-class-action-judgment/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Keystone RV Co. has agreed to pay $2,000 to each owner of a Passport Brand Western Edition trailer with a serial number ending after HX414101 to resolve claims it misrepresented the materials used to build the trailers…."
+  },
+  {
+    "slug": "tca-120m-nar-real-estate-commission-class-action-settlement",
+    "name": "$120M NAR real estate commission class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/120m-nar-real-estate-commission-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "The National Association of Realtors and several real estate brokerages agreed to pay more than $120 million to resolve claims they violated federal antitrust laws by conspiring to raise and fix real estate broker commissions…."
+  },
+  {
+    "slug": "tca-travelers-insurance-new-mexico-uim-coverage-class-action-settlement",
+    "name": "Travelers Insurance New Mexico UIM coverage class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/travelers-insurance-new-mexico-uim-coverage-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Travelers Insurance class action settlement for New Mexico UIM coverage. Class members can receive a premium refund or a claim re-evaluation…."
+  },
+  {
+    "slug": "tca-8-16m-night-us-brooklyn-bedding-class-action-settlement",
+    "name": "$8.16M Night US Brooklyn Bedding class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/8-16m-night-us-brooklyn-bedding-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "The Night US deceptive discount class action settlement provides $8.16 million in benefits, including cash or store credit for eligible purchases…."
+  },
+  {
+    "slug": "tca-44m-chantix-nitrosamine-class-action-settlement",
+    "name": "$44M Chantix nitrosamine class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/44m-chantix-nitrosamine-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Pfizer has agreed to a $44 million class action settlement to resolve claims that its Chantix smoking cessation drug was contaminated with a nitrosamine, a cancer-causing substance…."
+  },
+  {
+    "slug": "tca-1-25m-farmers-insurance-tcpa-class-action-settlement",
+    "name": "$1.25M Farmers Insurance TCPA class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/1-25m-farmers-insurance-tcpa-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Farmers Insurance has agreed to a $1.25 million class action settlement over claims it violated the Telephone Consumer Protection Act. Submit a claim by Sept. 14, 2026…."
+  },
+  {
+    "slug": "tca-7-5m-youtube-tv-automatic-renewal-class-action-settlement",
+    "name": "$7.5M YouTube TV automatic renewal class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/7-5m-youtube-tv-automatic-renewal-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "YouTube agreed to a $7.5 million class action settlement to resolve claims it violated California’s automatic renewal law with its YouTube TV subscriptions…."
+  },
+  {
+    "slug": "tca-payactiv-data-breach-class-action-settlement",
+    "name": "Payactiv data breach class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/payactiv-data-breach-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Payactiv data breach class action settlement: Individuals who received a data breach notification from Payactiv may be eligible for a class action settlement…."
+  },
+  {
+    "slug": "tca-3-5m-zoll-medical-corp-data-breach-class-action-settlement",
+    "name": "$3.5M ZOLL Medical Corp. data breach class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/3-5m-zoll-medical-corp-data-breach-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "The ZOLL Medical Corp. data breach class action settlement provides $3.5 million in benefits for eligible individuals who received a data breach notice…."
+  },
+  {
+    "slug": "tca-70m-oppenheimer-co-abdp-cash-sweep-class-action-settlement",
+    "name": "$70M Oppenheimer & Co. ABDP cash sweep class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/70m-oppenheimer-co-abdp-cash-sweep-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Oppenheimer class action settlement: $70M class action settlement for Advantage Bank Deposit Program participants. Claim deadline is Sept. 17, 2026…."
+  },
+  {
+    "slug": "tca-11m-hartford-premium-tax-charges-class-action-settlement",
+    "name": "$11M Hartford premium tax charges class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/11m-hartford-premium-tax-charges-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Talcott Resolution Life & Annuity Insurance Co. and Talcott Resolution Life Insurance Co. agreed to an $11 million class action settlement over excessive premium tax charges…."
+  },
+  {
+    "slug": "tca-359-9m-realpage-antitrust-class-action-settlement",
+    "name": "$359.9M RealPage antitrust class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/359-9m-realpage-antitrust-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "The RealPage rental price-fixing class action settlement provides $359.9 million in benefits. Submit your claim by Jan. 29, 2027…."
+  },
+  {
+    "slug": "tca-14m-costco-sales-emails-class-action-settlement",
+    "name": "$14M Costco sales emails class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/14m-costco-sales-emails-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Consumers who received misleading emails from Costco may be eligible for compensation under the $14 million class action settlement…."
+  },
+  {
+    "slug": "tca-750k-strides-testosterone-gel-class-action-settlement",
+    "name": "$750k Strides testosterone gel class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/750k-strides-testosterone-gel-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Strides Pharma has agreed to a $750,000 class action settlement to resolve claims that its testosterone gel products were contaminated with benzene…."
+  },
+  {
+    "slug": "tca-2-4m-guitar-center-wage-and-hour-violations-class-action-settlement",
+    "name": "$2.4M Guitar Center wage and hour violations class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/2-4m-guitar-center-wage-and-hour-violations-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Guitar Center employees could benefit from a $2.4 million class action settlement resolving claims that the retailer committed wage and hour violations…."
+  },
+  {
+    "slug": "tca-3m-aidvantage-tcpa-class-action-settlement",
+    "name": "$3M Aidvantage TCPA class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/3m-aidvantage-tcpa-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Aidvantage TCPA $3M class action settlement. If you received unsolicited robocalls from Aidvantage, you may be eligible for a share of the $3 million class action settlement…."
+  },
+  {
+    "slug": "tca-2-2m-equifax-credit-reporting-class-action-settlement",
+    "name": "$2.2M Equifax credit reporting class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/2-2m-equifax-credit-reporting-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Equifax has agreed to a $2.2 million class action settlement over claims it violated the Fair Credit Reporting Act by reporting the same collection account multiple times…."
+  },
+  {
+    "slug": "tca-1-8m-serviceaide-data-breach-class-action-settlement",
+    "name": "$1.8M Serviceaide data breach class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/1-8m-serviceaide-data-breach-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "If you were affected by the Serviceaide data breach, you may be eligible for a cash payment from a $1.8 million class action settlement…."
+  },
+  {
+    "slug": "tca-2-5m-fiton-video-privacy-class-action-settlement",
+    "name": "$2.5M FitOn video privacy class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/2-5m-fiton-video-privacy-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Consumers who used FitOn may qualify for a payment from the $2.5 million video privacy class action settlement over alleged data sharing…."
+  },
+  {
+    "slug": "tca-50m-disney-antitrust-class-action-settlement",
+    "name": "$50M Disney antitrust class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/50m-disney-antitrust-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Disney agreed to pay $50 million as part of a partial class action settlement to resolve claims that it violated federal antitrust laws by raising the price of live TV subscriptions…."
+  },
+  {
+    "slug": "tca-2-95m-stiiizy-data-breach-class-action-settlement",
+    "name": "$2.95M STIIIZY data breach class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/2-95m-stiiizy-data-breach-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "If you were affected by the STIIIZY data breach, you may be eligible for a cash payment from a $2.95 million class action settlement…."
+  },
+  {
+    "slug": "tca-3-04m-las-vegas-grand-prix-tickets-class-action-settlement",
+    "name": "$3.04M Las Vegas Grand Prix tickets class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/3-04m-las-vegas-grand-prix-tickets-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Liberty Media Corp. and Las Vegas Grand Prix Inc. agreed to a $3,047,986 class action settlement to resolve claims that they wrongfully revoked admission to the 2023 Las Vegas Grand Prix without a refund…."
+  },
+  {
+    "slug": "tca-1-8m-call-on-doc-tracking-pixels-class-action-settlement",
+    "name": "$1.8M Call-On-Doc tracking pixels class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/1-8m-call-on-doc-tracking-pixels-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Call-On-Doc privacy class action settlement: $20 payments for California users affected by tracking pixels. Claim deadline is Aug. 29, 2026…."
+  },
+  {
+    "slug": "tca-1-9m-new-york-renaissance-faire-hidden-fees-class-action-settlement",
+    "name": "$1.9M New York Renaissance Faire hidden fees class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/1-9m-new-york-renaissance-faire-hidden-fees-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Renaissance Entertainment Productions agreed to a class action settlement over claims it failed to disclose service fees for tickets to its New York Renaissance Faire…."
+  },
+  {
+    "slug": "tca-59-5m-flo-data-sharing-class-action-settlement",
+    "name": "$59.5M Flo period tracker class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/59-5m-flo-data-sharing-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Flo Health, Google and Flurry agreed to a $59.5 million class action settlement over claims the Flo app shared private health data without user consent…."
+  },
+  {
+    "slug": "tca-lands-end-data-breach-class-action-settlement",
+    "name": "Lands’ End data breach class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/lands-end-data-breach-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "The Lands’ End data breach class action settlement benefits consumers whose private information was compromised in the December 2024 incident…."
+  },
+  {
+    "slug": "tca-12-5m-allina-health-system-pixel-tracking-class-action-settlement",
+    "name": "$12.5M Allina Health System pixel tracking class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/12-5m-allina-health-system-pixel-tracking-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Class members may qualify for a cash payment from the $12.5 million Allina Health System pixel tracking settlement. File by Sept. 8, 2026…."
+  },
+  {
+    "slug": "tca-10-5m-lemonade-insurance-data-breach-class-action-settlement",
+    "name": "$10.5M Lemonade Insurance data breach class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/10-5m-lemonade-insurance-data-breach-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Affected consumers can receive up to $10,000 for losses and three years of credit monitoring from a $10.5 million Lemonade data breach class action settlement…."
+  },
+  {
+    "slug": "tca-8-25m-google-play-childrens-privacy-class-action-settlement",
+    "name": "$8.25M Google Play children’s privacy class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/8-25m-google-play-childrens-privacy-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Google and AdMob agreed to pay $8.25 million to resolve claims that they violated children’s privacy laws through its Google Play Store policies…."
+  },
+  {
+    "slug": "tca-35m-labcorp-data-breach-class-action-settlement",
+    "name": "$35M Labcorp data breach class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/35m-labcorp-data-breach-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "If you received Labcorp diagnostic services between August 2018 and March 2019, you may be eligible for a cash payment from a $35 million Labcorp data breach class action settlement…."
+  },
+  {
+    "slug": "tca-bmw-shark-fin-antenna-class-action-settlement",
+    "name": "BMW shark-fin antenna class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/bmw-shark-fin-antenna-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "BMW drivers may be eligible for a class action settlement resolving claims that BMW vehicles are equipped with a defective shark-fin antenna that allows water to leak into the vehicle…."
+  },
+  {
+    "slug": "tca-68m-google-assistant-privacy-class-action-settlement",
+    "name": "$68M Google Assistant privacy class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/68m-google-assistant-privacy-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Consumers who purchased a Google-made device or had communications recorded by Google Assistant may be eligible for class action settlement benefits…."
+  },
+  {
+    "slug": "tca-15m-generac-pwrcell-solar-power-systems-class-action-settlement",
+    "name": "$15M Generac PWRcell solar power systems class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/15m-generac-pwrcell-solar-power-systems-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Generac agreed to pay $15 million to resolve claims that SnapRS devices in its PWRcell solar power systems are defective. Class members can submit a claim by Aug. 24, 2026…."
+  },
+  {
+    "slug": "tca-circle-k-data-breach-class-action-settlement",
+    "name": "Circle K data breach class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/circle-k-data-breach-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Individuals who received a Circle K data breach notice may qualify for compensation through the class action settlement…."
+  },
+  {
+    "slug": "tca-fanatics-handling-fees-class-action-settlement",
+    "name": "Fanatics handling fees class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/fanatics-handling-fees-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Fanatics class action settlement: Consumers who paid handling fees on Fanatics.com can claim two $5 vouchers. Submit a claim by Aug. 27, 2026…."
+  },
+  {
+    "slug": "tca-whirlpool-defective-refrigerator-class-action-settlement",
+    "name": "Whirlpool defective refrigerator class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/whirlpool-defective-refrigerator-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Whirlpool refrigerators have a “wire harness issue” that causes the ice maker, ice dispenser, water dispenser and/or control panel to fail. A class action settlement will provide cash or repairs…."
+  },
+  {
+    "slug": "tca-299-5m-toyota-ic-forklift-emissions-class-action-settlement",
+    "name": "$299.5M Toyota IC forklift emissions class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/299-5m-toyota-ic-forklift-emissions-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Toyota agreed to a $299.5 million class action settlement over defective internal combustion forklifts that failed to meet emissions standards…."
+  },
+  {
+    "slug": "tca-212000-hefty-recyclable-bags-settlement",
+    "name": "$212,000 Hefty recyclable bags settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/212000-hefty-recyclable-bags-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Reynolds Consumer Products, which sells Hefty recycling bags, has agreed to pay $212,000 to resolve claims that it falsely advertised the bags as recyclable…."
+  },
+  {
+    "slug": "tca-2m-aetna-infertility-treatments-class-action-settlement",
+    "name": "$2M Aetna infertility treatments class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/2m-aetna-infertility-treatments-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Aetna has agreed to a $2 million class action settlement to resolve claims that it discriminated against LGBTQ+ couples seeking infertility treatments…."
+  },
+  {
+    "slug": "tca-240m-suntrust-overdraft-fees-class-action-settlement",
+    "name": "$240M SunTrust overdraft fees class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/240m-suntrust-overdraft-fees-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Georgia consumers can benefit from the SunTrust Bank class action settlement if they were charged illegal overdraft fees on ATM and debit card transactions…."
+  },
+  {
+    "slug": "tca-9m-kia-hyundai-settlement-offers-cash-and-security-upgrades-to-owners",
+    "name": "$9M Kia Hyundai settlement offers cash and security upgrades to owners",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/9m-kia-hyundai-settlement-offers-cash-and-security-upgrades-to-owners/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Kia and Hyundai agreed to a multistate AG settlement over vehicle thefts. Affected individuals can receive a free software upgrade, hardware upgrade or cash…."
+  },
+  {
+    "slug": "tca-4-5m-hearthside-food-solutions-child-labor-class-action-settlement",
+    "name": "$4.5M Hearthside Food Solutions child labor class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/4-5m-hearthside-food-solutions-child-labor-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Hearthside Food Solutions has agreed to a $4.5 million settlement with the Illinois Attorney General and Department of Labor to resolve allegations that it violated child labor laws…."
+  },
+  {
+    "slug": "tca-7-6m-hospital-sisters-health-system-hshs-data-breach-settlement",
+    "name": "$7.6M Hospital Sisters Health System HSHS data breach Settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/7-6m-hospital-sisters-health-system-hshs-data-breach-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Hospital Sisters Health System (HSHS) has agreed to a $7.6 million class action lawsuit settlement to resolve claims that it failed to prevent a 2023 data breach that compromised patient information…."
+  },
+  {
+    "slug": "tca-62-1m-hyundai-and-kia-airbag-class-action-settlement",
+    "name": "$62.1M Hyundai and Kia airbag class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/62-1m-hyundai-and-kia-airbag-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Hyundai and Kia have agreed to a $62.1 million class action lawsuit settlement to resolve claims that certain vehicles were equipped with defective airbag control units…."
+  },
+  {
+    "slug": "tca-jeep-steering-wheel-front-suspension-recall-class-action-settlement",
+    "name": "Jeep steering wheel, front suspension recall class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/jeep-steering-wheel-front-suspension-recall-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Fiat Chrysler Automobiles (FCA) agreed to a class action lawsuit settlement to resolve claims that its Jeep Wrangler and Gladiator vehicles were defective and later recalled due to safety concerns. …"
+  },
+  {
+    "slug": "tca-toyota-air-bag-control-units-78-5m-class-action-settlement",
+    "name": "Toyota air bag control units $78.5M class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/consumer-products/auto-news/toyota-air-bag-control-units-78-5m-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Toyota agreed to pay a $78.5 million settlement to resolve claims its vehicles were equipped with defective air bag control units that could malfunction during a crash…."
+  },
+  {
+    "slug": "tca-certainteed-horizon-shingles-class-action-settlement",
+    "name": "CertainTeed Horizon shingles class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/certainteed-horizon-shingles-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "CertainTeed agreed to a class action settlement to resolve claims that its Horizon-brand shingles are defective and can cause property damage. …"
+  },
+  {
+    "slug": "tca-pacer-record-fees-125m-class-action-settlement",
+    "name": "PACER record fees $125M class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/money/fees/pacer-record-fees-125m-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "The U.S. government agreed to pay $125 million to resolve claims it charged excessive fees for users of its Public Access to Electronic Records, or PACER, court records system…."
+  },
+  {
+    "slug": "tca-trinity-industries-et-plus-guardrails-6m-class-action-settlement",
+    "name": "Trinity Industries ET-Plus guardrails $6M class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/class-action-news/trinity-industries-et-plus-guardrails-6m-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Trinity Industries agreed to pay $6 million to resolve claims that ET-Plus guardrail devices were dangerous and defective…."
+  },
+  {
+    "slug": "tca-anthem-microprocessor-controlled-prosthesis-coverage-class-action-settlement",
+    "name": "Anthem microprocessor-controlled prosthesis coverage class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/insurance/anthem-microprocessor-controlled-prosthesis-coverage-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Anthem agreed to a class action lawsuit settlement to resolve claims it wrongfully denied coverage for microprocessor-controlled prostheses…."
+  },
+  {
+    "slug": "tca-sanyo-solar-panels-delamination-class-action-settlement",
+    "name": "Sanyo solar panels delamination class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/sanyo-solar-panels-delamination-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Sanyo and Panasonic agreed to a class action lawsuit settlement to resolve claims their solar panels can delaminate…."
+  },
+  {
+    "slug": "tca-my-little-steamer-class-action-settlement",
+    "name": "My Little Steamer class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/consumer-products/household/my-little-steamer-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Consumers who purchased a recalled My Little Steamer may be eligible to benefit from a class action lawsuit settlement reached with Ingenious Designs and other defendants over alleged product safety concerns…."
+  },
+  {
+    "slug": "tca-whirlpool-leaky-refrigerator-class-action-settlement",
+    "name": "Whirlpool leaky refrigerator class action settlement",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/consumer-products/appliances/whirlpool-leaky-refrigerator-class-action-settlement/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "Whirlpool leaky refrigerator class action settlement update: The Whirlpool refrigerator settlement was granted final approval Dec. 31, 2019. Top Class Actions will continue to provide updates as we learn more. Let Top Class Actions…"
+  },
+  {
+    "slug": "tca-zonolite-vermiculite-attic-insulation-trust",
+    "name": "Zonolite vermiculite attic insulation trust",
+    "claim_url": "https://topclassactions.com/lawsuit-settlements/lawsuit-news/zonolite-vermiculite-attic-insulation-trust/",
+    "payout": "Varies",
+    "deadline": "Varies",
+    "proof": "N/A",
+    "description": "W.R. Grace has funded the Zonolite Attic Insulation Trust to reimburse claimants for legitimate property damage claims associated with the removal, abatement, and/or containing the asbestos-contaminated vermiculite insulation. Zonolite is the trademarked name of…"
+  }
+];
