@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { denverTaxDelinquentPreview, compingStats, waterStats, reSkus } from '@/data/realEstate';
 import ListBuilder from './ListBuilder';
+import { avenues } from '@/data/avenues';
 
 export const metadata: Metadata = {
   title: 'The data PropStream doesn’t sell — tax-delinquent + water-rights parcels, scored | Shinnslist',
@@ -119,6 +120,21 @@ export default function ReHubPage() {
           Check what you hunt for. The table filters live against real county data. New signal types appear here automatically as each dataset finishes ingest.
         </p>
         <ListBuilder />
+
+        <h2 style={{ marginTop: 40 }}>Every signal we sell — one page each</h2>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 12 }}>
+          {avenues.map((a) => (
+            <Link key={a.slug} href={`/re/${a.slug}`} style={{ border: a.status === 'live' ? '1px solid #16181d' : '1px solid #e2e5ea', borderRadius: 6, padding: '14px 16px', textDecoration: 'none', color: '#16181d' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 8 }}>
+                <b style={{ fontSize: 14.5 }}>{a.h1.split('—')[0].split(',')[0]}</b>
+                <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '.05em', color: a.status === 'live' ? '#0f766e' : '#b98a00' }}>
+                  {a.status === 'live' ? 'LIVE' : 'SOON'}
+                </span>
+              </div>
+              <div style={{ fontSize: 12.5, color: '#5c6470', marginTop: 6 }}>{a.stats[0]?.value} {a.stats[0]?.label}</div>
+            </Link>
+          ))}
+        </div>
 
         <h2 style={{ marginTop: 40 }}>Why nobody else sells this exact thing
         </h2>
