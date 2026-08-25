@@ -69,6 +69,14 @@ function StageRail() {
 export default function HomePage() {
   return (
     <>
+      {/* RE vertical promo — top of page */}
+      <Link href="/re" className="re-promo" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 14, maxWidth: 1080, margin: '18px auto 0', padding: '13px 18px', borderRadius: 10, border: '1px solid #d8e2dc', background: '#f2f7f4', textDecoration: 'none' }}>
+        <span style={{ fontSize: 14.5, color: '#16181d' }}>
+          <strong style={{ color: '#0f5c3f' }}>New:</strong> Tax-delinquent + water-rights parcel lists — scored, $29 one-time.{' '}
+          <span style={{ color: '#5c6470' }}>The data PropStream doesn&apos;t sell.</span>
+        </span>
+        <span style={{ fontSize: 14, fontWeight: 700, color: '#0f5c3f', whiteSpace: 'nowrap' }}>See the data →</span>
+      </Link>
       <section className="grant-hero">
         <div className="grant-shell grant-hero-grid">
           <div className="grant-hero-copy">

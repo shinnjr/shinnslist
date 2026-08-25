@@ -2,10 +2,11 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { FileCheck2, Search, SlidersHorizontal, UserRound } from 'lucide-react';
+import { Building2, FileCheck2, Search, SlidersHorizontal, UserRound } from 'lucide-react';
 
 const links = [
   { href: '/grants', label: 'Matches', icon: Search },
+  { href: '/re', label: 'Property', icon: Building2 },
   { href: '/applications', label: 'Applications', icon: FileCheck2 },
   { href: '/onboarding', label: 'Profile', icon: UserRound },
   { href: '/pricing', label: 'Pricing', icon: SlidersHorizontal },

@@ -50,18 +50,15 @@ export default function TaxDelinquentDenverPage() {
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 16, margin: '28px 0' }}>
-          <div style={{ border: '1px solid #e2ece6', borderRadius: 12, padding: 16, background: '#fff' }}>
-            <Database size={20} color="#4ade80" />
+          <div style={{ border: '1px solid #e2ece6', borderLeft: '2px solid #16181d', borderRadius: 0, padding: '2px 0 2px 14px', background: 'transparent' }}>
             <b style={{ display: 'block', marginTop: 6 }}>{denverTaxDelinquent.total.toLocaleString()} rows</b>
             <span style={{ fontSize: 13, color: '#7d8b99' }}>{denverTaxDelinquent.joined.toLocaleString()} joined to assessor data</span>
           </div>
-          <div style={{ border: '1px solid #e2ece6', borderRadius: 12, padding: 16, background: '#fff' }}>
-            <Droplets size={20} color="#38bdf8" />
+          <div style={{ border: '1px solid #e2ece6', borderLeft: '2px solid #16181d', borderRadius: 0, padding: '2px 0 2px 14px', background: 'transparent' }}>
             <b style={{ display: 'block', marginTop: 6 }}>{denverTaxDelinquent.multiYearDelinquent} multi-year</b>
             <span style={{ fontSize: 13, color: '#7d8b99' }}>2019 + 2023 cohorts — deepest distress first</span>
           </div>
-          <div style={{ border: '1px solid #e2ece6', borderRadius: 12, padding: 16, background: '#fff' }}>
-            <ShieldCheck size={20} color="#4ade80" />
+          <div style={{ border: '1px solid #e2ece6', borderLeft: '2px solid #16181d', borderRadius: 0, padding: '2px 0 2px 14px', background: 'transparent' }}>
             <b style={{ display: 'block', marginTop: 6 }}>100% official sources</b>
             <span style={{ fontSize: 13, color: '#7d8b99' }}>Denver Treasurer + Denver Assessor open data</span>
           </div>
@@ -69,10 +66,10 @@ export default function TaxDelinquentDenverPage() {
 
         <h2 style={{ marginTop: 8 }}>Preview the first 10 rows — free, no email</h2>
         <p style={{ color: '#7d8b99', fontSize: 14 }}>Exactly what&apos;s in the file, highest scores first. Mailing addresses are included for every joined row in the paid CSV.</p>
-        <div style={{ overflowX: 'auto', border: '1px solid #e2ece6', borderRadius: 12, background: '#fff' }}>
+        <div style={{ overflowX: 'auto', border: '1px solid #e2e5ea', borderRadius: 4, background: '#fff' }}>
           <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13, minWidth: 760 }}>
             <thead>
-              <tr style={{ borderBottom: '2px solid #e2ece6' }}>
+              <tr style={{ borderBottom: '2px solid #16181d' }}>
                 {['Score', 'Owner', 'Property', 'Neighborhood', 'Tax owed', 'Total w/ interest', 'Assessed value', 'Equity ratio', 'Years'].map((h) => (
                   <th key={h} style={{ textAlign: 'left', padding: '10px 12px', color: '#7d8b99', fontSize: 11, textTransform: 'uppercase', letterSpacing: '.05em' }}>{h}</th>
                 ))}
@@ -80,8 +77,8 @@ export default function TaxDelinquentDenverPage() {
             </thead>
             <tbody>
               {denverTaxDelinquentPreview.map((r) => (
-                <tr key={r.parcel} style={{ borderBottom: '1px solid #f0f4f1' }}>
-                  <td style={{ padding: '10px 12px', fontWeight: 700, color: '#0f766e' }}>{r.score}</td>
+                <tr key={r.parcel} style={{ borderBottom: '1px solid #eceef1' }}>
+                  <td style={{ padding: '10px 12px', fontWeight: 700, fontVariantNumeric: 'tabular-nums' }}>{r.score}</td>
                   <td style={{ padding: '10px 12px', maxWidth: 200 }}>{r.owner}{r.entityOwner ? <span style={{ display: 'block', fontSize: 11, color: '#7d8b99' }}>entity</span> : null}</td>
                   <td style={{ padding: '10px 12px' }}>{r.addr}</td>
                   <td style={{ padding: '10px 12px', color: '#7d8b99' }}>{r.hood}</td>
@@ -99,7 +96,7 @@ export default function TaxDelinquentDenverPage() {
           Paid CSV adds: full owner + mailing address, parcel ID, tax-sale indicator, partial-payment status, beds/baths/year built, legal description, and all {denverTaxDelinquent.total.toLocaleString()} rows.
         </p>
 
-        <div style={{ border: '2px solid #0f766e', borderRadius: 16, padding: 28, margin: '32px 0', background: '#fff' }}>
+        <div style={{ border: '1px solid #16181d', borderRadius: 6, padding: 28, margin: '32px 0', background: '#fff' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 16 }}>
             <div>
               <div style={{ fontSize: 22, fontWeight: 800 }}>${denverTaxDelinquent.priceUsd} <span style={{ fontSize: 14, fontWeight: 400, color: '#7d8b99' }}>one-time · instant email delivery · guest checkout</span></div>
@@ -107,12 +104,12 @@ export default function TaxDelinquentDenverPage() {
             </div>
             <div style={{ textAlign: 'right' }}>
               <a href="/re/methodology" style={{ display: 'block', fontSize: 13, color: '#7d8b99', marginBottom: 8 }}>How it&apos;s built + guarantee</a>
-              <Link href="#buy" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: '#0f766e', color: '#fff', padding: '12px 24px', borderRadius: 10, fontWeight: 700, textDecoration: 'none' }}>
+              <Link href="#buy" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: '#16181d', color: '#fff', padding: '12px 24px', borderRadius: 6, fontWeight: 700, textDecoration: 'none' }}>
                 <Download size={16} /> Get the full CSV
               </Link>
             </div>
           </div>
-          <div id="buy" style={{ marginTop: 20, padding: 16, background: '#f6faf8', borderRadius: 10, fontSize: 13, color: '#374151' }}>
+          <div id="buy" style={{ marginTop: 20, padding: 16, background: '#f6f7f8', borderLeft: '3px solid #b98a00', borderRadius: 4, fontSize: 13, color: '#374151' }}>
             <b>Checkout is being finalized.</b> The list is ready; email delivery wiring ships with the checkout worker this week. In the meantime the preview above is fully ungated and every row is verifiable against the official records listed below.
           </div>
         </div>
@@ -120,9 +117,9 @@ export default function TaxDelinquentDenverPage() {
         <h2>Sources & freshness</h2>
         <ul style={{ lineHeight: 2, fontSize: 14 }}>
           {denverTaxDelinquent.sources.map((s) => (
-            <li key={s.label}><a href={s.url} style={{ color: '#0f766e' }}>{s.label}</a>{s.rows ? ` — ${s.rows.toLocaleString()} records` : ''}{s.updated ? ` · updated ${s.updated}` : ''}</li>
+            <li key={s.label}><a href={s.url} style={{ color: '#16181d', textDecoration: 'underline' }}>{s.label}</a>{s.rows ? ` — ${s.rows.toLocaleString()} records` : ''}{s.updated ? ` · updated ${s.updated}` : ''}</li>
           ))}
-          <li>Comping engine backtest ({compingStats.sampleSize.toLocaleString()} NYC sales): <b>{compingStats.medianErrorPct}% median error, {compingStats.bandHitPct}% of estimates inside the ±10% band</b> — full method on the <Link href="/re/methodology" style={{ color: '#0f766e' }}>methodology page</Link>.</li>
+          <li>Comping engine backtest ({compingStats.sampleSize.toLocaleString()} NYC sales): <b>{compingStats.medianErrorPct}% median error, {compingStats.bandHitPct}% of estimates inside the ±10% band</b> — full method on the <Link href="/re/methodology" style={{ color: '#16181d', textDecoration: 'underline' }}>methodology page</Link>.</li>
         </ul>
       </div>
     </div>

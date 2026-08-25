@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { denverTaxDelinquentPreview, compingStats, waterStats, reSkus } from '@/data/realEstate';
+import ListBuilder from './ListBuilder';
 
 export const metadata: Metadata = {
   title: 'The data PropStream doesn’t sell — tax-delinquent + water-rights parcels, scored | Shinnslist',
@@ -113,8 +114,13 @@ export default function ReHubPage() {
         </div>
 
         {/* Why this is hard to copy — the moat section */}
-        <h2 style={{ fontSize: 21, fontWeight: 720, letterSpacing: '-0.02em', color: ink, margin: '44px 0 6px' }}>
-          Why nobody else sells this exact thing
+        <h2 style={{ marginTop: 40 }}>Build your list — pick the signals, see rows instantly</h2>
+        <p style={{ color: '#5c6470', fontSize: 15, maxWidth: 720 }}>
+          Check what you hunt for. The table filters live against real county data. New signal types appear here automatically as each dataset finishes ingest.
+        </p>
+        <ListBuilder />
+
+        <h2 style={{ marginTop: 40 }}>Why nobody else sells this exact thing
         </h2>
         <p style={{ fontSize: 14.5, lineHeight: 1.55, color: sub, margin: '0 0 20px', maxWidth: 700 }}>
           Not because it&apos;s secret — because it&apos;s tedious. Every source below is public. The product is the joining:

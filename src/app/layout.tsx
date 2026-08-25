@@ -77,6 +77,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <nav aria-label="Primary navigation" className="grant-desktop-nav">
               <Link href="/grants">Grant matches</Link>
               <Link href="/free-money">Free money</Link>
+              <Link href="/re">Property data</Link>
               <Link href="/applications">Applications</Link>
               <Link href="/how-it-works">How it works</Link>
               <Link href="/pricing">Pricing</Link>
@@ -99,6 +100,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="grant-footer-links">
               <Link href="/grants">Matches</Link>
               <Link href="/free-money">Free money</Link>
+              <Link href="/re">Property data</Link>
               <Link href="/applications">Applications</Link>
               <Link href="/pricing">Pricing</Link>
               <Link href="/learn">Learn</Link>
