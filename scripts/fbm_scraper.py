@@ -338,7 +338,9 @@ class SerpSource:
     def fetch(self, city: str = "denver") -> tuple[str, list[dict]]:
         """Return (source_note, raw result dicts) from SERP."""
         raw: list[dict] = []
-        if self.engine == "ddg":
+        if self.engine == "tinyfish":
+            raw = self._tinyfish(city)
+        elif self.engine == "ddg":
             raw = self._ddg(city)
         elif self.engine == "google":
             raw = self._google(city)
@@ -347,6 +349,41 @@ class SerpSource:
         else:
             raise ValueError(f"unknown engine {self.engine}")
         return f"serp:{self.engine}", raw
+
+    # -- TinyFish search (James's standing rule: TinyFish first, no SERP scraping) --
+    def _tinyfish(self, city: str) -> list[dict]:
+        """Search via the tinyfish CLI (free Search API). Returns the same raw
+        dict shape as the other engines so parse_serp_results is untouched."""
+        import subprocess
+        out: list[dict] = []
+        for q in self.queries:
+            qq = q.replace("Denver", city)
+            try:
+                r = subprocess.run(
+                    ["tinyfish", "search", "query", qq, "--location", "United States"],
+                    capture_output=True, text=True, timeout=60,
+                )
+                if r.returncode != 0:
+                    log.warning("tinyfish query '%s' failed: %s", qq, (r.stderr or "")[-200:])
+                    continue
+                data = json.loads(r.stdout)
+            except (subprocess.TimeoutExpired, json.JSONDecodeError, FileNotFoundError) as e:
+                log.warning("tinyfish query '%s' error: %s", qq, e)
+                continue
+            results = data.get("results") or data.get("data", {}).get("results") or []
+            for item in results:
+                url = item.get("url") or item.get("link", "")
+                if not url:
+                    continue
+                out.append({"title": item.get("title", ""),
+                            "url": url,
+                            "snippet": item.get("snippet") or item.get("description", ""),
+                            "raw_engine": "tinyfish"})
+            log.info("tinyfish: %d results for '%s'", len(results), qq)
+            time.sleep(random.uniform(1.0, 2.0))
+        if not out:
+            raise BlockedError("tinyfish returned 0 results")
+        return out
 
     # -- DuckDuckGo (ddgs package, then raw HTML endpoints) ---------------
     def _ddg(self, city: str) -> list[dict]:
@@ -706,8 +743,8 @@ def run_engine(listings: Iterable[Listing], city_filter: Optional[str] = None,
 def main(argv: Optional[list[str]] = None) -> int:
     p = argparse.ArgumentParser(description="FBM Denver free-listings scraper")
     p.add_argument("--city", default="denver", help="City alias (default denver)")
-    p.add_argument("--engine", default="auto",
-                   choices=["auto", "ddg", "google", "bing", "fb", "offline"],
+    p.add_argument("--engine", default="tinyfish",
+                   choices=["tinyfish", "auto", "ddg", "google", "bing", "fb", "offline"],
                    help="Feed source. auto = ddg -> google -> bing (search fallback).")
     p.add_argument("--cookies", help="JSON cookies file from a logged-in FB session")
     p.add_argument("--file", help="Parse a saved post-login FB Marketplace HTML file")
