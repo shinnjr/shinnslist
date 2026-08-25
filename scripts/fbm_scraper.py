@@ -338,9 +338,7 @@ class SerpSource:
     def fetch(self, city: str = "denver") -> tuple[str, list[dict]]:
         """Return (source_note, raw result dicts) from SERP."""
         raw: list[dict] = []
-        if self.engine == "tinyfish":
-            raw = self._tinyfish(city)
-        elif self.engine == "ddg":
+        if self.engine == "ddg":
             raw = self._ddg(city)
         elif self.engine == "google":
             raw = self._google(city)
@@ -350,7 +348,6 @@ class SerpSource:
             raise ValueError(f"unknown engine {self.engine}")
         return f"serp:{self.engine}", raw
 
-    # -- TinyFish search (James's standing rule: TinyFish first, no SERP scraping) --
     def _tinyfish(self, city: str) -> list[dict]:
         """Search via the tinyfish CLI (free Search API). Returns the same raw
         dict shape as the other engines so parse_serp_results is untouched."""
@@ -743,8 +740,8 @@ def run_engine(listings: Iterable[Listing], city_filter: Optional[str] = None,
 def main(argv: Optional[list[str]] = None) -> int:
     p = argparse.ArgumentParser(description="FBM Denver free-listings scraper")
     p.add_argument("--city", default="denver", help="City alias (default denver)")
-    p.add_argument("--engine", default="tinyfish",
-                   choices=["tinyfish", "auto", "ddg", "google", "bing", "fb", "offline"],
+    p.add_argument("--engine", default="fb",
+                   choices=["fb", "auto", "ddg", "google", "bing", "offline"],
                    help="Feed source. auto = ddg -> google -> bing (search fallback).")
     p.add_argument("--cookies", help="JSON cookies file from a logged-in FB session")
     p.add_argument("--file", help="Parse a saved post-login FB Marketplace HTML file")
