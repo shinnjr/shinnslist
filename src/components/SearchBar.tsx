@@ -44,7 +44,7 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
         <motion.button
           type="submit"
           whileTap={{ scale: 0.95 }}
-          className="bg-[var(--shinnslist-pink)] text-white text-xs font-bold px-4 py-1.5 rounded-lg hover:bg-fuchsia-600 transition-colors"
+          className="bg-[var(--shinnslist-pink)] text-black text-xs font-bold px-4 py-1.5 rounded-lg hover:bg-emerald-600 transition-colors"
         >
           Search
         </motion.button>

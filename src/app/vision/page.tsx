@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
+import { ErrorBoundary } from '@/components/ErrorBoundary';
 import { getSub, isUnlocked } from '@/lib/subscription';
 import { track } from '@/lib/track';
 
@@ -40,7 +41,7 @@ export default function VisionPage() {
           </p>
           <a
             href="/pricing"
-            className="inline-flex min-h-[48px] items-center bg-[var(--shinnslist-pink)] text-white px-8 py-3 rounded-full font-bold text-sm hover:bg-fuchsia-600 active:scale-[0.97] transition-all"
+            className="inline-flex min-h-[48px] items-center bg-[var(--shinnslist-pink)] text-black px-8 py-3 rounded-full font-bold text-sm hover:bg-emerald-600 active:scale-[0.97] transition-all"
           >
             Unlock subscriptions →
           </a>
@@ -105,6 +106,7 @@ export default function VisionPage() {
           : `Unlock the ${verdict?.category || ''} vertical to save scans.`}
       </p>
 
+      <ErrorBoundary label="Deal Vision">
       {/* Photo input / preview */}
       <div className="mb-5">
         <input
@@ -128,7 +130,7 @@ export default function VisionPage() {
           <div className="relative">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={photo} alt="Item to scan" className="w-full rounded-2xl max-h-72 object-cover border border-[var(--shinnslist-border)]" />
-            <button onClick={reset} className="absolute top-3 right-3 bg-black/60 text-white text-xs rounded-full px-3 py-1.5 hover:bg-black/80 transition-colors">
+            <button onClick={reset} aria-label="Retake photo" className="flex min-h-[48px] items-center absolute top-3 right-3 bg-black/60 text-white text-xs rounded-full px-3 py-1.5 hover:bg-black/80 transition-colors">
               Retake
             </button>
           </div>
@@ -157,7 +159,7 @@ export default function VisionPage() {
         <button
           onClick={analyze}
           disabled={loading}
-          className="w-full min-h-[48px] bg-[var(--shinnslist-pink)] text-white font-bold py-4 rounded-xl hover:bg-fuchsia-600 active:scale-[0.98] transition-all disabled:opacity-60 mb-6 flex items-center justify-center gap-2"
+          className="w-full min-h-[48px] bg-[var(--shinnslist-pink)] text-black font-bold py-4 rounded-xl hover:bg-emerald-600 active:scale-[0.98] transition-all disabled:opacity-60 mb-6 flex items-center justify-center gap-2"
         >
           {loading ? (
             <><span className="animate-spin inline-block w-5 h-5 border-2 border-white/40 border-t-white rounded-full" /> Identifying item…</>
@@ -168,7 +170,7 @@ export default function VisionPage() {
       )}
 
       {error && (
-        <p className="text-red-400 text-sm text-center mb-4">{error}</p>
+        <p role="alert" className="text-red-400 text-sm text-center mb-4">{error}</p>
       )}
 
       {/* Verdict card */}
@@ -218,7 +220,7 @@ export default function VisionPage() {
           )}
 
           <div className="flex gap-3 mt-4">
-            <button onClick={reset} className="flex-1 min-h-[44px] bg-[var(--shinnslist-surface)] border border-[var(--shinnslist-border)] text-white text-sm font-medium rounded-xl hover:bg-zinc-800 active:scale-[0.97] transition-all">
+            <button onClick={reset} className="flex-1 min-h-[48px] bg-[var(--shinnslist-surface)] border border-[var(--shinnslist-border)] text-white text-sm font-medium rounded-xl hover:bg-zinc-800 active:scale-[0.97] transition-all">
               Scan another
             </button>
             <button
@@ -226,13 +228,14 @@ export default function VisionPage() {
                 const text = `🔥 Scanned with Shinnslist: ${verdict.item} — ${verdict.retailValue ? `$${verdict.retailValue} value` : 'check this deal'}`;
                 navigator.clipboard?.writeText?.(text).catch(() => {});
               }}
-              className="flex-1 min-h-[44px] bg-[var(--shinnslist-pink)]/10 border border-[var(--shinnslist-pink)]/30 text-[var(--shinnslist-pink)] text-sm font-bold rounded-xl hover:bg-[var(--shinnslist-pink)]/20 active:scale-[0.97] transition-all"
+              className="flex-1 min-h-[48px] bg-[var(--shinnslist-pink)]/10 border border-[var(--shinnslist-pink)]/30 text-[var(--shinnslist-pink)] text-sm font-bold rounded-xl hover:bg-[var(--shinnslist-pink)]/20 active:scale-[0.97] transition-all"
             >
               Share deal
             </button>
           </div>
         </motion.div>
       )}
+      </ErrorBoundary>
     </main>
   );
 }

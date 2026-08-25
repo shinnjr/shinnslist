@@ -2,6 +2,7 @@ import type Stripe from 'stripe';
 import { getStripe } from '../../_lib/stripe';
 import { applySubscriptionToUser, getUserByStripeCustomer } from '../../_lib/billing';
 import { addonForLookupKey, tierForLookupKey } from '../../_lib/config';
+import { rateLimit, rateLimitedResponse } from '../../_lib/rate-limit';
 
 interface PagesContext {
   request: Request;
@@ -15,6 +16,9 @@ function json(body: unknown, status = 200): Response {
   });
 }
 
+// Stripe payloads are small (KBs); cap well above that to reject garbage.
+const MAX_PAYLOAD_BYTES = 2 * 1024 * 1024;
+
 /**
  * Stripe webhook. Verifies the signature, then keeps the Supabase users
  * row in sync with the subscription lifecycle:
@@ -26,7 +30,15 @@ function json(body: unknown, status = 200): Response {
 export async function onRequestPost(context: PagesContext): Promise<Response> {
   const { request, env } = context;
 
+  // Loose backstop only — the signature check below is the real gate.
+  // Stripe retries on 429, so this never loses billing events.
+  const rl = rateLimit(request, { limit: 60, windowSeconds: 60, keyPrefix: 'stripe-webhook' });
+  if (!rl.ok) return rateLimitedResponse(rl);
+
   const payload = await request.text();
+  if (payload.length > MAX_PAYLOAD_BYTES) {
+    return json({ error: 'payload_too_large' }, 413);
+  }
   const signature = request.headers.get('stripe-signature');
   const secret = (env.STRIPE_WEBHOOK_SECRET as string) || '';
 
@@ -67,7 +79,7 @@ export async function onRequestPost(context: PagesContext): Promise<Response> {
   return json({ received: true });
 }
 
-async function handleCheckout(env: Record<string, unknown>, session: any): Promise<void> {
+async function handleCheckout(env: Record<string, unknown>, session: Stripe.Checkout.Session): Promise<void> {
   if (!session.metadata?.user_id) return;
   const userId = session.metadata.user_id;
   const customerId =
@@ -79,9 +91,9 @@ async function handleCheckout(env: Record<string, unknown>, session: any): Promi
   const full = await getStripe(env).checkout.sessions.retrieve(session.id, {
     expand: ['line_items.data.price'],
   });
-  const keys = (full.line_items?.data ?? [])
-    .map((li: any) => li.price?.lookup_key)
-    .filter(Boolean);
+  const keys: string[] = (full.line_items?.data ?? [])
+    .map((li) => (li.price && 'lookup_key' in li.price ? li.price.lookup_key : undefined))
+    .filter((k): k is string => typeof k === 'string');
 
   const tierKey = keys.find((k: string) => tierForLookupKey(k));
   const tier = (tierKey ? tierForLookupKey(tierKey) : 'pro') as 'pro' | 'flipper';
@@ -96,12 +108,19 @@ async function handleCheckout(env: Record<string, unknown>, session: any): Promi
   });
 }
 
-async function handleSubscriptionUpdated(env: Record<string, unknown>, sub: any): Promise<void> {
+async function handleSubscriptionUpdated(env: Record<string, unknown>, sub: Stripe.Subscription): Promise<void> {
   const userId = await resolveUserId(env, sub);
   if (!userId) return;
   const status = mapStatus(sub.status);
   const tier = sub.metadata?.tier === 'flipper' ? 'flipper' : 'pro';
-  const addons = sub.metadata?.addons ? JSON.parse(sub.metadata.addons) : [];
+  // Sub metadata is attacker-influenced only via Stripe itself; parse defensively anyway.
+  let addons: string[] = [];
+  try {
+    const parsed = JSON.parse(sub.metadata?.addons ?? '[]');
+    if (Array.isArray(parsed)) addons = parsed.filter((a): a is string => typeof a === 'string');
+  } catch {
+    addons = [];
+  }
   await applySubscriptionToUser(env, userId, {
     tier,
     addons,
@@ -111,7 +130,7 @@ async function handleSubscriptionUpdated(env: Record<string, unknown>, sub: any)
   });
 }
 
-async function handleSubscriptionDeleted(env: Record<string, unknown>, sub: any): Promise<void> {
+async function handleSubscriptionDeleted(env: Record<string, unknown>, sub: Stripe.Subscription): Promise<void> {
   const userId = await resolveUserId(env, sub);
   if (!userId) return;
   await applySubscriptionToUser(env, userId, {
@@ -133,7 +152,7 @@ function mapStatus(status: string): 'active' | 'trialing' | 'past_due' | 'unpaid
   }
 }
 
-async function resolveUserId(env: Record<string, unknown>, sub: any): Promise<string | null> {
+async function resolveUserId(env: Record<string, unknown>, sub: Stripe.Subscription): Promise<string | null> {
   if (sub.metadata?.user_id) return sub.metadata.user_id;
   const customerId = typeof sub.customer === 'string' ? sub.customer : sub.customer?.id;
   if (!customerId) return null;

@@ -1,41 +1,33 @@
 import { test, expect } from '@playwright/test';
 
-/**
- * Onboarding flow: pick categories -> pick interests -> email signup.
- * Ends by redirecting to /welcome (per onboarding/page.tsx handleSignup).
- */
-test('onboarding: categories -> interests -> email -> welcome', async ({ page }) => {
-  await page.goto('/onboarding', { waitUntil: 'networkidle' });
+test('grant onboarding: profile facts persist and matching starts without crossing a submission gate', async ({ page }) => {
+  await page.goto('/onboarding', { waitUntil: 'domcontentloaded' });
 
-  // Step 1: pick-categories
-  await expect(page.getByRole('heading', { name: /What brings you here\?/ })).toBeVisible();
-  // Grouping cards = buttons inside the grid (each has an emoji + label), before the Continue button
-  const groupingCards = page.locator('main .grid button');
-  await groupingCards.nth(0).click();
-  await groupingCards.nth(1).click();
+  await expect(page.getByRole('heading', { name: 'Who is applying?' })).toBeVisible();
+  const applicantType = page.getByRole('button', { name: 'Small business' });
+  await applicantType.click();
+  await expect(applicantType).toHaveClass(/is-selected/);
+  await page.getByLabel('Applicant name').fill('Shinnslist QA Applicant');
+  await expect(page.getByLabel('Applicant name')).toHaveValue('Shinnslist QA Applicant');
+  await page.getByRole('button', { name: 'Continue', exact: true }).click();
 
-  const continueBtn = page.getByRole('button', { name: /Continue \(2 selected\)/ });
-  await expect(continueBtn).toBeEnabled();
-  await continueBtn.click();
+  await expect(page.getByRole('heading', { name: 'Apply the hard eligibility rules.' })).toBeVisible();
+  await expect(page.getByLabel('City')).toHaveValue('Denver');
+  await expect(page.getByLabel('State')).toHaveValue('Colorado');
+  await page.getByRole('button', { name: 'Continue', exact: true }).click();
 
-  // Step 2: pick-interests (need >= 3 selected to enable continue)
-  await expect(page.getByRole('heading', { name: /Pick your interests/ })).toBeVisible();
-  const cardButtons = page.locator('main .grid button');
-  // click first 3 interest cards
-  await cardButtons.nth(0).click();
-  await cardButtons.nth(1).click();
-  await cardButtons.nth(2).click();
+  await expect(page.getByRole('heading', { name: 'Give the drafting engine real material.' })).toBeVisible();
+  await page.getByLabel('What do you do, who do you help, and why does it matter?').fill('We help Colorado applicants identify verified grants and prepare truthful, source-backed applications.');
+  await page.getByLabel('What would grant funding pay for?').fill('Improve application verification, accessibility, and deadline operations.');
+  await page.getByRole('button', { name: 'Continue', exact: true }).click();
 
-  const continueInterests = page.getByRole('button', { name: /Continue \(3 selected\)/ });
-  await expect(continueInterests).toBeEnabled();
-  await continueInterests.click();
+  await expect(page.getByRole('heading', { name: 'Ready to calculate your matches.' })).toBeVisible();
+  await expect(page.getByText('No SSN, EIN, bank details, signature, or legal attestation has been collected.')).toBeVisible();
+  await page.getByRole('button', { name: 'Calculate my matches' }).click();
 
-  // Step 3: email-signup
-  await expect(page.getByRole('heading', { name: /You're all set!/ })).toBeVisible();
-  await page.getByPlaceholder('you@email.com').fill('e2e+test@shinnslist.com');
-  await page.getByRole('button', { name: /Start finding deals/ }).click();
-
-  // Redirects to /welcome
-  await page.waitForURL('**/welcome', { timeout: 15000 });
-  await expect(page.getByRole('heading', { name: /Welcome to Shinnslist!/ })).toBeVisible();
+  await page.waitForURL('**/grants?profile=complete', { timeout: 15000 });
+  const profile = await page.evaluate(() => JSON.parse(localStorage.getItem('shinnslist_grant_profile') || '{}'));
+  expect(profile.businessName).toBe('Shinnslist QA Applicant');
+  expect(profile.mission).toContain('truthful');
+  expect(profile).not.toHaveProperty('ssn');
 });

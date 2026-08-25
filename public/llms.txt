@@ -1,0 +1,48 @@
+# Shinnslist
+
+> Verified grants, eligibility checks, and complete drafted applications — nothing submits without your approval. Shinnslist turns grant discovery into finished submissions for small businesses, nonprofits, and founders. It also helps individuals find money they are owed and have not claimed — open class-action settlements — all free to search, free to claim, no finder's fee.
+
+Shinnslist is a grant-autopilot platform. It monitors official funder sources, verifies every opportunity (amount, deadline, eligibility, fee, verification date), runs hard eligibility rules against a reusable applicant profile, drafts funder-specific answers and narratives, and stops at a human approval gate before anything submits. It is not a paid database of links and it is not an application-fee service.
+
+## What Shinnslist does
+- Verifies grants from official funder sources and rejects stale, paid, or ineligible opportunities.
+- Qualifies: hard eligibility rules (location, entity type, ownership, revenue) run first so a bad fit never wastes time.
+- Drafts: verified facts become funder-specific answers, budgets, and narratives.
+- Approves: the applicant reviews the exact application and controls attestations, signatures, and fees.
+- Submits: approved applications run through a browser workflow and return a confirmation receipt.
+
+## Key pages
+- [Home](https://shinnslist.com/): grants found, drafted, and ready to submit
+- [How it works](https://shinnslist.com/how-it-works): the verify → qualify → draft → approve → submit pipeline
+- [Verified grants](https://shinnslist.com/grants): current verified grant opportunities with source, deadline, eligibility, and fee
+- [Pricing](https://shinnslist.com/pricing): pay for applications moving forward, not links in a database
+- [Build your profile](https://shinnslist.com/onboarding): a reusable applicant profile
+
+## Free money — find what you're owed
+- [Free Money Finder](https://shinnslist.com/free-money): open class-action settlements you may be owed, plus grants and benefits — free to search, free to claim, no finder's fee
+- [Class-action settlements](https://shinnslist.com/free-money/class-actions): open settlements and free claim filing — free to claim, with an optional done-for-you filing service at a disclosed flat fee
+- [Search everything](https://shinnslist.com/find): one search across grants, benefits, and open class-action settlements
+
+## Guides (free)
+- [Learn hub](https://shinnslist.com/learn): how grants work, funder types, and FAQs
+- [How to find grants you can actually win](https://shinnslist.com/learn/find-grants): funder types, where to search, eligibility screening
+- [How to write a grant application that wins](https://shinnslist.com/learn/write-grant-application): the scored proposal structure, step by step
+- [Grants for women founders, verified](https://shinnslist.com/learn/grants-for-women-founders): Amber Grant, IFundWomen, Eileen Fisher, Tory Burch, and Cartier — verified amounts, eligibility, and the application playbook
+- [Grants for minority-owned small businesses, verified](https://shinnslist.com/learn/grants-for-minority-owned-businesses): what actually exists in 2026 — SBA facts, the MBDA and 8(a) rule changes, STEP, SBIR/STTR, corporate programs, and the application playbook
+
+## Frequently asked questions
+- How do I find grants I'm eligible for? Build a profile; Shinnslist runs hard eligibility rules and returns only verified matches you can win.
+- How much does it cost to find grants? Searching is free; you pay for applications that move forward, not for links in a database.
+- Does Shinnslist submit applications automatically? No. Every application requires your explicit approval before submission; attestations, signatures, and fees stay under your control.
+- How are grants verified? Each opportunity is checked against its official funder source and carries its source, deadline, eligibility rules, fee, and verification date.
+- Is unclaimed money really free to claim? Yes — it is held by state treasurers and claimed free at MissingMoney.com or your state's portal; anyone charging a finder's fee is selling something you can do free.
+- Do bank signup bonuses have strings attached? Most require a minimum deposit or qualifying direct deposit and pay after 30–90 days; they are taxable income.
+
+## What Shinnslist is not
+- Not a paid grant database that resells public links.
+- Not an application-fee marketplace; fee traps are blocked.
+- Not an autosubmitter; no submission happens without approval.
+- Not a paid finder for unclaimed money; we link to the free official sources and never charge to claim.
+## Done-for-you filing (cart + wizard)
+- [Filing cart](https://shinnslist.com/cart): optional done-for-you filing — we prepare and file class-action claims and grant applications for a disclosed flat fee based on estimated work. First cart is a flat $29 bundle; $19/mo membership (first month free) cuts 75% off every future filing. Filing yourself is always free; Shinnslist is not a law firm and takes no cut of any settlement.
+- [Claim wizard](https://shinnslist.com/file/oak-view-group-data-breach): guided 4-step claim preparation for every open settlement (one page per settlement) — collects your details, checks eligibility, and either hands you a copy-paste summary to file free or offers our done-for-you filing at a disclosed price.

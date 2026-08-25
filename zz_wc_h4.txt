@@ -1,0 +1,3 @@
+   15960 zz_cov_snapshot_h4.txt
+   20875 zz_sb_snapshot_h4.txt
+   36835 total

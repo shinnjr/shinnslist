@@ -1,0 +1,77 @@
+================================================================================
+CHILDCARE ASSISTANCE PROGRAMS FOR FAMILIES — LONG-TAIL RESEARCH
+Shinnslist research file · Compiled 2026-08-15
+Format: NAME | FUNDER/ORG | URL | WHO QUALIFIES | AMOUNT | DEADLINE | SOURCE_TYPE | NOTES
+All URLs verified HTTP 200/202 or confirmed live in browser on compile date.
+===============================================================================
+
+------------------------- FEDERAL / NATIONAL PROGRAMS -------------------------
+
+1. Head Start (national) | U.S. Dept of Health & Human Services, Office of Head Start | https://www.acf.hhs.gov/ohs | Low-income families (income at/below federal poverty guidelines, or TANF/SSI recipient, or foster/homeless child); ages 0-5 | Free comprehensive early childhood education, health, nutrition, social services; no fee | ROLLING (local programs accept year-round; must apply at local grantee) | GOV | Apply via local Head Start center, not federally; find local center via childcare.gov. Family-services model — supports parents too.
+
+2. Early Head Start | U.S. DHHS, Office of Head Start | https://www.acf.hhs.gov/ohs/early-head-start | Pregnant women & families with children under 3; low income per poverty guidelines | Free home-visiting and/or center-based care + family support | ROLLING (local grantees) | GOV | Pair with Head Start for age 0-5 continuum; many grantees have waitlists — apply early.
+
+3. Child Care and Development Fund (CCDF) Subsidy | ACF Office of Child Care (federal) + State Lead Agencies | https://www.acf.hhs.gov/occ | Working/attending-school low-income families; most states at/below 85% of State Median Income (varies) | Subsidized child care (voucher paid to provider); family copay on sliding scale | ROLLING (state-specific; some states have waitlists) | GOV | CCDF is the umbrella — each state runs its own Child Care Assistance Program (see state entries below).
+
+4. Child & Dependent Care Tax Credit | IRS | https://www.irs.gov/credits-deductions/individuals/child-and-dependent-care-credit | Families with earned income who paid for care of child <13 (or dependent/spouse incapable of care) so they can work | Up to $3,000 credit for 1 dependent / $6,000 for 2+ (covers up to 35% of qualifying expenses) | ANNUAL (claimed on tax return; deadline = federal filing deadline) | GOV | Refundable portion expanded; keep care receipts. Separate from Dependent Care FSA (can't double-dip).
+
+5. Head Start / Early Head Start Center Locator & resources | U.S. DHHS / ECLKC | https://eclkc.ohs.acf.hhs.gov/ | Families of children 0-5 | Free Head Start/EHS program search | ROLLING | GOV | Use to find local Head Start grantee to enroll; also hosts training.
+
+6. Benefits.gov — Child Care benefit finder | U.S. Government (SAVE) | https://www.benefits.gov/benefit/599 | Varies by benefit screened | N/A — screening tool | ROLLING | GOV | Screens families for all federal child care benefits incl. CCDF, Head Start, state subsidies.
+
+7. SBA loans for child care providers (start-up/expansion) | U.S. Small Business Administration (7(a)) | https://www.sba.gov/funding-programs/loans | New/expanding child care businesses (centers, family child care homes, providers); for-profits | 7(a) loans up to $5M (guaranteed portion); also SBA child care-specific loan guarantee program | ROLLING (via SBA lenders) | GOV | PROVIDER START-UP GRANT/FINANCING category; SBA has special 7(a) delegation for child care. Not a grant — low-interest guaranteed loan.
+
+------------------------- STATE CHILDCARE SUBSIDY / SCHOLARSHIP PROGRAMS ------
+
+8. Maryland Child Care Scholarship | Maryland State Dept of Education (Division of Early Childhood) | https://earlychildhood.marylandpublicschools.org/families/child-care-scholarshipprogram | Families earning up to ~300% FPL (sliding tiers); work/school requirement | Subsidized child care via voucher; family copay on sliding scale | ROLLING — NOTE: partial enrollment freeze / waitlist; as of Jul 2026 MSDE awarding to small number as spaces open; homeless families now eligible | GOV | A named, specific state scholarship. Waitlist demand exceeds funding.
+
+9. Texas Child Care & Early Learning Program | Texas Workforce Commission | https://www.twc.texas.gov/programs/child-care | Low-income working families, students, and those receiving/providing child care; income ≤ ~85% SMI | Subsidized child care (voucher to provider); copay on sliding scale | ROLLING (apply through local workforce board) | GOV | Named state CCDF program; contact local Texas Workforce Solutions office.
+
+10. Illinois Child Care Assistance Program (CCAP) | Illinois Dept of Human Services | https://www.dhs.state.il.us/page.aspx?item=32976 | Working low-income families; income up to 225% FPL | Subsidized child care; family copay based on income | ROLLING | GOV | Includes a "grant-funded" pathway; application via local Child Care Resource & Referral.
+
+11. Pennsylvania Child Care Works | PA Dept of Human Services (OCDEL) | https://www.dhs.pa.gov/Services/Children/Pages/Child-Care-Works.aspx | Low-income working families; income up to 200% FPL | Subsidized child care (voucher); copay on sliding scale | ROLLING | GOV | PA CCIS network helps navigate; also Provider Pre-Licensing & Startup support available.
+
+12. First 5 California (family-support + subsidized child care) | First 5 California (state tobacco-tax funded) | https://www.first5california.com/ | California families with children 0-5 | Funded child care/early learning, home visiting, parent resources via county First 5 commissions | ROLLING | NONPROFIT/GOV | Local county First 5 commissions award child care & family-support funds; amounts vary by county.
+
+------------------------- MILITARY CHILDCARE ASSISTANCE -----------------------
+
+13. Military Child Care & Child Care Fee Assistance | U.S. Dept of Defense / MilitaryChildCare.com | https://militarychildcare.com/ | Active-duty, Guard/Reserve on orders, DoD civilians | Military-operated child care with sliding-fee scale; fee assistance up to ~$1,500/mo per child when base care unavailable | ROLLING (enroll via MCC portal) | GOV | Branch-specific fee assistance (Air Force, Army, Marine Corps, Navy, Coast Guard). Apply through MCC.
+
+14. Military OneSource — child care resources & fee assistance | Dept of Defense / Military OneSource | https://www.militaryonesource.mil/resources/military-life/child-care | Service members & families | Fee assistance info, respite/backup care, home-based care pilots | ROLLING | GOV | Aggregates all military child care help; free for military families.
+
+15. DoD Dependent Care Flexible Spending Account (military) | Dept of Defense | https://www.militaryonesource.mil/resources/military-life/child-care | Active component, Title 10 AGR, DoD civilians; can combine with fee assistance | Up to $5,000/year pre-tax toward child care, preschool, camp | ANNUAL (Federal Benefits Open Season each fall + qualifying life events) | GOV | Newer DoD benefit — set aside pre-tax earnings; separate from CCDF.
+
+16. Child Care Aware of America — Military & family fee assistance/referral | Child Care Aware of America | https://www.childcareaware.org/military-families/ | Military families; also low-income families via state CCR&R | Referral to subsidized care, fee-assistance navigation | ROLLING | NONPROFIT | Nonprofit CCR&R network; connects to local subsidies & scholarships.
+
+------------------------- DEPENDENT-CARE / EMPLOYER-BASED ASSISTANCE ----------
+
+17. Dependent Care Flexible Spending Account (DCFSA) | FSAFEDS (federal employees) | https://www.fsafeds.gov/ | Federal civilian employees (and eligible dependents) | Up to $5,000/year pre-tax for dependent care | ANNUAL (Open Season each fall + life events) | GOV | Standard employer DCAP for federal workers; reduces taxable income. Same model available via most private employers.
+
+18. Care.com Care@Work / Care Benefits (employer backup + dependent care) | Care.com (IAC) | https://www.care.com/business | Employees of companies offering Care@Work benefit | Discounted/backup child care, dependent-care stipends paid by employer | ROLLING (employer-gated) | COMMERCIAL | Ask HR whether your company offers Care@Work — includes emergency/backup care.
+
+19. Bright Horizons Back-Up Care / employer child care | Bright Horizons | https://www.brighthorizons.com/ | Employees of partner employers | Backup/emergency child care (often subsidized by employer, ~$20-25/day co-pay) | ROLLING (employer-gated) | COMMERCIAL | Emergency care when regular care breaks down; check employer benefits portal.
+
+------------------------- NONPROFIT / COMMUNITY SCHOLARSHIPS & ASSISTANCE -----
+
+20. YMCA Financial Assistance (child care/after-school) | YMCA of the USA (local associations) | https://www.ymca.org/ | Low- to middle-income families at local YMCAs | Sliding-scale tuition assistance for child care, after-school, camps | ROLLING (local; each Y sets income guidelines) | NONPROFIT | Apply at local YMCA; many subsidize majority of cost for qualifying families.
+
+21. Boys & Girls Clubs of America — membership & fee assistance | Boys & Girls Clubs of America | https://www.bgca.org/ | Youth 6-18 at local clubs | Reduced/subsidized membership & program fees (sliding scale) | ROLLING (local) | NONPROFIT | Provides affordable after-school/summer care; scholarships at local club.
+
+22. United Way 211 — child care assistance navigation | United Way Worldwide | https://www.211.org/ | Anyone needing help; free | Connects to local child care subsidies, scholarships, emergency funds | ROLLING | NONPROFIT | Dial 211 or use site; local United Ways often run child care relief grant funds.
+
+23. Child Care Aware of America — family resource & referral | Child Care Aware of America | https://www.childcareaware.org/families/ | Families seeking child care help | Free referral to local CCR&R, subsidies, scholarships, fee assistance | ROLLING | NONPROFIT | The national CCR&R umbrella; find your state/local CCR&R for direct assistance.
+
+24. PATCH (Hawaii child care resource & referral) | PATCH (People Attentive to Children) | https://www.patchhawaii.org/ | Hawaii families (child care + also supports home providers) | Child care referral, subsidy navigation, provider scholarships | ROLLING | NONPROFIT | Hawaii-specific CCR&R; also certifies/assists providers.
+
+25. ZERO TO THREE — early care resources | ZERO TO THREE (National Center for Infants, Toddlers & Families) | https://www.zerotothree.org/ | Parents of 0-3, professionals | Resources, parent support, provider development tools | ROLLING | NONPROFIT | Policy + parent resources; not a direct cash program but links to care help.
+
+------------------------- EMERGENCY CHILDCARE --------------------------------
+
+26. American Red Cross — child care & disaster childcare resources | American Red Cross | https://www.redcross.org/ | Families in emergencies/disasters; volunteer & licensed caregivers | Emergency/backup child care training & coordination (esp. during disasters) | ROLLING (activated during emergencies) | NONPROFIT | Red Cross runs emergency childcare for essential workers/volunteers during disasters & public-health events.
+
+27. Care.com backup/emergency care benefit | Care.com | https://www.care.com/ | Consumers + employer-benefit members | On-demand backup/emergency child care (paid per use; discounted via employer) | ROLLING | COMMERCIAL | Emergency sitter backup when normal care falls through.
+
+------------------------- PROVIDER START-UP / SUPPLY GRANTS (context) ---------
+NOTE: For families looking to START a child care business (common Shinnslist angle), the main access points are the SBA 7(a) child care loan guarantee (above) plus state "child care supply/business" grant programs administered through the same state lead agencies (MD, TX, IL, PA listed above) — many states run recurring provider startup/stabilization grant rounds. Check state CCR&R (Child Care Aware) for current provider-grant application windows.
+================================================================================
+END OF LIST — 27 programs documented (all URLs verified live on 2026-08-15).

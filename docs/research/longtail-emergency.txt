@@ -1,0 +1,99 @@
+SHINNSLIST RESEARCH — LONG-TAIL EMERGENCY / UTILITY / FOOD / RENT / FUNERAL ASSISTANCE
+=====================================================================================
+Scope: NON-federal + local + nonprofit + utility-company + faith programs.
+EXCLUDED (big federal safety net): LIHEAP, SNAP, TANF, WIC, Medicaid, SSI/SSDI,
+Section 8, ERAP, federal emergency-rental.
+All URLs below were HTTP-verified 200 on 2026-08-15 unless marked [CHECK].
+SOURCE_TYPE legend: 200=curl HTTP 200; 200-browser=verified in headless browser
+(curl gave 403/blocked); 000=unreachable from this network; 4xx/5xx=code returned.
+
+FORMAT: NAME | FUNDER/ORG | URL | WHO QUALIFIES | AMOUNT | DEADLINE_OR_ROLLING | SOURCE_TYPE | NOTES
+====================================================================================
+
+----- A. EMERGENCY CASH / HARDSHIP GRANTS (NONPROFIT + FAITH) -----
+
+1. Modest Needs Foundation | Modest Needs Foundation (501c3) | https://www.modestneeds.org/ | Working poor households facing a short-term financial emergency (rent, utilities, medical, eviction, funeral, car repair) that threatens self-sufficiency; one-time | Typically up to ~$1,000 for one-time self-sufficiency grants | ROLLING (apply online) | 000 (connection timeout from this network — server not reachable; verify independently) | Aims to stop the cycle of poverty by covering single unexpected expenses. CHECK: site unreachable here; confirm live status before listing on Shinnslist.
+
+2. Salvation Army Emergency / Financial Assistance | The Salvation Army (faith-based, local corps offices) | https://www.salvationarmyusa.org/ | Anyone in need; local corps offices offer rent/mortgage, utility, food, clothing, prescription and emergency shelter aid | Varies by local corps (often $100–$500; some food/shelter free) | ROLLING (apply at local corps) | 200 | Route users to their nearest corps office / 800-SAL-ARMY for immediate emergency funds.
+
+3. Catholic Charities USA — Emergency & Basic Needs Assistance | Catholic Charities USA (faith-based, 160+ local agencies) | https://www.catholiccharitiesusa.org/ | Individuals/families in crisis; local agencies provide rent, utilities, food, clothing, and emergency cash | Varies by diocese (local emergency grants) | ROLLING (via local agency) | 200 | 160+ local Catholic Charities agencies; find the local office by ZIP.
+
+4. St. Vincent de Paul Society (SVdP) — Emergency Assistance | Society of St. Vincent de Paul USA (faith-based, local councils) | https://www.svdpusa.org/ | Families/individuals in need; local conferences help with rent, utilities, food, and emergency expenses via home visits | Varies (often food + utility/rent help, some cash) | ROLLING (via local council) | 200 | Local conference "home visit" model; lookup local council by ZIP.
+
+5. Episcopal Relief & Development — Emergency Grants | Episcopal Relief & Development (faith-based) | https://www.episcopalrelief.org/ | Individuals in crisis; disaster/emergency relief grants via Episcopal dioceses and partner agencies | Varies (networked grants) | ROLLING | 200 | Focuses on long-term recovery + disaster relief; route to local Episcopal network.
+
+6. United Way — Emergency Financial Assistance via 211 | United Way (local affiliates) | https://www.211.org/ | Anyone facing a hardship; 211 is a free confidential helpline connecting to local rent, utility, food, and emergency-assistance programs | Varies (programs are local) | ROLLING (call 211) | 200 | 211 database is the fastest door to thousands of local non-federal programs. Note: 211.org/get-help path blocked (403) but 211.org main verified.
+
+7. Need Help Paying Bills — National Hardship Resource Directory | Need Help Paying Bills (nonprofit directory) | https://www.needhelppayingbills.com/ | Anyone; state-by-state listings of local emergency cash grants, rent/utility help, food banks, free cell phones (Lifeline), and prescription aid | Varies (directory; grants often $100–$1,000) | ROLLING | 200 | Aggregator of hard-to-find local programs; strong utility/food/rent/phone sections.
+
+8. findhelp.org (formerly Aunt Bertha) | findhelp.org (nonprofit) | https://www.findhelp.org/ | Anyone; ZIP-based search of local social-services programs (food, rent, utilities, housing, legal, medical) | Varies (local programs) | ROLLING | 200 | Free, ad-free national directory; enter ZIP to see what's actually open nearby.
+
+9. Community Action Agencies (CAPs) — Emergency Assistance | Community Action Partnership (network of ~1,000 local agencies) | https://www.communityactionpartnership.com/ | Low-income individuals/families; local CAPs administer emergency utility, rent, food, and heating help (incl. local LIHEAP-adjacent funds) | Varies by agency | ROLLING (apply locally) | 200 | CAPs are the local hub for energy/utility hardship funds beyond federal LIHEAP; find agency by county.
+
+10. American Red Cross — Disaster & Home Fire Assistance | American Red Cross (nonprofit) | https://www.redcross.org/ | Households affected by disasters/fires; immediate shelter, food, and financial assistance after home fires and emergencies | Varies (disaster grants) | ROLLING (after incident) | 200 | First stop after a house fire/storm; provides direct financial aid + recovery casework.
+
+----- B. UTILITY ASSISTANCE (UTILITY-CO. FUNDS, CO-OPS, STATE/LOCAL) -----
+
+11. Dollar Energy Fund — Utility Hardship Grants | Dollar Energy Fund (nonprofit) + utility partners | https://www.dollarenergy.org/ | Low-income utility customers of partner utilities; pays past-due gas, water, wastewater and electric bills | Up to ~$1,000 per year (varies by utility/state) | ROLLING (apply via MyApp/agency) | 200-browser (Cloudflare) | Partners with utilities across ~18 states (PA, OH, WV, VA, MD, IN, TN, CA, TX, etc.). Hotline 1-888-282-6816.
+
+12. THAW — The Heat and Warmth Fund (Michigan) | THAW (501c3, Detroit) | https://www.thawfund.org/ | Michigan residents in an energy crisis (heat, electricity, or water); low-income households w/ children, seniors, disabled, veterans | Up to ~$2,000/yr (varies by program); $8.6M to 11,000+ households last yr | ROLLING (apply online) | 200-browser (Cloudflare) | 39 agency partners across Michigan. Phone 1-800-866-THAW (8429).
+
+13. Operation Round Up — Touchstone Energy / Electric Co-op Fund | Touchstone Energy Cooperatives (600+ local electric co-ops) | https://www.operationroundup.com/ | Low-income customers/members of participating rural electric cooperatives; funds energy bills and community hardship | Varies by co-op (typically $100–$500 in hardship/energy grants) | ROLLING (per local co-op) | 200 | Co-op members' "round up" pennies fund a hardship pool; find participating co-op by ZIP. Strong rural long-tail.
+
+14. Citizens Energy — Fuel & Heating Assistance (MA) | Citizens Energy Corporation (nonprofit) | https://www.citizensenergy.com/ | Massachusetts low-income residents needing home heating/fuel assistance beyond LIHEAP | Varies (fuel/oil grants) | ROLLING (seasonal) | 200 | Provides free/subsidized heating oil & fuel assistance; complements LIHEAP.
+
+15. State Utility-Commission Hardship Programs (e.g., PA PUC, PA LIHEAP+ Utility Fund) | State Public Utility Commissions | https://www.puc.pa.gov/ | Low-income residents of that state; state PUC pages link to utility-company customer-assistance programs (CAPs), arrearage grants, and weatherization | Varies by state/utility | ROLLING (varies) | 200 | Utility Customer Assistance Programs (CAPs) discount bills up to 30-60% for income-qualified households; every state's PUC lists them.
+
+16. Utility Company Customer Assistance Programs (Duke, Consumers, DTE, etc.) | Individual investor-owned utilities | https://www.duke-energy.com/ | Income-qualified residential customers; monthly bill discounts + arrearage forgiveness (e.g., Duke's Energy Assistance Program) | Up to 30-60% monthly discount + grant forgiveness | ROLLING | 200 | Every major utility runs its own hardship fund beyond LIHEAP; check the user's own utility account. (ConsumersEnergy.com returned 503 this run.)
+
+17. Our Energy Cooperative (OEC) Hardship Programs | Our Energy Cooperative (Ohio electric co-op) | https://www.our.coop/ | OEC member-customers in financial hardship | Varies (energy-assistance grants) | ROLLING | 200 | Example of a single-co-op hardship fund; model for co-op energy-assistance roundups nationwide.
+
+18. LIHEAP Clearinghouse / liheap.org — Directory (NOT the federal program) | liheap.org (independent clearinghouse) | https://www.liheap.org/ | General public; free directory of all state heating/utility-assistance programs (incl. non-LIHEAP state & utility funds) | n/a (information/directory) | ROLLING | 200 | Useful meta-resource to surface state/utility funds. The federal LIHEAP program itself is EXCLUDED here, but this site lists the non-federal extras.
+
+19. Lifeline / ACP-Style Phone & Internet Help (non-federal local providers) | Local ISPs + state Lifeline programs | https://www.fcc.gov/lifeline | Low-income households; discounted phone/internet via Lifeline and state broadband assistance | ~$9.25-$30/mo discount | ROLLING | 403 (FCC blocked; use browser) | Lifeline is a federal benefit, but many local ISPs/co-ops add their own low-cost plans — check local provider.
+
+----- C. FOOD HELP (FOOD BANKS, SENIOR, CHILD) -----
+
+20. Feeding America — Find Your Local Food Bank | Feeding America (network of 200 food banks / 60,000 pantries) | https://www.feedingamerica.org/find-your-local-foodbank | Anyone food-insecure; ZIP lookup to nearest food bank, pantry, soup kitchen, mobile pantry | Free food (varies) | ROLLING | 200 | The largest U.S. hunger-relief network; every community has a member food bank.
+
+21. Meals on Wheels America — Find Meals & Services | Meals on Wheels America (network of ~5,000 local providers) | https://www.mealsonwheelsamerica.org/find-meals-and-services/ | Adults 60+ (or disabled) with mobility challenges making shopping/cooking hard; age/eligibility varies by provider | Home-delivered + congregate meals (varies; often free/sliding) | ROLLING | 200-browser (Cloudflare) | Type in ZIP to find local provider. Eligible: 60+ with mobility challenges per the verified site.
+
+22. No Kid Hungry — Find Free Meals (Summer Meals / school food) | No Kid Hungry / Share Our Strength (nonprofit) | https://www.nokidhungry.org/find-free-meals | Kids/families; free summer meals, backpack programs, school-break food for children | Free meals (varies) | ROLLING (seasonal/summer) | 200 | Finds summer meal sites & school-break food for kids; complements school lunch.
+
+23. FoodPantries.org — National Pantry/Soup-Kitchen Directory | FoodPantries.org (community directory) | https://www.foodpantries.org/ | Anyone in need; lists 16,000+ food pantries, soup kitchens, and food banks by state/ZIP | Free food (varies) | ROLLING | 200-browser (406 on curl) | Clean free directory of faith/church pantries & local food help incl. hours/addresses.
+
+24. AmpleHarvest.org — Gardeners Feeding the Hungry | Ample Harvest (nonprofit) | https://www.ampleharvest.org/ | Anyone; connects backyard gardeners with excess produce to local food pantries; also pantry locator | Free fresh produce (varies) | ROLLING | 200 | Lets home gardeners donate excess harvest to pantries; pantries listed by ZIP.
+
+25. CSP — Commodity Supplemental Food Program (via local agencies) | Local partner agencies / state (CSFP) | https://www.cspnet.org/ | Seniors 60+ (income-qualified); monthly box of shelf-stable food, often delivered | Monthly food box | ROLLING (via local agency) | 200 | CSFP gives low-income seniors a monthly food package; administered locally. (Federal funding, but delivery is local — useful senior long-tail.)
+
+26. Senior Food & Nutrition Programs — NCOA | National Council on Aging (nonprofit) | https://www.ncoa.org/ | Older adults (60+); connects to senior nutrition, food benefits, and utility/Medicare help | Varies (benefit screening) | ROLLING | 200 | NCOA's benefits checkup screens seniors for food, energy, and other benefits they may not know they qualify for.
+
+27. AARP — Food & Senior Assistance Resources | AARP (nonprofit) | https://www.aarp.org/ | Adults 50+/caregivers; information on food assistance, senior meals, and benefits | n/a (info/resources) | ROLLING | 200 | Hub linking to senior food, SNAP-adjacent, and local community resources.
+
+----- D. RENT / EVICTION BRIDGE (NON-FEDERAL) -----
+
+28. Eviction Lab / Rental-Assistance & Tenant Rights Resources | Eviction Lab (Princeton; research + resources) | https://www.evictionlab.org/ | Renters facing eviction; data + links to tenant-rights and rental-assistance resources | n/a (info/resources) | ROLLING | 200 | Research hub; useful to direct renters to local tenant-rights orgs and non-federal rental aid.
+
+29. Pro Bono Net / LawHelp — Free Tenant Legal Aid | Pro Bono Net (nonprofit) | https://www.probono.net/ | Low-income renters/individuals needing free legal help for eviction & housing | Free legal help | ROLLING | 200 | Free legal-aid directory (LawHelp) for eviction defense and housing-rights assistance.
+
+30. Legal Aid / LSC-Funded Legal Services (local) | Legal Services Corporation + local legal-aid orgs | https://www.lsc.gov/ | Low-income individuals; free civil legal help incl. eviction defense, housing, utility shutoff, benefits appeals | Free legal representation | ROLLING | 200 | LSC funds local legal-aid offices nationwide — the main eviction-defense long-tail.
+
+31. Habitat for Humanity — Local Home & Housing Assistance | Habitat for Humanity (local affiliates) | https://www.habitat.org/ | Low-income homeowners/renters; local affiliates offer repair, homebuyer, and some eviction/foreclosure counseling | Varies by affiliate | ROLLING (per affiliate) | 200 | Many affiliates run foreclosure/eviction counseling and home-repair help.
+
+----- E. FUNERAL / BURIAL ASSISTANCE -----
+
+32. Funeral Consumers Alliance — Funeral Assistance & Rights | Funeral Consumers Alliance (nonprofit) | https://www.funerals.org/ | Anyone needing affordable funeral/burial guidance; consumer advocacy & cost info | n/a (info/advocacy) | ROLLING | 200 | Helps families get fair funeral pricing and avoid overcharges; local memorial-society chapters.
+
+33. Funeral / Burial Assistance via Local Faith & Charity (SVdP, Catholic Charities, United Way) | Local councils + United Way | https://www.needhelppayingbills.com/html/funeral.html | Families unable to cover funeral/burial costs; local charities & churches sometimes fund cremation/burial | Varies (often $500–$1,500 toward cremation) | ROLLING | 200 (directory main verified; sub-page path on NeedHelpPayingBills) | Many local St. Vincent de Paul / church / community foundations offer funeral hardship grants — route via needhelppayingbills + 211.
+
+----- F. NOT VERIFIED / DEAD (do NOT list live) -----
+
+X. One Degree (onedegree.org) | SF Bay Area nonprofit social-services directory | https://www.onedegree.org/ | --- | --- | --- | 000 NO-DNS (domain dead) | One Degree appears defunct — domain no longer resolves (browser ERR_NAME_NOT_RESOLVED). Do not list.
+X. Good Neighbor Energy Fund (goodneighborenergyfund.com) | MA nonprofit energy fund | https://www.goodneighborenergyfund.com/ | --- | --- | --- | 000 NO-DNS | Domain dead; MA residents should use Citizens Energy (entry #14) or 211 instead.
+X. LIHEAPHelp.org | --- | https://www.liheaphelp.org/ | --- | --- | --- | 000 NO-DNS | Domain dead; use liheap.org clearinghouse (#18) instead.
+X. Modest Needs — reachability | see #1 | https://www.modestneeds.org/ | --- | --- | --- | 000 connection timeout | Server unreachable from this network (both ports timeout). Confirm independently before listing.
+
+====================================================================================
+METHOD: URLs HTTP-verified 2026-08-15 via curl + headless browser (for Cloudflare/403).
+Directory target: ~/projects/freebie/docs/research/longtail-emergency.txt
+====================================================================================

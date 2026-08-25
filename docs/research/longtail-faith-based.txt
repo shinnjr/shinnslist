@@ -1,0 +1,121 @@
+SHINNSLIST RESEARCH — LONG-TAIL FAITH-BASED ASSISTANCE PROGRAMS
+=====================================================================================
+Scope: Denominational emergency assistance (Catholic, Lutheran, Jewish, Islamic,
+Episcopal, Methodist, Baptist, Presbyterian), church-based scholarships, and
+faith-based food/rent/utility help. National denominational bodies + how to find
+their LOCAL programs. Focus = hard-to-find long-tail individual/family help.
+All URLs below HTTP-verified 200 on 2026-08-15 unless marked.
+SOURCE_TYPE legend: 200=curl HTTP 200; 200-browser=verified in headless browser
+(curl gave 403/blocked); 403-bot=Cloudflare/anti-bot, unreachable even in browser
+(excluded from list); 000=unreachable from this network.
+
+FORMAT: NAME | FUNDER/ORG | URL | WHO QUALIFIES | AMOUNT | DEADLINE_OR_ROLLING | SOURCE_TYPE | NOTES
+=====================================================================================
+
+----- A. DENOMINATIONAL EMERGENCY ASSISTANCE (NATIONAL BODIES + LOCAL LOOKUP) -----
+
+1. Lutheran Social Services of America (LSSA) | LSSA / ELCA & LCMS-affiliated network of ~300 local agencies | https://www.lssa.org/ | Individuals/families in need in any state — local LSS agencies offer emergency rent, utility, food, clothing, prescription, refugee & family help | Varies by local agency (emergency cash/food commonly) | ROLLING (via local agency) | 200 | Largest U.S. Lutheran human-services network; use the local-agency locator on the site to route by ZIP. Covers all Lutheran traditions (ELCA, LCMS, others).
+
+2. ICNA Relief | Islamic Circle of North America (Sunni Muslim) | https://www.icnarelief.org/ | Anyone in need regardless of faith; national U.S. network of relief centers offers rent/utility/food assistance, shelters, refugee aid, and disaster relief | Varies by program (food boxes, utility/rent help, free clinics) | ROLLING (via regional relief center) | 200 | One of the most active U.S. Muslim relief networks with physical relief centers; find nearest center via site. Services open to all faiths.
+
+3. Islamic Relief USA | Islamic Relief Worldwide (Muslim) | https://irusa.org/ | Individuals/families in crisis in the U.S.; Zakat & Sadaqah-funded programs provide food (pantry programs), emergency cash, utility help, and disaster relief | Varies by program; Zakat relief typically $100s for food/rent/utilities | ROLLING (apply via local chapter / programs page) | 200 | Largest U.S. Muslim humanitarian org. Zakat page (irusa.org/zakat/) details eligible recipients (the poor, needy, debtors) and is a clear entry point for emergency assistance.
+
+4. Zakat Foundation of America | Zakat Foundation of America (Muslim) | https://www.zakat.org/ | Eligible Zakat recipients: the poor/needy, families in debt, stranded/indebted travelers; U.S. domestic programs cover food, rent, utility, and emergency relief | Varies by program | ROLLING | 200 | National Muslim charity with U.S. food-pantry network + domestic hardship programs. Zakat-eligible criteria map cleanly to low-income families.
+
+5. United Methodist Committee on Relief (UMCOR) | UMCOR / United Methodist Church | https://umcor.org/ | Individuals/families in the U.S. affected by disaster, displacement, or emergency; domestic case-management grants for recovery | Varies (recovery grants via local UM Conferences) | ROLLING (via conference/disaster-response network) | 200 | The UMC's emergency-response arm. UMCOR/USA page (umcor.org/USA/) covers U.S. domestic recovery; route families to their Annual Conference for direct case help.
+
+6. Presbyterian Disaster Assistance (PDA) | Presbyterian Church (USA) | https://www.pcusa.org/ | Individuals/families recovering from disaster or emergency within PC(USA) presbyteries; emergency & long-term recovery grants | Varies (recovery grants) | ROLLING | 200 | PC(USA)'s disaster-response ministry. National homepage verified; also presbyterianmission.org/ministries/ (200) for compassion/justice programs that include local emergency aid.
+
+7. Episcopal Relief & Development | Episcopal Church (national) | https://www.episcopalrelief.org/ | Individuals/families in crisis; U.S. disaster/emergency response grants deployed via Episcopal dioceses and partner agencies | Varies (networked disaster + recovery grants) | ROLLING | 200 | National Episcopal emergency-relief body. Long-term recovery focus; route to local Episcopal diocesan network for direct aid.
+
+8. Send Relief | Send Relief / Southern Baptist Convention (NAMB) | https://www.sendrelief.org/ | Anyone in need; disaster-relief + local compassion ministries providing food, utility/rent help, and crisis support through Baptist state conventions & churches | Varies by ministry (food, emergency aid) | ROLLING (via state convention/local church) | 200 | Southern Baptist disaster/compassion arm. Baptist Global Response (baptistglobalresponse.com, 200) is the SBC's international-poverty partner; Send Relief is the domestic entry point.
+
+9. Cooperative Baptist Fellowship (CBF) — Help & Hope | Cooperative Baptist Fellowship | https://cbf.net/ | Individuals/families in need served through CBF-affiliated churches & partner ministries; emergency/hospitality relief | Varies (via local CBF church) | ROLLING | 200 | Moderate-Baptist network; directs need to local CBF congregations that operate food pantries, benevolence funds, and emergency help.
+
+10. American Baptist Home Mission Societies (ABHMS) | American Baptist Churches USA | https://www.abhms.org/ | Individuals/families in need; supports congregational ministry (food, shelter, homelessness, disaster response) across ABCUSA churches | Varies (via local ABC church) | ROLLING | 200 | American Baptist home-missions agency; local ABCUSA churches run benevolence/food programs. National home page verified.
+
+11. United Church of Christ (UCC) — Justice & Local Ministries | United Church of Christ | https://www.ucc.org/ | Individuals/families in need served by local UCC congregations; disaster response, food, housing, emergency assistance | Varies (via local UCC church) | ROLLING | 200 | UCC has an organized disaster-recovery ministry + Stronger Churches/Covenanted Ministries; route to nearest congregation. ucc.org/what-we-do/ (200) lists program areas.
+
+12. Church World Service (CWS) — Domestic Emergency & Food | Church World Service (ecumenical, 37 denominations) | https://cwsglobal.org/ | U.S. families in need; CWS food-grant and emergency-assistance programs via member denominations + CROP hunger network | Varies | ROLLING | 200 | Ecumenical agency (mainline Protestant + Orthodox + others). CWS Blankets & emergency grant programs support local hunger/relief partners.
+
+13. Mennonite Central Committee (MCC) | Mennonite Central Committee | https://mcc.org/ | Individuals/families in need; U.S. material-resource, food, thrift, refugee, and emergency-assistance programs via local MCC offices & congregations | Varies (food, material aid) | ROLLING | 200 | Anabaptist relief network with strong U.S. domestic presence (thrift shops, food, refugee resettlement).
+
+14. Christian Appalachian Project | Christian Appalachian Project (interdenominational Catholic-founded) | https://www.christianapp.org/ | Low-income individuals/families in Appalachia (KY, TN, VA, WV, OH, NC); emergency housing, food, utilities, home repair, education | Varies (in-kind + financial aid programs) | ROLLING | 200 | Long-running regional faith-based assistance provider; distinctive for rural Appalachian emergency help.
+
+15. Salvation Army Emergency & Benevolence | The Salvation Army (evangelical Christian) | https://www.salvationarmyusa.org/ | Anyone in need; local corps provide rent/mortgage, utility, food, clothing, prescription, shelter aid | Varies by corps (often $100–$500; some free) | ROLLING (at local corps / 800-SAL-ARMY) | 200 | The classic "last-resort" faith-based emergency aid; route by nearest corps office.
+
+16. St. Vincent de Paul Society (SVdP) | Society of St. Vincent de Paul USA (Catholic) | https://www.svdpusa.org/ | Families/individuals in need; local conferences help with rent, utilities, food, emergency expenses via in-home visits | Varies (food + rent/utility help, some cash) | ROLLING (via local council) | 200 | Catholic lay "home visit" emergency model. get-help/ locator (svdpusa.org/get-help/, 200) finds nearest council.
+
+17. Seventh-day Adventist Community Services | Adventist Community Services / North American Division | https://www.communityservices.org/ | Individuals/families in need; local Adventist Community Services centers provide food, clothing, utility/rent assistance, disaster response | Varies (local centers) | ROLLING (via local center) | 200 | Nationwide network of Adventist community centers; strong food/clothing/utility programs.
+
+18. Hebrew Free Loan Society (HFLS) | Hebrew Free Loan Society (Jewish) | https://www.hfls.org/ | Anyone (traditionally underserved families); INTEREST-FREE loans for emergency, housing, medical, education, business | Interest-free loans (no fixed cap; application-based) | ROLLING (apply online) | 200 | Model for hundreds of local Hebrew Free Loan societies (SF, LA, Chicago, etc.) offering $0-interest loans — key Jewish long-tail for families who can't qualify for bank loans.
+
+19. Jewish Family Services / Jewish Family & Children's Services | JFCS (network of Jewish Family Service agencies) | https://www.jfcs.org/ | Individuals/families in need regardless of religion; emergency financial assistance, food (kosher pantries), rent/utility help, counseling | Varies by local JFCS agency | ROLLING (via local JFS) | 200 | JFS agencies exist in most metro areas (NY, SF, LA, Boston, Chicago...). jfcs.org is the SF Bay-Area flagship; use local JFS locator for others.
+
+20. B'nai B'rith — Senior & Community Services | B'nai B'rith International (Jewish) | https://www.bnaibrith.org/ | Seniors, families, and individuals in need; community-service, housing, and emergency-support programs | Varies | ROLLING | 200 | Long-established Jewish community-service body with housing and family-assistance programs.
+
+21. Church of the Nazarene — Compassionate Ministries | Church of the Nazarene | https://nazarene.org/ | Individuals/families in need; local Nazarene churches run food pantries, benevolence funds, utility/rent help | Varies (via local church) | ROLLING | 200 | Wesleyan-holiness denomination; local compassionate ministries are a common emergency-aid door.
+
+22. The Christian and Missionary Alliance (C&MA) | Christian & Missionary Alliance | https://www.cmalliance.org/ | Individuals/families in need; local Alliance churches offer benevolence/emergency assistance | Varies (via local church) | ROLLING | 200 | Pentecostal-influenced evangelical denomination; national homepage verified, route to local congregation.
+
+23. Reformed Church in America (RCA) | Reformed Church in America | https://www.rca.org/ | Individuals/families in need; local RCA churches run deacons' funds and benevolence programs for emergency help | Varies (via local church) | ROLLING | 200 | Denominational body whose local churches offer deacons-fund emergency assistance.
+
+24. Disciples of Christ (Christian Church) — Week of Compassion | Christian Church (Disciples of Christ) | https://disciples.org/ | Individuals/families in crisis; disaster-relief and emergency-assistance programs via Disciples regions & congregations | Varies | ROLLING | 200 | Mainline Protestant denomination; Week of Compassion is its relief fund, delivered through regional churches.
+
+----- B. FAITH-BASED FOOD / RENT / UTILITY HELP (FOCUSED PROGRAMS) -----
+
+25. Catholic Charities USA — Find Help / Emergency Assistance | Catholic Charities USA (Catholic, 160+ local agencies) | https://www.catholiccharitiesusa.org/find-help/ | Individuals/families in crisis; local agencies provide rent, utilities, food, clothing, emergency cash | Varies by diocese | ROLLING (via local agency) | 200 | The flagship Catholic emergency network. find-help/ locator by ZIP. Partially covered in prior wave — included as the Catholic anchor + local-agency locator.
+
+26. Bread for the World — Hunger Advocacy (local partners) | Bread for the World (interdenominational Christian) | https://www.bread.org/ | Food-insecure families; advocacy org that channels to denominational food programs & SNAP outreach | N/A (advocacy → food-program referrals) | ROLLING | 200 | Less a direct grant, more a hub connecting faith-hunger programs; useful directory-level source.
+
+27. World Vision US — Domestic Crisis & Family Support | World Vision (evangelical Christian) | https://www.worldvision.org/ | U.S. families facing crisis; child-sponsorship + domestic disaster/crisis programs and church-partner food help | Varies | ROLLING | 200 | Global Christian relief body with U.S. domestic programs incl. disaster response and family support via church partners.
+
+28. Lutheran Church Extension Fund (LCEF) — Ministry & Local Aid | Lutheran Church Extension Fund | https://www.lcef.org/ | Lutheran congregations & ministries (indirect: supports local aid programs); emergency ministry funding | Varies | ROLLING | 200 | LCMS financial arm that funds local Lutheran ministries providing community emergency aid — a funding pipe for local faith food/rent help.
+
+29. Jewish Community Federation & Endowment (local scholarship/assistance arms) | Jewish community federations (e.g., jcsf.org San Francisco) | https://www.jcsf.org/ | Jewish and local families; federations fund local food, housing, and emergency-assistance + scholarship programs | Varies (local) | ROLLING | 200 | Local Jewish federations are a major funding source for community food banks, JFCS, and emergency aid. jcsf.org = SF example; nationwide via jewishfederations.org (200).
+
+30. United Methodist General Board of Higher Ed & Ministry (GBHEM) | GBHEM / United Methodist Church | https://www.gbhem.org/ | United Methodist students; educational scholarships and leadership aid | Varies (need- and merit-based scholarships) | Varies (annual cycles) | 200 | National UMC scholarship/financial-aid authority; the central door for Methodist church-based scholarships.
+
+----- C. CHURCH-BASED SCHOLARSHIPS (FAITH-AFFILIATED COLLEGES + DENOMINATIONAL FUNDS) -----
+
+31. Catholic Scholarships (portal) | Catholic Scholarship portals & K-12/college funds | https://catholicscholarships.org/ | Catholic and non-Catholic students; scholarships for Catholic schools, parish/community scholarships | Varies | Varies (rolling portal) | 200 | Directory portal aggregating Catholic school scholarships (many parish-funded and hard to find).
+
+32. Islamic Scholarship Fund (ISF) | Islamic Scholarship Fund (Muslim) | https://www.islamicscholarshipfund.org/ | U.S. Muslim (and non-Muslim) students pursuing degrees in fields where Muslims are underrepresented (media, law, politics, arts); merit + need | Varies (annual scholarships) | Annual (typically opens each spring) | 200 | National Muslim scholarship fund; distinct from ISNA's program. Check site for current cycle.
+
+33. ISNA Scholarship | Islamic Society of North America | https://www.isna.net/isna-scholarship/ | Muslim students (and others) in the U.S./Canada; undergraduate & medical/vocational scholarships | Varies (need-based) | Annual (rolls most years) | 200 | ISNA is North America's largest Muslim umbrella org; its scholarship program is a well-known long-tail entry.
+
+34. Episcopal Church Foundation | Episcopal Church Foundation | https://www.episcopalfoundation.org/ | Episcopal-affiliated students & leaders; fellowships and education grants | Varies | Annual | 200 | National Episcopal education/fellowship foundation.
+
+35. Presbyterian Foundation | Presbyterian Church (USA) Foundation | https://www.presbyterianfoundation.org/ | Presbyterian-affiliated students & ministries; endowed scholarships and ministry grants | Varies | Varies (endowment-funded) | 200 | PC(USA)'s foundation manages endowed scholarship funds for Presbyterian students and family assistance ministries.
+
+36. United Methodist Foundation (UMF Global) | United Methodist Foundation | https://umfglobal.org/ | United Methodist students & ministries; scholarships and grants via UM conferences | Varies | Varies | 200 | Network funding UM scholarships + local ministry emergency aid; connect to local UM Conference Foundation.
+
+37. Christian Appalachian Project — Education Programs | Christian Appalachian Project | https://www.christianapp.org/ | Low-income Appalachian students; educational support & scholarships | Varies | Annual | 200 | Faith-based education arm for Appalachian youth (see #14).
+
+38. Knights of Columbus — Charities & Scholarships | Knights of Columbus (Catholic fraternal) | https://www.kofc.org/ | Catholic families & students; local council charity funds + national scholarships | Varies (local council funds; national scholarships) | Varies | 200 | Catholic fraternal order whose local councils give emergency aid and scholarships to families/students.
+
+----- EXCLUDED (could not verify HTTP 200 / anti-bot) -----
+- Muslim Aid USA (muslimaid.org): 403 / Cloudflare — browser also blocked.
+- Chabad (chabad.org): 403 — browser blocked.
+- Tzu Chi USA (tzuchi.us): 403 — browser blocked (Buddhist emergency aid, worth re-checking manually).
+- Catholic Relief Services (crs.org): 403 — browser blocked (mostly international).
+- Lutheran World Relief (lwr.org): 403 — browser blocked.
+- American Jewish Joint Distribution Committee (jdc.org): 403 — browser blocked.
+- Assemblies of God (ag.org): 403 — browser blocked.
+These are real orgs but couldn't be HTTP-verified from this network; re-check manually before listing.
+
+=====================================================================================
+NOTES FOR SHINNSLIST USE
+- Most faith-based emergency assistance is DELIVERED LOCALLY (diocese/presbytery/congregation/
+  federation/relief center), so the URL above is the national body + locator, and the true
+  grant lives at the local level. Route users: national body → local agency locator → apply.
+- Strongest "long tail / didn't know I qualified" picks:
+    • ICNA Relief + Islamic Relief Zakat (open to ALL faiths, very active, under-advertised)
+    • Hebrew Free Loan Societies ($0-interest loans — families locked out of banks)
+    • JFS/Jewish Family Services + local federations (emergency aid regardless of religion)
+    • SVdP home-visit model + Catholic Charities find-help locator (Catholic network)
+    • Baptist (Send Relief + CBF + ABHMS) and Presbyterian (PDA + Compassion) networks
+- Faith scholarships cluster on ANNUAL cycles (ISF, ISNA, GBHEM, Episcopal Foundation,
+  Presbyterian Foundation); Shinnslist should surface "cycle open" flags and route to the
+  specific application page each season.
+=====================================================================================

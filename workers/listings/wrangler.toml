@@ -12,7 +12,7 @@ workers_dev = true
 # ]
 
 [vars]
-NEXT_PUBLIC_SUPABASE_URL = ""
+NEXT_PUBLIC_SUPABASE_URL = "https://nmisxwzrbsyqihqwnvsx.supabase.co"
 
 # Secret (set via: npx wrangler secret put SUPABASE_SERVICE_ROLE_KEY):
 #   SUPABASE_SERVICE_ROLE_KEY = eyJ...

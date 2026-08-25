@@ -67,7 +67,7 @@ export function ErrorFallback({
       {onRetry && (
         <button
           onClick={onRetry}
-          className="touch-target inline-flex items-center gap-2 bg-[var(--shinnslist-pink)] text-white px-8 py-3 rounded-full text-sm font-bold hover:bg-fuchsia-600 active:scale-[0.98] transition-all"
+          className="touch-target inline-flex items-center gap-2 bg-[var(--shinnslist-pink)] text-black px-8 py-3 rounded-full text-sm font-bold hover:bg-emerald-600 active:scale-[0.98] transition-all"
         >
           Try again
         </button>

@@ -91,7 +91,7 @@ export default function TopDealCard({ deal, rank, analysis, locked, onUnlock }: 
             </div>
             <button
               onClick={() => { track('unlock_click', { category: slug, deal_id: deal.id }); onUnlock(slug); }}
-              className="min-h-[44px] bg-[var(--shinnslist-pink)] text-white text-sm font-bold px-6 py-2.5 rounded-full hover:bg-fuchsia-600 active:scale-[0.97] transition-all shadow-lg shadow-[var(--shinnslist-pink)]/25"
+              className="min-h-[48px] bg-[var(--shinnslist-pink)] text-black text-sm font-bold px-6 py-2.5 rounded-full hover:bg-emerald-600 active:scale-[0.97] transition-all shadow-lg shadow-[var(--shinnslist-pink)]/25"
             >
               Unlock this vertical — $1/wk
             </button>
@@ -149,7 +149,7 @@ export default function TopDealCard({ deal, rank, analysis, locked, onUnlock }: 
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => track('deal_view', { deal_id: deal.id, category: slug, price: deal.price, estimated_value: deal.estimatedValue ?? undefined, city: deal.location?.city })}
-            className="mt-3 block w-full text-center min-h-[44px] bg-[var(--shinnslist-surface)] border border-[var(--shinnslist-border)] text-white text-sm font-semibold py-2.5 rounded-full hover:border-[var(--shinnslist-pink)] hover:text-[var(--shinnslist-pink)] active:scale-[0.98] transition-all"
+            className="mt-3 block w-full text-center min-h-[48px] bg-[var(--shinnslist-surface)] border border-[var(--shinnslist-border)] text-white text-sm font-semibold py-2.5 rounded-full hover:border-[var(--shinnslist-pink)] hover:text-[var(--shinnslist-pink)] active:scale-[0.98] transition-all"
           >
             Message seller →
           </a>

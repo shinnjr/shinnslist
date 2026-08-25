@@ -1,153 +1,562 @@
 {
-  "generated_at": "2026-08-08T05:22:46.966430+00:00",
-  "city_filter": "denver",
-  "count": 6,
+  "generated_at": "2026-08-08T09:43:14.436463+00:00",
+  "city": "denver",
+  "count": 33,
   "listings": [
     {
-      "title": "LEGO Star Wars Collection, new, sealed boxes",
+      "title": "$1,000 1971 Yamaha dt Aurora, CO",
       "price": "Free",
-      "price_cents": 0,
-      "location": "Denver, CO",
-      "url": "https://www.facebook.com/marketplace/item/sample3",
-      "image_url": "",
-      "posted_minutes_ago": 90,
-      "dedupe_key": "lego star wars collection new sealed boxes||denver co",
-      "hash": "e331ad560eea",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/1572986744435278/?ref=browse_tab&amp;referral_code=marketplace_top_picks&amp;referral_story_type=top_picks&amp;__tn__=!%3AD",
       "score": {
-        "overall": 74,
+        "overall": 57,
         "value": 55,
-        "condition": 84,
-        "recency": 96,
+        "condition": 60,
+        "is_free": true,
         "value_tokens": [
-          "lego"
+          "yamaha"
         ],
-        "condition_tokens": [
-          "new",
-          "sealed"
-        ],
-        "is_free": true
-      }
+        "condition_tokens": []
+      },
+      "dedupe_key": " 1 000 1971 yamaha dt aurora co",
+      "captured_at": "2026-08-08T09:43:14.435825+00:00"
     },
     {
-      "title": "Apple iPhone 13 - free, barely used",
-      "price": "Free",
-      "price_cents": 0,
-      "location": "Denver, CO",
-      "url": "https://www.facebook.com/marketplace/item/sample1",
-      "image_url": "",
-      "posted_minutes_ago": 40,
-      "dedupe_key": "apple iphone 13 free barely used||denver co",
-      "hash": "239c639453b3",
+      "title": "$900 Endless Pools E2000 Swim Spa Insulated Cover - Excellent Condition Denver, CO",
+      "price": "$900",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/1688636282186882/?ref=browse_tab&amp;referral_code=marketplace_top_picks&amp;referral_story_type=top_picks&amp;__tn__=!%3AD",
       "score": {
-        "overall": 73,
-        "value": 60,
+        "overall": 56,
+        "value": 42,
         "condition": 72,
-        "recency": 98,
-        "value_tokens": [
-          "apple",
-          "iphone"
-        ],
-        "condition_tokens": [
-          "barely used"
-        ],
-        "is_free": true
-      }
-    },
-    {
-      "title": "Mountain bike Trek, gently used",
-      "price": "Free",
-      "price_cents": 0,
-      "location": "Denver, CO",
-      "url": "https://www.facebook.com/marketplace/item/sample6",
-      "image_url": "",
-      "posted_minutes_ago": 25,
-      "dedupe_key": "mountain bike trek gently used||denver co",
-      "hash": "e98b55de4d54",
-      "score": {
-        "overall": 73,
-        "value": 60,
-        "condition": 72,
-        "recency": 99,
-        "value_tokens": [
-          "mountain bike",
-          "trek"
-        ],
-        "condition_tokens": [
-          "gently used"
-        ],
-        "is_free": true
-      }
-    },
-    {
-      "title": "KitchenAid stand mixer, excellent condition",
-      "price": "Free",
-      "price_cents": 0,
-      "location": "Denver, CO",
-      "url": "https://www.facebook.com/marketplace/item/sample9",
-      "image_url": "",
-      "posted_minutes_ago": 45,
-      "dedupe_key": "kitchenaid stand mixer excellent condition||denver co",
-      "hash": "771364c1e4fc",
-      "score": {
-        "overall": 71,
-        "value": 55,
-        "condition": 72,
-        "recency": 98,
-        "value_tokens": [
-          "kitchenaid"
-        ],
+        "is_free": false,
+        "value_tokens": [],
         "condition_tokens": [
           "excellent"
-        ],
-        "is_free": true
-      }
+        ]
+      },
+      "dedupe_key": " 900 endless pools e2000 swim spa insulated cover excellent condition denver co",
+      "captured_at": "2026-08-08T09:43:14.435679+00:00"
     },
     {
-      "title": "Nintendo Switch with games",
-      "price": "Free",
-      "price_cents": 0,
-      "location": "Denver, CO",
-      "url": "https://www.facebook.com/marketplace/item/sample7",
-      "image_url": "",
-      "posted_minutes_ago": 5,
-      "dedupe_key": "nintendo switch with games||denver co",
-      "hash": "d2e96dc0face",
+      "title": "$200 Gorgeous antique 1950's French door oven and pull out range Arvada, CO",
+      "price": "$200",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/1339511881619769/?ref=browse_tab&amp;referral_code=marketplace_top_picks&amp;referral_story_type=top_picks&amp;__tn__=!%3AD",
       "score": {
-        "overall": 70,
-        "value": 60,
-        "condition": 60,
-        "recency": 100,
-        "value_tokens": [
-          "nintendo",
-          "switch"
-        ],
-        "condition_tokens": [],
-        "is_free": true
-      }
-    },
-    {
-      "title": "Free treadmill, needs repair",
-      "price": "Free",
-      "price_cents": 0,
-      "location": "Denver, CO",
-      "url": "https://www.facebook.com/marketplace/item/sample5",
-      "image_url": "",
-      "posted_minutes_ago": 300,
-      "dedupe_key": "free treadmill needs repair||denver co",
-      "hash": "2d0317bf05b5",
-      "score": {
-        "overall": 59,
-        "value": 55,
-        "condition": 42,
-        "recency": 87,
-        "value_tokens": [
-          "treadmill"
-        ],
+        "overall": 56,
+        "value": 42,
+        "condition": 72,
+        "is_free": false,
+        "value_tokens": [],
         "condition_tokens": [
-          "needs repair"
+          "antique"
+        ]
+      },
+      "dedupe_key": " 200 gorgeous antique 1950 s french door oven and pull out range arvada co",
+      "captured_at": "2026-08-08T09:43:14.435702+00:00"
+    },
+    {
+      "title": "$45 Pottery Barn 3-in-1 stroller for dolls Denver, CO",
+      "price": "$45",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/1198522820020153/?ref=browse_tab&amp;referral_code=marketplace_top_picks&amp;referral_story_type=top_picks&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 56,
+        "value": 52,
+        "condition": 60,
+        "is_free": false,
+        "value_tokens": [
+          "stroller",
+          "pottery barn"
         ],
-        "is_free": true
-      }
+        "condition_tokens": []
+      },
+      "dedupe_key": " 45 pottery barn 3 in 1 stroller for dolls denver co",
+      "captured_at": "2026-08-08T09:43:14.435804+00:00"
+    },
+    {
+      "title": "$700 $800 1969 Yamaha yl2c trailmaster Golden, CO",
+      "price": "$700",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/1017604441260132/?ref=browse_tab&amp;referral_code=marketplace_general&amp;referral_story_type=general_listing&amp;tracking=%7B%22qid%22%3A%22-6381703603988213111%22%2C%22mf_story_key%22%3A%221897440607850314094%22%2C%22top_level_post_id%22%3A%221897440607850314094%22%2C%22commerce_rank_obj%22%3A%22%7B%5C%22target_id%5C%22%3A1897440607850314094%2C%5C%22target_type%5C%22%3A6%2C%5C%22primary_position%5C%22%3A2%2C%5C%22ranking_signature%5C%22%3A0%2C%5C%22ranking_region%5C%22%3Anull%2C%5C%22ranking_request_id%5C%22%3A8495704664631141454%2C%5C%22commerce_channel%5C%22%3A501%2C%5C%22value%5C%22%3A0.00031647758204021%2C%5C%22upsell_type%5C%22%3A129%2C%5C%22candidate_retrieval_source_map%5C%22%3A%7B%5C%2227682663638052201%5C%22%3A3001%2C%5C%2227794036750296297%5C%22%3A3016%2C%5C%2227887941204204769%5C%22%3A3016%2C%5C%2227874405635547796%5C%22%3A805%2C%5C%2228041379928826526%5C%22%3A3016%2C%5C%2228175315582157865%5C%22%3A805%7D%2C%5C%22candidate_write_path_source_map%5C%22%3A[]%2C%5C%22delivery_flow_path%5C%22%3Anull%2C%5C%22grouping_info%5C%22%3Anull%2C%5C%22is_prefetch%5C%22%3Afalse%2C%5C%22request_fetch_reason%5C%22%3Anull%7D%22%7D&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 56,
+        "value": 52,
+        "condition": 60,
+        "is_free": false,
+        "value_tokens": [
+          "yamaha",
+          "gold"
+        ],
+        "condition_tokens": []
+      },
+      "dedupe_key": " 700 800 1969 yamaha yl2c trailmaster golden co",
+      "captured_at": "2026-08-08T09:43:14.436166+00:00"
+    },
+    {
+      "title": "Just listed $30 UppaBaby Vista V1 *read entire listing* Lakewood, CO",
+      "price": "$30",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/1740006100634921/?ref=browse_tab&amp;referral_code=marketplace_general&amp;referral_story_type=general_listing&amp;tracking=%7B%22qid%22%3A%22-6381703603988213111%22%2C%22mf_story_key%22%3A%221897440607850314094%22%2C%22top_level_post_id%22%3A%221897440607850314094%22%2C%22commerce_rank_obj%22%3A%22%7B%5C%22target_id%5C%22%3A1897440607850314094%2C%5C%22target_type%5C%22%3A6%2C%5C%22primary_position%5C%22%3A2%2C%5C%22ranking_signature%5C%22%3A0%2C%5C%22ranking_region%5C%22%3Anull%2C%5C%22ranking_request_id%5C%22%3A8495704664631141454%2C%5C%22commerce_channel%5C%22%3A501%2C%5C%22value%5C%22%3A0.00031647758204021%2C%5C%22upsell_type%5C%22%3A129%2C%5C%22candidate_retrieval_source_map%5C%22%3A%7B%5C%2227682663638052201%5C%22%3A3001%2C%5C%2227794036750296297%5C%22%3A3016%2C%5C%2227887941204204769%5C%22%3A3016%2C%5C%2227874405635547796%5C%22%3A805%2C%5C%2228041379928826526%5C%22%3A3016%2C%5C%2228175315582157865%5C%22%3A805%7D%2C%5C%22candidate_write_path_source_map%5C%22%3A[]%2C%5C%22delivery_flow_path%5C%22%3Anull%2C%5C%22grouping_info%5C%22%3Anull%2C%5C%22is_prefetch%5C%22%3Afalse%2C%5C%22request_fetch_reason%5C%22%3Anull%7D%22%7D&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 56,
+        "value": 52,
+        "condition": 60,
+        "is_free": false,
+        "value_tokens": [
+          "baby",
+          "uppababy"
+        ],
+        "condition_tokens": []
+      },
+      "dedupe_key": "just listed 30 uppababy vista v1 read entire listing lakewood co",
+      "captured_at": "2026-08-08T09:43:14.436194+00:00"
+    },
+    {
+      "title": "$2,000 1977 Astroglass bass boat Denver, CO",
+      "price": "Free",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/861161513205574/?ref=browse_tab&amp;referral_code=marketplace_top_picks&amp;referral_story_type=top_picks&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 54,
+        "value": 50,
+        "condition": 60,
+        "is_free": true,
+        "value_tokens": [],
+        "condition_tokens": []
+      },
+      "dedupe_key": " 2 000 1977 astroglass bass boat denver co",
+      "captured_at": "2026-08-08T09:43:14.435566+00:00"
+    },
+    {
+      "title": "$3,600 2005 Toyota prius LE Hatchback 4D Lakewood, CO",
+      "price": "Free",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/995149393556505/?ref=browse_tab&amp;referral_code=marketplace_top_picks&amp;referral_story_type=top_picks&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 54,
+        "value": 50,
+        "condition": 60,
+        "is_free": true,
+        "value_tokens": [],
+        "condition_tokens": []
+      },
+      "dedupe_key": " 3 600 2005 toyota prius le hatchback 4d lakewood co",
+      "captured_at": "2026-08-08T09:43:14.435626+00:00"
+    },
+    {
+      "title": "FREE Free Arvada, CO",
+      "price": "Free",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/2160317947858120/?ref=browse_tab&amp;referral_code=marketplace_top_picks&amp;referral_story_type=top_picks&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 54,
+        "value": 50,
+        "condition": 60,
+        "is_free": true,
+        "value_tokens": [],
+        "condition_tokens": []
+      },
+      "dedupe_key": "free free arvada co",
+      "captured_at": "2026-08-08T09:43:14.435734+00:00"
+    },
+    {
+      "title": "$2,950 1960s ALL ALUMINUM SCREENS 3 LEFT Denver, CO",
+      "price": "Free",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/1414117763940486/?ref=browse_tab&amp;referral_code=marketplace_top_picks&amp;referral_story_type=top_picks&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 54,
+        "value": 50,
+        "condition": 60,
+        "is_free": true,
+        "value_tokens": [],
+        "condition_tokens": []
+      },
+      "dedupe_key": " 2 950 1960s all aluminum screens 3 left denver co",
+      "captured_at": "2026-08-08T09:43:14.435768+00:00"
+    },
+    {
+      "title": "$1,200 1972 Crestliner tiger muskie 19\u2019 Denver, CO",
+      "price": "Free",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/1547459346730654/?ref=browse_tab&amp;referral_code=marketplace_general&amp;referral_story_type=general_listing&amp;tracking=%7B%22qid%22%3A%22-6381703603988213111%22%2C%22mf_story_key%22%3A%227770700412230972899%22%2C%22top_level_post_id%22%3A%227770700412230972899%22%2C%22commerce_rank_obj%22%3A%22%7B%5C%22target_id%5C%22%3A7770700412230972899%2C%5C%22target_type%5C%22%3A6%2C%5C%22primary_position%5C%22%3A1%2C%5C%22ranking_signature%5C%22%3A0%2C%5C%22ranking_region%5C%22%3Anull%2C%5C%22ranking_request_id%5C%22%3A8495704664631141454%2C%5C%22commerce_channel%5C%22%3A501%2C%5C%22value%5C%22%3A0.00032678417857032%2C%5C%22upsell_type%5C%22%3A129%2C%5C%22candidate_retrieval_source_map%5C%22%3A%7B%5C%2226804007845938728%5C%22%3A805%2C%5C%2237546495868328150%5C%22%3A3016%2C%5C%2236185231794425752%5C%22%3A3502%2C%5C%2228062736800010082%5C%22%3A3012%2C%5C%2227340270502232840%5C%22%3A3528%2C%5C%2228223416747282386%5C%22%3A3012%7D%2C%5C%22candidate_write_path_source_map%5C%22%3A[]%2C%5C%22delivery_flow_path%5C%22%3Anull%2C%5C%22grouping_info%5C%22%3Anull%2C%5C%22is_prefetch%5C%22%3Afalse%2C%5C%22request_fetch_reason%5C%22%3Anull%7D%22%7D&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 54,
+        "value": 50,
+        "condition": 60,
+        "is_free": true,
+        "value_tokens": [],
+        "condition_tokens": []
+      },
+      "dedupe_key": " 1 200 1972 crestliner tiger muskie 19 denver co",
+      "captured_at": "2026-08-08T09:43:14.435958+00:00"
+    },
+    {
+      "title": "Just listed $3,750 TOOL LOT- and there\u2019s a lot Englewood, CO",
+      "price": "Free",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/1695333818366660/?ref=browse_tab&amp;referral_code=marketplace_general&amp;referral_story_type=general_listing&amp;tracking=%7B%22qid%22%3A%22-6381703603988213111%22%2C%22mf_story_key%22%3A%227770700412230972899%22%2C%22top_level_post_id%22%3A%227770700412230972899%22%2C%22commerce_rank_obj%22%3A%22%7B%5C%22target_id%5C%22%3A7770700412230972899%2C%5C%22target_type%5C%22%3A6%2C%5C%22primary_position%5C%22%3A1%2C%5C%22ranking_signature%5C%22%3A0%2C%5C%22ranking_region%5C%22%3Anull%2C%5C%22ranking_request_id%5C%22%3A8495704664631141454%2C%5C%22commerce_channel%5C%22%3A501%2C%5C%22value%5C%22%3A0.00032678417857032%2C%5C%22upsell_type%5C%22%3A129%2C%5C%22candidate_retrieval_source_map%5C%22%3A%7B%5C%2226804007845938728%5C%22%3A805%2C%5C%2237546495868328150%5C%22%3A3016%2C%5C%2236185231794425752%5C%22%3A3502%2C%5C%2228062736800010082%5C%22%3A3012%2C%5C%2227340270502232840%5C%22%3A3528%2C%5C%2228223416747282386%5C%22%3A3012%7D%2C%5C%22candidate_write_path_source_map%5C%22%3A[]%2C%5C%22delivery_flow_path%5C%22%3Anull%2C%5C%22grouping_info%5C%22%3Anull%2C%5C%22is_prefetch%5C%22%3Afalse%2C%5C%22request_fetch_reason%5C%22%3Anull%7D%22%7D&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 54,
+        "value": 50,
+        "condition": 60,
+        "is_free": true,
+        "value_tokens": [],
+        "condition_tokens": []
+      },
+      "dedupe_key": "just listed 3 750 tool lot and there s a lot englewood co",
+      "captured_at": "2026-08-08T09:43:14.435991+00:00"
+    },
+    {
+      "title": "$4,000 1981 Iveco z100 Arvada, CO",
+      "price": "Free",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/985107277333272/?ref=browse_tab&amp;referral_code=marketplace_general&amp;referral_story_type=general_listing&amp;tracking=%7B%22qid%22%3A%22-6381703603988213111%22%2C%22mf_story_key%22%3A%227770700412230972899%22%2C%22top_level_post_id%22%3A%227770700412230972899%22%2C%22commerce_rank_obj%22%3A%22%7B%5C%22target_id%5C%22%3A7770700412230972899%2C%5C%22target_type%5C%22%3A6%2C%5C%22primary_position%5C%22%3A1%2C%5C%22ranking_signature%5C%22%3A0%2C%5C%22ranking_region%5C%22%3Anull%2C%5C%22ranking_request_id%5C%22%3A8495704664631141454%2C%5C%22commerce_channel%5C%22%3A501%2C%5C%22value%5C%22%3A0.00032678417857032%2C%5C%22upsell_type%5C%22%3A129%2C%5C%22candidate_retrieval_source_map%5C%22%3A%7B%5C%2226804007845938728%5C%22%3A805%2C%5C%2237546495868328150%5C%22%3A3016%2C%5C%2236185231794425752%5C%22%3A3502%2C%5C%2228062736800010082%5C%22%3A3012%2C%5C%2227340270502232840%5C%22%3A3528%2C%5C%2228223416747282386%5C%22%3A3012%7D%2C%5C%22candidate_write_path_source_map%5C%22%3A[]%2C%5C%22delivery_flow_path%5C%22%3Anull%2C%5C%22grouping_info%5C%22%3Anull%2C%5C%22is_prefetch%5C%22%3Afalse%2C%5C%22request_fetch_reason%5C%22%3Anull%7D%22%7D&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 54,
+        "value": 50,
+        "condition": 60,
+        "is_free": true,
+        "value_tokens": [],
+        "condition_tokens": []
+      },
+      "dedupe_key": " 4 000 1981 iveco z100 arvada co",
+      "captured_at": "2026-08-08T09:43:14.436010+00:00"
+    },
+    {
+      "title": "$0 OG Miter Saw Denver, CO",
+      "price": "Free",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/1351884526927221/?ref=browse_tab&amp;referral_code=marketplace_general&amp;referral_story_type=general_listing&amp;tracking=%7B%22qid%22%3A%22-6381703603988213111%22%2C%22mf_story_key%22%3A%227770700412230972899%22%2C%22top_level_post_id%22%3A%227770700412230972899%22%2C%22commerce_rank_obj%22%3A%22%7B%5C%22target_id%5C%22%3A7770700412230972899%2C%5C%22target_type%5C%22%3A6%2C%5C%22primary_position%5C%22%3A1%2C%5C%22ranking_signature%5C%22%3A0%2C%5C%22ranking_region%5C%22%3Anull%2C%5C%22ranking_request_id%5C%22%3A8495704664631141454%2C%5C%22commerce_channel%5C%22%3A501%2C%5C%22value%5C%22%3A0.00032678417857032%2C%5C%22upsell_type%5C%22%3A129%2C%5C%22candidate_retrieval_source_map%5C%22%3A%7B%5C%2226804007845938728%5C%22%3A805%2C%5C%2237546495868328150%5C%22%3A3016%2C%5C%2236185231794425752%5C%22%3A3502%2C%5C%2228062736800010082%5C%22%3A3012%2C%5C%2227340270502232840%5C%22%3A3528%2C%5C%2228223416747282386%5C%22%3A3012%7D%2C%5C%22candidate_write_path_source_map%5C%22%3A[]%2C%5C%22delivery_flow_path%5C%22%3Anull%2C%5C%22grouping_info%5C%22%3Anull%2C%5C%22is_prefetch%5C%22%3Afalse%2C%5C%22request_fetch_reason%5C%22%3Anull%7D%22%7D&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 54,
+        "value": 50,
+        "condition": 60,
+        "is_free": true,
+        "value_tokens": [],
+        "condition_tokens": []
+      },
+      "dedupe_key": " 0 og miter saw denver co",
+      "captured_at": "2026-08-08T09:43:14.436024+00:00"
+    },
+    {
+      "title": "$1,800 1983 Honda Odyssey Kiowa, CO",
+      "price": "Free",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/1065303366024038/?ref=browse_tab&amp;referral_code=marketplace_general&amp;referral_story_type=general_listing&amp;tracking=%7B%22qid%22%3A%22-6381703603988213111%22%2C%22mf_story_key%22%3A%224689708918093504676%22%2C%22top_level_post_id%22%3A%224689708918093504676%22%2C%22commerce_rank_obj%22%3A%22%7B%5C%22target_id%5C%22%3A4689708918093504676%2C%5C%22target_type%5C%22%3A6%2C%5C%22primary_position%5C%22%3A3%2C%5C%22ranking_signature%5C%22%3A0%2C%5C%22ranking_region%5C%22%3Anull%2C%5C%22ranking_request_id%5C%22%3A8495704664631141454%2C%5C%22commerce_channel%5C%22%3A501%2C%5C%22value%5C%22%3A0.00026265102830282%2C%5C%22upsell_type%5C%22%3A129%2C%5C%22candidate_retrieval_source_map%5C%22%3A%7B%5C%2227837730102583286%5C%22%3A3012%2C%5C%2226425523527124151%5C%22%3A3533%2C%5C%2227634519176176648%5C%22%3A3186%2C%5C%2226922754097403028%5C%22%3A805%2C%5C%2228005756682447900%5C%22%3A3131%2C%5C%2227833721729645066%5C%22%3A3565%7D%2C%5C%22candidate_write_path_source_map%5C%22%3A[]%2C%5C%22delivery_flow_path%5C%22%3Anull%2C%5C%22grouping_info%5C%22%3Anull%2C%5C%22is_prefetch%5C%22%3Afalse%2C%5C%22request_fetch_reason%5C%22%3Anull%7D%22%7D&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 54,
+        "value": 50,
+        "condition": 60,
+        "is_free": true,
+        "value_tokens": [],
+        "condition_tokens": []
+      },
+      "dedupe_key": " 1 800 1983 honda odyssey kiowa co",
+      "captured_at": "2026-08-08T09:43:14.436243+00:00"
+    },
+    {
+      "title": "$450 FS/FT Casio DG-20 Digital Guitar Ships to you",
+      "price": "$450",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/1094388363253091/?ref=browse_tab&amp;referral_code=marketplace_top_picks&amp;referral_story_type=top_picks&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 53,
+        "value": 47,
+        "condition": 60,
+        "is_free": false,
+        "value_tokens": [
+          "guitar"
+        ],
+        "condition_tokens": []
+      },
+      "dedupe_key": " 450 fs ft casio dg 20 digital guitar ships to you",
+      "captured_at": "2026-08-08T09:43:14.435220+00:00"
+    },
+    {
+      "title": "$120 3-Seat Child Stroller / Triple Stroller with Canopy \u2013 $145 OBO Denver, CO",
+      "price": "$120",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/1229771502579948/?ref=browse_tab&amp;referral_code=marketplace_top_picks&amp;referral_story_type=top_picks&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 53,
+        "value": 47,
+        "condition": 60,
+        "is_free": false,
+        "value_tokens": [
+          "stroller"
+        ],
+        "condition_tokens": []
+      },
+      "dedupe_key": " 120 3 seat child stroller triple stroller with canopy 145 obo denver co",
+      "captured_at": "2026-08-08T09:43:14.435523+00:00"
+    },
+    {
+      "title": "Just listed $70 Evolur Cruise Rider Lightweight Stroller w/ Canopy \u2013 Cognac \u2013 $70 Ships to you",
+      "price": "$70",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/938381035970378/?ref=browse_tab&amp;referral_code=marketplace_top_picks&amp;referral_story_type=top_picks&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 53,
+        "value": 47,
+        "condition": 60,
+        "is_free": false,
+        "value_tokens": [
+          "stroller"
+        ],
+        "condition_tokens": []
+      },
+      "dedupe_key": "just listed 70 evolur cruise rider lightweight stroller w canopy cognac 70 ships to you",
+      "captured_at": "2026-08-08T09:43:14.435876+00:00"
+    },
+    {
+      "title": "Just listed $90 Bugaboo Donkey 5 Stroller Bassinet Set Grey Melange Ships to you",
+      "price": "$90",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/1059818076520147/?ref=browse_tab&amp;referral_code=marketplace_top_picks&amp;referral_story_type=top_picks&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 53,
+        "value": 47,
+        "condition": 60,
+        "is_free": false,
+        "value_tokens": [
+          "stroller"
+        ],
+        "condition_tokens": []
+      },
+      "dedupe_key": "just listed 90 bugaboo donkey 5 stroller bassinet set grey melange ships to you",
+      "captured_at": "2026-08-08T09:43:14.435900+00:00"
+    },
+    {
+      "title": "$40 $75 Medium Mid-Century Modern Mirror Denver, CO",
+      "price": "$40",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/868516649392404/?ref=browse_tab&amp;referral_code=marketplace_general&amp;referral_story_type=general_listing&amp;tracking=%7B%22qid%22%3A%22-6381703603988213111%22%2C%22mf_story_key%22%3A%227770700412230972899%22%2C%22top_level_post_id%22%3A%227770700412230972899%22%2C%22commerce_rank_obj%22%3A%22%7B%5C%22target_id%5C%22%3A7770700412230972899%2C%5C%22target_type%5C%22%3A6%2C%5C%22primary_position%5C%22%3A1%2C%5C%22ranking_signature%5C%22%3A0%2C%5C%22ranking_region%5C%22%3Anull%2C%5C%22ranking_request_id%5C%22%3A8495704664631141454%2C%5C%22commerce_channel%5C%22%3A501%2C%5C%22value%5C%22%3A0.00032678417857032%2C%5C%22upsell_type%5C%22%3A129%2C%5C%22candidate_retrieval_source_map%5C%22%3A%7B%5C%2226804007845938728%5C%22%3A805%2C%5C%2237546495868328150%5C%22%3A3016%2C%5C%2236185231794425752%5C%22%3A3502%2C%5C%2228062736800010082%5C%22%3A3012%2C%5C%2227340270502232840%5C%22%3A3528%2C%5C%2228223416747282386%5C%22%3A3012%7D%2C%5C%22candidate_write_path_source_map%5C%22%3A[]%2C%5C%22delivery_flow_path%5C%22%3Anull%2C%5C%22grouping_info%5C%22%3Anull%2C%5C%22is_prefetch%5C%22%3Afalse%2C%5C%22request_fetch_reason%5C%22%3Anull%7D%22%7D&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 53,
+        "value": 47,
+        "condition": 60,
+        "is_free": false,
+        "value_tokens": [
+          "mid century"
+        ],
+        "condition_tokens": []
+      },
+      "dedupe_key": " 40 75 medium mid century modern mirror denver co",
+      "captured_at": "2026-08-08T09:43:14.435939+00:00"
+    },
+    {
+      "title": "Just listed $50,000 1997 Mercedes-Benz t1n sprinter 4x4 70k miles Denver, CO",
+      "price": "$50",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/1048731441357161/?ref=browse_tab&amp;referral_code=marketplace_top_picks&amp;referral_story_type=top_picks&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 50,
+        "value": 42,
+        "condition": 60,
+        "is_free": false,
+        "value_tokens": [],
+        "condition_tokens": []
+      },
+      "dedupe_key": "just listed 50 000 1997 mercedes benz t1n sprinter 4x4 70k miles denver co",
+      "captured_at": "2026-08-08T09:43:14.435548+00:00"
+    },
+    {
+      "title": "$50 Pok\u00e9mon card collection around 300 cards + binder Denver, CO",
+      "price": "$50",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/1294124612799983/?ref=browse_tab&amp;referral_code=marketplace_top_picks&amp;referral_story_type=top_picks&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 50,
+        "value": 42,
+        "condition": 60,
+        "is_free": false,
+        "value_tokens": [],
+        "condition_tokens": []
+      },
+      "dedupe_key": " 50 pok mon card collection around 300 cards binder denver co",
+      "captured_at": "2026-08-08T09:43:14.435589+00:00"
+    },
+    {
+      "title": "$20 6 Vornado Velocity Heaters Denver, CO",
+      "price": "$20",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/1805863547051736/?ref=browse_tab&amp;referral_code=marketplace_top_picks&amp;referral_story_type=top_picks&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 50,
+        "value": 42,
+        "condition": 60,
+        "is_free": false,
+        "value_tokens": [],
+        "condition_tokens": []
+      },
+      "dedupe_key": " 20 6 vornado velocity heaters denver co",
+      "captured_at": "2026-08-08T09:43:14.435652+00:00"
+    },
+    {
+      "title": "Just listed $450,000 2 Beds 2 Baths Apartment Denver, CO",
+      "price": "$450",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/1533773964889447/?ref=browse_tab&amp;referral_code=marketplace_top_picks&amp;referral_story_type=top_picks&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 50,
+        "value": 42,
+        "condition": 60,
+        "is_free": false,
+        "value_tokens": [],
+        "condition_tokens": []
+      },
+      "dedupe_key": "just listed 450 000 2 beds 2 baths apartment denver co",
+      "captured_at": "2026-08-08T09:43:14.435721+00:00"
+    },
+    {
+      "title": "$500 1992 four wheel pop-up Lakewood, CO",
+      "price": "$500",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/1030613019670966/?ref=browse_tab&amp;referral_code=marketplace_top_picks&amp;referral_story_type=top_picks&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 50,
+        "value": 42,
+        "condition": 60,
+        "is_free": false,
+        "value_tokens": [],
+        "condition_tokens": []
+      },
+      "dedupe_key": " 500 1992 four wheel pop up lakewood co",
+      "captured_at": "2026-08-08T09:43:14.435750+00:00"
+    },
+    {
+      "title": "$375 2013 Toyota prius C hybrid battery cells and harnesses. Denver, CO",
+      "price": "$375",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/1590619575755746/?ref=browse_tab&amp;referral_code=marketplace_top_picks&amp;referral_story_type=top_picks&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 50,
+        "value": 42,
+        "condition": 60,
+        "is_free": false,
+        "value_tokens": [],
+        "condition_tokens": []
+      },
+      "dedupe_key": " 375 2013 toyota prius c hybrid battery cells and harnesses denver co",
+      "captured_at": "2026-08-08T09:43:14.435848+00:00"
+    },
+    {
+      "title": "$33,900 2024 Ram promaster ev Lakewood, CO",
+      "price": "$33",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/1052394810647985/?ref=browse_tab&amp;referral_code=marketplace_top_picks&amp;referral_story_type=top_picks&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 50,
+        "value": 42,
+        "condition": 60,
+        "is_free": false,
+        "value_tokens": [],
+        "condition_tokens": []
+      },
+      "dedupe_key": " 33 900 2024 ram promaster ev lakewood co",
+      "captured_at": "2026-08-08T09:43:14.435917+00:00"
+    },
+    {
+      "title": "$23,995 2017 Tesla Model X \u00b7 Long Range Plus Sport Utility 4D Denver, CO",
+      "price": "$23",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/1358491763076705/?ref=browse_tab&amp;referral_code=marketplace_general&amp;referral_story_type=general_listing&amp;tracking=%7B%22qid%22%3A%22-6381703603988213111%22%2C%22mf_story_key%22%3A%221897440607850314094%22%2C%22top_level_post_id%22%3A%221897440607850314094%22%2C%22commerce_rank_obj%22%3A%22%7B%5C%22target_id%5C%22%3A1897440607850314094%2C%5C%22target_type%5C%22%3A6%2C%5C%22primary_position%5C%22%3A2%2C%5C%22ranking_signature%5C%22%3A0%2C%5C%22ranking_region%5C%22%3Anull%2C%5C%22ranking_request_id%5C%22%3A8495704664631141454%2C%5C%22commerce_channel%5C%22%3A501%2C%5C%22value%5C%22%3A0.00031647758204021%2C%5C%22upsell_type%5C%22%3A129%2C%5C%22candidate_retrieval_source_map%5C%22%3A%7B%5C%2227682663638052201%5C%22%3A3001%2C%5C%2227794036750296297%5C%22%3A3016%2C%5C%2227887941204204769%5C%22%3A3016%2C%5C%2227874405635547796%5C%22%3A805%2C%5C%2228041379928826526%5C%22%3A3016%2C%5C%2228175315582157865%5C%22%3A805%7D%2C%5C%22candidate_write_path_source_map%5C%22%3A[]%2C%5C%22delivery_flow_path%5C%22%3Anull%2C%5C%22grouping_info%5C%22%3Anull%2C%5C%22is_prefetch%5C%22%3Afalse%2C%5C%22request_fetch_reason%5C%22%3Anull%7D%22%7D&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 50,
+        "value": 42,
+        "condition": 60,
+        "is_free": false,
+        "value_tokens": [],
+        "condition_tokens": []
+      },
+      "dedupe_key": " 23 995 2017 tesla model x long range plus sport utility 4d denver co",
+      "captured_at": "2026-08-08T09:43:14.436066+00:00"
+    },
+    {
+      "title": "$450 Speedqueen commercial washer dryer Aurora, CO",
+      "price": "$450",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/2155531671971092/?ref=browse_tab&amp;referral_code=marketplace_general&amp;referral_story_type=general_listing&amp;tracking=%7B%22qid%22%3A%22-6381703603988213111%22%2C%22mf_story_key%22%3A%221897440607850314094%22%2C%22top_level_post_id%22%3A%221897440607850314094%22%2C%22commerce_rank_obj%22%3A%22%7B%5C%22target_id%5C%22%3A1897440607850314094%2C%5C%22target_type%5C%22%3A6%2C%5C%22primary_position%5C%22%3A2%2C%5C%22ranking_signature%5C%22%3A0%2C%5C%22ranking_region%5C%22%3Anull%2C%5C%22ranking_request_id%5C%22%3A8495704664631141454%2C%5C%22commerce_channel%5C%22%3A501%2C%5C%22value%5C%22%3A0.00031647758204021%2C%5C%22upsell_type%5C%22%3A129%2C%5C%22candidate_retrieval_source_map%5C%22%3A%7B%5C%2227682663638052201%5C%22%3A3001%2C%5C%2227794036750296297%5C%22%3A3016%2C%5C%2227887941204204769%5C%22%3A3016%2C%5C%2227874405635547796%5C%22%3A805%2C%5C%2228041379928826526%5C%22%3A3016%2C%5C%2228175315582157865%5C%22%3A805%7D%2C%5C%22candidate_write_path_source_map%5C%22%3A[]%2C%5C%22delivery_flow_path%5C%22%3Anull%2C%5C%22grouping_info%5C%22%3Anull%2C%5C%22is_prefetch%5C%22%3Afalse%2C%5C%22request_fetch_reason%5C%22%3Anull%7D%22%7D&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 50,
+        "value": 42,
+        "condition": 60,
+        "is_free": false,
+        "value_tokens": [],
+        "condition_tokens": []
+      },
+      "dedupe_key": " 450 speedqueen commercial washer dryer aurora co",
+      "captured_at": "2026-08-08T09:43:14.436098+00:00"
+    },
+    {
+      "title": "Just listed $50 Inflatable hot tub Littleton, CO",
+      "price": "$50",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/1360246039589252/?ref=browse_tab&amp;referral_code=marketplace_general&amp;referral_story_type=general_listing&amp;tracking=%7B%22qid%22%3A%22-6381703603988213111%22%2C%22mf_story_key%22%3A%221897440607850314094%22%2C%22top_level_post_id%22%3A%221897440607850314094%22%2C%22commerce_rank_obj%22%3A%22%7B%5C%22target_id%5C%22%3A1897440607850314094%2C%5C%22target_type%5C%22%3A6%2C%5C%22primary_position%5C%22%3A2%2C%5C%22ranking_signature%5C%22%3A0%2C%5C%22ranking_region%5C%22%3Anull%2C%5C%22ranking_request_id%5C%22%3A8495704664631141454%2C%5C%22commerce_channel%5C%22%3A501%2C%5C%22value%5C%22%3A0.00031647758204021%2C%5C%22upsell_type%5C%22%3A129%2C%5C%22candidate_retrieval_source_map%5C%22%3A%7B%5C%2227682663638052201%5C%22%3A3001%2C%5C%2227794036750296297%5C%22%3A3016%2C%5C%2227887941204204769%5C%22%3A3016%2C%5C%2227874405635547796%5C%22%3A805%2C%5C%2228041379928826526%5C%22%3A3016%2C%5C%2228175315582157865%5C%22%3A805%7D%2C%5C%22candidate_write_path_source_map%5C%22%3A[]%2C%5C%22delivery_flow_path%5C%22%3Anull%2C%5C%22grouping_info%5C%22%3Anull%2C%5C%22is_prefetch%5C%22%3Afalse%2C%5C%22request_fetch_reason%5C%22%3Anull%7D%22%7D&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 50,
+        "value": 42,
+        "condition": 60,
+        "is_free": false,
+        "value_tokens": [],
+        "condition_tokens": []
+      },
+      "dedupe_key": "just listed 50 inflatable hot tub littleton co",
+      "captured_at": "2026-08-08T09:43:14.436126+00:00"
+    },
+    {
+      "title": "Just listed $30,000 1999 Toyota Crown Estate Denver, CO",
+      "price": "$30",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/2707371039664733/?ref=browse_tab&amp;referral_code=marketplace_general&amp;referral_story_type=general_listing&amp;tracking=%7B%22qid%22%3A%22-6381703603988213111%22%2C%22mf_story_key%22%3A%221897440607850314094%22%2C%22top_level_post_id%22%3A%221897440607850314094%22%2C%22commerce_rank_obj%22%3A%22%7B%5C%22target_id%5C%22%3A1897440607850314094%2C%5C%22target_type%5C%22%3A6%2C%5C%22primary_position%5C%22%3A2%2C%5C%22ranking_signature%5C%22%3A0%2C%5C%22ranking_region%5C%22%3Anull%2C%5C%22ranking_request_id%5C%22%3A8495704664631141454%2C%5C%22commerce_channel%5C%22%3A501%2C%5C%22value%5C%22%3A0.00031647758204021%2C%5C%22upsell_type%5C%22%3A129%2C%5C%22candidate_retrieval_source_map%5C%22%3A%7B%5C%2227682663638052201%5C%22%3A3001%2C%5C%2227794036750296297%5C%22%3A3016%2C%5C%2227887941204204769%5C%22%3A3016%2C%5C%2227874405635547796%5C%22%3A805%2C%5C%2228041379928826526%5C%22%3A3016%2C%5C%2228175315582157865%5C%22%3A805%7D%2C%5C%22candidate_write_path_source_map%5C%22%3A[]%2C%5C%22delivery_flow_path%5C%22%3Anull%2C%5C%22grouping_info%5C%22%3Anull%2C%5C%22is_prefetch%5C%22%3Afalse%2C%5C%22request_fetch_reason%5C%22%3Anull%7D%22%7D&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 50,
+        "value": 42,
+        "condition": 60,
+        "is_free": false,
+        "value_tokens": [],
+        "condition_tokens": []
+      },
+      "dedupe_key": "just listed 30 000 1999 toyota crown estate denver co",
+      "captured_at": "2026-08-08T09:43:14.436148+00:00"
+    },
+    {
+      "title": "$10,000 2012 Toyota Sienna \u00b7 XLE Limited Minivan 4D Thornton, CO",
+      "price": "$10",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/27984625534463952/?ref=browse_tab&amp;referral_code=marketplace_general&amp;referral_story_type=general_listing&amp;tracking=%7B%22qid%22%3A%22-6381703603988213111%22%2C%22mf_story_key%22%3A%224689708918093504676%22%2C%22top_level_post_id%22%3A%224689708918093504676%22%2C%22commerce_rank_obj%22%3A%22%7B%5C%22target_id%5C%22%3A4689708918093504676%2C%5C%22target_type%5C%22%3A6%2C%5C%22primary_position%5C%22%3A3%2C%5C%22ranking_signature%5C%22%3A0%2C%5C%22ranking_region%5C%22%3Anull%2C%5C%22ranking_request_id%5C%22%3A8495704664631141454%2C%5C%22commerce_channel%5C%22%3A501%2C%5C%22value%5C%22%3A0.00026265102830282%2C%5C%22upsell_type%5C%22%3A129%2C%5C%22candidate_retrieval_source_map%5C%22%3A%7B%5C%2227837730102583286%5C%22%3A3012%2C%5C%2226425523527124151%5C%22%3A3533%2C%5C%2227634519176176648%5C%22%3A3186%2C%5C%2226922754097403028%5C%22%3A805%2C%5C%2228005756682447900%5C%22%3A3131%2C%5C%2227833721729645066%5C%22%3A3565%7D%2C%5C%22candidate_write_path_source_map%5C%22%3A[]%2C%5C%22delivery_flow_path%5C%22%3Anull%2C%5C%22grouping_info%5C%22%3Anull%2C%5C%22is_prefetch%5C%22%3Afalse%2C%5C%22request_fetch_reason%5C%22%3Anull%7D%22%7D&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 50,
+        "value": 42,
+        "condition": 60,
+        "is_free": false,
+        "value_tokens": [],
+        "condition_tokens": []
+      },
+      "dedupe_key": " 10 000 2012 toyota sienna xle limited minivan 4d thornton co",
+      "captured_at": "2026-08-08T09:43:14.436226+00:00"
+    },
+    {
+      "title": "$700 Nissan Leaf for parts Aurora, CO",
+      "price": "$700",
+      "location": "",
+      "url": "https://www.facebook.com/marketplace/marketplace/item/1057707393511822/?ref=browse_tab&amp;referral_code=marketplace_top_picks&amp;referral_story_type=top_picks&amp;__tn__=!%3AD",
+      "score": {
+        "overall": 34,
+        "value": 27,
+        "condition": 42,
+        "is_free": false,
+        "value_tokens": [],
+        "condition_tokens": [
+          "for parts"
+        ]
+      },
+      "dedupe_key": " 700 nissan leaf for parts aurora co",
+      "captured_at": "2026-08-08T09:43:14.435607+00:00"
     }
   ]
 }

@@ -24,7 +24,7 @@ export default function WelcomePage() {
         <div className="flex flex-col sm:flex-row gap-3 justify-center stagger">
           <a
             href="/"
-            className="min-h-[48px] bg-[var(--shinnslist-pink)] text-white px-8 py-3 rounded-full font-bold text-sm hover:bg-fuchsia-600 active:scale-[0.97] transition-all inline-flex items-center justify-center"
+            className="min-h-[48px] bg-[var(--shinnslist-pink)] text-black px-8 py-3 rounded-full font-bold text-sm hover:bg-emerald-600 active:scale-[0.97] transition-all inline-flex items-center justify-center"
           >
             View Deal Feed →
           </a>

@@ -1,0 +1,92 @@
+# LONG-TAIL CIVIC/SERVICE CLUB GRANTS & SCHOLARSHIPS
+# Shinnslist research — hard-to-find LOCAL grants/scholarships from civic/service clubs.
+# National umbrella programs + how locals apply. URLs verified HTTP 200 unless noted.
+# Compiled 2026-08-15.
+#
+# FORMAT: NAME | FUNDER/ORG | URL | WHO QUALIFIES | AMOUNT | DEADLINE_OR_ROLLING | SOURCE_TYPE | NOTES
+
+# ===================== ROTARY =====================
+Rotary District Grants | The Rotary Foundation / Rotary International | https://www.rotary.org/get-involved/our-programs/grants | Rotary & Rotaract clubs/districts (apply via local district governor); funds small-scale, short-term community needs | Small-scale, typically ~$1,000-$25,000 (amount set per district) | Annual, district deadlines vary (spring/fall) | National umbrella (curl 200) | Apply through the LOCAL district; district committee decides. Not individual — club-run. Rotaract clubs (young adults 18-30) also eligible.
+
+Rotary Global Grants | The Rotary Foundation / Rotary International | https://www.rotary.org/get-involved/our-programs/grants | Rotary clubs partnering with an international club; projects in Rotary's 7 areas of focus | US$30,000-$400,000 (Foundation co-funds ~50%) | Rolling (submitted year-round; needs training + district approval) | National umbrella (curl 200) | For larger international projects with measurable outcomes; clubs must complete Global Grant training. Local clubs can team up to access.
+
+Rotary Disaster Response Grants | The Rotary Foundation | https://www.rotary.org/get-involved/our-programs/grants | Rotary clubs/districts in natural-disaster-affected areas | Up to ~US$25,000 | Rolling on activation after a disaster | National umbrella (curl 200) | Relief + recovery; apply via district. Part of Rotary's grant portfolio.
+
+Rotary Peace Fellowships | The Rotary Foundation | https://www.rotary.org/en/our-programs/peace-fellowships | Individuals w/ bachelor's + 3 yrs relevant work experience & leadership (grad students/professionals) | Full funding (tuition, room/board, travel) for master's or certificate program | Annual; apply ~May (2027-28 intake via local district by ~May 15) | National umbrella (curl 200) | Apply through a local Rotary district sponsor. 100+ fellows/yr worldwide.
+
+# ===================== LIONS =====================
+Lions Clubs International Foundation (LCIF) Community Impact Grants | Lions Clubs International Foundation (LCIF) | https://www.lionsclubs.org/en/discover-our-clubs/lions-clubs-international-foundation | Local Lions clubs & districts (community impact, vision, diabetes, hunger) | Varies | Rolling | National umbrella (URL HTTP 403 / Cloudflare-blocked — could NOT verify) | lionsclubs.org aggressively bot-blocks curl + browser. Apply via LOCAL Lions club; club submits to LCIF. Local Lions clubs also run their own local scholarships.
+
+LCIF Disaster / Emergency Grants (humanitarian aid) | LCIF | https://www.lionsclubs.org/en/discover-our-clubs/lions-clubs-international-foundation/grants | Lions clubs in disaster-affected areas applying for emergency relief funds | Varies (emergency/humanitarian) | Rolling on disaster activation | National umbrella (URL blocked by Cloudflare — could NOT verify) | Disaster & humanitarian aid channeled through local Lions clubs. Site requires manual human access.
+
+# ===================== KIWANIS =====================
+Kiwanis Children's Fund Grants | Kiwanis International / Kiwanis Children's Fund | https://www.kiwanis.org/childrens-fund/ | Kiwanis clubs, districts, Key Clubs & Circle K clubs running children-serving projects | Varies (grants to clubs/districts; plus Key Club/Circle K) | Annual / rolling | National umbrella (direct 403; VERIFIED via Wayback archive snapshot 2023) | Fund focuses on education/literacy, health/nutrition, youth leadership + maternal-neonatal tetanus/iodine. Apply via local Kiwanis club/district.
+
+Local Kiwanis Club Scholarships | Individual Kiwanis clubs (nationwide) | https://www.kiwanis.org/kiwanis/childrens-fund/ (club locator: https://www.kiwanis.org/find-club) | Local high school & college students in the club's community | Varies (typically $500-$5,000) | Varies (usually spring, pre-graduation) | LOCAL (not centrally listed) | EVERY Kiwanis club runs local scholarships + supports Key Club (high school) & Circle K (college) students. Contact local club directly — this is the true long-tail moat.
+
+# ===================== ELKS =====================
+Elks Most Valuable Student (MVS) | Elks National Foundation | https://www.elks.org/scholars/scholarships/mvs.cfm | US-citizen high school seniors (NO Elks-family relationship needed), enrolling in 4-year US degree | Up to $50,000 total (top multi-year award) | Annual: 2027 app opens Aug 1, 2026; closes Nov 12, 2026 | National umbrella (curl 200) | Judged on scholarship, leadership, financial need. Apply online; program code ElksMVS. Many winners also get local lodge add-ons.
+
+Elks Legacy Awards | Elks National Foundation | https://www.elks.org/scholars/scholarships/Legacy.cfm | Children/grandchildren/step/legal-ward of a living Elks member (joined on/before Apr 1 2024), high school senior | Up to $4,000 (251 state-allocated + 149 at-large awards) | Annual: opens Sep 1, 2026; deadline Feb 1, 2027 | National umbrella (curl 200) | Can stack with local & state scholarships. Service-with-lodge required of recipients.
+
+Elks Emergency Educational Grants | Elks National Foundation | https://www.elks.org/scholars/scholarships/eefgrants.cfm | Children of a deceased or totally-disabled Elks member (veteran; member in good standing 1+ yr) | Up to $5,000 (max 4 grants over undergrad) | Rolling (apply anytime) | National umbrella (curl 200) | Educational assistance; one ENF scholarship/grant per academic year.
+
+Elks Weigel Medical School Scholarship | Elks National Foundation | https://www.elks.org/scholars/scholarships/MedicalSchoolScholarship.cfm | US medical students (3rd/4th yr; Elks relationship not required) | ~$15,000 (up to 5 awards) | Annual | National umbrella (curl 200) | National medical scholarship; apply online.
+
+Elks Community Investments Program (CIP) | Elks National Foundation | https://www.elks.org/cip/default.cfm | LOCAL Elks lodges applying for community/charitable grants | Varies | Annual | National umbrella (curl 200) | Local lodge applies to fund local nonprofits & projects — the gateway for LOCAL community grants.
+
+Elks Grants & Appropriations (incl. emergency grants to lodges) | Elks National Foundation | https://www.elks.org/ENF/appropriations.cfm | Lodges & state associations for emergency & community needs | Varies | Rolling | National umbrella (curl 200) | Includes emergency grants to lodges after disasters/community crises.
+
+# ===================== OPTIMIST =====================
+Optimist Oratorical Contest | Optimist International Foundation | https://www.optimist.org/member/scholarships4.cfm | Students under 19 on Oct 1 of contest year, not yet completed high school | $150,000+ in college scholarships/yr total (club prize $150 up to $25,000 international) | Annual: club rounds ~Sept-June | National umbrella (curl 200) | 2026-27 topic: "How My Actions Strengthen Those Around Me." Apply at LOCAL Optimist club.
+
+Optimist Essay Contest | Optimist International Foundation | https://www.optimist.org/member/scholarships3.cfm | Students under age 18 (some regions 19) | Varies (cash/scholarship) | Annual | National umbrella (curl 200) | Written essay; apply at local Optimist club.
+
+Optimist Communication Contest for the Deaf & Hard of Hearing | Optimist International | https://www.optimist.org/member/scholarships2.cfm | Young people who are deaf or hard of hearing | Varies | Annual | National umbrella (curl 200) | Unique niche scholarship; apply at local club.
+
+# ===================== JUNIOR LEAGUE =====================
+Junior League Community Impact Funds | The Association of Junior Leagues International (AJLI) | https://thejuniorleagueinternational.org/ | LOCAL Junior Leagues award community grants to area nonprofits | Varies (local, often $5k-$25k) | Annual (local deadlines) | National umbrella (curl 403 on ajli.org; VERIFIED via browser 200 on official domain) | 250+ local Junior Leagues each run their own Community Impact Fund. Use "Find a League" to locate local grants. Women-led civic org.
+
+# ===================== ALTRUSA =====================
+Altrusa International Foundation Grants | Altrusa International Foundation | https://www.altrusa.org/foundation | Local Altrusa clubs & districts (literacy/education-focused community projects) | Varies | Annual | National umbrella (curl 200) | Altrusa's mission is literacy/education; local clubs award local scholarships + community grants. Contact local Altrusa club.
+
+Altrusa International Foundation Scholarships | Altrusa International | https://www.altrusa.org/scholarships | Students supported by local Altrusa clubs/districts | Varies | Annual | National umbrella (curl 200) | District/club-administered; apply via local Altrusa club.
+
+# ===================== ZONTA =====================
+Zonta Amelia Earhart Fellowship | Zonta International Foundation | https://www.zonta.org/Web/Programs/Education/Amelia_Earhart_Fellowship | Women pursuing PhD/doctoral degrees in aerospace engineering & space sciences | US$10,000 (up to 30 fellows/yr) | Annual: 2026 closed; REOPENS Aug 2026 | National umbrella (curl 200) | Apply through local Zonta district/club. 1,794 fellowships to date ($12.2M).
+
+Zonta Women in Business Leadership Award (Jane M. Klausman) | Zonta International | https://www.zonta.org/Web/Programs/Education/Zonta_Women_in_Business_Leadership_Award.aspx | Women in undergraduate/graduate business & management programs | Up to US$6,000 | Annual | National umbrella (curl 200) | Apply via local Zonta club/district. Formerly "Jane M. Klausman Women in Business Scholarship."
+
+Zonta Women in STEM Award | Zonta International | https://www.zonta.org/Web/Programs/Education/Zonta_Women_in_STEM_Award.aspx | Women pursuing STEM degrees (undergrad/grad) | Up to US$10,000 | Annual | National umbrella (curl 200) | Apply via local Zonta club/district.
+
+Zonta Young Women in Leadership Award | Zonta International | https://www.zonta.org/Web/Programs/Education/Zonta_Young_Women_in_Leadership_Award.aspx | Young women leaders (high school/university age) | Up to US$2,000 | Annual | National umbrella (curl 200) | Apply via local Zonta club.
+
+# ===================== PILOT =====================
+Pilot International Scholarship | Pilot International / Pilot Founders Fund (PIFF) | https://www.pilotinternational.org/about/scholarships | Graduating HS seniors + full-time undergrads pursuing careers with youth & young-adult leadership, brain safety/health, or family care | Up to $2,000/yr (renewable up to 3 more years) | Annual: deadline Mar 16 (5pm EDT) | National umbrella (curl 200) | Based on community service, financial need, academics. Email PDF application to PIFFscholarships@pilothq.org.
+
+Pilot Becky Burrows Memorial Scholarship | Pilot International / PIFF | https://www.pilotinternational.org/about/scholarships | Adults re-entering workforce / second-career / upskilling in fields serving youth, families, brain health | Varies | Annual: ~March | National umbrella (curl 200) | Named for a 38-yr Pilot member; for non-traditional students.
+
+# ===================== SOROPTIMIST =====================
+Soroptimist Live Your Dream Awards | Soroptimist International of the Americas | https://www.soroptimist.org/our-work/live-your-dream-awards/ | Women who are the PRIMARY financial support for their families, pursuing education/training | Varies (typically $1,000-$10,000; $3.4M to 2,300+ women last yr) | Annual: applications Aug 1 - Nov 15 | National umbrella (curl 200) | Cash award usable for tuition/books/childcare/transport. Over half of recipients are survivors of domestic violence/trafficking. Apply through LOCAL Soroptimist club.
+
+# ===================== HOW LOCALS APPLY (the moat) =====================
+# National umbrella sites define programs, but AWARD MONEY flows through LOCAL clubs/lodges/chapters.
+# For each, the user should use the club's "Find a Club / Lodge / League" locator, then contact the
+# local chapter secretary directly. Local club scholarship + community grant programs are almost never
+# aggregated online — that is Shinnslist's differentiation.
+# - Rotary: rotary.org/find-a-club
+# - Lions: lionsclubs.org (Lion Locator)
+# - Kiwanis: kiwanis.org/find-club
+# - Elks: elks.org Lodge Locator
+# - Optimist: optimist.org (find club near you)
+# - Junior League: thejuniorleagueinternational.org (Find a League)
+# - Altrusa: altrusa.org (find a club)
+# - Zonta: zonta.org (club locator)
+# - Pilot: pilotinternational.org (find a club)
+# - Soroptimist: soroptimist.org (find a club)
+
+# VERIFICATION NOTES:
+# - Verified HTTP 200 via curl: Rotary(4), Elks(6), Optimist(4), Zonta(4), Pilot(2), Altrusa(2), Soroptimist(1) = 23
+# - Verified via browser HTTP 200: Junior League (thejuniorleagueinternational.org)
+# - Verified via Wayback archive snapshot (direct Cloudflare-blocked): Kiwanis Children's Fund
+# - Could NOT verify (aggressive Cloudflare bot-block, blocks curl AND browser): Lions LCIF pages (2) — flagged honestly

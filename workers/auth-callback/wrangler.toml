@@ -12,5 +12,5 @@ workers_dev = true
 # ]
 
 [vars]
-NEXT_PUBLIC_SUPABASE_URL = ""
-NEXT_PUBLIC_SUPABASE_ANON_KEY = ""
+NEXT_PUBLIC_SUPABASE_URL = "https://nmisxwzrbsyqihqwnvsx.supabase.co"
+NEXT_PUBLIC_SUPABASE_ANON_KEY = "sb_publishable__hPy32xbnBwGYQHKNiiw-g_zWrx2bSC"

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cloudflare/workers-sdk/main/packages/wrangler/config-schema.json",
+  "name": "shinnslist-grant-engine",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-15",
+  "observability": {
+    "enabled": true
+  },
+  "triggers": {
+    "crons": ["0 */6 * * *"]
+  }
+}

@@ -1,0 +1,6 @@
+# Redirect removed free-money verticals (unclaimed, bank bonuses, free stock, credit)
+# to the unified finder. Scope is now grants + benefits + class actions.
+/free-money/unclaimed     /find   301
+/free-money/bank-bonuses  /find   301
+/free-money/free-stock    /find   301
+/free-money/credit        /find   301

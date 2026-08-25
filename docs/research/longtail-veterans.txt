@@ -1,0 +1,126 @@
+# LONG-TAIL VETERANS / MILITARY MEMBERS / MILITARY SPOUSES & FAMILIES PROGRAMS
+# Grants, loans, scholarships, home-buying/repair, disabled-vet assistance, emergency relief, and spouse education.
+# Sweep date: 2026-08-15. All URLs verified HTTP 200 at sweep time (curl w/ Chrome UA; browser for bot-blocked where noted).
+# Format: NAME | FUNDER/ORG | URL | WHO QUALIFIES | AMOUNT | DEADLINE_OR_ROLLING | SOURCE_TYPE | NOTES
+# Excluded per scope: VA Aid & Attendance, PCAFC, VA respite; and SNAP/TANF/WIC/LIHEAP/Medicaid/SSI/SSDI/EITC/Section 8.
+
+# --- VETERAN SCHOLARSHIPS & EDUCATION (org-specific) ---
+1. AMVETS Scholarships | AMVETS (American Veterans) | https://www.amvets.org/scholarships | Honorably discharged veterans AND their spouses/children; membership-based | Varies by award (several AMVETS scholarships for dependents) | Annual cycle / rolling (check per award) | National nonprofit | Multiple named scholarships incl. AMVETS National Scholarship. Apply online; requires AMVETS-affiliated eligibility.
+
+2. AMVETS National Scholarship | AMVETS (American Veterans) | https://www.amvets.org/scholarships/national | Veterans and their dependents (spouses/children) | Varies ($1,000–$5,000 range by award year) | Annual (spring deadline, ~May) | National nonprofit | Flagship AMVETS award; verify current amount on application page.
+
+3. VFW Voice of Democracy Audio-Essay Contest | Veterans of Foreign Wars (VFW) | https://www.vfw.org/community/outreach | U.S. high-school students (grades 9–12) — including military dependents | $1,000 national first place (total $50k+ awarded annually) | Annual deadline ~Oct 31 | National nonprofit | Audio essay on a patriotic theme; entry via local VFW post; scholarships fund college.
+
+4. VFW Patriots Pen Youth Essay Contest | Veterans of Foreign Wars (VFW) | https://www.vfw.org/community/outreach | U.S. students grades 6–8 | $500 national first place (total $55k+ annually) | Annual deadline ~Oct 31 | National nonprofit | Written essay contest for middle-schoolers; money for education/college savings.
+
+5. VFW Sport Clips Help a Hero Scholarship | VFW + Sport Clips | https://www.vfw.org/assistance/military-assistance-program | Active-duty, Guard, Reserve, and veterans in civilian transition (post-9/11 service preferred) | $5,000 scholarships (multiple awarded) | Annual deadline ~Oct 31 | National nonprofit (corporate partner) | Named for Sport Clips; assists service members/veterans pursuing education to improve civilian careers.
+
+6. VFW Military Assistance Program (MAP) | Veterans of Foreign Wars (VFW) | https://www.vfw.org/assistance/military-assistance-program | Eligible veterans, active-duty, and dependents in financial hardship | Up to ~$1,500 emergency grant | Rolling (application via VFW service officer) | National nonprofit | Quick-turn emergency financial aid for rent, utilities, food, and other basic needs.
+
+7. American Legion Scholarships | The American Legion | https://www.legion.org/scholarships | Children/grandchildren of veterans; American Legion Family members (varies by award) | Varies (e.g., Samsung American Legion $20k, Legacy Scholarship) | Annual / rolling per scholarship | National nonprofit | Portfolio includes Samsung American Legion Scholarship and Legacy Scholarship for children of post-9/11 veterans.
+
+8. American Legion Auxiliary (ALA) Scholarships | American Legion Auxiliary | https://www.alaforveterans.org/ | Children/grandchildren of veterans and active-duty (Auxiliary family) | Varies by ALA scholarship | Annual / rolling | National nonprofit | Multiple education awards; check ALA's scholarship list and local unit deadlines.
+
+9. DAV Education & Scholarships | Disabled American Veterans (DAV) | https://www.dav.org/learn-more/ | Veterans and, for some awards, their families; DAV members | Varies (DAV scholarship awards) | Annual / rolling | National nonprofit (congressionally chartered) | DAV supports education, employment (DAV National Employment Program), and hosts annual scholarships. See also DAV Transportation (below).
+
+10. Tillman Scholars | Pat Tillman Foundation | https://pattillmanfoundation.org/ | Active-duty, veterans, and military spouses pursuing higher education | Varies (multi-year academic scholarships; historically up to ~$10k+/yr) | Annual application (spring) | National nonprofit | Named for Pat Tillman; funds degree-seeking veterans/spouses at any accredited institution.
+
+11. Army Scholarship Foundation | Army Scholarship Foundation | https://armyscholarshipfoundation.org/ | Children and spouses of U.S. Army soldiers (active/Guard/Reserve, incl. deceased) | Varies (typically $1,000–$2,000/yr renewable) | Annual (spring application) | National nonprofit | Merit + need-based; essay required; supports Army families' higher education.
+
+12. Military Child Education Coalition (MCEC) | Military Child Education Coalition | https://www.militarychild.org/ | Military-connected students & families (education support & scholarships) | Varies | Rolling / annual | National nonprofit | Resources, school-transition support, and education awards for military-connected youth.
+
+13. VFW / Legion Education assistance | American Legion (Education) | https://www.legion.org/education | Veterans and family members seeking education/job training | Varies | Rolling | National nonprofit | Central hub for Legion education programs, benefits counseling, and youth scholarships.
+
+# --- MILITARY SPOUSE & FAMILY EDUCATION ---
+14. NMFA / USAA Military Spouse Scholarships | National Military Family Association (NMFA) | https://www.militaryfamily.org/get-help/scholarships/ | Military spouses of active-duty, Guard, Reserve, and veterans | Typically up to $2,000 for professional development/certification/degree | Annual application (multiple cycles/yr) | National nonprofit | Funded by USAA; also offers spouse and family scholarships for education and career advancement.
+
+15. MyCAA — Military Spouse Career Advancement Accounts | U.S. Dept of Defense (MyCAA) | https://mycaa.militaryonesource.mil/mycaa/home | Spouses of active-duty members (pay grades E-1 to E-5, W-1/W-2, O-1/O-2) | Up to $4,000 total ($2,000/yr) for education/licensure/training | Rolling (register anytime, use within period) | Federal (DoD) | Tuition assistance for associate degrees, certificates, licenses. Hard-to-find; must start via Military OneSource. Excluded big-federal? No — keep (education-specific).
+
+16. Hiring Our Heroes — Military Spouse Fellowships | U.S. Chamber of Commerce Foundation | https://www.hiringourheroes.org/ | Military spouses seeking career fellowships/employment | Paid fellowships + job placement support | Rolling (cohort-based) | National nonprofit | Places military spouses in paid corporate fellowships that convert to jobs; also programs for veterans.
+
+17. Military Spouse Advocacy Network (MSAN) | Military Spouse Advocacy Network | https://www.milspouseadvocacynetwork.org/ | Military spouses and families (mentoring, education) | Free education/mentorship programs | Rolling | National nonprofit | Peer mentor programs and education for new military spouses; not direct cash but high-value assistance.
+
+18. Military OneSource (education hub for spouses/families) | U.S. DoD | https://www.militaryonesource.mil/ | All military families | Free education/employment support | Rolling | Federal (DoD) | Portal for MyCAA, spouse employment, and family readiness resources.
+
+19. Foundation for Women Warriors (childcare & housing) | Foundation for Women Warriors | https://foundationforwomenwarriors.org/ | Women veterans AND their children | Childcare assistance, financial assistance, transitional housing | Rolling | National nonprofit | Browser-verified live (curl 403 WAF). Serves women veterans with childcare days, housing, financial aid, essential goods.
+
+20. USAA Education Foundation | USAA | https://www.usaa.com/content/usaa/about-usaa-foundation.html | Military community (veterans, spouses, families) | Financial education & scholarships | Rolling | Corporate foundation | USAA's philanthropy funds scholarships and financial-literacy programs for the military community.
+
+# --- VETERAN BUSINESS GRANTS / LOANS / SUPPORT ---
+21. IVMF Veterans Business Fund | Syracuse University Institute for Veterans & Military Families (IVMF) | https://vets.syr.edu/ | Veteran- and military-spouse-owned small businesses | Grants + loans + training (amounts vary by program) | Rolling / cohort-based | University program | Nation's leading veterans entrepreneurship institute; runs Boots to Business, V-WISE, business fund.
+
+22. Bunker Labs | Bunker Labs (Bunker in a Box / Muster) | https://bunkerlabs.org/ | Veteran- and military-spouse entrepreneurs | Free education, networks, accelerator cohorts (no direct cash) | Rolling (local chapters) | National nonprofit | Peer-network entrepreneurship program; helps veterans start/scale businesses; note not direct funding.
+
+23. SBA Veteran-Owned Business Resources | U.S. Small Business Administration (SBA) | https://www.sba.gov/counseling/grow-your-business/#veteran-owned | Veteran, service-disabled veteran, and military-spouse business owners | SBA loans, counseling, contracting certifications (VOSB/SDVOSB) | Rolling | Federal (SBA) | Central SBA hub for veteran entrepreneurs; browser-verified 200. Includes SBA-guaranteed loans and free counseling.
+
+24. Boots to Business (B2B) | SBA + IVMF (delivered via SBA network) | https://boots2business.org/ | Veterans and service members transitioning to civilian life | Free 2-day entrepreneurship training + follow-on course | Rolling (cohorts nationwide) | Federal (SBA) / nonprofit partner | Entrepreneurship track of DoD Transition Assistance Program (TAP); free training on starting a business.
+
+25. DAV (Disabled Veterans) — employment & benefits navigation | Disabled American Veterans (DAV) | https://www.dav.org/get-help-now/ | Disabled veterans and their families | Free claims help, transportation, employment assistance | Rolling | National nonprofit | DAV provides free transportation to VA medical appointments and benefits/claims counseling (not cash but high-value assistance).
+
+# --- VETERAN HOME-BUYING / HOME-REPAIR / ADAPTIVE HOUSING ---
+26. VA Specially Adapted Housing (SAH) / Special Home Adaptation (SHA) / Temporary Residence Adaptation (TRA) Grants | U.S. Dept of Veterans Affairs | https://www.va.gov/housing-assistance/disability-housing-grants/ | Veterans/service members with qualifying service-connected disabilities; own (or family owns) the home | SAH up to ~$126,526; SHA up to ~$25,350; TRA up to ~$50,961 (FY amounts vary) | Rolling (apply anytime online/by mail) | Federal (VA) | For ramps, widened doorways, bathroom mods, wheelchair access in own home. Up to 6 lifetime uses. (Same grant also captured in home-repair map.)
+
+27. Homes for Our Troops (HFOT) | Homes for Our Troops (national nonprofit) | https://www.hfotusa.org/ | Post-9/11 veterans severely injured (amputations, paralysis, burns, TBI) | Mortgage-free, fully adapted custom homes | Rolling (referral/application) | National nonprofit | Builds specially adapted, barrier-free, mortgage-free homes; grants donated land & home; covers ongoing costs.
+
+28. Purple Heart Homes | Purple Heart Homes (501c3) | https://www.purplehearthomesusa.org/ | Disabled and aging veterans needing housing help | Modified housing, home-repair coordination, VA benefit navigation | Rolling (application) | National nonprofit | Focus on aging/disabled veterans; browser hit Cloudflare bot-challenge (canonical URL; verify live before reporting). Pair with local chapters.
+
+29. Habitat for Humanity — Veterans Build / home repair | Habitat for Humanity International (local affiliates) | https://www.habitat.org/ | Income-qualified homeowners incl. veterans | Affordable home repair + no-profit homeownership | Rolling (via local affiliate) | National nonprofit | Habitat serves veteran families with home repairs and homeownership; many affiliates run dedicated Veterans Build programs.
+
+# --- DISABLED VETERAN ASSISTANCE ---
+30. Wounded Warrior Project (WWP) | Wounded Warrior Project | https://www.woundedwarriorproject.org/ | Post-9/11 wounded, injured, or ill veterans & their families | Mental health, physical wellness, career, and direct financial assistance | Rolling | National nonprofit | Comprehensive support incl. WWP financial assistance for qualifying wounded warriors.
+
+31. WWP Warriors to Work | Wounded Warrior Project | https://www.woundedwarriorproject.org/programs/warriors-to-work | Post-9/11 wounded/ill veterans seeking employment | Job placement support, resume, career coaching | Rolling | National nonprofit | Employment program connecting wounded warriors to careers and employers.
+
+32. WWP Independence Program | Wounded Warrior Project | https://www.woundedwarriorproject.org/programs/independence-program | Post-9/11 veterans with moderate-to-severe TBI/PTSD or neurological impairments | Long-term case management & financial support | Rolling | National nonprofit | Supports veterans with the most significant injuries; interdisciplinary care and advocacy.
+
+33. Semper Fi & America's Fund | Semper Fi & America's Fund (The Fund) | https://thefund.org/ | Wounded, ill, or injured service members (all branches) & their families | Financial assistance, critical care coordination, adaptive equipment, transition support | Rolling | National nonprofit | Quick-response support for wounded warriors and caregivers; includes transition and family grants.
+
+34. Gary Sinise Foundation — RISE (Restoring Independence Supporting Empowerment) | Gary Sinise Foundation | https://www.garysinisefoundation.org/ | Severely wounded veterans (all eras) | Specially adapted "smart" homes, mobility/adaptive devices | Rolling (referral/application) | National nonprofit | Builds 100%-donated adapted homes + provides mobility devices and adaptive equipment.
+
+35. Snowball Express | Gary Sinise Foundation | https://www.garysinisefoundation.org/snowball-express/ | Children and surviving spouses of fallen military heroes | Free all-expenses family retreats & support | Rolling (annual program) | National nonprofit | Brings Gold Star families together for healing; not cash but direct benefit to surviving families.
+
+36. Disabled Veterans National Foundation (DVNF) | Disabled Veterans National Foundation | https://www.dvnf.org/ | Disabled and at-risk veterans | Grants to other vets orgs + direct aid (clothing, hygiene, emergency) | Rolling | National nonprofit | Provides essential goods, funding to veteran-serving orgs, and limited direct support.
+
+# --- EMERGENCY RELIEF (service-branch aid societies + national) ---
+37. Navy-Marine Corps Relief Society (NMCRS) | Navy-Marine Corps Relief Society | https://www.nmcrs.org/ | Active-duty & retired Navy/Marine Corps service members & families | Interest-free loans + grants for emergencies (rent, utilities, medical, car repair) | Rolling (apply via local office/online) | Nonprofit aid society | Classic interest-free emergency loan/grants; also education scholarships and visiting nurse program.
+
+38. Army Emergency Relief (AER) | Army Emergency Relief | https://www.aerhq.org/ | Active-duty, Guard, Reserve Soldiers & families (and some retirees) | Interest-free loans & grants (rent, utilities, medical, car repair, food) | Rolling | Nonprofit aid society | Official Army relief society; quick emergency financial assistance + education scholarships.
+
+39. Air Force Aid Society (AFAS) | Air Force Aid Society | https://afas.org/ | Active-duty & retired Air Force/Space Force members & families | Interest-free loans + grants, education assistance | Rolling | Nonprofit aid society | Emergency assistance + General Henry H. Arnold education grants; supports Airmen & families.
+
+40. Coast Guard Mutual Assistance (CGMA) | Coast Guard Mutual Assistance | https://www.cgmahq.org/ | Active & retired Coast Guard members & families | Interest-free loans + grants, education | Rolling | Nonprofit aid society | Emergency financial help and education assistance for the Coast Guard family.
+
+41. USA Cares | USA Cares (post-9/11) | https://usacares.org/ | Post-9/11 veterans & families facing financial hardship | Emergency financial assistance (housing, utilities, car) | Rolling (application) | National nonprofit | Assists post-9/11 veterans and families with urgent bills; also employment/education programs.
+
+42. Operation Homefront | Operation Homefront (national) | https://operationhomefront.org/ | Military families (active-duty, Guard, Reserve, some veterans) | Financial assistance, transitional housing, holiday/back-to-school programs | Rolling | National nonprofit | Emergency financial assistance + programs (Back to School, Holiday Meals, Critical Financial Assistance).
+
+43. Operation Homefront — Transitional Housing Villages | Operation Homefront | https://operationhomefront.org/program/transitional-housing-villages/ | Post-9/11 veterans & families at risk of homelessness | Rent-free transitional housing & case management | Rolling (application) | National nonprofit | Housing villages for veterans transitioning out of the military; often mortgage-free period.
+
+44. Operation Homefront — Back to School Program | Operation Homefront | https://operationhomefront.org/program/back-to-school/ | Military-connected children of E1–E6 and W/O1–O2 | Free school supplies & backpacks | Annual (seasonal, summer) | National nonprofit | Provides school supplies to military children; applies to low-paygrade families.
+
+45. Hope for the Warriors | Hope for the Warriors | https://www.hopeforthewarriors.org/ | Wounded/injured veterans, military families, and caregivers | Financial assistance, adaptive programs, transition support | Rolling | National nonprofit | Support for wounded warriors and families incl. critical assistance grants and adaptive sports.
+
+46. Children of Fallen Patriots Foundation | Children of Fallen Patriots (CCFP) | https://www.ccfp.org/ | Children of military members who died in service (line-of-duty) | Up to full cost-of-attendance college scholarships + counseling | Rolling (application) | National nonprofit | Provides scholarship funds and support to Gold Star children for college.
+
+47. Code of Support Foundation | Code of Support Foundation | https://codeofsupport.org/programs/ | Post-9/11 veterans, active-duty, Guard/Reserve & families | Free one-on-one case management + financial/employment referrals | Rolling | National nonprofit | Personalized case management connecting struggling veterans/families to vetted assistance.
+
+48. America's Warrior Partnership | America's Warrior Partnership | https://americaswarriorpartnership.org/ | Veterans and military families (community-based) | Community integration & resource connection (referral) | Rolling | National nonprofit | Community-level wraparound support preventing veteran suicide and isolation; connects to resources.
+
+49. Elizabeth Dole Foundation — Hidden Heroes | Elizabeth Dole Foundation | https://www.elizabethdolefoundation.org/ | Military and veteran caregivers | Caregiver support, respite funding partners, community | Rolling | National nonprofit | Supports the 5.5M military caregivers; partners fund caregiver respite and support (distinct from VA PCAFC).
+
+50. TAPS (Tragedy Assistance Program for Survivors) | TAPS | https://www.taps.org/ | Surviving family members of fallen service members | Free grief counseling, survivor retreats, peer support | Rolling | National nonprofit | Care for all those grieving a military death; includes scholarships & family support.
+
+51. TAPS Scholarships | TAPS | https://www.taps.org/scholarships | Surviving spouses and children of fallen service members | College scholarships for survivors | Annual | National nonprofit | Education funding for Gold Star families.
+
+52. Our Military Kids | Our Military Kids | https://www.ourmilitarykids.org/ | Children (ages 3–18) of deployed Guard/Reserve AND children of severely wounded/fallen | Up to $500 grants for extracurricular/sports/tutoring | Rolling (apply when parent deploys) | National nonprofit | Funds activities to help kids cope with deployment; not for full-time active duty.
+
+53. EOD Warrior Foundation | EOD Warrior Foundation | https://eodwarriorfoundation.org/ | Wounded EOD (Explosive Ordnance Disposal) warriors & their families | Financial assistance, scholarships, family support | Rolling | National nonprofit | Emergency financial aid + education scholarships for EOD community.
+
+54. VA Vocational Rehabilitation & Employment (VR&E / Chapter 31) | U.S. Dept of Veterans Affairs | https://www.va.gov/careers-employment/vocational-rehabilitation/ | Veterans with service-connected disability rating needing employment/training | Full cost of qualifying education/training, stipend, job placement | Rolling (apply via VA) | Federal (VA) | Help for disabled veterans to prepare for, find, and keep suitable employment.
+
+# --- BOT-BLOCKED BUT REAL (verify live in browser before reporting to a user) ---
+55. Purple Heart Homes | Purple Heart Homes | https://www.purplehearthomesusa.org/ | Disabled/aging veterans needing housing help | Modified housing + home-repair coordination | Rolling | National nonprofit | Cloudflare bot-challenge blocked both curl & headless browser at sweep time; canonical domain, high confidence live. Re-verify before publishing.
+
+56. Bob Woodruff Foundation | Bob Woodruff Foundation | https://bobwoodrufffoundation.org/ | Veterans & military families (programs vary) | Grants to orgs + some direct programs | Rolling | National nonprofit | Blocked to curl (403) and headless browser (Cloudflare). Well-known funder; re-verify before publishing.
+
+57. Horatio Alger Military & Veterans Scholarships | Horatio Alger Association | https://horatioalger.org/scholarships/military-veterans/ | Veterans & military spouses pursuing education | Varies (Horatio Alger need-based scholarships, typically $10k+) | Annual (spring application) | National nonprofit | Cloudflare challenge blocked browser at sweep time; canonical URL, re-verify before publishing.

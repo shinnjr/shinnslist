@@ -1,0 +1,64 @@
+# LONG-TAIL: VETERAN-SPECIFIC HOME REPAIR / MODIFICATION / ACCESSIBILITY / TEMPORARY HOUSING PROGRAMS
+# Sweep date: 2026-08-15. Each URL curl-verified (curl -sIL -L, Chrome UA); 200 = confirmed live at sweep.
+# 403 = live-but-bot-walled real org, kept only where the program is corroborated (well-known 501(c)(3)).
+# Format: NAME | FUNDER/ORG | URL | WHO QUALIFIES | AMOUNT | DEADLINE_OR_ROLLING | SOURCE_TYPE | NOTES
+
+1. Homes For Our Troops (HFOT) | Homes For Our Troops (national 501c3) | https://www.hfotusa.org/ | Severely injured post-9/11 veterans with catastrophic injuries | Specially adapted, mortgage-free custom home | Rolling (application + evaluation) | ORG | Builds 100% accessible, mortgage-free homes for severely injured veterans. Also home visits. Apply online; high demand, waitlisted.
+
+2. Tunnel to Towers Foundation — Smart Homes | Stephen Siller Tunnel to Towers Foundation | https://t2t.org/smart-homes/ | Severely injured post-9/11 military & first responders | Mortgage-free fully accessible smart homes | Rolling (nomination) | ORG | Builds accessible "Smart Homes" for catastrophically injured veterans and first responders. Apply/nominate on site.
+
+3. Gary Sinise Foundation — RISE Home Modifications | Gary Sinise Foundation (RISE program) | https://www.garysinisefoundation.org/programs/home-modifications | Severely wounded/injured service members | Free home modifications (accessibility/adaptive) | Rolling (referral) | ORG | RISE funds accessibility renovations — ramps, wider doors, adaptive bathrooms — for wounded warriors in their own homes.
+
+4. Gary Sinise Foundation — Custom Homebuilding (RISE) | Gary Sinise Foundation (RISE) | https://www.garysinisefoundation.org/programs/custom-homebuilding | Severely wounded service members | Specially adapted mortgage-free custom homes | Rolling (referral) | ORG | RISE builds fully adapted smart homes for the most catastrophically injured veterans. Referral-based intake.
+
+5. Operation Finally Home | Operation Finally Home (national 501c3) | https://operationfinallyhome.org/ | Wounded/disabled veterans & military families | Mortgage-free custom or modified homes | Rolling (application) | ORG | Builds mortgage-free homes for disabled/wounded veterans and the spouses of fallen heroes. Apply online.
+
+6. Semper Fi & America's Fund — Services & Home Support | Semper Fi & America's Fund | https://thefund.org/services-and-support/ | Post-9/11 wounded, ill, or injured service members & families | Grants for home mods, accessibility & recovery support | Rolling (case-based) | ORG | Fund case team provides financial grants including home modification and accessibility needs. Apply via Fund.
+
+7. Veterans Community Project | Veterans Community Project (Kansas City, MO) | https://www.veteranscommunityproject.org/ | Homeless & at-risk veterans (KC region + expanding) | Tiny-home village, case mgmt, basic-needs help | Rolling | ORG | Builds villages of tiny homes for homeless veterans with wraparound services. Also all-hazards relief.
+
+8. Wounded Warrior Project — Independence Program (Home Mods) | Wounded Warrior Project | https://www.woundedwarriorproject.org/programs/independence-program | Post-9/11 severely wounded/injured veterans | Home modifications, adaptive equipment | Rolling (referral) | ORG | WWP Independence Program assists severely wounded vets with home accessibility modifications and independence.
+
+9. Paralyzed Veterans of America (PVA) — Home Modification | Paralyzed Veterans of America | https://www.pva.org/ | Veterans with spinal cord injury/disease or paralysis | Home modification grants & advocacy | Rolling (membership) | ORG | PVA helps members obtain accessible-home modifications and adaptive equipment; chapter support nationwide.
+
+10. Habitat for Humanity — Veterans Build | Habitat for Humanity International (local affiliates) | https://www.habitat.org/volunteer/near-you/veterans-build | Veteran & military families, low-income homeowners | Free/low-cost home repair & build | Rolling (via local affiliate) | ORG | "Veterans Build" chapters do repairs, accessibility ramps & weatherization for veteran homeowners. Find local affiliate.
+
+11. Fisher House Foundation | Fisher House Foundation | https://www.fisherhouse.org/ | Active duty, retired, & veteran families using military/V.A. medical facilities | Free temporary housing near VA/military hospitals | Rolling (apply through facility) | ORG | "Comfort homes" give families free lodging while a loved one receives care — a temporary housing safety net.
+
+12. Veterans Inc. | Veterans Inc. (Massachusetts) | https://veteransinc.org/ | Veterans & their families (New England focus) | Housing assistance, home repair, emergency aid | Rolling | ORG | New England nonprofit providing transitional/permanent housing, home repair and supportive services to veterans.
+
+13. Homes 4 Heroes | Homes 4 Heroes (Ohio) | https://www.homes4heroes.org/ | U.S. veterans needing homeownership/repair help | Home repair & affordable-home assistance | Rolling | ORG | Ohio-area org assisting veterans with home repairs and homeownership; check eligibility by region.
+
+14. Operation Comfort | Operation Comfort (San Antonio, TX) | https://www.operationcomfort.org | Injured/wounded service members & veterans | Adaptive equipment, home & mobility support | Rolling | ORG | Supports wounded warriors with adaptive equipment and home/vehicle modifications, esp. Texas region.
+
+15. Purple Heart Homes | Purple Heart Homes (national 501c3) | https://www.purplehearthomesusa.org/ | Disabled, aging, & post-9/11 veterans | Home modifications & repairs (no-cost to vet) | Rolling | ORG | Modifies and repairs homes for qualifying veterans. NOTE: site 403 to curl (bot-walled); org corroborated via ProPublica/longtail-veterans.
+
+16. Building Homes for Heroes | Building Homes for Heroes (national 501c3) | https://www.buildinghomesforheroes.org/ | Severely wounded post-9/11 veterans | Mortgage-free modified homes | Rolling (nomination) | ORG | Gifts mortgage-free, accessibility-modified homes to severely wounded veterans. NOTE: 403 to curl; org corroborated via multiple sources.
+
+17. AMVETS — Assistance & Housing | AMVETS | https://www.amvets.org/ | U.S. veterans & families | Benefit claims, housing/emergency assistance navigation | Rolling | ORG | AMVETS national service officers help veterans access housing/repair benefits and emergency aid.
+
+18. Disabled American Veterans (DAV) — Get Help Now | Disabled American Veterans | https://www.dav.org/get-help-now/ | Disabled veterans | Benefit navigation incl. housing/SAH grant claims | Rolling | ORG | DAV service officers file VA housing/SAH/SHA grant claims and coordinate local help for disabled veterans.
+
+19. The American Legion — Veterans Services | The American Legion | https://www.legion.org/member-services/veterans-services | U.S. veterans & families | Claims help, emergency/repair assistance navigation | Rolling | ORG | Legion service officers help with VA benefits incl. housing/accessibility grants and connect to local posts.
+
+20. American Legion Auxiliary — Veterans Support | American Legion Auxiliary (ALA) | https://www.alaforveterans.org/ | Veterans & military families | Grants, emergency assistance, volunteer home help | Rolling | ORG | ALA units provide emergency funds and volunteer home-repair/yard help for veterans; contact local unit.
+
+21. Navy SEAL Foundation | Navy SEAL Foundation | https://www.navysealfoundation.org/ | Naval Special Warfare veterans & families | Emergency financial assistance incl. home/housing | Rolling (confidential intake) | ORG | Provides urgent financial support to NSW veterans & families for housing, home repair, and family needs.
+
+22. Green Beret Foundation | Green Beret Foundation | https://www.greenberetfoundation.org/ | Special Forces (Green Beret) veterans & families | Emergency grants incl. housing/home needs | Rolling | ORG | Delivers immediate financial support to Green Beret community for housing, medical, and family needs.
+
+23. National Veterans Foundation | National Veterans Foundation | https://veterans.org/ | All U.S. veterans & families | Crisis help, benefit/housing navigation | Rolling (help line) | ORG | Runs a veterans help line and direct assistance for housing and urgent needs across the country.
+
+24. Texas Veterans Commission — Home Modification Grant | Texas Veterans Commission (TVC) | https://www.tvc.texas.gov/veterans/grants/home-modification/ | Texas veterans with service-connected disability; homeowners | Home modification grants (accessibility, ramps) | Rolling | STATE | Texas-specific grant to modify homes for disabled veterans' accessibility. Apply through TVC.
+
+25. Illinois Dept. of Veterans Affairs — Homes & Services | Illinois DVA | https://veterans.illinois.gov/ | Illinois veterans & families | Housing assistance & benefit navigation | Rolling | STATE | Illinois DVA connects veterans to housing, repair, and benefit programs via county VSOs.
+
+26. Ohio Dept. of Veterans Services | Ohio Dept. of Veterans Services | https://dvs.ohio.gov/ | Ohio veterans & families | Benefit claims, housing/repair navigation | Rolling | STATE | Ohio DVS helps veterans access housing/accessibility benefits and county-level assistance.
+
+27. Michigan Veterans Affairs Agency | Michigan MVAA | https://www.michigan.gov/mvaa | Michigan veterans & families | Benefits, housing & homeless prevention help | Rolling | STATE | MVAA coordinates veteran benefits incl. housing support and homeless prevention across Michigan.
+
+28. Pennsylvania DMVA — Veterans Services | PA Dept. of Military & Veterans Affairs | https://www.dmva.pa.gov/ | Pennsylvania veterans & families | Benefit & housing/repair navigation | Rolling | STATE | PA DMVA helps veterans access housing, repair and benefit programs through county VSOs.
+
+29. VA — Veterans Experiencing Homelessness Programs | U.S. Dept. of Veterans Affairs | https://www.va.gov/homeless/ | Veterans who are homeless or at risk | Emergency/transitional housing, case management | Rolling | GOV | VA homeless programs provide temporary housing, rapid rehousing and case support to keep veterans housed.
+
+30. Catholic Charities USA — Veterans Services | Catholic Charities USA (network) | https://www.catholiccharitiesusa.org/ | Veterans & low-income families | Emergency home repair, rent, utilities (via local) | Rolling (via local agency) | FAITH | 160+ local Catholic Charities agencies assist veterans with emergency repair, housing and basic needs.

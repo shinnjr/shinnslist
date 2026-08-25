@@ -1,85 +1,114 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Archivo } from 'next/font/google';
+import Link from 'next/link';
+import { FileCheck2 } from 'lucide-react';
+import './globals.css';
 import BottomNav from '@/components/BottomNav';
-import PushPrompt from '@/components/PushPrompt';
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const archivo = Archivo({ subsets: ['latin'], variable: '--font-archivo' });
 
 export const metadata: Metadata = {
-  title: "Shinnslist — Find Deals Before Anyone Else",
-  description: "Real-time deal scoring across 15 verticals. Find free stuff, tools, trading cards, sneakers, watches, cars, Legos, handbags, electronics, real estate, instruments, art, sports gear, baby gear, and rentals — beat the crowd to the best deals before they're gone.",
+  title: 'Shinnslist — Grants found, drafted, and ready to submit',
+  description: 'Shinnslist verifies grants, checks your eligibility, drafts the application, and puts the finished submission in front of you for approval.',
+  alternates: { canonical: 'https://shinnslist.com' },
   openGraph: {
-    title: "Shinnslist — Find Deals Before Anyone Else",
-    description: "One deal score across every marketplace. 15 verticals. Instant alerts.",
-    siteName: "Shinnslist",
-    type: "website",
-    url: "https://shinnslist.com",
-    images: [{ url: "https://shinnslist.com/icon.svg", width: 512, height: 512 }],
+    title: 'Shinnslist — Stop searching. Start submitting.',
+    description: 'Verified grant matches become complete application previews, ready for your approval.',
+    siteName: 'Shinnslist',
+    type: 'website',
+    url: 'https://shinnslist.com',
+    images: [{ url: 'https://shinnslist.com/og.png', width: 1200, height: 630, alt: 'Shinnslist — Stop searching. Start submitting.' }],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Shinnslist — Find Deals Before Anyone Else",
-    description: "15 verticals. One deal score. Get alerts when underpriced items drop across marketplace platforms.",
+    card: 'summary_large_image',
+    title: 'Shinnslist — Your grant application queue',
+    description: 'Discover, qualify, draft, approve, and submit grants without rebuilding every application from scratch.',
+    images: ['https://shinnslist.com/og.png'],
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+const directionContract = `
+<!--
+THESIS: Grant applications move like controlled flight strips from verified opportunity to approved submission; refuse the generic SaaS hero-and-card grid.
+OWN-WORLD: Deep navy control bay, warm paper strips, cobalt routing marks, and green readiness stamps; square working surfaces with rounded controls only.
+STORY: The visitor sees real grants already moving through qualification and drafting, trusts the safety gates, and starts a reusable applicant profile.
+FIRST VIEWPORT: A direct promise and CTA occupy the left; a full-height live application strip bay owns the right and demonstrates match, draft, approval, and deadline state.
+FORM: Air-traffic-control flight-strip bay, assigned grounded direction 3; seed a1bc9303.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+-->
+`;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': 'https://shinnslist.com/#org',
+      name: 'Shinnslist',
+      url: 'https://shinnslist.com',
+      logo: 'https://shinnslist.com/icon.svg',
+      description: 'Verified grant discovery and application drafting for small businesses, nonprofits, and founders.',
+    },
+    {
+      '@type': 'WebSite',
+      '@id': 'https://shinnslist.com/#website',
+      url: 'https://shinnslist.com',
+      name: 'Shinnslist',
+      publisher: { '@id': 'https://shinnslist.com/#org' },
+    },
+  ],
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="dark">
-      <head>
-        <link rel="manifest" href="/manifest.json" />
-        <link rel="security-txt" href="/.well-known/security.txt" />
-        <meta name="theme-color" content="#FF1493" />
-      </head>
-      <body className={`${inter.variable} font-sans antialiased bg-[var(--shinnslist-bg)] text-[var(--shinnslist-muted)] min-h-screen flex flex-col`}>
-        {/* Header */}
-        <header className="border-b border-[var(--fa-border)] bg-[var(--fa-bg)]/90 backdrop-blur-xl sticky top-0 z-50">
-          <div className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
-            <a href="/" className="flex min-h-[48px] items-center gap-2">
-              <span className="text-xl">🆓</span>
-              <span className="text-lg font-bold text-white tracking-tight">
-                Shinns<span className="text-[var(--fa-green)]">list</span>
-              </span>
-            </a>
-            <nav className="hidden md:flex items-center gap-6 text-sm">
-              <a href="/" className="flex min-h-[48px] items-center hover:text-white transition-colors">Deals</a>
-              <a href="/pricing" className="flex min-h-[48px] items-center hover:text-white transition-colors">Pricing</a>
-              <a href="/pricing" className="flex min-h-[48px] items-center bg-[var(--fa-green)] text-black px-4 py-1.5 rounded-full text-sm font-bold hover:bg-emerald-400 active:scale-[0.97] transition-all">
-                Go Pro → $5/week
-              </a>
+    <html lang="en">
+      <body className={`${archivo.variable} grant-body`}>
+        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        <span aria-hidden="true" className="hidden" dangerouslySetInnerHTML={{ __html: directionContract }} />
+        <a href="#main-content" className="grant-skip">Skip to content</a>
+
+        <header className="grant-header">
+          <div className="grant-shell grant-header-inner">
+            <Link href="/" className="grant-brand" aria-label="Shinnslist home">
+              <span className="grant-brand-mark"><FileCheck2 size={18} strokeWidth={2.5} /></span>
+              <span>Shinnslist</span>
+            </Link>
+            <nav aria-label="Primary navigation" className="grant-desktop-nav">
+              <Link href="/grants">Grant matches</Link>
+              <Link href="/free-money">Free money</Link>
+              <Link href="/applications">Applications</Link>
+              <Link href="/how-it-works">How it works</Link>
+              <Link href="/pricing">Pricing</Link>
             </nav>
+            <div className="grant-header-actions">
+              <Link href="/login" className="grant-login-link">Log in</Link>
+              <Link href="/onboarding" className="grant-button grant-button-small">Build my profile</Link>
+            </div>
           </div>
         </header>
 
-        {children}
+        <main id="main-content" className="grant-main">{children}</main>
 
-        {/* Mobile bottom nav */}
-        <BottomNav />
-
-        {/* Push notification prompt */}
-        <PushPrompt />
-
-        {/* Footer */}
-        <footer className="border-t border-[var(--fa-border)] mt-auto pb-20 md:pb-0">
-          <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row justify-between gap-4 text-sm text-[var(--fa-muted)]">
+        <footer className="grant-footer">
+          <div className="grant-shell grant-footer-inner">
             <div>
-              <span className="font-bold text-white">Shinnslist</span>{" "}
-              <span>— Free stuff alerts, faster than anyone else.</span>
+              <div className="grant-brand grant-brand-footer"><span className="grant-brand-mark"><FileCheck2 size={16} /></span><span>Shinnslist</span></div>
+              <p>Verified grants become applications, not bookmarks.</p>
             </div>
-            <div className="flex gap-6">
-              <a href="/how-it-works" className="hover:text-white transition-colors">How It Works</a>
-              <a href="/pricing" className="hover:text-white transition-colors">Pricing</a>
-              <a href="mailto:hello@shinnslist.com" className="hover:text-white transition-colors">Contact</a>
-              <a href="/privacy" className="hover:text-white transition-colors">Privacy</a>
-              <a href="/terms" className="hover:text-white transition-colors">Terms</a>
+            <div className="grant-footer-links">
+              <Link href="/grants">Matches</Link>
+              <Link href="/free-money">Free money</Link>
+              <Link href="/applications">Applications</Link>
+              <Link href="/pricing">Pricing</Link>
+              <Link href="/learn">Learn</Link>
+              <Link href="/privacy">Privacy</Link>
+              <Link href="/terms">Terms</Link>
+              <a href="mailto:hello@shinnslist.com">Contact</a>
             </div>
           </div>
         </footer>
+        <BottomNav />
       </body>
     </html>
   );

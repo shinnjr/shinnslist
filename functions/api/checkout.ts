@@ -1,6 +1,7 @@
 import { getStripe, priceIdFor } from '../_lib/stripe';
 import { userIdFromRequest, serviceClient } from '../_lib/supabase';
 import { PRICES, TIER_BUNDLED_ADDONS, appUrl } from '../_lib/config';
+import { rateLimit, rateLimitedResponse } from '../_lib/rate-limit';
 
 interface PagesContext {
   request: Request;
@@ -14,6 +15,8 @@ function json(body: unknown, status = 200): Response {
   });
 }
 
+const MAX_BODY_BYTES = 16 * 1024;
+
 /**
  * Create a Stripe Checkout Session (subscription) for the signed-in user.
  * Body: { tier: 'pro'|'flipper', addons: string[] }
@@ -22,15 +25,25 @@ function json(body: unknown, status = 200): Response {
 export async function onRequestPost(context: PagesContext): Promise<Response> {
   const { request, env } = context;
 
+  // Cheap reject before reading the body or touching Stripe/Supabase.
+  const rl = rateLimit(request, { limit: 20, windowSeconds: 60, keyPrefix: 'checkout' });
+  if (!rl.ok) return rateLimitedResponse(rl);
+
   let body: { tier?: string; addons?: string[] } = {};
   try {
-    body = await request.json();
+    const raw = await request.text();
+    if (raw.length > MAX_BODY_BYTES) {
+      return json({ error: 'payload_too_large' }, 413);
+    }
+    body = raw ? JSON.parse(raw) : {};
   } catch {
     body = {};
   }
 
   const tier = body.tier === 'flipper' ? 'flipper' : 'pro';
-  const requestedAddons = Array.isArray(body.addons) ? body.addons : [];
+  const requestedAddons = Array.isArray(body.addons)
+    ? body.addons.filter((a): a is string => typeof a === 'string')
+    : [];
 
   // 1. Identify the signed-in user.
   const user = await userIdFromRequest(request, env);

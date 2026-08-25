@@ -1,0 +1,57 @@
+# Shinnslist Long-Tail Research: Assistance for SINGLE FATHERS (+ general single-parent programs serving dads)
+# Sweep date: 2026-08-15. All URLs verified HTTP 200 at sweep time. Excludes big federal programs (SNAP/TANF/LIHEAP/SSI).
+# Format: NAME | FUNDER/ORG | URL | WHO QUALIFIES | AMOUNT | DEADLINE_OR_ROLLING | SOURCE_TYPE | DAD_SPECIFIC_OR_GENERAL | ONE-LINE_NOTES
+
+National Responsible Fatherhood Clearinghouse (NRFC) - Program Map & Call Center | U.S. HHS / NRFC | https://fatherhood.gov/ | Dads (custodial & non-custodial) seeking local responsible-fatherhood programs; also practitioners | Varies by local program (referral/coaching) | Rolling | Fatherhood nonprofit | DAD_SPECIFIC | Clearinghouse links to state/local dad programs; national call center 1-877-4DAD411 for dads.
+
+National Fatherhood Initiative | National Fatherhood Initiative | https://fatherhood.org/ | Fathers, fatherhood organizations, and family-service agencies | Free resources, toolkits, program curriculum (indirect) | Rolling | Fatherhood nonprofit | DAD_SPECIFIC | Leading nonpartisan dad-focused org; offers fatherhood program curricula and community support.
+
+National Center for Fathering | National Center for Fathering | https://fathers.com/ | Fathers of all backgrounds | Free resources, courses, workshops (indirect) | Rolling | Fatherhood nonprofit | DAD_SPECIFIC | 500+ articles, courses, and train-the-trainer on engaged fathering.
+
+Project Fatherhood | Children's Institute, Inc. (Los Angeles) | https://www.childrensinstitute.org/project-fatherhood/ | Fathers, stepfathers, foster fathers, and father-figures in LA County | Free support groups + individual/family counseling (in-kind) | Rolling | Fatherhood nonprofit | DAD_SPECIFIC | 60+ years; 15,000+ dads and 23,000 kids served; groups incl. Men in Relationships (MIRG).
+
+The Father's UpLift | The Father's UpLift | https://www.fathersuplift.org/ | Dads, esp. those with mental-health/substance issues, reentry, and low income | Therapy, reentry support, workforce development (services) | Rolling | Fatherhood nonprofit | DAD_SPECIFIC | First mental-health/substance treatment center for fathers; offices in Boston & Cincinnati; also trains fatherhood providers.
+
+Operation Fatherhood | Volunteers of America (national) | https://www.operationfatherhood.org/ | Fathers and families served by VOA chapters | Family support, fatherhood programs (in-kind) | Rolling | Fatherhood nonprofit | DAD_SPECIFIC | VOA-run fatherhood engagement programs across local chapters.
+
+Fathers and Families Coalition of America | Fathers and Families Coalition of America | https://www.fathersandfamiliescoalition.org/ | Fathers, fatherhood organizations, family advocates | Advocacy, resources, network (indirect) | Rolling | Fatherhood nonprofit | DAD_SPECIFIC | National coalition supporting fatherhood programs and family policy.
+
+The Fatherhood Project | The Fatherhood Project | https://www.fatherhoodproject.org/ | Fathers (esp. non-custodial) and families | Programs, resources, counseling (in-kind) | Rolling | Fatherhood nonprofit | DAD_SPECIFIC | Community-based fatherhood support org.
+
+Fatherhood Friday | Fatherhood Friday | https://www.fatherhoodfriday.com/ | Fathers and families | Community events, resources (indirect) | Rolling | Fatherhood nonprofit | DAD_SPECIFIC | Positive fatherhood celebration/awareness network.
+
+DadsMatter | DadsMatter | https://www.dadsmatter.org/ | Fathers and families | Resources and support (indirect) | Rolling | Fatherhood nonprofit | DAD_SPECIFIC | Fatherhood awareness and engagement resource site.
+
+Family Scholar House | Family Scholar House (Louisville, KY) | https://familyscholarhouse.org/ | Single parents (moms AND dads) pursuing post-secondary degree or apprenticeship | Scholarship support + affordable housing + supportive services (value varies) | Rolling (enroll in program) | General single-parent nonprofit | GENERAL | Serves both single mothers and fathers; 5 residential campuses, 247 student-parent families in Louisville metro.
+
+Single Parent Scholarship Fund of Northwest Arkansas (SPSFNWA) | Single Parent Scholarship Fund of Northwest Arkansas | https://www.singleparentscholarship.org/ | Single parents (moms and dads) in NW Arkansas pursuing education | Scholarship (varies; need-based, includes advocacy) | Annual (application windows; contact) | General single-parent scholarship | GENERAL | Non-discrimination policy; open to male and female single parents.
+
+Garner Foundation | Garner Foundation | https://www.garnerfoundation.org/ | Single parents and families in need | Scholarships and assistance (varies) | Rolling | General single-parent nonprofit | GENERAL | Supports single parents with education and family needs.
+
+Single Parent Advocate | Single Parent Advocate | https://www.singleparentadvocate.org/ | Single parents (moms and dads) | Connections to food, housing, emergency help (referral) | Rolling | General single-parent nonprofit | GENERAL | Resource/referral hub for single parents; also accepts donations to fund essentials.
+
+Elks National Foundation - Most Valuable Student (MVS) Scholarship | Benevolent & Protective Order of Elks | https://www.elks.org/scholars/ | U.S. high-school seniors entering 4-year college (financial need + leadership); single parents may apply if eligible HS senior | $1,000 to $7,500/year, renewable; 500 scholarships | Annual (application opens ~Sept) | Civic club scholarship | GENERAL | Gender-neutral competitive scholarship; also Legacy and Emergency Educational grants via ENF.
+
+Catholic Charities USA - Emergency/Family Assistance | Catholic Charities USA (local agencies) | https://catholiccharitiesusa.org/ | Low-income families incl. single fathers | Emergency rent, utilities, food, case mgmt (varies by diocese) | Rolling (via local agency) | Faith org | GENERAL | 160+ local agencies; emergency assistance available to single dads in every metro.
+
+St. Vincent de Paul (SVdP USA) | Society of St. Vincent de Paul | https://www.svdpusa.org/ | Individuals/families in need incl. single fathers | Emergency food, rent, utilities, clothing (varies) | Rolling (via local conference) | Faith org | GENERAL | 4,500+ local councils/conferences nationwide help families regardless of family type.
+
+Lutheran Services in America | Lutheran Services in America (member network) | https://www.lutheranservices.org/ | Families in need incl. single parents | Health, housing, family services (varies) | Rolling (via local member) | Faith org | GENERAL | 300+ member orgs serving families; no gender restriction.
+
+The Salvation Army - Family & Utility Assistance | The Salvation Army (national) | https://www.salvationarmyusa.org/usn/ | Low-income individuals/families incl. single fathers | Emergency rent, utilities, food, shelter (varies) | Rolling (via local corps) | Faith org | GENERAL | Nationwide network of family-service centers; assists single dads.
+
+Jewish Family Services Los Angeles (JFS LA) | Jewish Family Service LA | https://www.jfsla.org/ | Families and individuals in need incl. single parents | Food, rent, counseling, employment help (varies) | Rolling | Faith org | GENERAL | 1,400+ programs; serves all residents, not only Jewish.
+
+Jewish Family and Children's Services (JFCS) | JFCS | https://www.jfcs.org/ | Families and individuals in need incl. single parents | Counseling, financial assistance, food (varies) | Rolling | Faith org | GENERAL | Multi-region JFCS serving all families regardless of background.
+
+211 - Community Resource Navigation | 211 (United Way network) | https://www.211.org/ | Any individual/family incl. single fathers | Referrals to local rent, utility, food, childcare help | Rolling | 211 / community directory | GENERAL | Dial 211 or visit to find local assistance; key discovery channel for dad-specific local programs.
+
+United Way - Local Assistance & 211 | United Way Worldwide (local UWs) | https://www.unitedway.org/ | Families and individuals in need incl. single parents | Local grants, food, housing, 211 (varies) | Rolling (via local UW) | Civic / community | GENERAL | Local United Ways fund and run single-parent and emergency assistance.
+
+Operation Homefront | Operation Homefront | https://www.operationhomefront.org/ | Military and veteran families incl. single-parent military families | Financial relief, housing, food assistance (varies) | Rolling | National nonprofit | GENERAL | Supports military families; helpful for single-father service members/veterans.
+
+Project HOPE | Project HOPE | https://www.projecthope.org/ | Families affected by health crises (global/US) | Health programs, family assistance (varies) | Rolling | National nonprofit | GENERAL | Health-focused relief org; some US family health assistance.
+
+Volunteers of America (VOA) | Volunteers of America (national) | https://www.voa.org/ | Low-income individuals/families incl. single dads | Housing, family services, fatherhood programs (varies) | Rolling (via local chapter) | National nonprofit | GENERAL | Parent org of Operation Fatherhood; local chapters run family and housing programs.
+
+Nexus Family Healing | Nexus Family Healing | https://www.nexusfamilyhealing.org/ | Children and families incl. single parents in crisis | Mental-health, foster-care, family support services (varies) | Rolling | National nonprofit | GENERAL | Behavioral-health and family preservation services; welcomes single-father families.

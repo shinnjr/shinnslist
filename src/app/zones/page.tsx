@@ -54,6 +54,7 @@ export default function ZonesPage() {
               <select
                 value={activeState}
                 onChange={e => setActiveState(e.target.value)}
+                aria-label="Select state"
                 className="min-h-[48px] bg-[var(--shinnslist-surface)] border border-[var(--shinnslist-border)] rounded-lg px-3 py-1.5 text-sm text-white"
               >
                 {states.map(s => (
@@ -64,9 +65,10 @@ export default function ZonesPage() {
 
             <button
               onClick={() => setMode(mode === 'draw' ? 'view' : 'draw')}
+              aria-pressed={mode === 'draw'}
               className={`min-h-[48px] px-4 py-1.5 rounded-full text-sm font-bold border transition-all active:scale-[0.97] ${
                 mode === 'draw'
-                  ? 'bg-[var(--shinnslist-pink)] border-[var(--shinnslist-pink)] text-white shadow-lg shadow-[var(--shinnslist-pink)]/20'
+                  ? 'bg-[var(--shinnslist-pink)] border-[var(--shinnslist-pink)] text-black shadow-lg shadow-[var(--shinnslist-pink)]/20'
                   : 'border-[var(--shinnslist-border)] text-[var(--shinnslist-muted)] hover:border-zinc-500'
               }`}
             >
@@ -76,6 +78,7 @@ export default function ZonesPage() {
             {/* Road trip toggle */}
             <button
               onClick={() => setRoadTrip(!roadTrip)}
+              aria-pressed={roadTrip}
               className={`flex min-h-[48px] items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium border transition-all active:scale-[0.97] ${
                 roadTrip
                   ? 'bg-green-600/20 border-green-600/40 text-green-400'
@@ -99,7 +102,8 @@ export default function ZonesPage() {
                 {zone.name} ({zone.state})
                 <button
                   onClick={() => removeZone(zone.id)}
-                  className="ml-1 text-[var(--shinnslist-muted)] hover:text-white"
+                  aria-label={`Remove ${zone.name}`}
+                  className="ml-1 flex h-12 w-12 items-center justify-center rounded-full text-[var(--shinnslist-muted)] hover:text-white hover:bg-white/5 transition-colors -m-1"
                 >
                   ×
                 </button>
@@ -149,7 +153,7 @@ export default function ZonesPage() {
                 Add zones in other states to expand your search area
               </p>
             </div>
-            <button className="min-h-[48px] bg-[var(--shinnslist-pink)] text-white text-xs font-bold px-4 py-2 rounded-full hover:bg-fuchsia-600 active:scale-[0.97] transition-all whitespace-nowrap">
+            <button className="min-h-[48px] bg-[var(--shinnslist-pink)] text-black text-xs font-bold px-4 py-2 rounded-full hover:bg-emerald-600 active:scale-[0.97] transition-all whitespace-nowrap">
               Add State
             </button>
           </div>

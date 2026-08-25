@@ -110,7 +110,8 @@ export default function PushPrompt() {
       <div className="bg-[var(--shinnslist-surface)] border border-[var(--shinnslist-border)] rounded-2xl p-4 shadow-2xl animate-slide-up">
         <button
           onClick={handleDismiss}
-          className="absolute top-3 right-3 text-[var(--shinnslist-muted)] hover:text-white text-lg leading-none"
+          aria-label="Dismiss notification"
+          className="absolute top-2 right-2 flex h-12 w-12 items-center justify-center rounded-full text-[var(--shinnslist-muted)] hover:text-white hover:bg-white/5 transition-colors"
         >
           ×
         </button>
@@ -123,7 +124,7 @@ export default function PushPrompt() {
             </p>
             <button
               onClick={handleEnable}
-              className="bg-[var(--shinnslist-pink)] text-white text-xs font-bold px-4 py-2 rounded-full hover:bg-fuchsia-600 transition-colors"
+              className="min-h-[48px] bg-[var(--shinnslist-pink)] text-black text-xs font-bold px-5 py-2 rounded-full hover:bg-emerald-600 transition-colors"
             >
               Enable alerts
             </button>

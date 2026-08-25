@@ -1,6 +1,7 @@
 import { getStripe } from '../../_lib/stripe';
 import { userIdFromRequest, serviceClient } from '../../_lib/supabase';
 import { appUrl } from '../../_lib/config';
+import { rateLimit, rateLimitedResponse } from '../../_lib/rate-limit';
 
 interface PagesContext {
   request: Request;
@@ -17,6 +18,9 @@ function json(body: unknown, status = 200): Response {
 /** Open the Stripe Customer Portal so a user can manage/cancel their subscription. */
 export async function onRequestPost(context: PagesContext): Promise<Response> {
   const { request, env } = context;
+
+  const rl = rateLimit(request, { limit: 20, windowSeconds: 60, keyPrefix: 'portal' });
+  if (!rl.ok) return rateLimitedResponse(rl);
 
   const user = await userIdFromRequest(request, env);
   if (!user?.id) return json({ error: 'unauthorized', url: '/login' }, 401);

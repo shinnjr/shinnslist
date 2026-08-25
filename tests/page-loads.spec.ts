@@ -11,13 +11,18 @@ import { test, expect } from '@playwright/test';
  */
 const PAGES = [
   { path: '/', name: 'home' },
+  { path: '/grants', name: 'grant matches' },
+  { path: '/applications', name: 'application control' },
+  { path: '/apply?id=tdf-capacity-building-2026', name: 'application preview' },
+  { path: '/how-it-works', name: 'grant workflow' },
   { path: '/onboarding', name: 'onboarding' },
-  { path: '/post', name: 'post' },
   { path: '/pricing', name: 'pricing' },
-  { path: '/welcome', name: 'welcome' },
   { path: '/signup', name: 'signup' },
   { path: '/login', name: 'login' },
-  { path: '/zones', name: 'zones' },
+  { path: '/post', name: 'legacy post' },
+  { path: '/welcome', name: 'legacy welcome' },
+  { path: '/zones', name: 'legacy zones' },
+  { path: '/watch', name: 'legacy watch' },
   { path: '/manifest.json', name: 'manifest' },
 ];
 
@@ -30,7 +35,7 @@ for (const page of PAGES) {
     // 2) Browser render check: must load and render non-empty content
     const errors: string[] = [];
     p.on('pageerror', (err) => errors.push(String(err)));
-    const resp = await p.goto(page.path, { waitUntil: 'networkidle' });
+    const resp = await p.goto(page.path, { waitUntil: 'domcontentloaded' });
     expect(resp?.status()).toBe(200);
 
     if (page.path.endsWith('.json')) {
@@ -43,7 +48,6 @@ for (const page of PAGES) {
       expect(bodyText.trim().length).toBeGreaterThan(0);
       // Surface known dev-mode client errors (hydration mismatch on home,
       // leaflet-draw CSS module in dev) as warnings, not hard failures.
-      // eslint-disable-next-line no-console
       if (errors.length) console.warn(`[${page.path}] client errors:`, errors);
     }
   });

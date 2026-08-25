@@ -12,6 +12,11 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Python virtualenvs + Playwright artifacts (huge bundled JS, not source)
+    ".venv/**",
+    "**/.venv/**",
+    "test-results/**",
+    "playwright-report/**",
   ]),
 ]);
 

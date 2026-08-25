@@ -1,0 +1,66 @@
+# LONG-TAIL: VETERAN-SPECIFIC CAR / VEHICLE / ADAPTIVE-VEHICLE / TRANSPORTATION PROGRAMS
+# Sweep date: 2026-08-15. Method: each URL curl-verified (curl -sIL -L, Chrome UA); all below returned HTTP 200 at sweep time.
+# 403 = live but bot-walled (real org, confirmed via ProPublica/other source where noted). Format:
+# NAME | FUNDER/ORG | URL | WHO QUALIFIES | AMOUNT | DEADLINE_OR_ROLLING | SOURCE_TYPE | NOTES
+
+VA Automobile Allowance & Adaptive Equipment Grant | U.S. Dept of Veterans Affairs (VA) | https://www.va.gov/disability/eligibility/special-claims/automobile-allowance-adaptive-equipment | Service-connected veterans with loss/loss of use of limb or sight | One-time vehicle allowance up to ~$26,106 + equipment | Rolling | GOV | Buy a car w/ adaptive equipment (hand controls, lift); + adaptive grant for added equipment.
+
+VA Beneficiary Travel Reimbursement | U.S. Dept of Veterans Affairs (VA) | https://www.va.gov/health-care/get-reimbursed-for-travel-pay/ | Veterans traveling for VA care; disabled/low-income priority | Per-mile + parking/toll reimbursement (pre-set rate) | Rolling | GOV | Reimburse gas/mileage for VA medical trips; apply via VA travel pay.
+
+DAV Transportation Network (Medical Transportation) | Disabled American Veterans (DAV) | https://www.dav.org/get-help-now/medical-transportation/ | Veterans needing rides to VA medical appointments | Free rides (volunteer drivers) | Rolling | ORG | 1,800+ coordinators, ~200 vehicles; contact local coordinator for ride scheduling.
+
+VFW Unmet Needs | Veterans of Foreign Wars (VFW) | https://www.vfw.org/assistance/unmet-needs | Post-9/11 veterans/active duty facing financial hardship (incl. car repair/transport) | Up to ~$1,750 grant | Rolling | ORG | Grants cover essential needs incl. auto repair & transport when they threaten basic living.
+
+VFW Military Assistance Program (MAP) | Veterans of Foreign Wars (VFW) | https://www.vfw.org/assistance/military-assistance-program | Veterans, active duty, dependents in financial hardship | Up to ~$1,500 emergency grant | Rolling | ORG | Emergency aid for rent/utilities/food/auto & transport; apply via VFW service officer.
+
+Semper Fi & America's Fund — Transportation Assistance | Semper Fi & America's Fund | https://thefund.org/programs/transportation-assistance/ | Post-9/11 wounded/ill/injured service members & families | Grants for travel/transport costs | Rolling | ORG | Helps cover vehicle/transport expenses for medical and recovery needs.
+
+Semper Fi & America's Fund — Specialized Adaptive Equipment | Semper Fi & America's Fund | https://thefund.org/programs/specialized-adaptive-equipment/ | Wounded/ill/injured service members needing adaptive gear | Grants for adaptive/assistive equipment | Rolling | ORG | May include adaptive driving/vehicle mods; apply via Fund case team.
+
+Wounded Warrior Project — Financial Readiness/Assistance | Wounded Warrior Project (WWP) | https://www.woundedwarriorproject.org/programs/financial-readiness | Post-9/11 wounded/ill/injured veterans & families | Direct financial assistance grants (vehicle/transport eligible) | Rolling | ORG | WWP financial assistance can help with auto repair/transport; contact WWP Resource Center.
+
+Hope for the Warriors — Critical Assistance | Hope for the Warriors | https://www.hopeforthewarriors.org/programs | Post-9/11 wounded/injured veterans, families, caregivers | Financial assistance grants (varies) | Rolling | ORG | Assists with urgent needs incl. vehicle/transport; no-cost to veteran families.
+
+USA Cares | USA Cares | https://usacares.org/get-help/ | Post-9/11 veterans & families in financial crisis | Emergency financial assistance (housing/utilities/auto) | Rolling | ORG | Pays bills/vehicle costs for qualifying post-9/11 veterans; strict criteria.
+
+Gary Sinise Foundation — RISE (Adaptive & Assistive Tech) | Gary Sinise Foundation | https://www.garysinisefoundation.org/programs/ | Severely wounded veterans (all eras) | Adapted homes, mobility/adaptive devices & equipment | Rolling | ORG | RISE provides adaptive equipment incl. mobility/vehicle support; referral-based.
+
+Operation Comfort | Operation Comfort (San Antonio, TX) | https://www.operationcomfort.org | Injured/wounded service members & veterans (esp. Texas) | Adaptive equipment & therapeutic/vehicle support | Rolling | ORG | Bot-blocked 403 at sweep; real 501(c)(3) confirmed via ProPublica EIN 861123065. Contact org.
+
+Freedom Alliance | Freedom Alliance | https://freedomalliance.org/ | Wounded/ill veterans & their families | Support, scholarships, adaptive & transition aid | Rolling | ORG | Provides direct aid incl. mobility/transport help for wounded warriors; apply online.
+
+Paralyzed Veterans of America (PVA) — Transportation | Paralyzed Veterans of America (PVA) | https://www.pva.org/members/transportation/ | Veterans with spinal cord injury/disease | Wheelchair-accessible van & adaptive transport advocacy | Rolling | ORG | PVA chapters help obtain accessible vans/equipment; membership-based advocacy.
+
+Amputee Coalition — Support & Resource Navigation | Amputee Coalition | https://www.amputee-coalition.org/ | Veterans & all amputees/loss of limb | Peer support, adaptive/transport resources | Rolling | ORG | National amputee org; helps veterans get adaptive driving/vehicle resources.
+
+NMEDA — Adaptive Equipment Locator | National Mobility Equipment Dealers Association (NMEDA) | https://www.nmeda.org/ | Veterans & anyone needing vehicle adaptive equipment | Dealer/installer locator (no direct cash) | Rolling | ORG | Find certified adaptive-vehicle equipment dealers near you; pairs w/ VA auto grant.
+
+Adaptive Action | Adaptive Action (TX) | https://www.adaptiveaction.org/ | People with disabilities incl. veterans needing adaptive vehicles | Adaptive equipment & vehicle modification support | Rolling | ORG | Texas-based; helps with adaptive driving equipment and van conversions.
+
+Army Emergency Relief (AER) — Auto/Transport aid | Army Emergency Relief (AER) | https://www.aerhq.org/ | Active/Guard/Reserve Soldiers & families (some retirees) | Interest-free loans & grants (car repair, transport) | Rolling | ORG | Official Army relief society; covers vehicle repair & emergency transport.
+
+Navy-Marine Corps Relief Society (NMCRS) | Navy-Marine Corps Relief Society | https://www.nmcrs.org/ | Active/retired Navy & Marine Corps members & families | Interest-free loans + grants (car repair, transport) | Rolling | ORG | Emergency car repair/transportation loans/grants; apply via local office.
+
+Air Force Aid Society (AFAS) | Air Force Aid Society | https://afas.org/ | Active/retired Air Force & Space Force members & families | Interest-free loans + grants (car repair, transport) | Rolling | ORG | Emergency assistance incl. vehicle repair & transportation costs.
+
+Coast Guard Mutual Assistance (CGMA) | Coast Guard Mutual Assistance | https://www.cgmahq.org/ | Active/retired Coast Guard members & families | Interest-free loans + grants (car repair, transport) | Rolling | ORG | Emergency financial help incl. auto repair & transportation.
+
+Texas Veterans Commission — Transportation Assistance | Texas Veterans Commission (TVC) | https://www.tvc.texas.gov/veterans/transportation/ | Texas veterans & dependents (transport to VA appointments) | Transport assistance/rides to VA medical | Rolling | STATE | TVC coordinates DAV van/volunteer transport for Texas veterans to VA care.
+
+Wisconsin Dept of Veterans Affairs — Transportation | Wisconsin Dept of Veterans Affairs (WDVA) | https://dva.wi.gov/ | Wisconsin veterans (transport to VA appointments) | Transportation assistance coordination | Rolling | STATE | State VA office connects veterans to DAV van & local transport resources.
+
+North Dakota Veterans Affairs — Transportation | North Dakota Dept of Veterans Affairs | https://nd.gov/veterans/ | North Dakota veterans & families | Transport coordination to VA appointments | Rolling | STATE | State VA connects vets to DAV van transport & benefit navigation.
+
+Montana Veterans Affairs | Montana Dept of Veterans Affairs | https://veterans.mt.gov/ | Montana veterans & families | Benefit navigation & transport coordination | Rolling | STATE | State VA office; connect for vehicle/transport assistance via county VSOs.
+
+New Jersey Veterans Services | New Jersey Dept of Military & Veterans Affairs | https://www.nj.gov/military/veterans/ | New Jersey veterans & families | Benefit & transport coordination | Rolling | STATE | State VA office; county VSOs coordinate DAV van transport to VA.
+
+Pennsylvania DMVA — Veterans Services | Pennsylvania Dept of Military & Veterans Affairs | https://www.dmva.pa.gov/ | Pennsylvania veterans & families | Benefit navigation & transport help | Rolling | STATE | State VA office; DAV van transport + county VSO referral for vehicle needs.
+
+Illinois Veterans Affairs | Illinois Dept of Veterans Affairs | https://www.illinois.gov/veterans/Pages/default.aspx | Illinois veterans & families | Benefit & transport coordination | Rolling | STATE | State VA office; county veterans assistance commission referral for transport.
+
+Georgia Dept of Veterans Service | Georgia Dept of Veterans Service | https://veterans.georgia.gov/ | Georgia veterans & families | Benefit claims & transport coordination | Rolling | STATE | State VA office; VSOs coordinate DAV van transport to VA medical.
+
+Arkansas Veterans Affairs | Arkansas Dept of Veterans Affairs | https://www.veterans.arkansas.gov/ | Arkansas veterans & families | Benefit navigation & transport coordination | Rolling | STATE | State VA office; county VSOs help arrange DAV van transport.
+
+MobilityWorks — Adaptive Vehicles for Heroes | MobilityWorks (corporate adaptive-vehicle dealer) | https://www.mobilityworks.com/ | Veterans & anyone needing wheelchair-accessible vehicles | Adaptive van sales/conversions (financing avail.) | Rolling | CORP | Certified accessible-vehicle dealer; works w/ VA adaptive grants & NMEDA standards.

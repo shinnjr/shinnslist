@@ -1,0 +1,41 @@
+# Transport Vouchers / Ride Assistance — Long-Tail Discovery
+# Research date: 2026-08-15. Every URL verified with curl -sIL (HTTP 200, -L redirects).
+# Scope: INDIVIDUAL ride assistance (transit passes, ride vouchers, gas cards, medical
+# transport vouchers, taxi/Lyft vouchers, senior/disabled free transport). NOT car ownership.
+# Excludes SNAP/WIC/TANF/LIHEAP/Medicaid/Medicare/SSI/SSDI/EITC/Section8/USDA504 and prior car URLs.
+# Format: NAME | FUNDER/ORG | URL | WHO QUALIFIES | AMOUNT | DEADLINE_OR_ROLLING | SOURCE_TYPE | NOTES
+
+ITN America (Independent Transportation Network) | ITN America | https://www.itnamerica.org/ | Seniors 65+, vision-impaired adults | Rides w/ volunteer drivers; sliding fee | Rolling | ORG | National network of community-based ride programs
+DAV Transportation Network | Disabled American Veterans | https://www.dav.org/get-help-now/medical-transportation/ | Veterans needing rides to VA medical appts | Free rides (volunteer vans/trucks) | Rolling | ORG | Volunteer transport network; contact local DAV chapter
+Mercy Medical Angels | Mercy Medical Angels | https://www.mercymedical.org/ | Low-income patients traveling for medical care | Free/reduced flights, gas cards, bus tickets | Rolling | ORG | Also funds Amtrak & ground transport
+Corporate Angel Network | Corporate Angel Network | https://www.corpangelnetwork.org/ | Cancer patients + escorts traveling for treatment | Free seats on corporate jets | Rolling | ORG | Flights only, all states
+CancerCare Financial Assistance | CancerCare | https://www.cancercare.org/ | Cancer patients in treatment, low-income | Up to $2,000/yr incl transport/gas grants | Rolling | ORG | Transport funds via case manager application
+Patient Airlift Services (PALS) | PALS | https://palservices.org/ | Patients needing long-distance medical travel | Free flights w/ volunteer pilots | Rolling | ORG | NY region focused; medical approval needed
+Miracle Flights | Miracle Flights | https://www.miracleflights.org/ | Children (and escorts) needing distant medical care | Free flights | Rolling | ORG | Air travel for pediatric treatment
+Veterans Airlift Command | Veterans Airlift Command | https://www.veteransairlift.org/ | Veterans + families needing medical/comms travel | Free flights w/ volunteer pilots | Rolling | ORG | Military-focused air transport
+Angel Flight West | Angel Flight West | https://www.angelflightwest.org/ | Patients, families, medical personnel (13 western states) | Free flights | Rolling | ORG | Medical air transport nonprofit
+Pilots for Patients | Pilots for Patients | https://www.pilotsforpatients.org/ | Louisiana-area patients w/ financial need | Free air travel to medical appts | Rolling | ORG | Regional (LA) volunteer pilot program
+AirLifeline | Angel Flight America / AirLifeline | https://www.airlifeline.org/ | Patients traveling to specialized medical care | Free flights | Rolling | ORG | Network of volunteer pilot orgs
+Travelers Aid International | Travelers Aid International | https://www.travelersaid.org/ | Travelers in emergency at transport hubs | Emergency transit/bus/train vouchers | Rolling | ORG | Local chapters provide travel assistance
+MBTA Reduced Fare Program | MBTA (Massachusetts) | https://www.mbta.com/fares/reduced | Seniors 65+, people w/ disabilities, low-income | 50% off transit fares | Rolling | STATE | MA transit reduced fares
+SEPTA Senior Fare | SEPTA (Pennsylvania) | https://www.septa.org/fares/senior.html | PA residents 65+ (w/ Senior Key card) | Free rides (KEY card) | Rolling | STATE | Free regional transit for seniors
+MTA Access-A-Ride Paratransit | MTA New York City | https://new.mta.info/accessibility/paratransit | Disabled individuals unable to use bus/subway | Free paratransit ride service | Rolling | STATE | NYC paratransit shared rides
+SEPTA ADA Paratransit | SEPTA (Pennsylvania) | https://www.septa.org/fares/access.html | Disabled persons unable to use fixed-route | Paratransit service, ADA-compliant | Rolling | STATE | Philadelphia-area paratransit
+MetroAccess (WMATA) | WMATA (Washington DC) | https://www.wmata.com/service/accessibility/ | Disabled DC-area residents unable to use transit | Paratransit ride service | Rolling | STATE | ADA paratransit in DC/MD/VA
+LA Metro Reduced Fare / Lifeline | LA Metro (California) | https://www.metro.net/fares/ | Low-income riders, seniors, students, disabled | Reduced/lifeline fares | Rolling | STATE | LA County transit discounts
+SFMTA Lifeline Pass | SFMTA (San Francisco) | https://www.sfmta.com/getting-around/transit/fares-passes | Low-income SF residents (115-250% FPL) | Lifeline monthly pass ~40% off | Rolling | STATE | SF Muni reduced-fare program
+King County ORCA LIFT | King County Metro (Washington) | https://kingcounty.gov/en/dept/metro/fares-and-payment/reduced-fares | Low-income adults (≤200% FPL) | $1.75/ride ORCA LIFT fare | Rolling | STATE | Seattle-area reduced transit fare
+RTA Reduced Fare / Rides | RTA Chicago | https://www.rtachicago.org/riders/free-and-reduced-fare-programs | Seniors, disabled, low-income Chicago-area riders | Free/reduced fare across RTA systems | Rolling | STATE | Chicago metro transit discounts
+Modivcare | Modivcare | https://www.modivcare.com/ | Medicaid/Medicare members needing non-emergency medical transport | NEMT ride coordination | Rolling | CORP | Arranges medical rides via benefits
+Veyo | Veyo | https://www.veyo.com/ | Medicaid members needing medical transport | Non-emergency medical transport rides | Rolling | CORP | NEMT provider (via state plans)
+Rides in Sight | Beverly Foundation | https://www.ridesinsight.org/ | Seniors, people w/ disabilities needing rides | Referral to local transportation resources | Rolling | ORG | National senior/disabled transport directory
+Ride United (United Way NCA) | United Way of National Capital Area | https://www.unitedwaynca.org/ | DC/MD/VA residents needing rides | Free/reduced ride vouchers, Lyft rides | Rolling | 211 | Region-specific; call 211/contact local UW
+LyftUp / Lyft Donation Rides | Lyft | https://www.lyft.com/lyftup | People in need (via partner nonprofits) | Free/discounted ride credits | Rolling | CORP | Partner-led; apply via community org
+Pasadena Transit Health Center Shuttle | Pasadena Transit (California) | https://www.pasadenatransit.net/health-center/ | Pasadena residents needing health center transport | Free shuttle service | Rolling | STATE | Free local shuttle to health centers
+Hopelink Transportation | Hopelink | https://www.hopelink.org/transportation/ | Low-income, seniors, disabled in King County WA | Volunteer/community transportation | Rolling | ORG | King County WA ride services
+TripLink Regional Transportation | TripLink (Community Rides) | https://www.communityrides.org/ | Seniors/disabled in central Iowa region | Regional transport coordination | Rolling | ORG | Iowa ride call center
+VA Beneficiary Travel | US Department of Veterans Affairs | https://www.benefits.va.gov/COMPENSATION/travel.asp | Veterans with service-connected/authorized care | Mileage reimbursement (41.5c/mi) for VA appts | Rolling | GOV | Also VA Transport Network vans
+211 National Help Line | United Way / 211 | https://www.211.org/ | Anyone seeking local assistance | Free referral to local transport/transit vouchers | Rolling | 211 | 211 connects to local transport programs
+Area Agencies on Aging (n4a) | National Association of Area Agencies on Aging | https://www.n4a.org/ | Seniors 60+ (via local AAA) | Local transportation services/vouchers | Rolling | ORG | Find local AAA for transport
+NCOA Transportation Resources | National Council on Aging | https://www.ncoa.org/ | Older adults seeking transport options | Directory + benefits checkup referral | Rolling | ORG | Resources for senior transport options
+NeedyMeds Transportation/Assistance | NeedyMeds | https://www.needymeds.org/ | Low-income patients needing meds/medical transport | Free drug & assistance program database | Rolling | ORG | Database of patient assistance incl transport

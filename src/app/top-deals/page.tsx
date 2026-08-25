@@ -5,7 +5,8 @@ import { useSearchParams } from 'next/navigation';
 import { motion } from 'framer-motion';
 import type { Listing } from '@/types';
 import TopDealCard from '@/components/TopDealCard';
-import { EmptyState } from '@/components/ErrorBoundary';
+import { EmptyState, ErrorBoundary } from '@/components/ErrorBoundary';
+import { HeaderSkeleton, DealFeedSkeleton } from '@/components/Skeletons';
 import { analyzeTopDeal, type TopDealAnalysis } from '@/lib/top-deals';
 import { categorySlug, getSub, isUnlocked, recordSub } from '@/lib/subscription';
 import { DENVER } from '@/lib/geo';
@@ -119,12 +120,9 @@ export default function TopDealsPage() {
   if (loading) {
     return (
       <main className="flex-1 max-w-7xl mx-auto px-4 pt-8 pb-16">
-        <div className="animate-pulse space-y-4">
-          <div className="h-8 bg-zinc-800 rounded-lg w-64" />
-          <div className="h-4 bg-zinc-800 rounded w-96" />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {Array.from({ length: 6 }).map((_, i) => <div key={i} className="h-72 bg-zinc-800/60 rounded-2xl" />)}
-          </div>
+        <HeaderSkeleton />
+        <div className="mt-6">
+          <DealFeedSkeleton count={6} />
         </div>
       </main>
     );
@@ -158,7 +156,8 @@ export default function TopDealsPage() {
           <EmptyState message="No deals ranked yet" description="Scrapers are filling the feed — check back in a few minutes." emoji="🏆" />
         </section>
       ) : (
-        <section className="max-w-7xl mx-auto px-4 pb-16">
+        <ErrorBoundary label="Top deals">
+          <section className="max-w-7xl mx-auto px-4 pb-16">
           {/* Hero — #1 deal */}
           {hero && (
             <div className="mb-6">
@@ -203,13 +202,14 @@ export default function TopDealsPage() {
               </p>
               <a
                 href="/pricing"
-                className="inline-flex min-h-[48px] items-center bg-[var(--shinnslist-pink)] text-white px-8 py-3 rounded-full font-bold text-sm hover:bg-fuchsia-600 active:scale-[0.97] transition-all"
+                className="inline-flex min-h-[48px] items-center bg-[var(--shinnslist-pink)] text-black px-8 py-3 rounded-full font-bold text-sm hover:bg-emerald-600 active:scale-[0.97] transition-all"
               >
                 Unlock the top deals →
               </a>
             </motion.div>
           )}
         </section>
+        </ErrorBoundary>
       )}
     </main>
   );

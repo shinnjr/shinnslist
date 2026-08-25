@@ -1,0 +1,31 @@
+TOTAL in DB          : 2503
+ELIGIBLE (shown)     : 1446
+NEEDS_REVIEW (shown) : 0
+INELIGIBLE (hidden)  : 1057
+
+=== TOP 12 ELIGIBLE ===
+[94] USDA Section 504 Home Repair Program
+      Open across the U.S. | Applicant entity type is accepted | Matches your need: housing
+[94] Weatherization Assistance Program (WAP)
+      Open across the U.S. | Applicant entity type is accepted | Matches your need: housing
+[94] LIHEAP — Low Income Home Energy Assistance
+      Open across the U.S. | Applicant entity type is accepted | Matches your need: housing
+[94] LIHWAP — Low Income Household Water Assistance
+      Open across the U.S. | Applicant entity type is accepted | Matches your need: housing
+[94] Section 8 / Housing Choice Voucher
+      Open across the U.S. | Applicant entity type is accepted | Matches your need: housing
+[94] Down Payment Assistance (state HFA programs)
+      Open across the U.S. | Applicant entity type is accepted | Matches your need: housing
+[94] Emergency Rental Assistance
+      Open across the U.S. | Applicant entity type is accepted | Matches your need: housing
+[85] Denver Foundation Latina Give Fund
+      Location matches Colorado | Applicant entity type is accepted
+[85] Denver Foundation Greenwood Fund
+      Location matches Colorado | Applicant entity type is accepted
+[85] Denver RTD Discounted Fares (incl. Live income program)
+      Location matches Colorado | Applicant entity type is accepted
+[79] Freed Fellowship Grant
+      Open across the U.S. | Applicant entity type is accepted
+[79] SNAP — Supplemental Nutrition Assistance Program (food stamps)
+      Open across the U.S. | Applicant entity type is accepted
+EXIT=0

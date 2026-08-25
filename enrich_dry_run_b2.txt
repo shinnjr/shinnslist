@@ -1,0 +1,66 @@
+TOTAL: 2503 | no-location rows: 1204
+Would update: 230 rows
+  - add state/location: 220
+  - fix category (vehicle→transportation): 14
+
+Top detected states:
+  Colorado: 36
+  Ohio: 17
+  California: 16
+  Texas: 15
+  Illinois: 13
+  Michigan: 10
+  Pennsylvania: 9
+  Massachusetts: 7
+  District of Columbia: 6
+  Arizona: 6
+  Maryland: 5
+  Oregon: 5
+  North Carolina: 5
+  Arkansas: 4
+  Minnesota: 4
+
+Sample updates (first 40):
+  [-|transportation] Wheels4Hope
+  [California|-] Catholic Charities San Francisco
+  [-|transportation] Drive to Work
+  [Texas|-] Adaptive Action
+  [Wisconsin|-] Wisconsin Dept of Veterans Affairs — Transportatio
+  [North Dakota|-] North Dakota Veterans Affairs — Transportation
+  [Montana|-] Montana Veterans Affairs
+  [New Jersey|-] New Jersey Veterans Services
+  [Illinois|-] Illinois Veterans Affairs
+  [Georgia|-] Georgia Dept of Veterans Service
+  [Arkansas|-] Arkansas Veterans Affairs
+  [Maryland|-] 8. Maryland Child Care Scholarship
+  [Texas|-] 9. Texas Child Care & Early Learning Program
+  [Pennsylvania|-] 11. Pennsylvania Child Care Works
+  [California|-] 12. First 5 California (family-support + subsidize
+  [California|-] California Individual Artists Fellowship
+  [District of Columbia|-] Artist Trust Grants (Washington)
+  [Hawaii|-] 24. PATCH (Hawaii child care resource & referral)
+  [Texas|-] Texas Mothers of Multiples
+  [Virginia|-] 32. ABLEnow (Virginia)
+  [California|-] 33. CalABLE
+  [Tennessee|-] Tennessee Reconnect
+  [Indiana|-] Indiana Next Level Jobs — Workforce Ready Grant
+  [Ohio|-] Ohio TechCred
+  [Ohio|-] Ohio Individual Microcredential Assistance Program
+  [Kentucky|-] Kentucky Work Ready Kentucky Scholarship
+  [California|-] California Employment Training Panel (ETP)
+  [Colorado|-] Colorado Opportunity Scholarship Initiative (COSI)
+  [Colorado|-] Colorado Community College System — From Classroom
+  [Colorado|-] Colorado Dept. of Labor & Employment (state workfo
+  [Minnesota|-] CareerForce Minnesota
+  [New York|-] New York State Dept. of Labor
+  [District of Columbia|-] Washington Employment Security Department
+  [New Jersey|-] New Jersey Dept. of Labor & Workforce Development
+  [Michigan|-] Michigan LEO — Workforce Development
+  [Wisconsin|-] Wisconsin Dept. of Workforce Development
+  [Arkansas|-] Arkansas Division of Workforce Services
+  [Colorado|-] Jefferson County Colorado (Jeffco) Human Services 
+  [California|-] California Caregiver Resource Centers
+  [Michigan|-] 12. THAW — The Heat and Warmth Fund (Michigan)
+
+DRY RUN — no writes. Re-run with --apply to write.
+EXIT=0

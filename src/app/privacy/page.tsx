@@ -1,21 +1,36 @@
-export const metadata = { title: 'Privacy Policy — Shinnslist', description: 'Shinnslist privacy policy. We collect minimal data. We never sell your data.' };
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy — Shinnslist',
+  description: 'How Shinnslist collects, uses, and may share your grant-application profile data.',
+};
 
 export default function PrivacyPage() {
   return (
-    <main className="flex-1 max-w-3xl mx-auto px-4 py-16">
-      <h1 className="text-3xl font-bold text-white mb-8">Privacy Policy</h1>
-      <div className="prose prose-invert max-w-none space-y-6 text-[var(--shinnslist-muted)] text-sm leading-relaxed">
-        <p><strong className="text-white">Last updated:</strong> August 7, 2026</p>
-        <h2 className="text-white text-lg font-bold mt-8">What We Collect</h2>
-        <p>Shinnslist collects the minimum data needed to provide deal alerts: your email address (if you sign up), your location preferences, and your selected interest categories. We do not collect browsing history, personal messages, or payment information (payments are handled by Stripe).</p>
-        <h2 className="text-white text-lg font-bold mt-8">How We Use Your Data</h2>
-        <p>Your data is used exclusively to personalize your deal feed and send you relevant alerts. We never sell, rent, or share your personal data with third parties. Period.</p>
-        <h2 className="text-white text-lg font-bold mt-8">Scraping & Data Sources</h2>
-        <p>Shinnslist aggregates publicly available marketplace listings. We do not scrape private messages, user profiles, or any non-public data. All listings we display are publicly accessible.</p>
-        <h2 className="text-white text-lg font-bold mt-8">Cookies</h2>
-        <p>We use essential cookies for authentication and preferences. No tracking cookies. No analytics cookies. No advertising cookies.</p>
-        <h2 className="text-white text-lg font-bold mt-8">Contact</h2>
-        <p>Questions? Email <a href="mailto:hello@shinnslist.com" className="text-[var(--shinnslist-pink)] hover:underline">hello@shinnslist.com</a>.</p>
+    <main className="legal-page">
+      <div className="legal-wrap">
+        <h1>Privacy Policy</h1>
+        <p className="legal-updated">Last updated: August 15, 2026</p>
+
+        <h2>1. What we collect</h2>
+        <p>To find grants, benefits, and assistance you qualify for, Shinnslist collects the information you provide in your profile. This may include your name, date of birth, address, city, state, ZIP code, household size, income range, employment status, education, gender, race/ethnicity, veteran and disability status, immigration status, and the types of help you need (education, housing, transportation, food, utilities, medical, childcare, elder care, home repair, emergency, or business).</p>
+        <p>We <strong>never</strong> collect your Social Security number, EIN, bank account details, or signature during profile creation. Those are requested only by a specific funder on its own secure application form, at the moment of submission, and never by Shinnslist itself.</p>
+
+        <h2>2. How we use it</h2>
+        <p>We use your profile to (a) determine which grants, benefits, and assistance programs you may qualify for, (b) prefill applications so you can review, edit, and submit them faster, and (c) draft responses tailored to each funder&apos;s requirements.</p>
+
+        <h2>3. Sharing and selling of information</h2>
+        <p>Shinnslist is a free service. To fund the service without charging you, we may share or sell your profile information to vetted third parties, including funders, researchers, and data partners, consistent with applicable law. When we share data, we take reasonable steps to do so in a manner consistent with this policy and with your consent.</p>
+        <p>You consent to this sharing when you check the consent box during signup. You may withdraw consent and opt out at any time; doing so may limit your use of the free service but will not affect any application you have already submitted.</p>
+
+        <h2>4. Your choices</h2>
+        <p>You may review, edit, or delete your profile at any time from your account settings. You may opt out of data sharing by contacting us. We retain edits you make to your profile as part of our records.</p>
+
+        <h2>5. Security</h2>
+        <p>We use industry-standard safeguards to protect your information in transit and at rest, and we limit access to authorized personnel and systems. No method of transmission or storage is 100% secure, and we cannot guarantee absolute security.</p>
+
+        <h2>6. Contact</h2>
+        <p>Questions about this policy or requests to access or delete your data: <a href="mailto:privacy@shinnslist.com">privacy@shinnslist.com</a>.</p>
       </div>
     </main>
   );

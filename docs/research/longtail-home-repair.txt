@@ -1,0 +1,70 @@
+# LONG-TAIL HOME REPAIR / IMPROVEMENT / ADDITION / WEATHERIZATION / ACCESSIBILITY PROGRAMS
+# For low-to-moderate-income homeowners, renters, seniors, veterans, and families.
+# Sweep date: 2026-08-15. All URLs verified HTTP 200 at sweep time (curl w/ Chrome UA; browser for bot-blocked).
+# Format: NAME | FUNDER/ORG | URL | WHO QUALIFIES | AMOUNT | DEADLINE_OR_ROLLING | SOURCE_TYPE | NOTES
+# Excluded per scope: USDA Section 504, LIHEAP, federal WAP/Weatherization (already ingested elsewhere).
+
+1. Rebuilding Together | Rebuilding Together (national nonprofit) | https://rebuildingtogether.org/ | Low-income homeowners, seniors, veterans, people with disabilities | Free critical home repairs (no cost to homeowner) | Rolling (apply via local affiliate) | National nonprofit | Network of 100+ local affiliates do free repairs, accessibility ramps, grab bars, roofs, and energy upgrades. Find-your-affiliate tool on site.
+
+2. Habitat for Humanity — Aging in Place (Home Repair) | Habitat for Humanity International (via ~1,100 local affiliates) | https://www.habitat.org/our-work/aging-in-place | Older adults (typically 55-62+) who own their home; income-qualified | Free-to-low-cost repairs (no-interest, ability-to-pay) | Rolling (apply through local affiliate) | National nonprofit | Covers ramps, grab bars, roofs, floors, weatherization. Also includes "A Brush with Kindness" exterior paint/landscaping. Apply via your local Habitat.
+
+3. The Fuller Center for Housing | The Fuller Center for Housing (faith-based) | https://fullercenter.org/ | Low-income families/individuals who own substandard homes | No-profit home repair + affordable no-interest loans | Rolling | Faith-based nonprofit | Covenant Partners fix up homes; repairs done at no-profit; pay-what-you-can financing.
+
+4. Appalachia Service Project (ASP) | Appalachia Service Project (Christian volunteer org) | https://www.asphome.org/ | Low-income homeowners in TN, VA, WV, KY, NC Appalachia | Free critical home repairs (roofs, floors, water/plumbing, heat) | Rolling (apply; waitlisted) | Faith-based nonprofit | Volunteer-driven home repair for substandard homes; homeowner submits application online.
+
+5. VA Specially Adapted Housing (SAH) / Special Home Adaptation (SHA) / Temporary Residence Adaptation (TRA) Grants | U.S. Dept. of Veterans Affairs | https://www.va.gov/housing-assistance/disability-housing-grants/ | Veterans/service members with qualifying service-connected disabilities; own (or family owns) the home | SAH up to $126,526; SHA up to $25,350; TRA up to $50,961 (FY2026) | Rolling (apply anytime online/by mail) | Federal | For ramps, widened doorways, bathroom mods, wheelchair access. Up to 6 lifetime grant uses. (Related VA HISA grant also funds home mods for medical care.)
+
+6. FHA 203(k) Rehabilitation Mortgage | HUD / FHA | https://www.hud.gov/program_offices/housing/sfh/203k | Homebuyers/owners buying or refinancing a 1-4 unit home; credit-qualified | Finance up to $35,000 (Streamline/limited) or full rehab (Standard) | Rolling (through FHA-approved lender) | Federal | Combines home purchase + repair in one mortgage. Funds structural repairs, accessibility, energy upgrades. For existing homes only.
+
+7. HUD Title I Property Improvement Loan Insurance | HUD | https://www.hud.gov/program_offices/housing/sfh/title | Homeowners for property improvements/repairs | Up to $25,000 for single-family home (via approved lenders) | Rolling (through lender) | Federal | Insured rehab loan for structural, energy, accessibility, and manufactured-home improvements; no home equity required.
+
+8. Fannie Mae HomeStyle Renovation | Fannie Mae (GSE) | https://www.fanniemae.com/singlefamily/homestyle-renovation | Homebuyers/current owners; credit-qualified | Finance renovation up to 75% of after-improvement appraised value | Rolling (through lender) | GSE | Broad improvements incl. additions, repairs, accessibility. NOTE: site returned 403 to curl (WAF bot-block); live in browser — re-verify before reporting.
+
+9. Love INC (Love In the Name of Christ) Home Repair | Love INC National (Christian network) | https://www.loveinc.org/ | Low-income individuals & families | Free-to-low-cost home repairs, yard work, household help | Rolling (via local affiliate) | Faith-based nonprofit | Local affiliates run "Clearinghouse" — churches/vetted volunteers do repairs for struggling households. Find local chapter on site.
+
+10. Samaritan's Purse — Home Repair/Recovery | Samaritan's Purse (Christian relief) | https://www.samaritanspurse.org/ | Disaster survivors in affected areas; uninsured/underinsured homeowners | Free disaster home repairs (tarp/roof, mud-out, minor rebuild) | Rolling during active disaster responses | Faith-based nonprofit | Volunteer repair crews after floods/hurricanes; no-cost to homeowner. Priority to low-income/elderly/veterans.
+
+11. Mennonite Disaster Service (MDS) | Mennonite Disaster Service (Anabaptist volunteer org) | https://mds.mennonite.net/ | Disaster survivors; low-income homeowners in affected states | Free volunteer home repairs (flood, storm, rebuild) | Rolling during active responses | Faith-based nonprofit | Long-term volunteer rebuild/repair after disasters across the U.S.
+
+12. God's Pit Crew | God's Pit Crew (Christian disaster relief) | https://www.godspitcrew.org/ | Disaster survivors (Southeast U.S.); low-income/elderly homeowners | Free disaster repairs + rebuilds | Rolling during active responses | Faith-based nonprofit | Volunteer "Blue Bucket" relief plus home repair/rebuild for uninsured survivors.
+
+13. Energy Resource Center (ERC) — Colorado Energy Assistance & Weatherization | ERC (Colorado nonprofit) | https://erc-co.org/ | Low-income Coloradans (homeowners/renters) | Free/low-cost weatherization + furnace repair/replace, insulation, air sealing | Rolling | State-adjacent nonprofit | Colorado-specific. Energy bill assistance, gas/electric efficiency, and free furnace repair/replacement for income-qualified households.
+
+14. Xcel Energy — Programs & Rebates (Weatherization/Efficiency) | Xcel Energy (utility) | https://www.xcelenergy.com/programs_and_rebates | Xcel customers (CO/MN/NM/ND/SD/WI/TX); income-qualified tiers | Rebates + free no-cost efficiency upgrades for income-qualified households | Rolling | Utility | Income-qualified no-cost insulation/air sealing, appliance + heating rebates, bill assistance. Filter by state and income.
+
+15. NYSERDA — Residents & Homeowners (Energy Efficiency/Weatherization) | NYSERDA (New York State) | https://www.nyserda.ny.gov/Residents-and-Homeowners | NY homeowners/renters; income-eligible households (EmPower NY) | No-cost/low-cost insulation, air sealing, heat pumps, efficiency upgrades | Rolling | State | EmPower NY gives income-qualified households free insulation + air sealing; Assisted Home Performance subsidizes HVAC/appliances.
+
+16. Elevate (Energy & Water Efficiency + Home Repair Coordination) | Elevate (nonprofit) | https://www.elevatenp.org/ | Low-income households; affordable-housing residents | No-cost weatherization/energy upgrades (income-qualified) | Rolling | Nonprofit | Works with utilities/states (CO, IL, MN, etc.) to deliver energy + water efficiency and coordinate repairs in affordable housing.
+
+17. Community Action Partnership (CAPs) — Home Repair & Weatherization | National Community Action Partnership + 1,000 local CAP agencies | https://www.communityactionpartnership.com/ | Low-income individuals & families nationwide | Varies — free/low-cost repairs, weatherization, furnace help | Rolling (via local CAP) | Nonprofit network | Your local Community Action Agency runs HUD CDBG home repair + WAP weatherization + LIHEAP; find local CAP on site. First stop for low-income repair help.
+
+18. Operation Homefront — Critical Home Repair (veterans) | Operation Homefront (veterans nonprofit) | https://www.operationhomefront.org/ | Post-9/11 veterans & their families who are homeowners | Free critical home repairs/modifications | Rolling (apply on site) | Veterans nonprofit | Homepage verified 200; critical-home-repair subpages were 404 at sweep — navigate from homepage / apply to find current intake. Priority to struggling military families.
+
+19. Society of St. Vincent de Paul (SVdP) — Home Repair Ministries | Society of St. Vincent de Paul USA (Catholic) | https://www.svdpusa.org/ | Low-income individuals & families | Free/low-cost emergency home repairs | Rolling (via local council/conference) | Catholic nonprofit | Local SVdP conferences/ministries provide emergency repairs, ramps, and furnace help. Contact your local council.
+
+20. Illinois Housing Development Authority (IHDA) — Homeowner Repair | IHDA (Illinois state HFA) | https://www.ihda.org/ | Illinois homeowners; income-qualified | Rehab/repair loans & grants | Rolling | State HFA | IHDA funds owner-occupied rehabilitation (incl. accessibility + energy) through local programs. Homepage verified 200; drill into Homeowner section for current intake.
+
+21. California Housing Finance Agency (CalHFA) — Homebuyer Rehab | CalHFA (California state HFA) | https://www.calhfa.ca.gov/ | CA first-time homebuyers/owners; income-qualified | Rehab loans paired with CalHFA mortgages | Rolling | State HFA | Funds home improvement/rehab for CA buyers. Homepage verified 200; see Programs for current rehab offering.
+
+22. North Carolina Housing Finance Agency — Home Repair | NCHFA (North Carolina state HFA) | https://www.nchfa.com/ | NC low-income homeowners | Repair/rehab grants & loans via local agencies | Rolling (via local) | State HFA | Funds emergency + substantial home repair through local rehab programs (CDBG/HOME). Homepage verified 200.
+
+23. Virginia Housing (VHDA) — Home Repair Programs | Virginia Housing (Virginia state HFA) | https://www.vhda.com/ | VA homeowners; income-qualified | Repair/rehab loans & grants | Rolling (via local agencies) | State HFA | Home repair programs delivered through local/regional agencies. Homepage verified 200.
+
+24. Pennsylvania Housing Finance Agency (PHFA) — Home Repair & Weatherization | PHFA (Pennsylvania state HFA) | https://www.phfa.org/ | PA homeowners/renters; income-qualified | Repairs, weatherization, mortgage & utility help | Rolling | State HFA | PHFA + PA DCED administer home-repair & weatherization funding for low-income Pennsylvanians. Homepage verified 200. (PA "Whole-Home Repairs" program flows via DCED local agencies.)
+
+25. Ohio Housing Finance Agency (OHFA) | OHFA (Ohio state HFA) | https://www.ohiohome.org/ | Ohio homeowners; income-qualified | Home repair/rehab loans & grants | Rolling | State HFA | Funds owner-occupied repair/rehab through local programs. Homepage verified 200.
+
+26. Michigan State Housing Development Authority (MSHDA) — Home Repair | MSHDA (Michigan state HFA) | https://www.michigan.gov/mshda/ | Michigan homeowners; income-qualified | Repair/rehab loans & grants | Rolling | State HFA | Homeowner repair + accessibility programs via local partners. Homepage verified 200.
+
+27. Catholic Charities USA — Emergency Assistance (incl. home repair referrals) | Catholic Charities USA (network) | https://www.catholiccharitiesusa.org/ | Low-income individuals & families nationwide | Emergency assistance incl. some repair/utility help | Rolling (via local agency) | Catholic nonprofit | 160+ local agencies provide emergency home repair, furnace, utility, and rental assistance. Find local office on site.
+
+28. Colorado Department of Local Affairs (DOLA) — Home Repair & Weatherization Funding | Colorado DOLA / Div. of Housing (state) | https://www.colorado.gov/pacific/dola | Colorado low-income residents | Grants via local agencies (repair, weatherization, accessibility) | Rolling (via local agencies) | State | State distributes HOME/CDBG/energy funding to local home-repair & weatherization programs. Good CO anchor for James/Susan region.
+
+29. AARP Foundation — Housing & Home Resources (50+) | AARP Foundation (seniors nonprofit) | https://www.aarpfoundation.org/ | Adults age 50+; low-income seniors | Varies — home mods, property-tax relief, repair referrals | Rolling | Senior nonprofit | Not a direct repair grant, but connects seniors to home-repair/weatherization/accessibility help and advocacy. Homepage verified 200.
+
+# ---- NOT YET VERIFIED (candidates, re-check before reporting) ----
+# TEXAS TDHCA home repair — homepage 200 (https://www.tdhca.state.tx.us/) but specific repair page moved to new site; drill into "Help for Texans."
+# PENNSYLVANIA DCED "Whole-Home Repairs Program" — DCED homepage 200 (https://dced.pa.gov/); specific program page 404 at sweep; find current URL via DCED site search.
+# NYS HCR RESTORE / New York home-repair programs — hcr.ny.gov 403 to curl (live-but-bot-blocked); verify in browser.
+# helpnc.org (NC emergency home repair) — domain does NOT resolve (ERR_NAME_NOT_RESOLVED); NC repair help flows via NCDPS (https://www.ncdps.gov/, 200) + local agencies.
+# USDA Section 504 — EXCLUDED per scope (already ingested).

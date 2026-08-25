@@ -76,6 +76,13 @@ function clampInt(value, fallback, min, max) {
   return Math.min(max, Math.max(min, n));
 }
 
+// Float clamp for coordinates — parseInt would truncate 39.7392 to 39 (miles off).
+function clampFloat(value, fallback, min, max) {
+  const n = parseFloat(value);
+  if (Number.isNaN(n)) return fallback;
+  return Math.min(max, Math.max(min, n));
+}
+
 function mapListing(row) {
   return {
     id: row.id,
@@ -132,8 +139,8 @@ export default {
         return json({ error: 'SUPABASE_SERVICE_ROLE_KEY not configured' }, 500, rlHeaders);
       }
 
-      const lat = clampInt(url.searchParams.get('lat'), 39.7392, -90, 90);
-      const lng = clampInt(url.searchParams.get('lng'), -104.9903, -180, 180);
+      const lat = clampFloat(url.searchParams.get('lat'), 39.7392, -90, 90);
+      const lng = clampFloat(url.searchParams.get('lng'), -104.9903, -180, 180);
       const radius = clampInt(url.searchParams.get('radius'), 25, 1, 200);
       const limit = clampInt(url.searchParams.get('limit'), 50, 1, 100);
 

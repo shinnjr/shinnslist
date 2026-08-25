@@ -1,0 +1,3 @@
+/Users/jamesshinn/projects/freebie
+/Users/jamesshinn/.local/bin/npx
+ls: node_modules/.bin/tsx: No such file or directory

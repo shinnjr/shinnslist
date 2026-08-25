@@ -25,18 +25,20 @@ Set them once real keys exist. Each secret is set per-worker with:
 cd workers/<name> && npx wrangler secret put <NAME>
 ```
 
-| Worker            | Secrets needed                                                        |
+| Worker            | Secrets needed (status 2026-08-09)                                     |
 |-------------------|-----------------------------------------------------------------------|
-| `checkout`        | `STRIPE_SECRET_KEY` (`sk_...`)                                        |
-| `listings`        | `SUPABASE_SERVICE_ROLE_KEY` (`eyJ...`)                                |
-| `push`            | `VAPID_PRIVATE_KEY` (public key is a `[vars]` entry)                  |
-| `webhooks-stripe` | `STRIPE_WEBHOOK_SECRET` (`whsec_...`), `SUPABASE_SERVICE_ROLE_KEY`    |
-| `auth-callback`   | (none — Supabase URL + anon key are `[vars]`)                         |
+| `checkout`        | `STRIPE_SECRET_KEY` (`sk_...`) — **NOT SET** (key not provisioned yet) |
+| `listings`        | `SUPABASE_SERVICE_ROLE_KEY` ✅, `ADMIN_API_SECRET` ✅ (generated)        |
+| `push`            | `ADMIN_API_SECRET` ✅ (generated); `VAPID_PRIVATE_KEY` — **NOT SET** (private key never saved; public key is a `[vars]` entry) |
+| `webhooks-stripe` | `SUPABASE_SERVICE_ROLE_KEY` ✅; `STRIPE_WEBHOOK_SECRET` (`whsec_...`) — **NOT SET** |
+| `auth-callback`   | (none — Supabase URL + anon key are `[vars]`) ✅                       |
 
 Non-secret vars (`NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`,
 `STRIPE_PRO_PRICE_ID`, `STRIPE_FLIPPER_PRICE_ID`, `NEXT_PUBLIC_APP_URL`,
 `NEXT_PUBLIC_VAPID_PUBLIC_KEY`) are in each worker's `wrangler.toml` `[vars]` and
-must be filled with real values.
+are filled with real values (`NEXT_PUBLIC_SUPABASE_URL`, anon key, and
+`NEXT_PUBLIC_APP_URL=https://shinnslist.com`). `ADMIN_API_SECRET` was generated and
+appended to `.env.local` (gitignored).
 
 ## Wire to the frontend
 
@@ -67,6 +69,7 @@ at the `workers.dev` URLs above (the workers respond at both `/` and `/api/<name
   Session → `302` to Stripe. Returns `500` if `STRIPE_SECRET_KEY` missing.
 - **listings** `GET /?lat&lng&radius&limit&tab` → runs `nearby_listings` RPC, returns
   `{ listings }`. Also proxies `/rest/v1/*`, `/rpc/*`, `/auth/v1/*` to Supabase.
+  (2026-08-09: fixed coordinate truncation — `parseInt` → `parseFloat` for lat/lng.)
 - **push** `POST {action:subscribe|send|unsubscribe}` / `GET` (count). In-memory store
   (ephemeral per-isolate — matches the original edge route).
 - **webhooks-stripe** `POST /` → verifies `Stripe-Signature` (HMAC-SHA256, timing-safe),

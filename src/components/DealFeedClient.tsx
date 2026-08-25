@@ -182,7 +182,7 @@ export default function DealFeedClient({ initialListings }: Props) {
                 Get Free Stuff<br />
                 <span className="text-[var(--fa-green-bright)]">Before Anyone Else</span>
               </h1>
-              <p className="text-lg text-white/70 mb-8 max-w-xl leading-relaxed">
+              <p className="text-lg text-white/80 mb-8 max-w-xl leading-relaxed">
                 We scan Facebook Marketplace, Craigslist, OfferUp, Nextdoor &amp; more —
                 so you get instant alerts when free items drop near you.
               </p>
@@ -193,21 +193,21 @@ export default function DealFeedClient({ initialListings }: Props) {
                   <div className="text-4xl font-black text-[var(--fa-green-bright)] tabular-nums">
                     {listings.length.toLocaleString()}
                   </div>
-                  <div className="text-sm text-white/60 mt-1">Live deals</div>
+                  <div className="text-sm text-white/75 mt-1">Live deals</div>
                 </div>
                 <div className="w-px h-12 bg-white/10" />
                 <div className="text-center">
                   <div className="text-4xl font-black text-[var(--fa-gold)] tabular-nums">
                     {allFreeCount.toLocaleString()}
                   </div>
-                  <div className="text-sm text-white/60 mt-1">Free items</div>
+                  <div className="text-sm text-white/75 mt-1">Free items</div>
                 </div>
                 <div className="w-px h-12 bg-white/10" />
                 <div className="text-center">
                   <div className="text-4xl font-black text-white tabular-nums">
                     {sourceCount || 4}+
                   </div>
-                  <div className="text-sm text-white/60 mt-1">Sources</div>
+                  <div className="text-sm text-white/75 mt-1">Sources</div>
                 </div>
               </div>
 
@@ -247,14 +247,14 @@ export default function DealFeedClient({ initialListings }: Props) {
                               {l.price === 0 && (
                                 <span className="text-[7px] bg-[var(--fa-green)] text-black px-1.5 py-0.5 rounded font-extrabold">FREE</span>
                               )}
-                              <span className="text-[7px] text-zinc-500">{timeAgo(l.postedAt)}</span>
-                              <span className="text-[7px] text-zinc-500 ml-auto">{l.location?.city}</span>
+                              <span className="text-[7px] text-zinc-400">{timeAgo(l.postedAt)}</span>
+                              <span className="text-[7px] text-zinc-400 ml-auto">{l.location?.city}</span>
                             </div>
                           </div>
                         </div>
                       ))}
                       {listings.length === 0 && (
-                        <div className="flex items-center justify-center h-32 text-zinc-500 text-[10px]">
+                        <div className="flex items-center justify-center h-32 text-zinc-400 text-[10px]">
                           Loading deals...
                         </div>
                       )}
@@ -309,7 +309,8 @@ export default function DealFeedClient({ initialListings }: Props) {
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery('')}
-                className="text-zinc-500 hover:text-white text-sm"
+                aria-label="Clear search"
+                className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg text-zinc-400 hover:text-white transition-colors"
               >
                 ✕
               </button>
@@ -323,7 +324,8 @@ export default function DealFeedClient({ initialListings }: Props) {
             <button
               key={f}
               onClick={() => setActiveFilter(f)}
-              className={`min-h-[40px] touch-target text-xs px-3 py-1.5 rounded-full border transition-all whitespace-nowrap ${
+              aria-pressed={activeFilter === f}
+              className={`min-h-[48px] text-xs px-4 py-1.5 rounded-full border transition-all whitespace-nowrap ${
                 activeFilter === f
                   ? 'bg-[var(--fa-green)] border-[var(--fa-green)] text-black font-bold'
                   : 'border-[var(--fa-border)] text-[var(--fa-muted)] hover:border-zinc-500 hover:text-white'
@@ -346,9 +348,10 @@ export default function DealFeedClient({ initialListings }: Props) {
             <button
               key={v.id}
               onClick={() => { setActiveVertical(v.id); if (v.id !== 'all') track('vertical_select', { vertical: v.id }); }}
-              className={`flex min-h-[40px] items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-all ${
+              aria-pressed={activeVertical === v.id}
+              className={`flex min-h-[48px] items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-all ${
                 activeVertical === v.id
-                  ? 'bg-[var(--fa-purple)]/30 border border-[var(--fa-purple)]/60 text-[var(--fa-purple)]'
+                  ? 'bg-[var(--fa-purple)]/30 border border-[var(--fa-purple)]/60 text-white'
                   : 'border border-[var(--fa-border)] text-[var(--fa-muted)] hover:border-zinc-500 hover:text-zinc-300'
               }`}
             >
@@ -362,15 +365,25 @@ export default function DealFeedClient({ initialListings }: Props) {
       {/* Deal grid */}
       <section className="max-w-7xl mx-auto px-4 pb-16">
         {filtered.length === 0 ? (
-          <EmptyState
-            message="No deals found"
-            description={searchQuery ? `Nothing matches "${searchQuery}". Try different keywords.` : "Try a different category or check back soon — new deals drop every few minutes."}
-            emoji="📦"
-            action={{
-              label: 'Show all deals',
-              onClick: () => { setActiveVertical('all'); setActiveFilter('All'); setSearchQuery(''); },
-            }}
-          />
+          listings.length === 0 ? (
+            <EmptyState
+              message="The deal feed is warming up"
+              description="We're pulling in the latest listings from the marketplaces — check back in a minute or two."
+              emoji="🔥"
+            />
+          ) : (
+            <EmptyState
+              message="No deals match"
+              description={searchQuery
+                ? `Nothing matches "${searchQuery}". Try different keywords or clear the search.`
+                : "Try a different category or filter — new deals drop every few minutes."}
+              emoji="📦"
+              action={{
+                label: 'Show all deals',
+                onClick: () => { setActiveVertical('all'); setActiveFilter('All'); setSearchQuery(''); },
+              }}
+            />
+          )
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {filtered.map((deal, idx) => {
@@ -451,21 +464,21 @@ export default function DealFeedClient({ initialListings }: Props) {
       </section>
 
       {/* Bottom CTA — Freebie Alerts style */}
-      <section className="bg-[var(--fa-blue)] py-16">
+      <section className="bg-[#1D4ED8] py-16">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <p className="text-blue-200 text-sm font-semibold tracking-wider uppercase mb-2">
+          <p className="text-blue-100 text-sm font-semibold tracking-wider uppercase mb-2">
             Get Shinnslist
           </p>
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
             Get free stuff locally
           </h2>
-          <p className="text-blue-200 mb-8 text-lg">
+          <p className="text-blue-100 mb-8 text-lg">
             Get notifications of giveaways near you. Be the first to claim them.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
               href="/pricing"
-              className="bg-white text-[var(--fa-blue)] px-10 py-4 rounded-full font-bold text-sm hover:bg-gray-100 transition-colors shadow-lg"
+              className="bg-white text-blue-800 px-10 py-4 rounded-full font-bold text-sm hover:bg-gray-100 transition-colors shadow-lg"
             >
               Go Pro — $5/week
             </a>
@@ -476,7 +489,7 @@ export default function DealFeedClient({ initialListings }: Props) {
               Set up zones
             </a>
           </div>
-          <p className="text-blue-200/70 text-xs mt-4">
+          <p className="text-blue-100/80 text-xs mt-4">
             🔒 Cancel anytime. No contracts.
           </p>
         </div>

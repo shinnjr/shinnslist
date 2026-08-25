@@ -1,0 +1,26 @@
+CHUNK 0
+# Shinnslist — Long-Tail Discovery Coverage Map
+
+> The moat. Hard-to-find individual & family assistance — NOT the big federal
+> programs (SNAP/TANF/LIHEAP already ingested). These live in community foundations,
+> sororities, churches, 211s, Reddit, TikTok, Pinterest, civic clubs, local news.
+>
+> **Status legend:** `[ ]` = queued · `[~]` = sweeping · `[x]` = swept & ingested
+> **Rule: NEVER mark a bucket `[x]` until it has been swept across ALL source types
+> and results are ingested into Supabase. "Done" = every bucket `[x]`.**
+
+## Scoreboard
+- Total long-tail programs ingested: **1,225** (verified live in Supabase 2026-08-16 ~01:58 UTC overnight run; total DB 2,503, official 1,278)
+- 2026-08-16 ~01:58 UTC overnight cron (wave 29 re-run): ingest re-parsed 1,087 rows from 39 files, upserted 1,087 (idempotent); live Supabase REST HEAD-count verified **2,503 total / 1,225 longtail / 1,278 official** — unchanged (0 new unique); no new research files on disk (newest 05:17); 42/42 buckets [x] + all source types [x] → no new subagent dispatch
+- 2026-08-16 ~01:25 UTC overnight cron (wave 28 re-run): ingest re-parsed 1,087 rows from 39 files, upserted 1,087 (idempotent); live Supabase REST HEAD-count verified **2,503 total / 1,225 longtail / 1,278 official** — unchanged (0 new unique); no new research files on disk (newest 05:17); 42/42 buckets [x] + all source types [x] → no new subagent dispatch
+- 2026-08-16 ~00:51 UTC overnight cron (wave 27 re-run): ingest re-parsed 1,087 rows from 39 files, upserted 1,087 (idempotent); live Supabase REST verified **2,503 total / 1,225 longtail / 1,278 official** — unchanged (0 new unique); no new research files on disk (newest 05:17); 42/42 buckets [x] + all source types [x] → no new subagent dispatch
+- 2026-08-16 ~00:30 overnight cron (wave 26 re-run): ingest re-parsed 1,087 rows from 39 files, upserted 1,087 (idempotent); live Supabase REST verified **2,503 total / 1,225 longtail / 1,278 official** — unchanged (0 new unique); no new research files on disk (newest 05:17); 42/42 buckets [x] + all source types [x] → no new subagent dispatch
+- Buckets swept: **42** · Buckets queued: **0** — ALL COVERAGE BUCKETS [x]
+- Source types: national/community/faith/civic/211/gov/corporate [x] + social/local [x] (wave 11 sweep files)
+- Last sweep: 2026-08-15 overnight cron (wave 11: reddit-sweep 33, social-sweep 25, local-news 34 — 86 new unique after dedup, URL-verified)
+- 2026-08-15 ~08:00 re-run: ingest re-parsed 1,087 rows from 39 files, upserted 1,087; 0 new unique rows (live counts unchanged: 2,503 total / 1,225 longtail / 1,278 official); no new research files on disk (newest 05:17); no uncovered buckets remain, so no new subagent dispatch
+- 2026-08-15 ~09:00 re-run: ingest re-parsed 1,087 rows from 39 files, upserted 1,087 (idempotent); 0 new unique rows — live verified via Supabase REST: **2,503 total / 1,225 longtail / 1,278 official**; no new research files on disk; 42/42 buckets [x] + all source types [x] → no new subagent dispatch
+- 2026-08-15 ~11:00 re-run: ingest re-parsed 1,087 rows from 39 files, upserted 1,087 (idempotent); 0 new unique rows — live verified via Supabase REST: **2,503 total / 1,225 longtail / 1,278 official**; no new research files on disk (newest 05:17); 42/42 buckets [x] + all source types [x] → no new subagent dispatch
+- 2026-08-15 ~10:00 re-run: ingest re-parsed 1,087 rows from 39 files, upserted 1,087 (idempotent); 0 new unique rows — live verified via Supabase REST: **2,503 total / 1,225 longtail / 1,278 official**; no new research files on disk (newest 05:17); 42/42 buckets [x] + all source types [x] → no new subagent dispatch
+- 2026-08-15 ~09:00 re-run (wave 18): ingest re-parsed 1,087 rows from 39 files, upserted 1,087 (idempotent); 0 new unique rows — live verified via Supabase REST: **2,503 total / 1,225 longtail / 1,278 official**; no new research files on disk (newest 05:17); 42/42 buckets [x] + all source types [x] → no new subagent dispatch
+- 2026-08-15 ~12:00 

@@ -1,0 +1,45 @@
+# LGBTQ+ Individual Long-Tail Programs — Shinnslist wave
+# Sweep date: 2026-08-15. All URLs verified HTTP 200 at sweep time. Re-verify before re-reporting (liveness/deadlines drift).
+# Format: NAME | FUNDER/ORG | URL | WHO QUALIFIES | AMOUNT | DEADLINE_OR_ROLLING | SOURCE_TYPE | NOTES
+# NOTE: Some orgs (True Colors, StartOut, NGLCC, Backstage, SAGE) are service/advocacy/network providers, not direct-cash grants — flagged in NOTES.
+
+# ===== SCHOLARSHIPS =====
+Point Flagship Scholarship | Point Foundation | https://pointfoundation.org/scholarships/flagship | LGBTQ+ & ally students pursuing bachelor's/graduate/professional degrees at accredited US institutions, full-time, min 3.3 GPA (not 100% online-only) | Need-based financial award, renewable up to 4 years | Annual; apps open ~late year, deadline ~Jan (verify) | Scholarship | Largest national LGBTQ+ scholarship; most competitive.
+Point Access Scholarship | Point Foundation | https://pointfoundation.org/scholarships/access | LGBTQ+ students with financial need (supports community-college + 4-yr paths) | Need-based | Annual (verify) | Scholarship | Aimed at LGBTQ+ students of color / higher-need applicants.
+Point Community College Scholarship | Point Foundation | https://pointfoundation.org/scholarships/community-college | LGBTQ+ & ally students in 2-year/community-college programs, min 2.5 GPA | $1,500 | Annual | Scholarship | Low barrier — 2.5 GPA; for associate/trade paths.
+Point Internship & Professional Development Award | Point Foundation | https://pointfoundation.org/scholarships/internship-professional-development | Point-affiliated students seeking internships & professional growth | Award (stipend) | Annual (verify) | Scholarship | Complements flagship/access awards.
+Pride Foundation Scholarships | Pride Foundation | https://www.pridefoundation.org/scholarships/ | LGBTQ+/questioning residents of AK, ID, MT, OR, WA (may study elsewhere); all education levels & interests | Varies; $8.5M awarded to 2,400+ students to date | Annual, ~Feb (verify) | Regional scholarship | Covers tuition, supplies, research; most regional depth in PNW.
+LEAGUE Foundation Scholarship | LEAGUE Foundation | https://leaguefoundation.org/ | Self-identifying LGBTQ+ graduating US high school seniors (+ allies) moving directly into higher education | Varies (~$2,200 avg historically; $560K/253 awards) | Apps open Jan, close April; awards summer | Scholarship | Focuses on graduating HS seniors (highest dropout/suicide risk group).
+Gamma Mu Foundation Scholarships & Grants | Gamma Mu Foundation | https://gammamufoundation.org/grants-and-scholarships | LGBTQ+ students (esp. those from smaller/underserved communities) + LGBTQ+ community orgs | Varies | Annual (verify) | Scholarship/org grants | Also offers org grants; individual scholarships targeted at small-community students.
+PFLAG Chapter Scholarship Programs | PFLAG National | https://pflag.org/scholarship | LGBTQ+ students via local PFLAG chapters (chapter-specific criteria) | Varies by chapter | Rolling / varies by chapter | Chapter scholarship locator | Not national-administered — find your local chapter to apply.
+
+# ===== EMERGENCY / HARDSHIP =====
+Point of Pride Annual Trans Surgery Fund | Point of Pride (absorbed Jim Collins Foundation) | https://www.pointofpride.org/annual-transgender-surgery-fund | Trans folks in US needing gender-affirming surgery (US-based surgeon), financial need; all gender identities | Direct financial support for surgery (need-based, multi-thousand) | Apps open Nov 1; deadline Nov 30 | Trans medical grant | Formerly Jim Collins Foundation; one of the few surgery-fund programs.
+Point of Pride HRT Access Fund | Point of Pride | https://www.pointofpride.org/hrt-access-fund | Trans people living in US needing hormone-access support | Grant (part paid directly to provider/pharmacy) | Apps open May 1–May 31 | Trans medical grant | Rolled re-opening May each year.
+Point of Pride Electrolysis Support Fund | Point of Pride | https://www.pointofpride.org/electrolysis-support-fund | Trans people across the gender spectrum needing electrolysis support | Grant | Apps Feb 1–Feb 28 | Trans medical grant | Pays providers directly; annual Feb window.
+Point of Pride Thrive Fund | Point of Pride | https://www.pointofpride.org/thrive-fund | Trans folks who cannot afford gender-affirming care (small grants) | Small grant | Rolling/periodic (verify) | Trans hardship grant | General gender-affirming care catch-all.
+Trans Lifeline Microgrants | Trans Lifeline | https://translifeline.org/microgrants/ | Trans & non-binary people in US; priority Black, Latina, migrants, sex workers, housing-insecure | $100K disbursed in relaunch cycle (2025) via 5 partner orgs | Relaunched Dec 2025; next cycle routed through partner orgs | Trans microgrant | NOT direct-apply — delivered through 5 locally based direct-service partner orgs.
+Rainbow Railroad | Rainbow Railroad | https://rainbowrailroad.org/ | LGBTQI+ people facing persecution/violence in their home countries | Relocation, emergency crisis response, cash assistance | Rolling / application | Crisis relocation & cash aid | Global; for people fleeing danger, not US-based hardship.
+
+# ===== BUSINESS / ENTREPRENEURSHIP =====
+StartOut Programs | StartOut | https://startout.org/ | LGBTQ+ & allied entrepreneurs building scalable businesses (early-stage to scaling) | Mentorship, community, education, networking (no direct cash grants) | Rolling | Entrepreneur nonprofit | 28K connected, 1,829 companies supported, $1.58B raised by members.
+NGLCC LGBTBE Certification | NGLCC (National LGBT Chamber of Commerce) | https://nglcc.org/ | LGBTQ+-owned businesses (≥51% LGBTQ+ ownership/control) | Certification unlocks corporate supplier-diversity contracts & programs | Rolling | Business chamber | Certification is the value lever — corporate procurement access, not cash.
+Backstage Capital | Backstage Capital | https://www.backstage.capital/ | Underrepresented founders (incl. LGBTQ+, women, POC) | Venture investment (equity — NOT a grant) | Rolling | Venture fund | Include as fundraising option; not financial assistance.
+
+# ===== HOUSING / HOMELESSNESS =====
+True Colors United | True Colors United | https://truecolorsunited.org/ | LGBTQ+ & BIPOC youth experiencing or at-risk of homelessness | Advocacy, training, provider technical assistance, referral hub (no direct cash) | Rolling | Youth homelessness org | National policy/advocacy + YHDP partnership; direct help via local shelters.
+Ali Forney Center | Ali Forney Center | https://www.aliforneycenter.org/ | LGBTQ+ homeless / at-risk youth (NYC) | Emergency & transitional housing, medical, mental-health services | Rolling | Housing/shelter | Largest US LGBTQ+ youth shelter network (NYC).
+Encircle (incl. Encircle Home) | Encircle | https://encircletogether.org/ | LGBTQ+ youth, young adults & families (UT/ID/NV/AZ/CA) | Free therapy, drop-in programs; Encircle Home housing scholarships | Rolling | Youth/family support | Free therapy + scholarship-based housing for LGBTQ+ youth.
+
+# ===== YOUTH / FAMILY =====
+SMYAL | SMYAL | https://www.smyal.org/ | LGBTQ+ youth ages 13–30 in the DC metro area | Housing, counseling, programs | Rolling | Youth org | Serves DC region.
+The Trevor Project | The Trevor Project | https://www.thetrevorproject.org/ | LGBTQ+ young people (25 & under) in crisis | 24/7 free crisis counseling (phone/text/chat) | Always open | Crisis hotline | Immediate crisis support, not a grant.
+Family Equality | Family Equality | https://www.familyequality.org/ | LGBTQ+ parents, prospective parents & families; family-building support | Family support services, scholarships & family-building programs | Rolling | Family nonprofit | Supports LGBTQ+ family-building (adoption, fertility) + advocacy.
+SAGE | SAGE (Advocacy & Services for LGBTQ+ Elders) | https://www.sageusa.org/ | LGBTQ+ elders (50+) | Elder services, SAGE hotline, community programs | Rolling | Elder services | Largest national LGBTQ+ elder org.
+
+# ===== ADDITIONAL NOTES =====
+# Point Foundation Emergency Fund: internal program for current/former Point Scholars (no public application page found). Not listed as open public program — applicants must already be Point Scholars.
+# HRC (Human Rights Campaign) Foundation: homepage live (https://www.hrc.org/), but NO currently-open public scholarship page found at sweep (site restructured; scholarship URLs 404). Monitor for announced cycles before reporting.
+# Org-funding bodies verified live but EXCLUDED from individual list (they grant to orgs, not individuals): Astraea Lesbian Foundation for Justice (astraeafoundation.org), Stonewall Community Foundation (stonewallfoundation.org), Borealis Philanthropy (borealisphilanthropy.org).
+# transgenderemergencyfund.org (legacy Trans Lifeline microgrant URL) is DEAD (DNS does not resolve) — use translifeline.org/microgrants/.
+# GLSEN (glsen.org) returned no HTTP response at sweep (bot-blocked/000) and does not run individual grants — excluded.

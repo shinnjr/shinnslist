@@ -73,7 +73,7 @@ export default function PostPage() {
           <p className="text-[var(--shinnslist-muted)] text-xs mt-4">
             You'll get notified when someone messages you
           </p>
-          <a href="/" className="inline-flex min-h-[48px] items-center mt-6 bg-[var(--shinnslist-pink)] text-white font-bold py-3 px-8 rounded-xl hover:bg-fuchsia-600 active:scale-[0.97] transition-all">
+          <a href="/" className="inline-flex min-h-[48px] items-center mt-6 bg-[var(--shinnslist-pink)] text-black font-bold py-3 px-8 rounded-xl hover:bg-emerald-600 active:scale-[0.97] transition-all">
             Back to deals
           </a>
         </motion.div>
@@ -119,7 +119,9 @@ export default function PostPage() {
             </div>
 
             {/* Title */}
+            <label htmlFor="post-title" className="sr-only">Title</label>
             <input
+              id="post-title"
               type="text"
               placeholder="What are you selling?" 
               value={title}
@@ -128,7 +130,9 @@ export default function PostPage() {
             />
 
             {/* Price */}
+            <label htmlFor="post-price" className="sr-only">Price</label>
             <input
+              id="post-price"
               type="text"
               placeholder="Price (optional)" 
               value={price}
@@ -142,9 +146,10 @@ export default function PostPage() {
                 <button
                   key={p}
                   onClick={() => setPlatform(p)}
+                  aria-pressed={platform === p}
                   className={`flex-1 min-h-[48px] py-2 rounded-lg text-sm font-medium transition-all active:scale-[0.97] ${
                     platform === p
-                      ? 'bg-[var(--shinnslist-pink)] text-white shadow-lg shadow-[var(--shinnslist-pink)]/20'
+                      ? 'bg-[var(--shinnslist-pink)] text-black shadow-lg shadow-[var(--shinnslist-pink)]/20'
                       : 'bg-[var(--shinnslist-bg)] text-[var(--shinnslist-muted)] hover:text-white'
                   }`}
                 >
@@ -153,12 +158,12 @@ export default function PostPage() {
               ))}
             </div>
 
-            {error && <p className="text-red-400 text-xs mb-3 animate-fade-in">{error}</p>}
+            {error && <p role="alert" className="text-red-400 text-xs mb-3 animate-fade-in">{error}</p>}
 
             <button
               onClick={handlePost}
               disabled={!photo || !title || posting}
-              className="w-full min-h-[48px] bg-[var(--shinnslist-pink)] text-white font-bold py-4 rounded-xl hover:bg-fuchsia-600 active:scale-[0.98] transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              className="w-full min-h-[48px] bg-[var(--shinnslist-pink)] text-black font-bold py-4 rounded-xl hover:bg-emerald-600 active:scale-[0.98] transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
             >
               {posting ? (<><Spinner /> Posting...</>) : '🚀 Post to Marketplace'}
             </button>

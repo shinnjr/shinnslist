@@ -1,0 +1,64 @@
+CHUNK 1
+re-run (wave 19): ingest re-parsed 1,087 rows from 39 files, upserted 1,087 (idempotent); 0 new unique rows — live verified via Supabase REST: **2,503 total / 1,225 longtail / 1,278 official**; no new research files on disk (newest 05:17); 42/42 buckets [x] + all source types [x] → no new subagent dispatch
+- 2026-08-15 ~15:30 re-run (wave 21): ingest re-parsed 1,087 rows from 39 files, upserted 1,087 (idempotent); 0 new unique rows — live verified via Supabase REST: **2,503 total / 1,225 longtail / 1,278 official**; no new research files on disk (newest 05:17); 42/42 buckets [x] + all source types [x] → no new subagent dispatch
+- 2026-08-15 ~13:00 re-run (wave 20): ingest re-parsed 1,087 rows from 39 files, upserted 1,087 (idempotent); 0 new unique rows — live verified via Supabase REST: **2,503 total / 1,225 longtail / 1,278 official**; no new research files on disk (newest 05:17); 42/42 buckets [x] + all source types [x] → no new subagent dispatch
+- 2026-08-15 ~14:00 re-run (wave 21): ingest re-parsed 1,087 rows from 39 files, upserted 1,087 (idempotent); 0 new unique rows — live verified via Supabase REST: **2,503 total / 1,225 longtail / 1,278 official**; no new research files on disk (newest 05:17); 42/42 buckets [x] + all source types [x] → no new subagent dispatch
+
+## Buckets (demographic × need)
+
+### Single parents
+- [x] single_mom × education/scholarship
+- [x] single_mom × emergency/cash
+- [x] single_dad × education/scholarship
+- [x] single_dad × emergency/cash
+- [x] single_parent × housing (rent/deposit)
+- [x] single_parent × childcare
+- [x] single_parent × home_repair
+- [x] single_parent × car_transport
+
+### Transportation
+- [x] car_repair / vehicle × general (low-income)
+- [x] car × single_parent
+- [x] car × disability
+- [x] car × veterans
+- [x] transport_vouchers × general
+
+### Household / family
+- [x] home_repair / home_addition × general (low-income)
+- [x] home_repair × seniors
+- [x] home_repair × veterans
+- [x] big_family × general
+- [x] utility_assistance × general (beyond LIHEAP)
+- [x] furniture_appliance × general
+
+### Eldercare / caregiving
+- [x] elder_care × general
+- [x] nursing_care / in-home × general
+- [x] caregiver_support × general (beyond federal)
+- [x] respite_care × general
+
+### Every demographic
+- [x] veterans, [x] disabled, [x] seniors, [x] students, [x] first_gen
+- [x] Black, [x] Latino, [x] AAPI, [x] Native, [x] immigrant, [x] LGBTQ+
+- [x] formerly_incarcerated, [x] foster_youth, [x] artists, [x] farmers, [x] gig_workers, [x] professions, [x] funeral
+
+## Source types (must sweep ALL per bucket)
+- [x] national nonprofit · [x] community foundation · [x] faith/church
+- [x] sorority/fraternity · [x] civic club (Rotary/Kiwanis/Lions)
+- [x] 211 databases · [x] local/state gov · [x] corporate
+- [x] Reddit · [x] TikTok · [x] Pinterest · [x] Instagram · [x] local news
+  (wave 11 files: longtail-reddit-sweep.txt, longtail-social-sweep.txt, longtail-local-news.txt — programs corroborated against org sites, URLs verified HTTP 200; bot-wall 403s on major orgs kept only with corroboration)
+
+## Source dossier (where to look)
+- **Community foundations:** Council on Foundations directory (~700+ US CFs), each runs
+  multiple small grant programs; Candid/Foundation Directory Online (free tier).
+- **Sororities/fraternities:** Soroptimist, P.E.O., Zonta, Altrusa, Delta Sigma Theta,
+  Alpha Kappa Alpha — all run women/parent scholarship + emergency funds.
+- **Faith:** Catholic Charities, St. Vincent de Paul, Lutheran Services, Salvation Army,
+  Jewish Family Services, church benevolent funds.
+- **211:** 211.org + state/regional 211 databases (largest local assistance directory).
+- **Reddit:** r/povertyfinance, r/singlemoms, r/singleparents, r/singlefathers,
+  r/assistance, r/almosthomeless, r/frugal — "what helped me" threads.
+- **TikTok/IG/Pinterest:** "free money", "grants for single moms", "help with car repair"
+  creator accounts (verify against org sites, never trust the video alone).
+- **Local:** city/county 
