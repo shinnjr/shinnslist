@@ -1,186 +1,94 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
-import {
-  ArrowRight,
-  BadgeCheck,
-  Check,
-  CheckCircle2,
-  Clock3,
-  FilePenLine,
-  LockKeyhole,
-  SearchCheck,
-  Send,
-  ShieldCheck,
-  X,
-} from 'lucide-react';
-import { GRANTS } from '@/data/grants';
+import ListBuilder from './re/ListBuilder';
+import { denverTaxDelinquentPreview, denverTaxDelinquent, compingStats, waterStats, zoneAStats } from '@/data/realEstate';
+import { avenues } from '@/data/avenues';
 
-const proofGrants = [GRANTS[1], GRANTS[5], GRANTS[7]];
+export const metadata: Metadata = {
+  title: 'Shinnslist — scored property lead lists from free public data',
+  description:
+    'Anyone can buy PropStream. Nobody can buy this. County treasurers publish delinquent-tax lists free; DWR well permits are public; FEMA buyouts are open data. We join them per-parcel and score what matters. Preview 10 rows ungated.',
+};
 
-function StageRail() {
+export default function Home() {
+  const live = avenues.filter((a) => a.status === 'live');
+  const soon = avenues.filter((a) => a.status !== 'live');
   return (
-    <div className="strip-bay" aria-label="Illustrative grant application workflow">
-      <div className="strip-bay-head">
-        <span>APPLICATION CONTROL</span>
-        <span className="strip-live"><i /> LIVE QUEUE</span>
-      </div>
-      <div className="strip-column-labels" aria-hidden="true">
-        <span>OPPORTUNITY</span><span>READINESS</span><span>NEXT ACTION</span>
-      </div>
-
-      <div className="flight-strip strip-priority">
-        <div className="strip-grant">
-          <span className="strip-code">TDF–26</span>
-          <strong>Strengthening Neighborhoods</strong>
-          <small>$500–$5,000 · due Oct 19</small>
-        </div>
-        <div className="strip-score"><strong>91</strong><span>strong fit</span></div>
-        <div className="strip-state is-ready"><CheckCircle2 size={17} /> Draft ready</div>
-      </div>
-
-      <div className="flight-strip">
-        <div className="strip-grant">
-          <span className="strip-code">LNV–26</span>
-          <strong>Lenovo Evolve Small</strong>
-          <small>$25,000 + technology · rolling</small>
-        </div>
-        <div className="strip-score"><strong>88</strong><span>strong fit</span></div>
-        <div className="strip-state is-writing"><FilePenLine size={17} /> Drafting answers</div>
-      </div>
-
-      <div className="flight-strip">
-        <div className="strip-grant">
-          <span className="strip-code">BRV–Q4</span>
-          <strong>Breva Thrive Grant</strong>
-          <small>$5,000 · opens Oct 1</small>
-        </div>
-        <div className="strip-score"><strong>86</strong><span>strong fit</span></div>
-        <div className="strip-state is-watch"><Clock3 size={17} /> Watching window</div>
-      </div>
-
-      <div className="strip-approval">
-        <ShieldCheck size={19} />
-        <div><strong>Nothing submits without approval.</strong><span>You see the exact answers first.</span></div>
-        <Link href="/applications">Open queue <ArrowRight size={15} /></Link>
-      </div>
-    </div>
-  );
-}
-
-export default function HomePage() {
-  return (
-    <>
-      {/* RE vertical promo — top of page */}
-      <Link href="/re" className="re-promo" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 14, maxWidth: 1080, margin: '18px auto 0', padding: '13px 18px', borderRadius: 10, border: '1px solid #d8e2dc', background: '#f2f7f4', textDecoration: 'none' }}>
-        <span style={{ fontSize: 14.5, color: '#16181d' }}>
-          <strong style={{ color: '#0f5c3f' }}>New:</strong> Tax-delinquent + water-rights parcel lists — scored, $29 one-time.{' '}
-          <span style={{ color: '#5c6470' }}>The data PropStream doesn&apos;t sell.</span>
-        </span>
-        <span style={{ fontSize: 14, fontWeight: 700, color: '#0f5c3f', whiteSpace: 'nowrap' }}>See the data →</span>
-      </Link>
-      <section className="grant-hero">
-        <div className="grant-shell grant-hero-grid">
-          <div className="grant-hero-copy">
-            <div className="source-proof"><BadgeCheck size={17} /> Verified from official funder sources</div>
-            <h1>Stop searching for grants. <span>Start submitting them.</span></h1>
-            <p className="grant-hero-lede">
-              Shinnslist checks what you qualify for, drafts the complete application, and puts it in front of you for approval—before a deadline disappears.
-            </p>
-            <div className="grant-hero-actions">
-              <Link href="/onboarding" className="grant-button grant-button-primary">Find grants I can win <ArrowRight size={18} /></Link>
-              <Link href="/grants" className="grant-text-link">See verified grants <ArrowRight size={16} /></Link>
-            </div>
-            <ul className="grant-trust-list">
-              <li><Check size={16} /> No credit card to see matches</li>
-              <li><Check size={16} /> Fee traps blocked</li>
-              <li><Check size={16} /> Final answers stay under your control</li>
-            </ul>
-          </div>
-          <StageRail />
-        </div>
-      </section>
-
-      <section className="grant-proof-band">
-        <div className="grant-shell proof-band-inner">
-          <p>Every opportunity carries its source, deadline, eligibility rules, fee, and verification date.</p>
-          <div className="proof-band-stats">
-            <span><strong>$0</strong> application fees in the verified queue</span>
-            <span><strong>1</strong> reusable applicant profile</span>
-            <span><strong>0</strong> submissions without approval</span>
-          </div>
-        </div>
-      </section>
-
-      <section className="grant-section mechanism-section">
+    <div className="grant-page">
+      {/* HERO */}
+      <section style={{ borderBottom: '1px solid #1c2530', padding: '72px 0 56px' }}>
         <div className="grant-shell">
-          <div className="grant-section-heading">
-            <h2>One profile. Every application moves forward.</h2>
-            <p>A search result is not useful until it becomes a finished application.</p>
-          </div>
-          <div className="mechanism-rail">
-            {[
-              { icon: SearchCheck, title: 'Verify', text: 'We monitor official sources and throw out stale, paid, or ineligible opportunities.' },
-              { icon: ShieldCheck, title: 'Qualify', text: 'Hard rules run first. A bad fit never wastes your time or submission credits.' },
-              { icon: FilePenLine, title: 'Draft', text: 'Your verified facts become funder-specific answers, budgets, and narratives.' },
-              { icon: LockKeyhole, title: 'Approve', text: 'You review the exact application and control attestations, signatures, and fees.' },
-              { icon: Send, title: 'Submit', text: 'Approved applications enter the browser workflow and return a confirmation receipt.' },
-            ].map(({ icon: Icon, title, text }, index) => (
-              <div className="mechanism-stop" key={title}>
-                <div className="mechanism-marker"><Icon size={20} /><span>{index + 1}</span></div>
-                <h3>{title}</h3>
-                <p>{text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="grant-section grant-evidence-section">
-        <div className="grant-shell evidence-grid">
-          <div className="evidence-copy">
-            <h2>Real grants. Real requirements. No “perfect match” theater.</h2>
-            <p>Each match explains why it fits, what could block it, and the work required. You can audit the official source yourself.</p>
-            <Link href="/grants" className="grant-button grant-button-dark">Browse current matches <ArrowRight size={17} /></Link>
-          </div>
-          <div className="evidence-strips">
-            {proofGrants.map((grant) => (
-              <article className="evidence-strip" key={grant.id}>
-                <div className="evidence-funder"><span>{grant.funder}</span><small>Verified {grant.verifiedAt}</small></div>
-                <div className="evidence-main"><h3>{grant.name}</h3><p>{grant.eligibility}</p></div>
-                <div className="evidence-amount"><strong>{grant.amount}</strong><span>{grant.deadlineLabel}</span></div>
-                <a href={`/apply?id=${grant.id}`} aria-label={`Preview ${grant.name}`}><ArrowRight size={18} /></a>
-              </article>
-            ))}
+          <p style={{ fontSize: 13, letterSpacing: '.08em', textTransform: 'uppercase', color: '#7d8b99', margin: 0 }}>
+            Shinnslist · property intelligence
+          </p>
+          <h1 style={{ fontSize: 'clamp(34px, 5vw, 58px)', lineHeight: 1.05, margin: '16px 0 20px', fontWeight: 800 }}>
+            Anyone can buy PropStream.<br />
+            <span style={{ color: '#4ade80' }}>Nobody can buy this.</span>
+          </h1>
+          <p style={{ fontSize: 18, maxWidth: 720, color: '#c9d4de', lineHeight: 1.6 }}>
+            The lists big platforms don&apos;t sell and niche sites overcharge for — built from
+            official public records nobody bothers to join. County treasurers publish delinquency
+            rolls free. Water rights are public. FEMA buyouts are open data. We do the joining,
+            score every parcel, and show our work.
+          </p>
+          <div style={{ display: 'flex', gap: 14, marginTop: 28, flexWrap: 'wrap' }}>
+            <Link href="/re" style={{ background: '#4ade80', color: '#0b0f14', fontWeight: 700, padding: '13px 26px', borderRadius: 8, textDecoration: 'none' }}>
+              Browse the data →
+            </Link>
+            <Link href="/grants-home" style={{ border: '1px solid #2a3644', color: '#d7e0ea', padding: '13px 26px', borderRadius: 8, textDecoration: 'none' }}>
+              Grants vertical (moved here)
+            </Link>
           </div>
         </div>
       </section>
 
-      <section className="grant-section guardrail-section">
-        <div className="grant-shell guardrail-grid">
-          <div className="guardrail-board">
-            <div className="guardrail-row is-stop"><X size={18} /><span>Ineligible entity type</span><strong>BLOCKED</strong></div>
-            <div className="guardrail-row is-stop"><X size={18} /><span>Application fee detected</span><strong>BLOCKED</strong></div>
-            <div className="guardrail-row is-pass"><Check size={18} /><span>Official deadline verified</span><strong>PASS</strong></div>
-            <div className="guardrail-row is-pass"><Check size={18} /><span>Applicant facts sourced</span><strong>PASS</strong></div>
-            <div className="guardrail-row is-hold"><LockKeyhole size={18} /><span>Legal attestation required</span><strong>YOUR APPROVAL</strong></div>
-          </div>
-          <div className="guardrail-copy">
-            <h2>Autopilot does not mean reckless.</h2>
-            <p>Grant funders remember spam. Shinnslist protects your reputation by blocking bad fits, rewriting every narrative for the funder, and stopping at real legal and financial gates.</p>
-            <ul>
-              <li><CheckCircle2 size={18} /> One application per funder per cycle</li>
-              <li><CheckCircle2 size={18} /> No invented facts or copied narratives</li>
-              <li><CheckCircle2 size={18} /> Receipts and obligations saved after submission</li>
-            </ul>
-          </div>
+      {/* PROOF STRIP */}
+      <section className="grant-shell" style={{ padding: '40px 0', borderBottom: '1px solid #1c2530' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))', gap: 18 }}>
+          {[
+            [zoneAStats.parcels.toLocaleString(), 'corridor parcels'],
+            [denverTaxDelinquent.total.toLocaleString(), 'Denver delinquent rows'],
+            [waterStats.wellsZoneA.toLocaleString(), 'well permits'],
+            [`${compingStats.medianErrorPct}%`, 'median comp error'],
+          ].map(([n, l]) => (
+            <div key={l}>
+              <b style={{ fontSize: 30, color: '#fff' }}>{n}</b>
+              <div style={{ color: '#7d8b99', fontSize: 13 }}>{l}</div>
+            </div>
+          ))}
         </div>
       </section>
 
-      <section className="grant-final-cta">
-        <div className="grant-shell grant-final-inner">
-          <div><h2>Your next grant should already be in motion.</h2><p>Build the profile once. See verified matches and the first application preview before paying.</p></div>
-          <Link href="/onboarding" className="grant-button grant-button-paper">Build my grant profile <ArrowRight size={18} /></Link>
+      {/* AVENUES */}
+      <section className="grant-shell" style={{ padding: '48px 0' }}>
+        <h2 style={{ fontSize: 24, marginBottom: 6 }}>Every signal we ingest</h2>
+        <p style={{ color: '#7d8b99', marginBottom: 22 }}>
+          Live now and in-pipeline. Each becomes a clickable filter in the builder below as its dataset lands.
+        </p>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: 10 }}>
+          {[...live, ...soon].map((a) => (
+            <Link key={a.slug} href={`/re/${a.slug}`}
+              style={{ border: '1px solid #1c2530', borderRadius: 10, padding: '14px 16px', textDecoration: 'none', color: 'inherit', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 10 }}>
+              <span>{a.h1}</span>
+              <span style={{ fontSize: 11, whiteSpace: 'nowrap', color: a.status === 'live' ? '#4ade80' : '#eab308', border: `1px solid ${a.status === 'live' ? '#14532d' : '#713f12'}`, borderRadius: 999, padding: '2px 9px' }}>
+                {a.status === 'live' ? 'LIVE' : 'SOON'}
+              </span>
+            </Link>
+          ))}
         </div>
       </section>
-    </>
+
+      {/* BUILDER */}
+      <section className="grant-shell" id="build" style={{ padding: '32px 0 64px', borderTop: '1px solid #1c2530' }}>
+        <h2 style={{ fontSize: 24 }}>Build your list — pick the signals, see rows instantly.</h2>
+        <ListBuilder />
+      </section>
+
+      {/* GRANTS FOOTER NOTE */}
+      <section className="grant-shell" style={{ padding: '24px 0 72px', color: '#7d8b99', fontSize: 14 }}>
+        Also here: our <Link href="/free-money" style={{ color: '#4ade80' }}>unclaimed money &amp; class actions finder</Link> and{' '}
+        <Link href="/grants-home" style={{ color: '#4ade80' }}>grant-matching engine</Link>.
+      </section>
+    </div>
   );
 }
