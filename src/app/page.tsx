@@ -35,9 +35,6 @@ export default function Home() {
             <Link href="/re" style={{ background: '#4ade80', color: '#0b0f14', fontWeight: 700, padding: '13px 26px', borderRadius: 8, textDecoration: 'none' }}>
               Browse the data →
             </Link>
-            <Link href="/grants-home" style={{ border: '1px solid #2a3644', color: '#d7e0ea', padding: '13px 26px', borderRadius: 8, textDecoration: 'none' }}>
-              Grants vertical (moved here)
-            </Link>
           </div>
         </div>
       </section>
@@ -84,11 +81,7 @@ export default function Home() {
         <ListBuilder />
       </section>
 
-      {/* GRANTS FOOTER NOTE */}
-      <section className="grant-shell" style={{ padding: '24px 0 72px', color: '#7d8b99', fontSize: 14 }}>
-        Also here: our <Link href="/free-money" style={{ color: '#4ade80' }}>unclaimed money &amp; class actions finder</Link> and{' '}
-        <Link href="/grants-home" style={{ color: '#4ade80' }}>grant-matching engine</Link>.
-      </section>
+      
     </div>
   );
 }

@@ -75,12 +75,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <span>Shinnslist</span>
             </Link>
             <nav aria-label="Primary navigation" className="grant-desktop-nav">
-              <Link href="/grants">Grant matches</Link>
               <Link href="/free-money">Free money</Link>
               <Link href="/re">Property data</Link>
-              <Link href="/applications">Applications</Link>
-              <Link href="/how-it-works">How it works</Link>
-              <Link href="/pricing">Pricing</Link>
             </nav>
             <div className="grant-header-actions">
               <Link href="/login" className="grant-login-link">Log in</Link>
@@ -98,11 +94,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <p>Verified grants become applications, not bookmarks.</p>
             </div>
             <div className="grant-footer-links">
-              <Link href="/grants">Matches</Link>
               <Link href="/free-money">Free money</Link>
               <Link href="/re">Property data</Link>
-              <Link href="/applications">Applications</Link>
-              <Link href="/pricing">Pricing</Link>
               <Link href="/learn">Learn</Link>
               <Link href="/privacy">Privacy</Link>
               <Link href="/terms">Terms</Link>
