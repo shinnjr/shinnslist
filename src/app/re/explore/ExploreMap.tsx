@@ -258,6 +258,7 @@ export default function ExploreMap({}: Props) {
             {sel.properties.wtr === 1 && <span>well/water</span>}
             {sel.properties.str === 1 && <span>STR licensed</span>}
             {!!sel.properties.ten && <span>{sel.properties.ten}yr held</span>}
+            {sel.properties.flood === 1 && <span>flood-buyout</span>}
             {sel.properties.oos === 1 && <span>out-of-state</span>}
           </div>
           <button onClick={() => setSel(null)} style={{ ...smallBtn, marginTop: 10 }}>Close</button>
