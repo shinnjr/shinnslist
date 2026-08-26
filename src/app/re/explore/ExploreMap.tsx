@@ -20,6 +20,8 @@ type Feat = {
     score: number; hp: number; abs: number; oos: number; ent: number; tr: number;
     ten: number | null; td: number; wtr: number; flood: number; burn: number;
     str: number; smr: number; vac: number;
+    zoning?: string | null; flood_zone?: string | null; og_buffer?: number;
+    wetlands?: number; geohazard?: number; historic_near?: number; view_protection?: number;
   };
 };
 
@@ -59,7 +61,7 @@ export default function ExploreMap({}: Props) {
 
   // load parcel data once
   useEffect(() => {
-    fetch('/data/corridor_top.json')
+    fetch('/data/corridor_top_v4.json')
       .then((r) => r.json())
       .then((d) => {
         setFeats(d.features);
@@ -260,6 +262,13 @@ export default function ExploreMap({}: Props) {
             {!!sel.properties.ten && <span>{sel.properties.ten}yr held</span>}
             {sel.properties.flood === 1 && <span>flood-buyout</span>}
             {sel.properties.oos === 1 && <span>out-of-state</span>}
+            {!!sel.properties.zoning && <span>zone: {String(sel.properties.zoning)}</span>}
+            {!!sel.properties.flood_zone && <span>FEMA {String(sel.properties.flood_zone)}</span>}
+            {sel.properties.og_buffer === 1 && <span>oil&amp;gas buffer</span>}
+            {sel.properties.wetlands === 1 && <span>wetland</span>}
+            {sel.properties.geohazard === 1 && <span>geo-hazard</span>}
+            {sel.properties.historic_near === 1 && <span>historic area</span>}
+            {sel.properties.view_protection === 1 && <span>view-protected</span>}
           </div>
           <button onClick={() => setSel(null)} style={{ ...smallBtn, marginTop: 10 }}>Close</button>
         </div>
