@@ -107,3 +107,19 @@ export const zoneAStats = {
   parcels: 571667,
   byCounty: { denver: 212664, jeffco: 229271, boulder: 129732 },
 };
+
+// THE DATA WALL — every ingested dataset, live counts from the 2026-08-25 build.
+export const dataWall = [
+  { name: 'Parcel spines (ownership + mailing)', rows: '571,667', counties: 'Denver · Jefferson · Boulder', source: 'County Assessor open GIS', fresh: 'Weekly cron' },
+  { name: 'Corridor scored parcels', rows: '227,834', counties: 'Arvada → Longmont → Lyons → Allenspark → Estes', source: 'Joined spine layers', fresh: 'Auto-rescored' },
+  { name: 'Tax-delinquent roll (scored)', rows: '8,373', counties: 'Denver', source: 'Treasurer pre-lien-sale XLSX', fresh: 'Daily cron' },
+  { name: 'Well permits (water rights)', rows: '76,639', counties: 'All Zone A', source: 'CO DWR registry', fresh: 'Weekly cron' },
+  { name: 'Septic (OWTS) permits', rows: '44,964', counties: 'Boulder', source: 'Boulder County GIS', fresh: 'Static + quarterly' },
+  { name: 'Building permit dockets', rows: '272,399', counties: 'Boulder', source: 'Accela open portal', fresh: 'Static' },
+  { name: 'STR licenses', rows: '374', counties: 'Boulder', source: 'County license registry', fresh: 'Static' },
+  { name: 'FEMA flood buyouts / damaged', rows: '149 corridor', counties: 'Corridor', source: 'OpenFEMA V1 API', fresh: 'Quarterly' },
+  { name: 'Wildfire burn scars', rows: '10 fires', counties: 'Corridor', source: 'USFS MTBS perimeters', fresh: 'Annual' },
+  { name: 'Severed mineral rights', rows: '904', counties: 'Larimer', source: 'Larimer GIS annotations', fresh: 'Static' },
+  { name: 'Sale tenure (years held)', rows: '355K+', counties: 'Jeffco + Boulder', source: 'Assessor sales files', fresh: 'Weekly cron' },
+  { name: '2026 assessed values', rows: '127,080', counties: 'Boulder', source: 'Assessor Values.csv', fresh: 'Nightly upstream' },
+];
