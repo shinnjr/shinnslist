@@ -53,12 +53,18 @@ export default function ExploreMap({}: Props) {
   const [sel, setSel] = useState<Feat | null>(null);
   const [minScore, setMinScore] = useState(150);
   const [listOpen, setListOpen] = useState(false);
+  const [weights, setWeights] = useState<Record<string, number> | null>(null); // null = engine default
+  const [playOpen, setPlayOpen] = useState(false);
+  const [localW, setLocalW] = useState<Record<string, number>>({});
 
   // load parcel data once
   useEffect(() => {
     fetch('/data/corridor_top.json')
       .then((r) => r.json())
-      .then((d) => setFeats(d.features))
+      .then((d) => {
+        setFeats(d.features);
+        if (d.meta?.weights) setWeights(d.meta.weights);
+      })
       .catch(() => setFeats([]));
   }, []);
 
@@ -194,10 +200,46 @@ export default function ExploreMap({}: Props) {
                   onChange={(e) => { const v = Number(e.target.value); setMinScore(v); paint(preset, v); }}
                   style={{ width: '100%' }} />
               </label>
-              <button onClick={() => setListOpen(true)} style={smallBtn}>View as list</button>
+              <div style={{ display: 'flex', gap: 8, marginTop: 10 }}>
+                <button onClick={() => setListOpen(true)} style={smallBtn}>View as list</button>
+                <button onClick={() => setPlayOpen(!playOpen)} style={{ ...smallBtn, ...(playOpen ? { borderColor: '#4ade80' } : {}) }}>
+                  ⚖ Factors
+                </button>
+              </div>
             </div>
           )}
         </>
+      )}
+
+
+      {/* FACTOR PLAYGROUND */}
+      {stage === 'live' && playOpen && (
+        <div style={{ ...panel, top: 16, right: listOpen ? 462 : 16, width: 300, maxHeight: '80vh', overflowY: 'auto' }}>
+          <b>Factor playground</b>
+          <p style={{ color: '#9fb0c0', fontSize: 12, margin: '6px 0 10px' }}>
+            Drag to re-weight. Green dots re-rank live.
+          </p>
+          {(weights
+            ? Object.entries(weights)
+                .filter(([k]) =>
+                  ['tax_delinquent','absentee_owner','out_of_state','entity_owned','trustee_or_estate'].includes(k) ||
+                  k.startsWith('burn') || k.startsWith('flood') || k.startsWith('str') || k.startsWith('water'))
+                .map(([k, v]) => [k, Number(v)] as [string, number])
+            : []
+          ).map(([k, def]) => {
+            const key = `w_${k}`;
+            const val = localW[key] ?? def;
+            return (
+              <label key={k} style={{ display: 'block', fontSize: 12, color: '#9fb0c0', marginBottom: 8 }}>
+                {k.replace(/_/g, ' ')}: <b style={{ color: '#fff' }}>{val}</b>
+                <input type="range" min={0} max={100} value={val}
+                  onChange={(e) => setLocalW({ ...localW, [key]: Number(e.target.value) })}
+                  style={{ width: '100%' }} />
+              </label>
+            );
+          })}
+          <button onClick={() => setLocalW({})} style={smallBtn}>Reset to engine weights</button>
+        </div>
       )}
 
       {/* SELECTION CARD */}
