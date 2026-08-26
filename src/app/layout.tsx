@@ -96,7 +96,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="grant-footer-links">
               <Link href="/free-money">Free money</Link>
               <Link href="/re">Property data</Link>
-              <Link href="/learn">Learn</Link>
+              <Link href="/re/methodology">How we score</Link>
               <Link href="/privacy">Privacy</Link>
               <Link href="/terms">Terms</Link>
               <a href="mailto:hello@shinnslist.com">Contact</a>

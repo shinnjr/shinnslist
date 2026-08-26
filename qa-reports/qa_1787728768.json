@@ -1,0 +1,152 @@
+{
+ "timestamp": "2026-08-26 01:18:00",
+ "pages": [
+  {
+   "page": "/",
+   "url": "https://shinnslist.com/",
+   "status": 200,
+   "text_length": 4888,
+   "blank_page": false,
+   "title": "Shinnslist \u2014 750K+ parcels joined from official public records",
+   "clicked": [
+    "Shinnslist",
+    "Free money",
+    "Property data",
+    "Property data",
+    "Explore parcels",
+    "See every dataset \u2193",
+    "Build a list free",
+    "8,373 rows"
+   ],
+   "console_errors": [],
+   "failed_requests": [
+    "https://shinnslist.com/free-money :: net::ERR_ABORTED",
+    "https://shinnslist.com/terms :: net::ERR_ABORTED",
+    "https://shinnslist.com/re/methodology :: net::ERR_ABORTED",
+    "https://shinnslist.com/re/str-eligible :: net::ERR_ABORTED",
+    "https://shinnslist.com/re/best-value-score :: net::ERR_ABORTED",
+    "https://shinnslist.com/re/explore :: net::ERR_ABORTED",
+    "https://shinnslist.com/re/tax-delinquent :: net::ERR_ABORTED",
+    "https://shinnslist.com/re/unpermitted-structures :: net::ERR_ABORTED",
+    "https://shinnslist.com/free-money/class-actions :: net::ERR_ABORTED",
+    "https://shinnslist.com/re :: net::ERR_ABORTED"
+   ],
+   "screenshot": "/tmp/qa_homepage.png"
+  },
+  {
+   "page": "/re",
+   "url": "https://shinnslist.com/re",
+   "status": 200,
+   "text_length": 5485,
+   "blank_page": false,
+   "title": "The data PropStream doesn\u2019t sell \u2014 tax-delinquent + water-rights parcels, scored",
+   "clicked": [
+    "Shinnslist",
+    "Free money",
+    "Property data",
+    "Property data",
+    "Explore parcels",
+    "Get the Denver list \u2014 $29",
+    "Methodology & accuracy guarant",
+    "Tax-delinquent\nOfficial pre-li"
+   ],
+   "console_errors": [],
+   "failed_requests": [
+    "https://shinnslist.com/free-money :: net::ERR_ABORTED",
+    "https://shinnslist.com/terms :: net::ERR_ABORTED",
+    "https://shinnslist.com/re/methodology :: net::ERR_ABORTED",
+    "https://shinnslist.com/re/explore :: net::ERR_ABORTED",
+    "https://shinnslist.com/ :: net::ERR_ABORTED",
+    "https://shinnslist.com/free-money/class-actions :: net::ERR_ABORTED",
+    "https://shinnslist.com/re :: net::ERR_ABORTED",
+    "https://shinnslist.com/re/tax-delinquent-denver :: net::ERR_ABORTED",
+    "https://shinnslist.com/privacy :: net::ERR_ABORTED"
+   ],
+   "screenshot": "/tmp/qa_re-hub.png"
+  },
+  {
+   "page": "/re/tax-delinquent-denver",
+   "url": "https://shinnslist.com/re/tax-delinquent-denver",
+   "status": 200,
+   "text_length": 3069,
+   "blank_page": false,
+   "title": "Denver tax-delinquent properties \u2014 scored list, official county data | Shinnslis",
+   "clicked": [
+    "Shinnslist",
+    "Free money",
+    "Property data",
+    "Property data",
+    "Explore parcels",
+    "Real-estate data",
+    "How it's built + guarantee",
+    "Get the full CSV"
+   ],
+   "console_errors": [],
+   "failed_requests": [
+    "https://shinnslist.com/free-money :: net::ERR_ABORTED",
+    "https://shinnslist.com/re/methodology :: net::ERR_ABORTED",
+    "https://shinnslist.com/re/explore :: net::ERR_ABORTED",
+    "https://shinnslist.com/ :: net::ERR_ABORTED",
+    "https://shinnslist.com/free-money/class-actions :: net::ERR_ABORTED",
+    "https://shinnslist.com/re :: net::ERR_ABORTED",
+    "https://shinnslist.com/terms :: net::ERR_ABORTED",
+    "https://shinnslist.com/privacy :: net::ERR_ABORTED"
+   ],
+   "screenshot": "/tmp/qa_denver-sku.png"
+  },
+  {
+   "page": "/re/methodology",
+   "url": "https://shinnslist.com/re/methodology",
+   "status": 200,
+   "text_length": 2473,
+   "blank_page": false,
+   "title": "How we score \u2014 public sources, published formula, accuracy guarantee | Shinnslis",
+   "clicked": [
+    "Shinnslist",
+    "Free money",
+    "Property data",
+    "Property data",
+    "Explore parcels",
+    "\u2190 Back to the Denver list",
+    "Free money",
+    "Property data"
+   ],
+   "console_errors": [],
+   "failed_requests": [
+    "https://shinnslist.com/re/flood-buyout :: net::ERR_ABORTED",
+    "https://shinnslist.com/free-money :: net::ERR_ABORTED",
+    "https://shinnslist.com/terms :: net::ERR_ABORTED",
+    "https://shinnslist.com/re/water-rights :: net::ERR_ABORTED",
+    "https://shinnslist.com/re/explore :: net::ERR_ABORTED",
+    "https://shinnslist.com/ :: net::ERR_ABORTED",
+    "https://shinnslist.com/re/tax-delinquent :: net::ERR_ABORTED",
+    "https://shinnslist.com/free-money/class-actions :: net::ERR_ABORTED",
+    "https://shinnslist.com/re :: net::ERR_ABORTED",
+    "https://shinnslist.com/re/tax-delinquent-denver :: net::ERR_ABORTED"
+   ],
+   "screenshot": "/tmp/qa_methodology.png"
+  },
+  {
+   "page": "/re/explore",
+   "url": "https://shinnslist.com/re/explore",
+   "status": 200,
+   "text_length": 349,
+   "blank_page": false,
+   "title": "Target from space \u2014 corridor parcel explorer | Shinnslist",
+   "map_canvas": true,
+   "buybox_visible": true,
+   "preset_click_error": "Page.wait_for_timeout: Target page, context or browser has been closed",
+   "clicked": [],
+   "console_errors": [],
+   "failed_requests": [
+    "https://shinnslist.com/free-money :: net::ERR_ABORTED",
+    "https://shinnslist.com/re/methodology :: net::ERR_ABORTED",
+    "https://shinnslist.com/ :: net::ERR_ABORTED",
+    "https://shinnslist.com/re :: net::ERR_ABORTED",
+    "https://shinnslist.com/terms :: net::ERR_ABORTED",
+    "https://shinnslist.com/privacy :: net::ERR_ABORTED"
+   ],
+   "exception": "Page.screenshot: Target page, context or browser has been closed"
+  }
+ ]
+}

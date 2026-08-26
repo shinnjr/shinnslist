@@ -108,7 +108,7 @@ export default function ReHubPage() {
           <Link href={`/re/${sku.slug}`} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: accent, color: '#fff', padding: '13px 24px', borderRadius: 8, fontWeight: 700, textDecoration: 'none', fontSize: 15 }}>
             Get the Denver list — ${sku.priceCents / 100}
           </Link>
-          <Link href="/re/how-we-score" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: accent, padding: '13px 18px', borderRadius: 8, fontWeight: 650, textDecoration: 'none', fontSize: 14.5, border: `1px solid ${hair}` }}>
+          <Link href="/re/methodology" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: accent, padding: '13px 18px', borderRadius: 8, fontWeight: 650, textDecoration: 'none', fontSize: 14.5, border: `1px solid ${hair}` }}>
             Methodology &amp; accuracy guarantee →
           </Link>
           <span style={{ fontSize: 12.5, color: sub }}>One-time payment · CSV to your inbox · No account</span>

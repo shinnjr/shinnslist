@@ -23,6 +23,7 @@
 /watch                   /re  301
 /welcome                 /re  301
 /cart                    /re  301
+/learn                   /how-we-score  301
 
 # Fresh HTML always — never let edges/cache serve stale pages
 /*
