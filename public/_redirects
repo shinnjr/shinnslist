@@ -10,6 +10,20 @@
 /free-money/free-stock    /free-money  301
 /free-money/credit        /free-money  301
 
+/login                   /re  301
+/signup                  /re  301
+/onboarding              /re  301
+/find                    /re  301
+/post                    /re  301
+/vision                  /re  301
+/top-deals               /re  301
+/dashboard               /re  301
+/builder                 /re  301
+/zones                   /re  301
+/watch                   /re  301
+/welcome                 /re  301
+/cart                    /re  301
+
 # Fresh HTML always — never let edges/cache serve stale pages
 /*
   X-Robots-Tag: noarchive

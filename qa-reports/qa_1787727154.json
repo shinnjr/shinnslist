@@ -1,0 +1,94 @@
+{
+ "timestamp": "2026-08-26 00:49:40",
+ "pages": [
+  {
+   "page": "/",
+   "url": "https://shinnslist.com/",
+   "status": 200,
+   "text_length": 4875,
+   "blank_page": false,
+   "title": "Shinnslist \u2014 750K+ parcels joined from official public records",
+   "clicked": [
+    "Shinnslist",
+    "Free money",
+    "Property data",
+    "Log in",
+    "Build my profile",
+    "See every dataset \u2193",
+    "Build a list free",
+    "8,373 rows"
+   ],
+   "console_errors": [
+    "Refused to execute script from 'https://shinnslist.com/_next/static/chunks/app/page-73cee53f47332d4b.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+    "Refused to execute script from 'https://shinnslist.com/_next/static/chunks/2246-96f59e628aea7419.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+    "Failed to load resource: the server responded with a status of 404 ()",
+    "ChunkLoadError: Loading chunk 2246 failed.\n(error: https://shinnslist.com/_next/static/chunks/2246-96f59e628aea7419.js)\n    at c.f.j (https://shinnslist.com/_next/static/chunks/webpack-9825cdfb10a61111.js:1:4122)\n    at https://shinnslist.com/_next/static/chunks/webpack-9825cdfb10a61111.js:1:1214\n    at Array.reduce (<anonymous>)\n    at c.e (https://shinnslist.com/_next/static/chunks/webpack-9825cdfb10a61111.js:1:1193)\n    at s (https://shinnslist.com/_next/static/chunks/3794-bde9d79bc018b636.js:32:39845)\n    at https://shinnslist.com/_next/static/chunks/3794-bde9d79bc018b636.js:32:55740\n    at t (https://shinnslist.com/_next/static/chunks/3794-bde9d79bc018b636.js:32:57203)"
+   ],
+   "failed_requests": [
+    "https://shinnslist.com/re/best-value-score :: net::ERR_ABORTED",
+    "https://shinnslist.com/re :: net::ERR_ABORTED",
+    "https://shinnslist.com/re/tax-delinquent :: net::ERR_ABORTED",
+    "https://shinnslist.com/_next/static/chunks/2246-96f59e628aea7419.js :: net::ERR_ABORTED",
+    "https://shinnslist.com/free-money/class-actions :: net::ERR_ABORTED",
+    "https://shinnslist.com/re/water-rights :: net::ERR_ABORTED",
+    "https://shinnslist.com/re/code-violations :: net::ERR_ABORTED",
+    "https://shinnslist.com/login :: net::ERR_ABORTED",
+    "https://shinnslist.com/onboarding :: net::ERR_ABORTED",
+    "https://shinnslist.com/free-money :: net::ERR_ABORTED"
+   ],
+   "screenshot": "/tmp/qa_homepage.png"
+  },
+  {
+   "page": "/re",
+   "url": "https://shinnslist.com/re",
+   "status": 200,
+   "text_length": 5472,
+   "blank_page": false,
+   "title": "The data PropStream doesn\u2019t sell \u2014 tax-delinquent + water-rights parcels, scored",
+   "clicked": [
+    "Shinnslist",
+    "Free money",
+    "Property data",
+    "Log in",
+    "Build my profile",
+    "Get the Denver list \u2014 $29",
+    "Methodology & accuracy guarant",
+    "Tax-delinquent\nOfficial pre-li"
+   ],
+   "console_errors": [
+    "Refused to execute script from 'https://shinnslist.com/_next/static/chunks/app/page-73cee53f47332d4b.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+    "Refused to execute script from 'https://shinnslist.com/_next/static/chunks/2246-96f59e628aea7419.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+    "Failed to load resource: the server responded with a status of 404 ()",
+    "ChunkLoadError: Loading chunk 2246 failed.\n(error: https://shinnslist.com/_next/static/chunks/2246-96f59e628aea7419.js)\n    at c.f.j (https://shinnslist.com/_next/static/chunks/webpack-9825cdfb10a61111.js:1:4122)\n    at https://shinnslist.com/_next/static/chunks/webpack-9825cdfb10a61111.js:1:1214\n    at Array.reduce (<anonymous>)\n    at c.e (https://shinnslist.com/_next/static/chunks/webpack-9825cdfb10a61111.js:1:1193)\n    at s (https://shinnslist.com/_next/static/chunks/3794-bde9d79bc018b636.js:32:39845)\n    at https://shinnslist.com/_next/static/chunks/3794-bde9d79bc018b636.js:32:55740\n    at t (https://shinnslist.com/_next/static/chunks/3794-bde9d79bc018b636.js:32:57203)"
+   ],
+   "failed_requests": [
+    "https://shinnslist.com/terms :: net::ERR_ABORTED",
+    "https://shinnslist.com/privacy :: net::ERR_ABORTED",
+    "https://shinnslist.com/login :: net::ERR_ABORTED",
+    "https://shinnslist.com/signup :: net::ERR_ABORTED",
+    "https://shinnslist.com/onboarding :: net::ERR_ABORTED",
+    "https://shinnslist.com/_next/static/chunks/app/page-73cee53f47332d4b.js :: net::ERR_ABORTED",
+    "https://shinnslist.com/re/methodology :: net::ERR_ABORTED",
+    "https://shinnslist.com/re/tax-delinquent-denver :: net::ERR_ABORTED",
+    "https://shinnslist.com/free-money :: net::ERR_ABORTED",
+    "https://shinnslist.com/find :: net::ERR_ABORTED"
+   ],
+   "screenshot": "/tmp/qa_re-hub.png"
+  },
+  {
+   "page": "/re/tax-delinquent-denver",
+   "url": "https://shinnslist.com/re/tax-delinquent-denver",
+   "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://shinnslist.com/re/tax-delinquent-denver\", waiting until \"networkidle\"\n"
+  },
+  {
+   "page": "/re/methodology",
+   "url": "https://shinnslist.com/re/methodology",
+   "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://shinnslist.com/re/methodology\", waiting until \"networkidle\"\n"
+  },
+  {
+   "page": "/re/explore",
+   "url": "https://shinnslist.com/re/explore",
+   "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://shinnslist.com/re/explore\", waiting until \"networkidle\"\n"
+  }
+ ]
+}

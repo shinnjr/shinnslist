@@ -79,8 +79,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/re">Property data</Link>
             </nav>
             <div className="grant-header-actions">
-              <Link href="/login" className="grant-login-link">Log in</Link>
-              <Link href="/onboarding" className="grant-button grant-button-small">Build my profile</Link>
+              <Link href="/re" className="grant-login-link">Property data</Link>
+              <Link href="/re/explore" className="grant-button grant-button-small">Explore parcels</Link>
             </div>
           </div>
         </header>
