@@ -59,7 +59,7 @@ export default function ExploreMap({}: Props) {
 
   // load parcel data once
   useEffect(() => {
-    fetch('/data/corridor_top.json')
+    fetch('/data/corridor_top.json.gz')
       .then((r) => r.json())
       .then((d) => {
         setFeats(d.features);
