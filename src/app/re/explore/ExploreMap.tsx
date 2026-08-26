@@ -138,6 +138,13 @@ export default function ExploreMap({}: Props) {
     setStage('live');
   };
 
+  // AUTO-PAINT: as soon as buybox shows + feats are loaded, paint default mix
+  useEffect(() => {
+    if (stage === 'buybox' && feats.length > 0 && !layer.current && L.current && map.current) {
+      paint('distressed', 0);
+    }
+  }, [stage, feats]);
+
   const shown = useMemo(
     () =>
       feats.filter((f) => (PRESETS[preset] ?? (() => true))(f.properties) && f.properties.score >= minScore),
